@@ -356,15 +356,15 @@
 </blockquote>
 
 <div class="link-grid"><div class="link-grid-container">
-<div class="link-grid-image" style="background-image: url(/images/apple-touch-icon-next.png);"></div>
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
 <p>CSDN</p><p>linux服务器安装Anaconda及配置Jupyter</p>
 <a href="https://blog.csdn.net/ImAustin/article/details/103179826"></a>
 </div><div class="link-grid-container">
-<div class="link-grid-image" style="background-image: url(/images/apple-touch-icon-next.png);"></div>
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
 <p>CSDN</p><p>在Google Cloud上部署深度学习环境，并为jupyter notebook配置域名https访问</p>
 <a href="https://blog.csdn.net/u012956394/article/details/88410416"></a>
 </div><div class="link-grid-container">
-<div class="link-grid-image" style="background-image: url(/images/apple-touch-icon-next.png);"></div>
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
 <p>CSDN</p><p>Ubuntu修改终端下的语言（中文或英文）</p>
 <a href="https://blog.csdn.net/BobYuan888/article/details/88662779"></a>
 </div></div>]]></content>
@@ -610,7 +610,7 @@
 <hr>
 <h1 id="个性化设置"><a href="#个性化设置" class="headerlink" title="个性化设置"></a>个性化设置</h1><p>小编这次的个性化设置基本上参照<code>NexT</code>主题的官方文档设置的，传送门如下：</p>
 <div class="link-grid"><div class="link-grid-container">
-<div class="link-grid-image" style="background-image: url(/images/apple-touch-icon-next.png);"></div>
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
 <p>Theme NexT</p><p>Stay Simple. Stay NexT.</p>
 <a href="https://theme-next.js.org/"></a>
 </div></div>
@@ -708,35 +708,35 @@
 </blockquote>
 
 <div class="link-grid"><div class="link-grid-container">
-<div class="link-grid-image" style="background-image: url(/images/apple-touch-icon-next.png);"></div>
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
 <p>Theme NexT</p><p>Stay Simple. Stay NexT.</p>
 <a href="https://theme-next.js.org/"></a>
 </div><div class="link-grid-container">
-<div class="link-grid-image" style="background-image: url(/images/apple-touch-icon-next.png);"></div>
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
 <p>CSDN</p><p>GitHub Pages自定义域名后每次hexo d都会失效解决</p>
 <a href="https://blog.csdn.net/fake_hydra/article/details/82414965"></a>
 </div><div class="link-grid-container">
-<div class="link-grid-image" style="background-image: url(/images/apple-touch-icon-next.png);"></div>
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
 <p>CSDN</p><p>hexo+github搭建免费个人博客</p>
 <a href="https://blog.csdn.net/weixin_38788347/article/details/78154487"></a>
 </div><div class="link-grid-container">
-<div class="link-grid-image" style="background-image: url(/images/apple-touch-icon-next.png);"></div>
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
 <p>CSDN</p><p>hexo + next主题高级配置</p>
 <a href="https://blog.csdn.net/destinytaoer/article/details/78400023"></a>
 </div><div class="link-grid-container">
-<div class="link-grid-image" style="background-image: url(/images/apple-touch-icon-next.png);"></div>
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
 <p>CSDN</p><p>Hexo框架下用NexT(v7.0+)主题美化博客</p>
 <a href="https://blog.csdn.net/weixin_39345384/article/details/80785373"></a>
 </div><div class="link-grid-container">
-<div class="link-grid-image" style="background-image: url(/images/apple-touch-icon-next.png);"></div>
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
 <p>CSDN</p><p>快速搭建博客：写作技巧</p>
 <a href="https://blog.csdn.net/weixin_41800884/article/details/103750672"></a>
 </div><div class="link-grid-container">
-<div class="link-grid-image" style="background-image: url(/images/apple-touch-icon-next.png);"></div>
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
 <p>CSDN</p><p>Hexo博客NexT主题终极配置</p>
 <a href="https://blog.csdn.net/panchao888888/article/details/80666352"></a>
 </div><div class="link-grid-container">
-<div class="link-grid-image" style="background-image: url(/images/apple-touch-icon-next.png);"></div>
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
 <p>CSDN</p><p>Hexo+NexT（三）：Next主题配置详解</p>
 <a href="https://blog.csdn.net/loze/article/details/94210320"></a>
 </div></div>
