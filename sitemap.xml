@@ -2,9 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pylover.net/allskills/skills/writing/</loc>
+    
+    <lastmod>2021-10-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/allskills/skills/</loc>
+    
+    <lastmod>2021-10-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/allskills/skills/writing/video.html</loc>
+    
+    <lastmod>2021-10-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/allskills/skills/writing/tabs.html</loc>
+    
+    <lastmod>2021-10-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/allskills/skills/writing/PDF.html</loc>
+    
+    <lastmod>2021-10-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/allskills/skills/writing/note.html</loc>
+    
+    <lastmod>2021-10-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/allskills/skills/writing/link-grid.html</loc>
+    
+    <lastmod>2021-10-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/allskills/skills/writing/label.html</loc>
+    
+    <lastmod>2021-10-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/allskills/skills/writing/group-pictures.html</loc>
+    
+    <lastmod>2021-10-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/allskills/skills/writing/button.html</loc>
+    
+    <lastmod>2021-10-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://pylover.net/allskills/</loc>
     
-    <lastmod>2021-06-25</lastmod>
+    <lastmod>2021-10-09</lastmod>
     
   </url>
   
@@ -17,76 +87,6 @@
   
   <url>
     <loc>https://pylover.net/allskills/tutorial/</loc>
-    
-    <lastmod>2021-06-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/allskills/skills/</loc>
-    
-    <lastmod>2021-06-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/allskills/skills/writing/video.html</loc>
-    
-    <lastmod>2021-06-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/allskills/skills/writing/tabs.html</loc>
-    
-    <lastmod>2021-06-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/allskills/skills/writing/PDF.html</loc>
-    
-    <lastmod>2021-06-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/allskills/skills/writing/note.html</loc>
-    
-    <lastmod>2021-06-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/allskills/skills/writing/link-grid.html</loc>
-    
-    <lastmod>2021-06-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/allskills/skills/writing/label.html</loc>
-    
-    <lastmod>2021-06-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/allskills/skills/writing/</loc>
-    
-    <lastmod>2021-06-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/allskills/skills/writing/group-pictures.html</loc>
-    
-    <lastmod>2021-06-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/allskills/skills/writing/button.html</loc>
     
     <lastmod>2021-06-25</lastmod>
     
@@ -249,7 +249,7 @@
 
   <url>
     <loc>https://pylover.net/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -257,42 +257,42 @@
   
   <url>
     <loc>https://pylover.net/tags/Chrome%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/jupyter/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/Hexo/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -301,56 +301,56 @@
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Chrome%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/jupyter/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Hexo/</loc>
-    <lastmod>2021-10-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/categories/%E9%A1%B9%E7%9B%AE/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/categories/%E9%A1%B9%E7%9B%AE/%E7%88%AC%E8%99%AB/</loc>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
