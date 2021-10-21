@@ -108,6 +108,54 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Python异常处理</title>
+    <url>/966110f5880f.html</url>
+    <content><![CDATA[<h1 id="普通的异常处理"><a href="#普通的异常处理" class="headerlink" title="普通的异常处理"></a>普通的异常处理</h1><span id="more"></span>
+
+<hr>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>retrying</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python项目管理与构建工具</title>
+    <url>/c7de17780364.html</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>python的项目管理与构建工具</p>
+<span id="more"></span>
+
+<hr>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>项目管理</tag>
+        <tag>项目构建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你值得学习的几个python库</title>
+    <url>/38cb468632d8.html</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Python有着很多很酷的第三方库，可以使任务变得更容易。</p>
+<span id="more"></span>
+
+<hr>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>package</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>开发者常用工具集</title>
     <url>/2da4fc93baa7.html</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>不同岗位的程序员也有千差万别，前端、算法、架构设计、测试……不同的岗位日常使用的工具截然不同。收集一些在开发中常用的<strong>软件/网站/插件/命令行工具</strong>。</p>
