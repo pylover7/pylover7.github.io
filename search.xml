@@ -123,6 +123,83 @@
       </tags>
   </entry>
   <entry>
+    <title>Python正则表达式小例子</title>
+    <url>/256d51a8f59c.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>收集了 20 个 <code>re</code> 模块的小栗子，供大家参考学习~</p>
+<span id="more"></span>
+
+<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><h3 id="查找第一个匹配串"><a href="#查找第一个匹配串" class="headerlink" title="查找第一个匹配串"></a>查找第一个匹配串</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;i love python very much&#x27;</span></span><br><span class="line">pat = <span class="string">&#x27;python&#x27;</span> </span><br><span class="line">r = re.search(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r.span()) <span class="comment">#(7,13)</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="查找所有1"><a href="#查找所有1" class="headerlink" title="查找所有1"></a>查找所有1</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;山东省潍坊市青州第1中学高三1班&#x27;</span></span><br><span class="line">pat = <span class="string">&#x27;1&#x27;</span></span><br><span class="line">r = re.finditer(pat,s)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> r:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br><span class="line"></span><br><span class="line"><span class="comment"># &lt;re.Match object; span=(9, 10), match=&#x27;1&#x27;&gt;</span></span><br><span class="line"><span class="comment"># &lt;re.Match object; span=(14, 15), match=&#x27;1&#x27;&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="d-匹配数字-0-9"><a href="#d-匹配数字-0-9" class="headerlink" title="\d 匹配数字 [0-9]"></a><code>\d</code> 匹配数字 <code>[0-9]</code></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;一共20行代码运行时间13.59s&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\d+&#x27;</span> <span class="comment"># +表示匹配数字(\d表示数字的通用字符)1次或多次</span></span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r)</span><br><span class="line"><span class="comment"># [&#x27;20&#x27;, &#x27;13&#x27;, &#x27;59&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="表示前一个字符匹配0或1次"><a href="#表示前一个字符匹配0或1次" class="headerlink" title="? 表示前一个字符匹配0或1次"></a><code>?</code> 表示前一个字符匹配0或1次</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;一共20行代码运行时间13.59s&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\d+\.?\d+&#x27;</span> <span class="comment"># ?表示匹配小数点(\.)0次或1次</span></span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r)</span><br><span class="line"><span class="comment"># [&#x27;20&#x27;, &#x27;13.59&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="匹配字符串的开头"><a href="#匹配字符串的开头" class="headerlink" title="^ 匹配字符串的开头"></a><code>^</code> 匹配字符串的开头</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;^[emrt]&#x27;</span> <span class="comment"># 查找以</span></span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r)</span><br><span class="line"><span class="comment"># [],因为字符串的开头是字符`T`，不在emrt匹配范围内，所以返回为空</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="re-I-忽略大小写"><a href="#re-I-忽略大小写" class="headerlink" title="re.I 忽略大小写"></a><code>re.I</code> 忽略大小写</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;^[emrt]&#x27;</span> <span class="comment"># 查找以</span></span><br><span class="line">r = re.<span class="built_in">compile</span>(pat,re.I).search(s)</span><br><span class="line"><span class="built_in">print</span>(r)</span><br><span class="line"><span class="comment"># &lt;re.Match object; span=(0, 1), match=&#x27;T&#x27;&gt; 表明字符串的开头在匹配列表中</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="提取单词"><a href="#提取单词" class="headerlink" title="提取单词"></a>提取单词</h3><div class="note info"><p>这是不准确版本，请参看第 <a href="#%E8%A1%A5%E5%85%85%E4%B8%8A%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%95%E8%AF%8D">9</a> 个</p>
+</div>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\s[a-zA-Z]+&#x27;</span>  </span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r) <span class="comment">#[&#x27; module&#x27;, &#x27; provides&#x27;, &#x27; regular&#x27;, &#x27; expression&#x27;, &#x27; matching&#x27;, &#x27; operations&#x27;, &#x27; similar&#x27;, &#x27; to&#x27;, &#x27; those&#x27;, &#x27; found&#x27;, &#x27; in&#x27;, &#x27; Perl&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="捕获单词去掉空格"><a href="#捕获单词去掉空格" class="headerlink" title="捕获单词去掉空格"></a>捕获单词去掉空格</h3><div class="note info"><p>使用 <code>()</code> 捕获，这是不准确版本，请参看第 <a href="#%E8%A1%A5%E5%85%85%E4%B8%8A%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%95%E8%AF%8D">9</a> 个</p>
+</div>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\s([a-zA-Z]+)&#x27;</span>  </span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r) <span class="comment">#[&#x27;module&#x27;, &#x27;provides&#x27;, &#x27;regular&#x27;, &#x27;expression&#x27;, &#x27;matching&#x27;, &#x27;operations&#x27;, &#x27;similar&#x27;, &#x27;to&#x27;, &#x27;those&#x27;, &#x27;found&#x27;, &#x27;in&#x27;, &#x27;Perl&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="补充上第一个单词"><a href="#补充上第一个单词" class="headerlink" title="补充上第一个单词"></a>补充上第一个单词</h3><div class="note info"><p>上面第 <a href="#%E6%8D%95%E8%8E%B7%E5%8D%95%E8%AF%8D%E5%8E%BB%E6%8E%89%E7%A9%BA%E6%A0%BC">8</a>，看到提取单词中未包括第一个单词，使用 <code>?</code> 表示前面字符出现 0 次或 1 次，但是此字符还有表示贪心或非贪心匹配含义，使用时要谨慎</p>
+</div>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\s?([a-zA-Z]+)&#x27;</span>  </span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r) <span class="comment">#[&#x27;This&#x27;, &#x27;module&#x27;, &#x27;provides&#x27;, &#x27;regular&#x27;, &#x27;expression&#x27;, &#x27;matching&#x27;, &#x27;operations&#x27;, &#x27;similar&#x27;, &#x27;to&#x27;, &#x27;those&#x27;, &#x27;found&#x27;, &#x27;in&#x27;, &#x27;Perl&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="使用-split-直接分割单词"><a href="#使用-split-直接分割单词" class="headerlink" title="使用 split() 直接分割单词"></a>使用 <code>split()</code> 直接分割单词</h3><p>使用以上方法分割单词，不是简洁的，仅仅为了演示。分割单词最简单还是使用 <code>split()</code> 。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\s+&#x27;</span>  </span><br><span class="line">r = re.split(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r) <span class="comment"># [&#x27;This&#x27;, &#x27;module&#x27;, &#x27;provides&#x27;, &#x27;regular&#x27;, &#x27;expression&#x27;, &#x27;matching&#x27;, &#x27;operations&#x27;, &#x27;similar&#x27;, &#x27;to&#x27;, &#x27;those&#x27;, &#x27;found&#x27;, &#x27;in&#x27;, &#x27;Perl&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="提取以m或t开头的单词，忽略大小写"><a href="#提取以m或t开头的单词，忽略大小写" class="headerlink" title="提取以m或t开头的单词，忽略大小写"></a>提取以m或t开头的单词，忽略大小写</h3><div class="note warning"><p>下面出现的结果不是我们想要的，原因出在 <code>?</code> 上！</p>
+</div>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\s?([mt][a-zA-Z]*)&#x27;</span> <span class="comment"># 查找以</span></span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r) <span class="comment"># [&#x27;module&#x27;, &#x27;matching&#x27;, &#x27;tions&#x27;, &#x27;milar&#x27;, &#x27;to&#x27;, &#x27;those&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="使用-查找字符串开头的单词"><a href="#使用-查找字符串开头的单词" class="headerlink" title="使用 ^ 查找字符串开头的单词"></a>使用 <code>^</code> 查找字符串开头的单词</h3><p>综合 <a href="#%E6%8F%90%E5%8F%96%E4%BB%A5m%E6%88%96t%E5%BC%80%E5%A4%B4%E7%9A%84%E5%8D%95%E8%AF%8D%E5%BF%BD%E7%95%A5%E5%A4%A7%E5%B0%8F%E5%86%99">11</a> 和 12 得到所有以 <code>m</code> 或 <code>t</code> 开头的单词</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;^([mt][a-zA-Z]*)\s&#x27;</span> <span class="comment"># 查找以</span></span><br><span class="line">r = re.<span class="built_in">compile</span>(pat,re.I).findall(s)</span><br><span class="line"><span class="built_in">print</span>(r) <span class="comment"># [&#x27;This&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="先分割，再查找满足要求的单词"><a href="#先分割，再查找满足要求的单词" class="headerlink" title="先分割，再查找满足要求的单词"></a>先分割，再查找满足要求的单词</h3><p>使用 <code>match</code> 表示是否匹配</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\s+&#x27;</span>  </span><br><span class="line">r = re.split(pat,s)</span><br><span class="line">res = [i <span class="keyword">for</span> i <span class="keyword">in</span> r <span class="keyword">if</span> re.match(<span class="string">r&#x27;[mMtT]&#x27;</span>,i)] </span><br><span class="line"><span class="built_in">print</span>(res) <span class="comment"># [&#x27;This&#x27;, &#x27;module&#x27;, &#x27;matching&#x27;, &#x27;to&#x27;, &#x27;those&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="贪心匹配"><a href="#贪心匹配" class="headerlink" title="贪心匹配"></a>贪心匹配</h3><p>尽可能多的匹配字符</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">content=<span class="string">&#x27;&lt;h&gt;ddedadsad&lt;/h&gt;&lt;div&gt;graph&lt;/div&gt;bb&lt;div&gt;math&lt;/div&gt;cc&#x27;</span></span><br><span class="line">pat=re.<span class="built_in">compile</span>(<span class="string">r&quot;&lt;div&gt;(.*)&lt;/div&gt;&quot;</span>)  <span class="comment">#贪婪模式</span></span><br><span class="line">m=pat.findall(content)</span><br><span class="line"><span class="built_in">print</span>(m) <span class="comment"># [&#x27;graph&lt;/div&gt;bb&lt;div&gt;math&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="非贪心匹配"><a href="#非贪心匹配" class="headerlink" title="非贪心匹配"></a>非贪心匹配</h3><p>与 <a href="#%E8%B4%AA%E5%BF%83%E5%8C%B9%E9%85%8D">14</a> 相比，仅仅多了一个问号 <code>(?)</code> ，得到结果完全不同</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">content=<span class="string">&#x27;&lt;h&gt;ddedadsad&lt;/h&gt;&lt;div&gt;graph&lt;/div&gt;bb&lt;div&gt;math&lt;/div&gt;cc&#x27;</span></span><br><span class="line">pat=re.<span class="built_in">compile</span>(<span class="string">r&quot;&lt;div&gt;(.*?)&lt;/div&gt;&quot;</span>)  <span class="comment">#贪婪模式</span></span><br><span class="line">m=pat.findall(content)</span><br><span class="line"><span class="built_in">print</span>(m) <span class="comment"># [&#x27;graph&#x27;, &#x27;math&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<p>与14比较可知，贪心匹配和非贪心匹配的区别，后者是字符串匹配后立即返回，见好就收。</p>
+<h3 id="含有多种分割符"><a href="#含有多种分割符" class="headerlink" title="含有多种分割符"></a>含有多种分割符</h3><p>使用 <code>split</code> 函数</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">content = <span class="string">&#x27;graph math,,english;chemistry&#x27;</span> <span class="comment"># 这种</span></span><br><span class="line">pat=re.<span class="built_in">compile</span>(<span class="string">r&quot;[\s\,\;]+&quot;</span>)  <span class="comment">#贪婪模式</span></span><br><span class="line">m=pat.split(content)</span><br><span class="line"><span class="built_in">print</span>(m) <span class="comment"># [&#x27;graph&#x27;, &#x27;math&#x27;, &#x27;english&#x27;, &#x27;chemistry&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="替换匹配的子串"><a href="#替换匹配的子串" class="headerlink" title="替换匹配的子串"></a>替换匹配的子串</h3><p><code>sub</code> 函数实现对匹配子串的替换</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">content=<span class="string">&quot;hello 12345, hello 456321&quot;</span>    </span><br><span class="line">pat=re.<span class="built_in">compile</span>(<span class="string">r&#x27;\d+&#x27;</span>) <span class="comment">#要替换的部分</span></span><br><span class="line">m=pat.sub(<span class="string">&quot;666&quot;</span>,content)</span><br><span class="line"><span class="built_in">print</span>(m) <span class="comment"># hello 666, hello 666</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="爬取百度首页标题"><a href="#爬取百度首页标题" class="headerlink" title="爬取百度首页标题"></a>爬取百度首页标题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> request</span><br><span class="line"></span><br><span class="line"><span class="comment">#爬虫爬取百度首页内容</span></span><br><span class="line">data=request.urlopen(<span class="string">&quot;http://www.baidu.com/&quot;</span>).read().decode()</span><br><span class="line"></span><br><span class="line"><span class="comment">#分析网页,确定正则表达式</span></span><br><span class="line">pat=<span class="string">r&#x27;&lt;title&gt;(.*?)&lt;/title&gt;&#x27;</span></span><br><span class="line"></span><br><span class="line">result=re.search(pat,data)</span><br><span class="line"><span class="built_in">print</span>(result) &lt;re.Match <span class="built_in">object</span>; span=(<span class="number">1358</span>, <span class="number">1382</span>), match=<span class="string">&#x27;&lt;title&gt;百度一下，你就知道&lt;/title&gt;&#x27;</span>&gt;</span><br><span class="line"></span><br><span class="line">result.group() <span class="comment"># 百度一下，你就知道</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="常用元字符总结"><a href="#常用元字符总结" class="headerlink" title="常用元字符总结"></a>常用元字符总结</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">. 匹配任意字符  </span><br><span class="line">^ 匹配字符串始位置 </span><br><span class="line">$ 匹配字符串中结束的位置 </span><br><span class="line">* 前面的原子重复0次1次多次 </span><br><span class="line">? 前面的原子重复一次或者0次 </span><br><span class="line">+ 前面的原子重复一次或多次</span><br><span class="line">&#123;n&#125; 前面的原子出现了 n 次</span><br><span class="line">&#123;n,&#125; 前面的原子至少出现 n 次</span><br><span class="line">&#123;n,m&#125; 前面的原子出现次数介于 n-m 之间</span><br><span class="line">( ) 分组,需要输出的部分</span><br></pre></td></tr></table></figure>
+
+<h3 id="常用通用字符总结"><a href="#常用通用字符总结" class="headerlink" title="常用通用字符总结"></a>常用通用字符总结</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\s  匹配空白字符 </span><br><span class="line">\w  匹配任意字母/数字/下划线 </span><br><span class="line">\W  和小写 w 相反，匹配任意字母/数字/下划线以外的字符</span><br><span class="line">\d  匹配十进制数字</span><br><span class="line">\D  匹配除了十进制数以外的值 </span><br><span class="line">[0-9]  匹配一个0-9之间的数字</span><br><span class="line">[a-z]  匹配小写英文字母</span><br><span class="line">[A-Z]  匹配大写英文字母</span><br></pre></td></tr></table></figure>
+
+<h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>以上就是Python中正则模块的基本使用总结，里面有循序渐进的优化分析过程，这些虽然是中间过程，但是对于正则小白而言，了解这些很有必要。</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>re</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python项目管理与构建工具</title>
     <url>/c7de17780364.html</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>python的项目管理与构建工具</p>
@@ -135,8 +212,7 @@
       </categories>
       <tags>
         <tag>python</tag>
-        <tag>项目管理</tag>
-        <tag>项目构建</tag>
+        <tag>项目</tag>
       </tags>
   </entry>
   <entry>
@@ -563,8 +639,8 @@
         <category>爬虫</category>
       </categories>
       <tags>
-        <tag>爬虫</tag>
         <tag>项目</tag>
+        <tag>爬虫</tag>
       </tags>
   </entry>
   <entry>
