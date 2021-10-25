@@ -108,6 +108,24 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Pycharm插件推荐</title>
+    <url>/ac21f05422a2.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><span id="more"></span>
+
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/_link_image/wechat.png"></object>
+<p>微信文章</p><p>参考文章的描述</p>
+<a href="https://mp.weixin.qq.com/s/wOTDnyG5VV2XYx1qe4apMA"></a>
+</div></div>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python异常处理</title>
     <url>/966110f5880f.html</url>
     <content><![CDATA[<h1 id="普通的异常处理"><a href="#普通的异常处理" class="headerlink" title="普通的异常处理"></a>普通的异常处理</h1><span id="more"></span>
@@ -308,7 +326,7 @@
 <p>其实例化的过程，你可以参考我这里的调试过程，加以理解。</p>
 <p><img data-src="./Python%E8%A3%85%E9%A5%B0%E5%99%A8/1.png" alt="调试图片"></p>
 <h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="./_link_image/wechat.png"></object>
+<object class="link-grid-image" data="'./_link_image/wechat.png'"></object>
 <p>微信文章</p><p>恶补了 Python 装饰器的六种写法，你随便问~</p>
 <a href="https://mp.weixin.qq.com/s/XTHZ-K1yDNPIoejNFvk6rw"></a>
 </div></div>
