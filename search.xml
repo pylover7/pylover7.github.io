@@ -189,6 +189,11 @@
 <h3 id="常用通用字符总结"><a href="#常用通用字符总结" class="headerlink" title="常用通用字符总结"></a>常用通用字符总结</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\s  匹配空白字符 </span><br><span class="line">\w  匹配任意字母/数字/下划线 </span><br><span class="line">\W  和小写 w 相反，匹配任意字母/数字/下划线以外的字符</span><br><span class="line">\d  匹配十进制数字</span><br><span class="line">\D  匹配除了十进制数以外的值 </span><br><span class="line">[0-9]  匹配一个0-9之间的数字</span><br><span class="line">[a-z]  匹配小写英文字母</span><br><span class="line">[A-Z]  匹配大写英文字母</span><br></pre></td></tr></table></figure>
 
 <h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>以上就是Python中正则模块的基本使用总结，里面有循序渐进的优化分析过程，这些虽然是中间过程，但是对于正则小白而言，了解这些很有必要。</p>
+<h2 id="原文链接"><a href="#原文链接" class="headerlink" title="原文链接"></a>原文链接</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
+<p>微信文章</p><p>学会Python正则表达式，就看这20个例子~</p>
+<a href="https://mp.weixin.qq.com/s/J8KvyEoZGWfnlKajPnAPYg"></a>
+</div></div>
 ]]></content>
       <categories>
         <category>学习笔记</category>
