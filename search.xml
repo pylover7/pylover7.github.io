@@ -113,8 +113,9 @@
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> <code>Pycharm</code> 作为最好的 <code>python</code> 编辑器之一，本身的功能就非常优秀了，不过加上了一些优秀的插件，它会变得更加优秀！</p>
 <span id="more"></span>
 
-<h2 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h2><h3 id="Chinese-Language-Pack"><a href="#Chinese-Language-Pack" class="headerlink" title="Chinese Language Pack"></a>Chinese Language Pack</h3><p>英语不好的同学，看着 <code>pycharm</code> 那么多的功能却不知道怎么用的，就不用多说了吧<br><img data-src="Pycharm%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/1.png"></p>
-<h3 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h3><h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
+<h2 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h2><h3 id="Chinese-Language-Pack"><a href="#Chinese-Language-Pack" class="headerlink" title="Chinese Language Pack"></a>Chinese Language Pack</h3><p>英语不好的同学，看着 <code>pycharm</code> 那么多的功能却不知道怎么用的，就不用多说了吧~<br><img data-src="Pycharm%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/1.png"></p>
+<h3 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h3><p>这个插件可以让你在 <code>Pycharm</code> 的任何地方对各种语言进行翻译，再也不用担心看源代码的注释看不懂了，而且不知道怎么用英语表达的中文也可以立马用翻译过来，必须是必备插件！<br><img data-src="Pycharm%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/2.png"></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
 <object class="link-grid-image" data="/uploads/wechat.png"></object>
 <p>微信文章</p><p>参考文章的描述</p>
 <a href="https://mp.weixin.qq.com/s/wOTDnyG5VV2XYx1qe4apMA"></a>
@@ -328,7 +329,7 @@
 
 <p>可以看到我们用singleton 这个装饰函数来装饰 User 这个类。装饰器用在类上，并不是很常见，但只要熟悉装饰器的实现过程，就不难以实现对类的装饰。在上面这个例子中，装饰器就只是实现对类实例的生成的控制而已。</p>
 <p>其实例化的过程，你可以参考我这里的调试过程，加以理解。</p>
-<p><img data-src="./Python%E8%A3%85%E9%A5%B0%E5%99%A8/10.png" alt="调试图片"></p>
+<p><img data-src="10.png"></p>
 <h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
 <object class="link-grid-image" data="/uploads/wechat.png"></object>
 <p>微信文章</p><p>恶补了 Python 装饰器的六种写法，你随便问~</p>
