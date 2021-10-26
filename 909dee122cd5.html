@@ -280,4 +280,208 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-05-14 21:00:23" itemprop="dateModif
+        <time title="修改时间：2021-05-14 21:00:23" itemprop="dateModified" datetime="2021-05-14T21:00:23+08:00">2021-05-14</time>
+      </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/909dee122cd5.html#SOHUCS" itemprop="discussionUrl">
+        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="909dee122cd5.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>去年的时候本着记录自己学习笔记的想法，开始创建自己的博客；后来翻来覆去，最终还是选择了<strong>Hexo</strong>来搭建自己的博客，这样的自由度会比较高，没有任何限制。</p>
+<p>后来，换电脑的时候，发现了一个很大的问题：电脑里面的博客环境不能完全的搬过去！虽然博客的各种文件都可以复制过去，但是<code>nodejs</code>的环境，以及<code>npm</code>安装的各种插件都不能完全的复现！</p>
+<span id="more"></span>
+
+<p>最主要的原因还是当初第一次做的时候安装的各种插件太多了，导致自己都不记得了；但是吧，配置文件又已经那么改了，不安装的话配置就会出错，修改配置文件的话emmmm我自己也不记得要改哪些了，所以不如直接只拿了曾经些的博客的<code>md</code>文件，其他的全部重新配置。</p>
+<p>这种换环境的问题就很是让我苦恼，后来也曾想过把博客的本地环境般到服务器上，但其实那和放在自己电脑上是一样的；直到最近发现了一个<strong>宝藏工具</strong>：<code>Cloud Studio</code>，下面，请跟随小编的步伐，来获取这个工具吧~</p>
+<h1 id="Hexo博客搭建流程的熟悉"><a href="#Hexo博客搭建流程的熟悉" class="headerlink" title="Hexo博客搭建流程的熟悉"></a>Hexo博客搭建流程的熟悉</h1><div class="note info"><p><strong>Hexo博客</strong>本地的建立请看<a target="_blank" rel="noopener" href="https://shuoshuoyun.cn/6004aa280b7b.html">这里</a></p>
+</div>
+
+<h1 id="新的环境的熟悉"><a href="#新的环境的熟悉" class="headerlink" title="新的环境的熟悉"></a>新的环境的熟悉</h1><p>我们的新环境是源于腾讯云的一个服务：<a class="btn" target="_blank" rel="noopener" href="https://cloud.tencent.com/product/coding">CODING DevOps</a>关于它的介绍，小伙伴们可以点进去仔细看看，这里就不多细讲了，小编已经尝试过了，很香~</p>
+<h1 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h1><p>不过今天的主角并不是<code>CODING Devops</code>，而是里面的一小部分而已，它叫做<code>Cloud Studio</code>，一个线上的<code>VScode</code>编辑器，下面我们来稍微介绍一下我们从无到有的流程：</p>
+<h2 id="注册腾讯云账号"><a href="#注册腾讯云账号" class="headerlink" title="注册腾讯云账号"></a>注册腾讯云账号</h2><p>这里想必大家应该都会的，不会的请出门左转问问度娘…</p>
+<h2 id="开通服务"><a href="#开通服务" class="headerlink" title="开通服务"></a>开通服务</h2><p><strong>首先我们打开<a target="_blank" rel="noopener" href="https://cloud.tencent.com/">腾讯云</a>的控制台:</strong><br><img data-src="./Coding-Hexo%E4%BA%91%E4%B8%8A%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1.png"></p>
+<p><strong>找到<code>CODING DevOps</code>服务</strong><br><img data-src="./Coding-Hexo%E4%BA%91%E4%B8%8A%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/2.png"></p>
+<p><strong>开通服务</strong></p>
+<p>开通服务的大致步骤：</p>
+<ul>
+<li>创建团队，自定义团队域名</li>
+<li>创建用户</li>
+<li>完成注册</li>
+</ul>
+<p>这里由于小编已经开通了，所以就直接点击<strong>立即使用</strong>即可，<br><img data-src="./Coding-Hexo%E4%BA%91%E4%B8%8A%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/3.png"></p>
+<p>点击后即可来到我们的服务后台，今天我们要介绍的主角就直接在服务器后台即可看见：<br><img data-src="./Coding-Hexo%E4%BA%91%E4%B8%8A%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/4.png"></p>
+<p>点进去后就可以看到工作空间的主界面了，用张图片来简单介绍一下这里：<br><img data-src="./Coding-Hexo%E4%BA%91%E4%B8%8A%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/5.png"></p>
+<p><img data-src="./Coding-Hexo%E4%BA%91%E4%B8%8A%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/6.png"></p>
+<h2 id="创建工作空间"><a href="#创建工作空间" class="headerlink" title="创建工作空间"></a>创建工作空间</h2><p><img data-src="./Coding-Hexo%E4%BA%91%E4%B8%8A%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/7.png"></p>
+<p>这里简单介绍一下这些东西：</p>
+<ul>
+<li><strong>工作空间名称</strong>：就是你的工作空间的名字</li>
+<li><strong>描述</strong>：可以简单说说你这个工作空间创建后用来干啥的，例如：Hexo博客</li>
+<li><strong>运行环境</strong>：<ul>
+<li>预置环境：就是免费白嫖一个工作空间！！！想白嫖请选这个！</li>
+<li>云服务器：链接自己的云服务器</li>
+<li>云服务器（使用密码创建）：链接自己的云服务器</li>
+</ul>
+</li>
+</ul>
+<p>下面的<strong>预置环境</strong>这里选择<code>Node.js</code>，这样可以省略它的安装过程：<br><img data-src="./Coding-Hexo%E4%BA%91%E4%B8%8A%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/8.png"></p>
+<p>创建完成后我们就可以看到一个<code>VScode</code>编辑器的界面，没错，这就是一个线上的<code>VScode</code>，它和你自己的<code>VScode</code>几乎一模一样，而且自带一个<strong>后台服务器</strong>来给你提供服务！！相信大家已经知道这个线上的<code>VScode</code>编辑器的巨大作用了！！这里我们暂时只讲解创建<code>Hexo博客</code>的。</p>
+<div class="note danger"><h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>每个用户使用这个<code>Cloud Studio</code>服务，每天只有四个小时！，每天只有四个小时！，每天只有四个小时！，重要的事情说三遍！</p>
+<p>所以当你使用完工作空间后，请记得关闭！！</p>
+</div>
+
+<p>下面的流程和在自己本地创建<code>Hexo环境</code>的步骤是一样的了，部署完成后，从此再也不怕换电脑了！</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>追光者
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://pylover.net/909dee122cd5.html" title="Coding+Hexo云上创建个人博客">https://pylover.net/909dee122cd5.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2c088c349386.html" rel="prev" title="搭建云Jupyter笔记本">
+                  <i class="fa fa-chevron-left"></i> 搭建云Jupyter笔记本
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/966110f5880f.html" rel="next" title="Python异常处理">
+                  Python异常处理 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="SOHUCS"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">琼ICP备2021004101号 </a>
+      <img src="/uploads/beian.png" alt=""><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43052302000141" rel="noopener" target="_blank">湘公网安备 43052302000141号 </a>
+  </div>
+
+<div class="copyright">
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">追光者</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdn.jsdelivr.net/npm/mermaid@8.13.2/dist/mermaid.min.js","integrity":"sha256-UIQPVkGifpwMvDH5yGgORJ9sSTDq38zz6BGU6dNaKhM="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://pylover.net/909dee122cd5.html"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<script class="next-config" data-name="changyan" type="application/json">{"enable":"ture","appid":"cyvkAzYFK","appkey":"ef256bad532909226bdc05cff4b14d96"}</script>
+<script src="/js/third-party/comments/changyan.js"></script>
+
+</body>
+</html>

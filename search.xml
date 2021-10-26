@@ -203,4 +203,933 @@
 
 <p>与14比较可知，贪心匹配和非贪心匹配的区别，后者是字符串匹配后立即返回，见好就收。</p>
 <h3 id="含有多种分割符"><a href="#含有多种分割符" class="headerlink" title="含有多种分割符"></a>含有多种分割符</h3><p>使用 <code>split</code> 函数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">content = <span class="string">&#x27;graph math,,english;chemistry&#x27;</span> <span class="comment"># 这种</span></span><br><span
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">content = <span class="string">&#x27;graph math,,english;chemistry&#x27;</span> <span class="comment"># 这种</span></span><br><span class="line">pat=re.<span class="built_in">compile</span>(<span class="string">r&quot;[\s\,\;]+&quot;</span>)  <span class="comment">#贪婪模式</span></span><br><span class="line">m=pat.split(content)</span><br><span class="line"><span class="built_in">print</span>(m) <span class="comment"># [&#x27;graph&#x27;, &#x27;math&#x27;, &#x27;english&#x27;, &#x27;chemistry&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="替换匹配的子串"><a href="#替换匹配的子串" class="headerlink" title="替换匹配的子串"></a>替换匹配的子串</h3><p><code>sub</code> 函数实现对匹配子串的替换</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">content=<span class="string">&quot;hello 12345, hello 456321&quot;</span>    </span><br><span class="line">pat=re.<span class="built_in">compile</span>(<span class="string">r&#x27;\d+&#x27;</span>) <span class="comment">#要替换的部分</span></span><br><span class="line">m=pat.sub(<span class="string">&quot;666&quot;</span>,content)</span><br><span class="line"><span class="built_in">print</span>(m) <span class="comment"># hello 666, hello 666</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="爬取百度首页标题"><a href="#爬取百度首页标题" class="headerlink" title="爬取百度首页标题"></a>爬取百度首页标题</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> request</span><br><span class="line"></span><br><span class="line"><span class="comment">#爬虫爬取百度首页内容</span></span><br><span class="line">data=request.urlopen(<span class="string">&quot;http://www.baidu.com/&quot;</span>).read().decode()</span><br><span class="line"></span><br><span class="line"><span class="comment">#分析网页,确定正则表达式</span></span><br><span class="line">pat=<span class="string">r&#x27;&lt;title&gt;(.*?)&lt;/title&gt;&#x27;</span></span><br><span class="line"></span><br><span class="line">result=re.search(pat,data)</span><br><span class="line"><span class="built_in">print</span>(result) &lt;re.Match <span class="built_in">object</span>; span=(<span class="number">1358</span>, <span class="number">1382</span>), match=<span class="string">&#x27;&lt;title&gt;百度一下，你就知道&lt;/title&gt;&#x27;</span>&gt;</span><br><span class="line"></span><br><span class="line">result.group() <span class="comment"># 百度一下，你就知道</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="常用元字符总结"><a href="#常用元字符总结" class="headerlink" title="常用元字符总结"></a>常用元字符总结</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">. 匹配任意字符  </span><br><span class="line">^ 匹配字符串始位置 </span><br><span class="line">$ 匹配字符串中结束的位置 </span><br><span class="line">* 前面的原子重复0次1次多次 </span><br><span class="line">? 前面的原子重复一次或者0次 </span><br><span class="line">+ 前面的原子重复一次或多次</span><br><span class="line">&#123;n&#125; 前面的原子出现了 n 次</span><br><span class="line">&#123;n,&#125; 前面的原子至少出现 n 次</span><br><span class="line">&#123;n,m&#125; 前面的原子出现次数介于 n-m 之间</span><br><span class="line">( ) 分组,需要输出的部分</span><br></pre></td></tr></table></figure>
+
+<h3 id="常用通用字符总结"><a href="#常用通用字符总结" class="headerlink" title="常用通用字符总结"></a>常用通用字符总结</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\s  匹配空白字符 </span><br><span class="line">\w  匹配任意字母/数字/下划线 </span><br><span class="line">\W  和小写 w 相反，匹配任意字母/数字/下划线以外的字符</span><br><span class="line">\d  匹配十进制数字</span><br><span class="line">\D  匹配除了十进制数以外的值 </span><br><span class="line">[0-9]  匹配一个0-9之间的数字</span><br><span class="line">[a-z]  匹配小写英文字母</span><br><span class="line">[A-Z]  匹配大写英文字母</span><br></pre></td></tr></table></figure>
+
+<h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>以上就是Python中正则模块的基本使用总结，里面有循序渐进的优化分析过程，这些虽然是中间过程，但是对于正则小白而言，了解这些很有必要。</p>
+<h2 id="原文链接"><a href="#原文链接" class="headerlink" title="原文链接"></a>原文链接</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>学会Python正则表达式，就看这20个例子~</p>
+<a href="https://mp.weixin.qq.com/s/J8KvyEoZGWfnlKajPnAPYg"></a>
+</div></div>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>re</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python装饰器</title>
+    <url>/f8a563e665a3.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>学习装饰器的一点点小笔记，记录一下</p>
+<span id="more"></span>
+
+<h2 id="什么是装饰器"><a href="#什么是装饰器" class="headerlink" title="什么是装饰器"></a>什么是装饰器</h2><p>装饰器本质上是一个Python函数，它可以让其他函数在不需要做任何代码变动的前提下增加额外功能，装饰器的返回值也是一个函数对象。</p>
+<p>它经常用于有切面需求的场景，比如：插入日志、性能测试、事务处理、缓存、权限校验等场景。</p>
+<p>装饰器是解决这类问题的绝佳设计，有了装饰器，我们就可以抽离出大量与函数功能本身无关的雷同代码并继续重用。</p>
+<p>装饰器的使用方法很固定</p>
+<ul>
+<li>先定义一个装饰器（帽子）</li>
+<li>再定义你的业务函数或者类（人）</li>
+<li>最后把这装饰器（帽子）扣在这个函数（人）头上</li>
+</ul>
+<p>就像下面这样子</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 定义装饰器</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">decorator</span>(<span class="params">func</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span>(<span class="params">*args, **kw</span>):</span></span><br><span class="line">        <span class="keyword">return</span> func()</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义业务函数并进行装饰</span></span><br><span class="line"><span class="meta">@decorator</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">function</span>():</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;hello, decorator&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>实际上，装饰器并不是编码必须性，意思就是说，你不使用装饰器完全可以，它的出现，应该是使我们的代码</p>
+<ul>
+<li>更加优雅，代码结构更加清晰</li>
+<li>将实现特定的功能代码封装成装饰器，提高代码复用率，增强代码可读性</li>
+</ul>
+<p>接下来介绍一下简单及复杂的装饰器。</p>
+<h2 id="普通装饰器"><a href="#普通装饰器" class="headerlink" title="普通装饰器"></a>普通装饰器</h2><p>首先咱来写一个最普通的装饰器，它实现的功能是：</p>
+<ul>
+<li>在函数执行前，先记录一行日志</li>
+<li>在函数执行完，再记录一行日志</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 这是装饰器函数，参数 func 是被装饰的函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">logger</span>(<span class="params">func</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span>(<span class="params">*args, **kw</span>):</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;我准备开始执行：&#123;&#125; 函数了:&#x27;</span>.<span class="built_in">format</span>(func.__name__))</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 真正执行的是这行。</span></span><br><span class="line">        func(*args, **kw)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;主人，我执行完啦。&#x27;</span>)</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br></pre></td></tr></table></figure>
+
+<p>假如，我的业务函数是，计算两个数之和。写好后，直接给它带上帽子。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@logger</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span>(<span class="params">x, y</span>):</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;&#123;&#125; + &#123;&#125; = &#123;&#125;&#x27;</span>.<span class="built_in">format</span>(x, y, x+y))</span><br></pre></td></tr></table></figure>
+
+<p>然后执行一下 <code>add</code> 函数。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">add(<span class="number">200</span>, <span class="number">50</span>)</span><br></pre></td></tr></table></figure>
+
+<p>来看看输出了什么？</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">我准备开始执行：add 函数了:</span><br><span class="line"><span class="number">200</span> + <span class="number">50</span> = <span class="number">250</span></span><br><span class="line">我执行完啦。</span><br></pre></td></tr></table></figure>
+
+<h2 id="带参数的函数装饰器"><a href="#带参数的函数装饰器" class="headerlink" title="带参数的函数装饰器"></a>带参数的函数装饰器</h2><p>通过上面两个简单的入门示例，你应该能体会到装饰器的工作原理了。</p>
+<p>不过，装饰器的用法还远不止如此，深究下去，还大有文章。今天就一起来把这个知识点学透。</p>
+<p>回过头去看看上面的例子，装饰器是不能接收参数的。其用法，只能适用于一些简单的场景。不传参的装饰器，只能对被装饰函数，执行固定逻辑。</p>
+<p>装饰器本身是一个函数，做为一个函数，如果不能传参，那这个函数的功能就会很受限，只能执行固定的逻辑。这意味着，如果装饰器的逻辑代码的执行需要根据不同场景进行调整，若不能传参的话，我们就要写两个装饰器，这显然是不合理的。</p>
+<p>比如我们要实现一个可以定时发送邮件的任务（一分钟发送一封），定时进行时间同步的任务（一天同步一次），就可以自己实现一个 periodic_task （定时任务）的装饰器，这个装饰器可以接收一个时间间隔的参数，间隔多长时间执行一次任务。</p>
+<p>可以这样像下面这样写，由于这个功能代码比较复杂，不利于学习，这里就不贴了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@periodic_task(<span class="params">spacing=<span class="number">60</span></span>)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">send_mail</span>():</span></span><br><span class="line">     <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@periodic_task(<span class="params">spacing=<span class="number">86400</span></span>)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">ntp</span>()</span></span><br><span class="line"><span class="function">    <span class="title">pass</span> </span></span><br></pre></td></tr></table></figure>
+<p>那我们来自己创造一个伪场景，可以在装饰器里传入一个参数，指明国籍，并在函数执行前，用自己国家的母语打一个招呼。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 小明，中国人</span></span><br><span class="line"><span class="meta">@say_hello(<span class="params"><span class="string">&quot;china&quot;</span></span>)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">xiaoming</span>():</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># jack，美国人</span></span><br><span class="line"><span class="meta">@say_hello(<span class="params"><span class="string">&quot;america&quot;</span></span>)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">jack</span>():</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>那我们如果实现这个装饰器，让其可以实现 传参 呢？</p>
+<p>会比较复杂，需要两层嵌套。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say_hello</span>(<span class="params">contry</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span>(<span class="params">func</span>):</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">deco</span>(<span class="params">*args, **kwargs</span>):</span></span><br><span class="line">            <span class="keyword">if</span> contry == <span class="string">&quot;china&quot;</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&quot;你好!&quot;</span>)</span><br><span class="line">            <span class="keyword">elif</span> contry == <span class="string">&quot;america&quot;</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&#x27;hello.&#x27;</span>)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">            <span class="comment"># 真正执行函数的地方</span></span><br><span class="line">            func(*args, **kwargs)</span><br><span class="line">        <span class="keyword">return</span> deco</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br></pre></td></tr></table></figure>
+
+<p>来执行一下</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">xiaoming()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;------------&quot;</span>)</span><br><span class="line">jack()</span><br></pre></td></tr></table></figure>
+
+<p>看看输出结果。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">你好!</span><br><span class="line">------------</span><br><span class="line">hello.</span><br></pre></td></tr></table></figure>
+
+<h2 id="不带参数的类装饰器"><a href="#不带参数的类装饰器" class="headerlink" title="不带参数的类装饰器"></a>不带参数的类装饰器</h2><p>以上都是基于函数实现的装饰器，在阅读别人代码时，还可以时常发现还有基于类实现的装饰器。</p>
+<p>基于类装饰器的实现，必须实现 <code>__call__</code> 和 <code>__init__</code> 两个内置函数。</p>
+<ul>
+<li><code>__init__</code> ：接收被装饰函数</li>
+<li><code>__call__</code> ：实现装饰逻辑。</li>
+</ul>
+<p>还是以日志打印这个简单的例子为例</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">logger</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, func</span>):</span></span><br><span class="line">        self.func = func</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span>(<span class="params">self, *args, **kwargs</span>):</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;[INFO]: the function &#123;func&#125;() is running...&quot;</span>\</span><br><span class="line">            .<span class="built_in">format</span>(func=self.func.__name__))</span><br><span class="line">        <span class="keyword">return</span> self.func(*args, **kwargs)</span><br><span class="line"></span><br><span class="line"><span class="meta">@logger</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say</span>(<span class="params">something</span>):</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;say &#123;&#125;!&quot;</span>.<span class="built_in">format</span>(something))</span><br><span class="line"></span><br><span class="line">say(<span class="string">&quot;hello&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>执行一下，看看输出</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[INFO]: the <span class="keyword">function</span> say() is running...</span><br><span class="line">say hello!</span><br></pre></td></tr></table></figure>
+
+<h2 id="带参数的类装饰器"><a href="#带参数的类装饰器" class="headerlink" title="带参数的类装饰器"></a>带参数的类装饰器</h2><p>上面不带参数的例子，你发现没有，只能打印 <code>INFO</code> 级别的日志，正常情况下，我们还需要打印 <code>DEBUG</code> <code>WARNING</code> 等级别的日志。这就需要给类装饰器传入参数，给这个函数指定级别了。</p>
+<p>带参数和不带参数的类装饰器有很大的不同。</p>
+<ul>
+<li><code>__init__</code> ：不再接收被装饰函数，而是接收传入参数。</li>
+<li><code>__call__</code> ：接收被装饰函数，实现装饰逻辑。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">logger</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, level=<span class="string">&#x27;INFO&#x27;</span></span>):</span></span><br><span class="line">        self.level = level</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span>(<span class="params">self, func</span>):</span> <span class="comment"># 接受函数</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span>(<span class="params">*args, **kwargs</span>):</span></span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;[&#123;level&#125;]: the function &#123;func&#125;() is running...&quot;</span>\</span><br><span class="line">                .<span class="built_in">format</span>(level=self.level, func=func.__name__))</span><br><span class="line">            func(*args, **kwargs)</span><br><span class="line">        <span class="keyword">return</span> wrapper  <span class="comment">#返回函数</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@logger(<span class="params">level=<span class="string">&#x27;WARNING&#x27;</span></span>)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say</span>(<span class="params">something</span>):</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;say &#123;&#125;!&quot;</span>.<span class="built_in">format</span>(something))</span><br><span class="line"></span><br><span class="line">say(<span class="string">&quot;hello&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>我们指定 <code>WARNING</code> 级别，运行一下，来看看输出:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[WARNING]: the <span class="keyword">function</span> say() is running...</span><br><span class="line">say hello!</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用偏函数与类实现装饰器"><a href="#使用偏函数与类实现装饰器" class="headerlink" title="使用偏函数与类实现装饰器"></a>使用偏函数与类实现装饰器</h2><p>绝大多数装饰器都是基于函数和闭包实现的，但这并非制造装饰器的唯一方式。</p>
+<p>事实上，Python 对某个对象是否能通过装饰器（ <code>@decorator</code> ）形式使用只有一个要求：** <mark class="label danger">decorator必须是一个可被调用（callable）的对象。</mark> **</p>
+<p>对于这个 <code>callable</code> 对象，我们最熟悉的就是函数了。</p>
+<p>除函数之外，类也可以是 <code>callable</code> 对象，只要实现了 <code>__call__</code> 函数（上面几个例子已经接触过了）。</p>
+<p>还有容易被人忽略的偏函数其实也是 <code>callable</code> 对象。</p>
+<p>接下来就来说说，如何使用 类和偏函数结合实现一个与众不同的装饰器。</p>
+<p>如下所示，DelayFunc 是一个实现了 <code>__call__</code> 的类，delay 返回一个偏函数，在这里 <code>delay</code> 就可以做为一个装饰器。（以下代码摘自 Python工匠：使用装饰器的小技巧）</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> functools</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DelayFunc</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self,  duration, func</span>):</span></span><br><span class="line">        self.duration = duration</span><br><span class="line">        self.func = func</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span>(<span class="params">self, *args, **kwargs</span>):</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&#x27;Wait for <span class="subst">&#123;self.duration&#125;</span> seconds...&#x27;</span>)</span><br><span class="line">        time.sleep(self.duration)</span><br><span class="line">        <span class="keyword">return</span> self.func(*args, **kwargs)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">eager_call</span>(<span class="params">self, *args, **kwargs</span>):</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;Call without delay&#x27;</span>)</span><br><span class="line">        <span class="keyword">return</span> self.func(*args, **kwargs)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">delay</span>(<span class="params">duration</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    装饰器：推迟某个函数的执行。</span></span><br><span class="line"><span class="string">    同时提供 .eager_call 方法立即执行</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 此处为了避免定义额外函数，</span></span><br><span class="line">    <span class="comment"># 直接使用 functools.partial 帮助构造 DelayFunc 实例</span></span><br><span class="line">    <span class="keyword">return</span> functools.partial(DelayFunc, duration)</span><br></pre></td></tr></table></figure>
+<p>我们的业务函数很简单，就是相加</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@delay(<span class="params">duration=<span class="number">2</span></span>)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span>(<span class="params">a, b</span>):</span></span><br><span class="line">    <span class="keyword">return</span> a+b</span><br></pre></td></tr></table></figure>
+
+<p>来看一下执行过程</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; add    <span class="comment"># 可见 add 变成了 Delay 的实例</span></span><br><span class="line">&lt;__main__.DelayFunc object at 0x107bd0be0&gt;</span><br><span class="line">&gt;&gt;&gt; </span><br><span class="line">&gt;&gt;&gt; add(3,5)  <span class="comment"># 直接调用实例，进入 __call__</span></span><br><span class="line">Wait <span class="keyword">for</span> 2 seconds...</span><br><span class="line">8</span><br><span class="line">&gt;&gt;&gt; </span><br><span class="line">&gt;&gt;&gt; add.func <span class="comment"># 实现实例方法</span></span><br><span class="line">&lt;<span class="keyword">function</span> add at 0x107bef1e0&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="能装饰类的装饰器"><a href="#能装饰类的装饰器" class="headerlink" title="能装饰类的装饰器"></a>能装饰类的装饰器</h2><p>用 Python 写单例模式的时候，常用的有三种写法。其中一种，是用装饰器来实现的。</p>
+<p>以下便是我自己写的装饰器版的单例写法。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">instances = &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">singleton</span>(<span class="params">cls</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_instance</span>(<span class="params">*args, **kw</span>):</span></span><br><span class="line">        cls_name = cls.__name__</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;===== 1 ====&#x27;</span>)</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> cls_name <span class="keyword">in</span> instances:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;===== 2 ====&#x27;</span>)</span><br><span class="line">            instance = cls(*args, **kw)</span><br><span class="line">            instances[cls_name] = instance</span><br><span class="line">        <span class="keyword">return</span> instances[cls_name]</span><br><span class="line">    <span class="keyword">return</span> get_instance</span><br><span class="line"></span><br><span class="line"><span class="meta">@singleton</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span>:</span></span><br><span class="line">    _instance = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, name</span>):</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;===== 3 ====&#x27;</span>)</span><br><span class="line">        self.name = name</span><br></pre></td></tr></table></figure>
+
+<p>可以看到我们用singleton 这个装饰函数来装饰 User 这个类。装饰器用在类上，并不是很常见，但只要熟悉装饰器的实现过程，就不难以实现对类的装饰。在上面这个例子中，装饰器就只是实现对类实例的生成的控制而已。</p>
+<p>其实例化的过程，你可以参考我这里的调试过程，加以理解。</p>
+
+
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>恶补了 Python 装饰器的六种写法，你随便问~</p>
+<a href="https://mp.weixin.qq.com/s/XTHZ-K1yDNPIoejNFvk6rw"></a>
+</div></div>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>装饰器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python项目管理与构建工具</title>
+    <url>/c7de17780364.html</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>python的项目管理与构建工具</p>
+<span id="more"></span>
+
+<hr>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>项目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python黑魔法指南</title>
+    <url>/41ca6dca22e5.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一本关于 <code>python</code> 的黑魔法指南，你值得拥有！</p>
+<span id="more"></span>
+]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>magic</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你值得学习的几个python库</title>
+    <url>/38cb468632d8.html</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Python有着很多很酷的第三方库，可以使任务变得更容易。</p>
+<span id="more"></span>
+
+<hr>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>package</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>开发者常用工具集</title>
+    <url>/2da4fc93baa7.html</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>不同岗位的程序员也有千差万别，前端、算法、架构设计、测试……不同的岗位日常使用的工具截然不同。收集一些在开发中常用的<strong>软件/网站/插件/命令行工具</strong>。</p>
+<span id="more"></span>
+
+<p>下面主要从4个方面介绍：</p>
+<ul>
+<li>PC端软件</li>
+<li>网页工具</li>
+<li>浏览器插件</li>
+<li>命令行工具</li>
+</ul>
+<h1 id="PC端工具"><a href="#PC端工具" class="headerlink" title="PC端工具"></a>PC端工具</h1><h2 id="VS-Code"><a href="#VS-Code" class="headerlink" title="VS Code"></a>VS Code</h2><p>第一名当然归属于神器 vscode ，这些年的开发中，IDE是接触最多的工具，无论前端JS，做服务开发时用Java，还是做算法时用Python，都离不开IDE。</p>
+<p>以往，是每种编程语言选择在这种语言表现最优的IDE，例如，codeblocks、eclipse、Pycharm、webstorm 等等，但是有了 vscode，这些我统统卸载了。</p>
+<p><strong>远程开发、丰富的主题、简易的配置、轻量化</strong>等等，若干优点让我爱不释手，详情可以查看我的另一篇文章：<a href="https://mp.weixin.qq.com/s?__biz=MzI0NTM1MzA2Mw==&mid=2247484755&idx=1&sn=872b5dc1432b3a0730e7f19cceb2b9f3&scene=21#wechat_redirect">我最终还是选择了VS code！</a></p>
+<h2 id="Sublime"><a href="#Sublime" class="headerlink" title="Sublime"></a>Sublime</h2><p>sublime是我接触较早，使用时间也较长的一款工具，最初是用来开发Python，后来写代码转向了vs code，sublime也就纯粹的成为了一款编辑工具。</p>
+<p>支持编码格式丰富、运行流畅、界面美观等等，虽然，相对于UE、notepad++说不出它绝对的优势在哪，我还是依然习惯于使用这款工具。</p>
+<h2 id="Postman"><a href="#Postman" class="headerlink" title="Postman"></a>Postman</h2><p>不同模块之间调用有很多种方式，数据库、函数接口、restful。其中restful应该是使用最为频繁的，不同语言，在这个过程中就涉及到测试Web API &amp; HTTP，Postman就变的异常重要。</p>
+<p>它支持GET, HEAD, POST, PUT等任何方式的请求，多种格式的header、body体，比起另外写一个测试脚本或者curl实在节省很多时间。</p>
+<h2 id="Xshell"><a href="#Xshell" class="headerlink" title="Xshell"></a>Xshell</h2><p>开发过程中，服务器是无法绕开的，这时候终端模拟工具就显得异常重要，之前用过Putty、mobaxterm等，但是最后还是选择了xshell。</p>
+<p>支持丰富的主题，轻松管理远程主机，强大的快捷功能，灵活的定制化，流畅的使用体验等等，让我越使用，越喜欢这款工具。</p>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>这里需要多说一句废话，<strong>要区分git和GitHub</strong>，GitHub是一个开源项目托管平台，git一款版本控制工具。</p>
+<p>在团队开发过程中，版本控制是必不可少的，提交、检视、MR等等，一系列的版本控制流程，让代码规范和交付更叫可靠，这里就离不开git。另外，git也支持很多常用Linux命令，所以，git对于我来说使用频率也是非常高的一款工具。</p>
+<h2 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h2><p>文档，在开发过程中当然是必不可少的，而markdown在开发中更加是举足轻重。Markdown编辑工具数不胜数，在线的、PC端的，比比皆是，但是我还是选择 typora 。界面简洁，支持实时预览，支持多种公式类型，支持TOC等标签。</p>
+<h2 id="Listary"><a href="#Listary" class="headerlink" title="Listary"></a>Listary</h2><p>listary 在一定程度上和everything有一些重叠，都可以用于文件搜索，但是有了listary之后我就很少使用everything，因为非常方便，当然，它也有不足之处，比如不能像everything那样使用正则表达式匹配，但是这丝毫不妨害它对我的吸引，调出非常方便，<strong>双击ctrl</strong>即可，而，最吸引我的地方是快速定位功能，无论是在文件夹内部，还是在控制面板、或者是在桌面，只要敲击一下要找的东西名称中的一个字母即可，此外，listary还可以作为快速启动软件使用，能够结合不同软件进行定制化，使用简短的字符匹配某一款软件，快速打开使用。</p>
+<h2 id="CopyTranslator"><a href="#CopyTranslator" class="headerlink" title="CopyTranslator"></a>CopyTranslator</h2><p>作为学生、科研人员或者算法工程师等职位难免会接触英文文章，读英语文章有哪些痛点呢？英语水平差，这个当然排第一，如果英语水平好了，就不要再找什么翻译软件了。</p>
+<p>我在阅读文献翻译英文时主要受困于如下几点，</p>
+<ul>
+<li>来回切换屏幕、复制、粘贴比较麻烦。</li>
+<li>人工翻译不仅贵而且效果不好。</li>
+<li>翻译软件有限制，比如我们用谷歌或百度翻译的时候，复制一段文章，拷贝到翻译框里，到换行符的位置会中断，这样就会让翻译的混乱不堪，还需要一个一个的把换行符删掉。</li>
+</ul>
+<p>CopyTranslator让翻译过程中变得快捷方便，而且，这款软件还支持点按复制、专注模式，能同时解决上述3个痛点。</p>
+<h1 id="网页工具"><a href="#网页工具" class="headerlink" title="网页工具"></a>网页工具</h1><h2 id="Bootschool"><a href="#Bootschool" class="headerlink" title="Bootschool"></a>Bootschool</h2><p><strong>bootschool</strong>是一个JS插件和网站模板分享网站,提供各种JS插件、jQuery特效、插件指导、网站模板与插件在线预览,jQuery插件下载及教程。</p>
+<p>也许，读到这里很多对JS不感兴趣的会感觉到失望，其实日常工作中我做JS开发的时间也不多，我只所以使用这个网站是因为它有丰富有趣的小功能，例如，<strong>自定义banner</strong>。</p>
+<p>在我们做Python、Spring Boot开发时，为了显示更加个性化，会输出一些字符串形式的banner信息，bootschool可以根据输入内容快速生成<strong>ASCII文字</strong>，当然，我们也可以用在其他方面，让原本单调的日志信息变得多姿多彩。</p>
+<h2 id="Jsoneditoronline"><a href="#Jsoneditoronline" class="headerlink" title="Jsoneditoronline"></a>Jsoneditoronline</h2><p>json格式是开发中非常常见的，包括http请求，数据持久化等等。json阅读和格式化就是一项非常必要的工作，之前使用过一段时间json.cn，但是自从同事给我推荐<strong>jsoneditoronline</strong>这款在线工具之后就再也没有用过其他的。</p>
+<p>这是一款来自<strong>谷歌</strong>的在线工具，支持差异化对比、格式检查等等非常丰富而强大的 json 编辑和格式化功能。</p>
+<h2 id="Explainshell"><a href="#Explainshell" class="headerlink" title="Explainshell"></a>Explainshell</h2><p>作为IT/互联网相关的工作人员，哪怕不是开发者，也有可能会和Linux打交道，我们可以用Linux进行开发、运维等，因此，Linux就成为了一项非常重要的个人技能。</p>
+<p>使用Linux过程中主要打交道的对象就是繁多的Linux命令和选项(options)就成了令人头疼的事情，举一个最为简单的例子:</p>
+<p><code>ls -al</code></p>
+<p>这个Linux命令包含两个部分，command和options，ls是查看命令，-a和-l分别代表：显示所有文件(包括以.开头的隐藏文件)、以列表形式显示。</p>
+<p>这些常用的我们都知道，但是有很多使用频率较少的怎么办？我们可以借助<strong>explainshell</strong>。它是一款利用Python开发的Linux命令行工具，通过解析帮助文档，逐个匹配一行Linux命令中不同字符的含义，让你对Linux命令能够一目了然，是一款非常棒的Linux学习工具。</p>
+<h2 id="Nicetool"><a href="#Nicetool" class="headerlink" title="Nicetool"></a>Nicetool</h2><p><strong>Nicetool</strong>包含超过400个简单易用的工具收录其中，使用领域涵盖生活常用、办公辅助，教育学习，视频媒体，网络工具，程序开发，工具无需注册下载，即用即走。</p>
+<h2 id="Alltoall"><a href="#Alltoall" class="headerlink" title="Alltoall"></a>Alltoall</h2><p><strong>alltoall</strong>是一个在线转换工具网站，200+种文件格式，视频、音频、图片、文档、表格、电子书等等，再也不用为文件格式转换下载各种工具和软件了。</p>
+<h1 id="浏览器插件"><a href="#浏览器插件" class="headerlink" title="浏览器插件"></a>浏览器插件</h1><h2 id="OneTab"><a href="#OneTab" class="headerlink" title="OneTab"></a>OneTab</h2><p>同事说“<strong>自从你给我推荐了这款插件，我再也离不开它了。</strong>”</p>
+<p>浏览器标签页是一样令人头疼的东西，至少对于我来说是这样的，每当打开一些网页之后会发现标签页密密麻麻，非常混乱，关闭后又担心会用到，不关闭实在影响浏览器的使用，而且过多的打开网页会带来很多内存占用。很久以来，一直没有找到好的解决方法，直到遇到OneTab这款插件，能够一键关闭、恢复所有标签页，而且能够节省高达95%的内容占用。</p>
+<p>只需单击一下，就可以把所有标签页转化成一个列表，如果再次需要某个网页的时候，可以单个或者全部恢复标签页。</p>
+<h2 id="SwitchyOmega"><a href="#SwitchyOmega" class="headerlink" title="SwitchyOmega"></a>SwitchyOmega</h2><p>我觉得校园网也是让很多大学生头疼的一个问题，外网无法访问校园网资源，校园网访问外网速度缓慢。怎么样才能在这两种网络之间自如切换？手动设置IE代理？那样效率太低了，不仅步骤繁琐，而且不能自动切换。SwitchyOmega就可以轻松解决代理切换问题，让你在不同的网络环境下自如切换代理，选择最快的代理方法打开你要的网页。</p>
+<h2 id="Octotree"><a href="#Octotree" class="headerlink" title="Octotree"></a>Octotree</h2><p>Octotree是当之无愧的Github神器，强烈的推荐给大家。</p>
+<p>查看某个文件是我使用Github过程中最苦恼的一个点，需要逐层进入一个目录，然后再逐层退出目录，这样不仅费劲，而且，如果网速不太好的话，查看一个文件需要耗费很长时间，例如，</p>
+<p>Octotree的出现能够让Github体验提升到一个全新的水平，它能够以树形结构展示Github项目，更加易于阅读，能够快速查看某个文件，能够让Github像大多数IDE那样。</p>
+<p>除此之外，Octotree还有一项非常实用的功能–下载单个文件。</p>
+<h2 id="Click-amp-Clean"><a href="#Click-amp-Clean" class="headerlink" title="Click&amp;Clean"></a>Click&amp;Clean</h2><p>浏览器是我们使用最多的一款工具之一，甚至没有其中的之一。每天我们花费大量的时间在浏览器上面，访问各种网址，也留下了很多访问的足迹，这就涉及一个问题，除了缓存垃圾之外就是隐私和安全信息。不知不觉中我们把自己的信息展露无疑。我认为有着Click&amp;Clean这款超强的隐私保护工具就再也不用担心这个问题了。</p>
+<ul>
+<li>清除浏览历史记录, 清除下载历史记录</li>
+<li>清空缓存</li>
+<li>删除 Cookie</li>
+<li>清除已保存的密码</li>
+<li>浏览器关闭时运行外部应用程序</li>
+<li>关闭所有窗口/标签前清理</li>
+<li>…</li>
+</ul>
+<h2 id="Tampermonkey"><a href="#Tampermonkey" class="headerlink" title="Tampermonkey"></a>Tampermonkey</h2><p>可以毫不谦虚的说，Tampermonkey是目前最为流行的用户脚本管理器，它适用于 Chrome, Microsoft Edge, Safari, Opera Next, 和 Firefox。</p>
+<p>用户脚本是一个什么东西？简而言之，不同脚本可以实现不同的功能。</p>
+<p>Tampermonkey可以对这些功能进行管理，让你的浏览器如虎添翼,Tampermonkey有很多可选的脚本。</p>
+<h1 id="命令行工具"><a href="#命令行工具" class="headerlink" title="命令行工具"></a>命令行工具</h1><h2 id="oh-my-zsh"><a href="#oh-my-zsh" class="headerlink" title="oh-my-zsh"></a>oh-my-zsh</h2><p>提到命令行工具，首推的自然是这款大杀器，bash的替代工具。bash算得上一款中规中矩的shell工具，没有什么缺陷，但是也谈不上优秀，在很多方面考虑的还不够周到，例如，自动补全、语法、高亮显示、提示符等。</p>
+<p>提到oh-my-zsh，那就厉害了，102kStar、250+插件、125+主题、1450+贡献者……从这一系列的数字中就可以体现出这款shell工具的生态有多么完善，也足以体现它有多么强大。</p>
+<h2 id="Tldr"><a href="#Tldr" class="headerlink" title="Tldr"></a>Tldr</h2><p>用Linux的过程中难免会和各种参数打交道，距离比如<code>ps -aux</code>、<code>tar -jxvf</code>、<code>find -name</code>，每个”-“后面的就是各种命令参数，大家比较熟悉的查看命令解释的方法有”command ?” “man command”，就是命令后面加？或者man加命令。以man为例，解释很详细，但是带来的问题就是冗余，有很多信息是我们不想看到的，所以tldr就凸显出它的优点，简洁、实用。</p>
+<h2 id="Tig"><a href="#Tig" class="headerlink" title="Tig"></a>Tig</h2><p>Tig是一个基于ncurses的git文本模式接口。它的功能主要是作为一个Git存储库浏览器，但也可以帮助在块级别上分段提交更改，并充当各种Git命令输出的分页器。</p>
+<h2 id="Autojump"><a href="#Autojump" class="headerlink" title="Autojump"></a>Autojump</h2><p>我们在Linux下开发时会频繁的切换工作目录，要一步一步的cd，pwd实在太麻烦了，autojump通过记录命令行中使用最多的目录并给定相应权重的数据块来进行工作，不需要完全输入目录名，甚至输错目录名都没问题。</p>
+<p><strong>使用方法：</strong></p>
+<p>跳转到包含foo的路径只需下面这个命令即可，autojump会通过维护的数据库进行跳转， <code>j foo</code></p>
+<h2 id="Script"><a href="#Script" class="headerlink" title="Script"></a>Script</h2><p>很多时候，为了安全，需要对工作内容进行备份和保存。而script就是一个隐藏的记录器，它可以记录终端会话的所有内容，形成文件，对总是忘记工作内容的同学真是福音。</p>
+<p><strong>使用方法：</strong></p>
+<p>在终端输入script,</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; script</span><br></pre></td></tr></table></figure>
+
+<p>会显示:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Script started, file is typescript</span><br></pre></td></tr></table></figure>
+
+<p>接着可以开始自己的操作，想退出输入exit即可，当前目录下会生成一个名为trypescript的文件，里面记录了刚才的操作。</p>
+<h2 id="Tree"><a href="#Tree" class="headerlink" title="Tree"></a>Tree</h2><p>刚接触非桌面Linux的同学大多数会感觉Linux没有Windows或Mac那么直观，的确，我们面对的就是一行行命令，文件夹、应用图标什么的都没有，自然不直观。但是可以借助一些工具来增强目录的直观性，这里推荐的就是tree，可以以类似于图像的树状图排列目录和文件。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># tree                   #以树状图列出当前目录结构</span></span><br><span class="line">.                        <span class="comment">#当前目录结构</span></span><br><span class="line">|-- README  </span><br><span class="line">|-- examples.desktop  </span><br><span class="line">|-- file  </span><br><span class="line">|-- file.new  </span><br><span class="line">|-- index.htm  </span><br><span class="line">|-- test  </span><br><span class="line">| |-- README  </span><br><span class="line">| |-- file  </span><br><span class="line">| |-- testfile  </span><br><span class="line">| |-- testfile1</span><br></pre></td></tr></table></figure>
+
+<h2 id="Httpie"><a href="#Httpie" class="headerlink" title="Httpie"></a>Httpie</h2><p>不同组件之间相互访问可以通过很多方式，其中restful是比较常用的一种。这里就涉及http请求，我们需要测试数据能够正确的上传和下载。在处理http请求过程中使用较多的工具就是curl。curl有很多明显的弊端：对用户不够友好，命令冗长；可视化效果差，没有高亮。httpie就是curl的一个非常好的替代者，它的使用更加简洁明了，而且能够高亮显示请求结果。</p>
+<h2 id="Glances"><a href="#Glances" class="headerlink" title="Glances"></a>Glances</h2><p>glances就如同它的汉语意思那样，“一眼”、“一瞥”，能够通过一个简单的命令对系统信息一目了然，了如指掌。glances利用Python编写的一个跨平台的监视工具，旨在通过curses或基于Web的界面提供大量监视信息。</p>
+<p>你不仅可以通过终端命令行使用该工具，还可以web界面、API接口等对服务器进行远程监控，可以将统计信息导出到文件或数据库。</p>
+<hr>
+<p>文章转自：<a href="https://mp.weixin.qq.com/s/1scAaNf-nAzjNkWC-N8WXQ">原文链接</a></p>
+<p><strong>特别声明：如有侵权，告知笔者，立删此文！</strong></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建云Jupyter笔记本</title>
+    <url>/2c088c349386.html</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近学习<code>python</code>用到了<code>jupyter notebook</code>编辑器；但由于环境原因，并不能一直在自己的笔记本上完成学习，很多时候需要在<strong>别的、没有<code>python</code>环境的、但是有网络的</strong>地方，这时候我们想学习<code>python</code>的时候就比较犯难，没有工作环境，怎么办？当然是问度娘咯，于是小编这就找到了这个搭建云<code>jupyter</code>笔记本的方法，搭建完成以后，嗯~相当舒服，有浏览器有网络的地方就可以开始码代码了，，</p>
+<span id="more"></span>
+
+<h1 id="前期准备工作"><a href="#前期准备工作" class="headerlink" title="前期准备工作"></a>前期准备工作</h1><div class="note success"><p>这里的前期准备工作是用于介绍服务器相关的，如果已经有一台服务器的同学可以忽略不计直接跳到<a class="btn" href="#安装">下一节</a>去看。</p>
+</div>
+
+<p>首先，我们搭建一个云<code>jupyter</code>笔记本，就需要一台云服务器；目前比较大的厂商有阿里云、腾讯云和百度云，这里小编只是介绍一下小编是如何白嫖这些厂商的服务器的~</p>
+<div class="tabs" id="fuwuqi"><ul class="nav-tabs"><li class="tab active"><a href="#fuwuqi-1">阿里云</a></li><li class="tab"><a href="#fuwuqi-2">腾讯云</a></li><li class="tab"><a href="#fuwuqi-3">百度云</a></li></ul><div class="tab-content"><div class="tab-pane active" id="fuwuqi-1"><p>为什么小编会把阿里云放在第一个呢，因为阿里云目前有一个<a class="btn" href="https://developer.aliyun.com/adc/student/?utm_content=g_1000107876&from=groupmessage&share_source=wechat"><i class="fas fa-cloud-upload-alt fa-fw"></i>阿里云高校学生计划</a>，这个计划可以让在校大学生白嫖一台六个月的服务器，你说香不香呢~重点是，如果你在这六个月内没有毕业，通过他们相关的考核即可免费再嫖六个月！！！一共就是一年！这可是一大好机会呀。</p>
+<div class="note info"><p>这里需要注意一点的就是，想领取这个服务器的必须目前该账号没有其他的服务器；如果有，那就是领取不了的。</p>
+</div>
+
+<p>领取后的服务器是固定配置，自选选项比较少，大家可以根据自己的需要选择；不过这个配置对于我们仅仅只是自己搞学习的学生党来说，还是不错的（毕竟我们自己买的话一般运行内存就买1G的，这个有2G）。</p>
+<p>安装的系统小编选择的是<code>Ubuntu</code>，因为刚开始学的时候就是学的这个系统，用起来比较顺手一点；当然，其他的系统都可以，看个人。</p>
+<p>其他的白嫖项呢，就是一个新用户可以免费使用指定范围内的服务器一个月还是三个月，不记得了，同学们可以自己去体验一下。</p>
+<div class="note info"><p>领取这些试用的服务器都是要实名认证的哦。</p>
+</div></div><div class="tab-pane" id="fuwuqi-2"><p>同样，新用户注册可以免费领取一个月的免费服务器一台，不过值得一提的是，腾讯云的服务器学生价是真的低，就几块钱一个月~</p></div><div class="tab-pane" id="fuwuqi-3"><p>这个小编注意的少，不过也是注册并实名认证就可以免费领取一个月的服务器了~</p></div></div></div>
+
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><div class="note info"><h2 id="温馨提示"><a href="#温馨提示" class="headerlink" title="温馨提示"></a>温馨提示</h2><p>本次我们要搭建的是云笔记本，所以大家需要有一台云服务器哦；关于云服务器的获取<a class="btn" href="#前言">上一节</a>有介绍，有需要的小伙伴可以看看。</p>
+</div>
+
+<p><code>jupyter notebook</code>的安装方式有两个选择，一个是安装<code>Anaconda</code>，里面会自带有<code>jupyter</code>工具；或者直接使用<code>python</code>中的<code>pip</code>安装。</p>
+<div class="tabs" id="anzhuang"><ul class="nav-tabs"><li class="tab active"><a href="#anzhuang-1">Anaconda</a></li><li class="tab"><a href="#anzhuang-2">Python</a></li></ul><div class="tab-content"><div class="tab-pane active" id="anzhuang-1"><div class="tabs" id="anacondaanzhuang"><ul class="nav-tabs"><li class="tab active"><a href="#anacondaanzhuang-1">下载</a></li><li class="tab"><a href="#anacondaanzhuang-2">安装</a></li><li class="tab"><a href="#anacondaanzhuang-3">检验</a></li></ul><div class="tab-content"><div class="tab-pane active" id="anacondaanzhuang-1"><p>在<a class="btn" href="https://www.anaconda.com/products/individual%">Anaconda 官网</a>中下载安装脚本，然后上传到服务器内，或者直接在服务器终端中使用命令下载：</p>
+<p><code>wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh</code></p></div><div class="tab-pane" id="anacondaanzhuang-2"><p>切换到刚才下载了<code>anaconda</code>脚本的目录下，运行脚本：</p>
+<p><code>bash Anaconda3-2020.02-Linux-x86_64.sh</code></p>
+<p>后面就是有<code>Enter</code>的按<code>Enter</code>，有需要输入<code>yes</code>的输入<code>yes</code>；当看到</p>
+<p><code>Thank you for installing Anaconda3!</code></p>
+<p>就表示你已经安装成功了！</p></div><div class="tab-pane" id="anacondaanzhuang-3"><p>在终端中输入：</p>
+<p><code>conda --version</code></p>
+<p>若显示了<code>conda</code>的版本信息，则表示安装成功了，但如果系统提示：</p>
+<p><code>conda: command not found</code></p>
+<p>那就执行一下以下命令：</p>
+<p><code>source /root/.bashrc</code></p>
+<p>就可以了，然后再进行版本信息验证。</p></div></div></div></div><div class="tab-pane" id="anzhuang-2"><p>最新版的<code>Ubuntu</code>系统已经预装了<code>Python2.7</code>和<code>Python3.5</code>版本了，若是小伙伴们还需要其他的版本，可以自行问问度娘，这里我们就不多加赘述了。</p>
+<p>有了<code>python</code>，安装<code>jupyter</code>便是非常简单的事情了，执行以下命令：</p>
+<p><code>pip install jupyter</code></p>
+<p>等待一小会儿，就可以安装好了。</p>
+<div class="note warning"><h2 id="jupyter-command-not-found"><a href="#jupyter-command-not-found" class="headerlink" title="jupyter command not found"></a>jupyter command not found</h2><p>可能有些小伙伴在安装完成后回出现这个问题，这里我们就一并解决了吧~当然，没有出现这个问题更好。</p>
+<p>首先我们寻找<code>juputer</code>是否存在，使用命令：</p>
+<p><code>find -name jupyter</code></p>
+<p>小编这里的返回结果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">./.local/share/jupyter</span><br><span class="line">./.local/bin/jupyter</span><br><span class="line">./.local/etc/jupyter</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<div class="note info"><p>这里的<code>bin</code>目录即是存放命令的目录，所以我们只要把这个加入环境变量即可.</p>
+</div>
+
+<p>这就表示我们已经安装好了<code>jupyter</code>了的，因此就需要把它加入到环境变量中，</p>
+<p>打开配置文件：</p>
+<p><code>sudo vim /etc/profile </code></p>
+<p>添加如下信息：</p>
+<p><code>export PATH=$PATH:~/.local/bin</code></p>
+<p>退出编辑：</p>
+<p><code>Esc</code>+<code>:wq</code>+<code>Enter</code></p>
+<p>执行配置：</p>
+<p><code>source  /etc/profile</code></p>
+<p>这个时候再在终端中输入<code>jupyter</code>即可返回一大段的命令提示符，这时候输入<code>jupyter notebook</code>即可打开。</p>
+</div></div></div></div>
+
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><div class="tabs" id="jupyterpeizhi"><ul class="nav-tabs"><li class="tab active"><a href="#jupyterpeizhi-1">生成配置文件</a></li><li class="tab"><a href="#jupyterpeizhi-2">修改配置文件</a></li></ul><div class="tab-content"><div class="tab-pane active" id="jupyterpeizhi-1"><p>在终端中执行以下命令：</p>
+<p><code>jupyter notebook --generate-config</code></p>
+<p>即可生成<code>jupyter notebook</code>的配置文件，并且会返回这个文件所在的路径，小编的路径如下：</p>
+<p><code>/home/deepin/.jupyter/jupyter_notebook_config.py</code></p></div><div class="tab-pane" id="jupyterpeizhi-2"><p>执行命令：</p>
+<p><code>vi /home/deepin/.jupyter/jupyter_notebook_config.py</code></p>
+<p>在文件最上面添加如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">c.NotebookApp.ip = &#x27;*&#x27;  # 允许访问此服务器的 IP，星号表示任意 IP</span><br><span class="line">c.NotebookApp.open_browser = False # 运行时不打开本机浏览器</span><br><span class="line">c.NotebookApp.port = 8888 # 使用的端口</span><br><span class="line">c.NotebookApp.enable_mathjax = True # 启用 MathJax</span><br><span class="line">c.NotebookApp.notebook_dir = &#x27;/root/jupyter&#x27;      # 存放文件的目录</span><br><span class="line">c.NotebookApp.allow_remote_access = True     # 允许远程访问</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>修改完成后保存推出即可；</p>
+<p>小伙伴们可以参考如上代码进行修改，若有其他需求则可以自行阅读配置文件进行修改。</p>
+<!-- tab 设置密码并启动服务 -->
+
+<p>密码设置命令：</p>
+<p><code>jupyter notebook password</code></p>
+<p>然后输入密码回车再次确认即可，</p>
+<p>最后输入<code>jupyter notebook</code>启动服务。</p></div></div></div>
+
+<p>至此我们搭建云<code>Jupyter</code>笔记本的教程就大概结束了，没有别的需求的小伙伴们就可以通过访问<code>http://服务器IP地址:8888</code>来访问你的<code>jupyter</code>啦（记得去服务器控制台将8888端口打开~），而且是随时随地的访问，是不是很方便呢，又可以开心的继续写代码了呢：）</p>
+<h1 id="修改语言"><a href="#修改语言" class="headerlink" title="修改语言"></a>修改语言</h1><p>小伙伴们打开<code>jupyter</code>后会发现，这个编辑器的默认语言是英语，，，可能某些英语底子不大好的同学看着就有点头疼（小编就是。。。），所以，小编在网络上疯狂寻找如何修改<code>jupyter</code>编辑器的语言教程，终于在某个深山老林里面找到了此等秘籍！</p>
+<div class="note success"><p><code>jupyter notebook</code>的默认语言是跟随启动<code>jupyter</code>时终端的语言。</p>
+</div>
+
+<p>因此，我们只需要将我们服务器的终端语言修改，那么启动后的<code>jupyter</code>就是我们想要的了；</p>
+<p>这里，我们当然是将语言修改成中文咯，不然第一次用这个编辑器的小伙伴可能都不知道咋整~</p>
+<div class="tabs" id="xiugaiyuyan"><ul class="nav-tabs"><li class="tab active"><a href="#xiugaiyuyan-1">查看本地语言包</a></li><li class="tab"><a href="#xiugaiyuyan-2">修改配置</a></li><li class="tab"><a href="#xiugaiyuyan-3">重启</a></li></ul><div class="tab-content"><div class="tab-pane active" id="xiugaiyuyan-1"><p>查看本地语言包命令：</p>
+<p><code>locale -a</code></p>
+<p>寻找是否有<code>zh_CN.utf8</code></p>
+<p>如果没有，首先需要安装中文语言包，命令如下：</p>
+<p><code>sudo apt-get install language-pack-zh-hans</code></p>
+<p>然后添加中文支持：</p>
+<p><code>locale-gen zh_CN.UTF-8</code></p></div><div class="tab-pane" id="xiugaiyuyan-2"><p>打开文件：</p>
+<p><code>vim /etc/default/locale</code></p>
+<p>将配置文件修改为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">LANG=&quot;zh_CN.UTF-8&quot;</span><br><span class="line">LANGUAGE=&quot;zh_CN:zh:en_US:en&quot;</span><br><span class="line">LC_NUMERIC=&quot;zh_CN.UTF-8&quot;</span><br><span class="line">LC_TIME=&quot;zh_CN.UTF-8&quot;</span><br><span class="line">LC_MONETARY=&quot;zh_CN.UTF-8&quot;</span><br><span class="line">LC_PAPER=&quot;zh_CN.UTF-8&quot;</span><br><span class="line">LC_IDENTIFICATION=&quot;zh_CN.UTF-8&quot;</span><br><span class="line">LC_NAME=&quot;zh_CN.UTF-8&quot;</span><br><span class="line">LC_ADDRESS=&quot;zh_CN.UTF-8&quot;</span><br><span class="line">LC_TELEPHONE=&quot;zh_CN.UTF-8&quot;</span><br><span class="line">LC_MEASUREMENT=&quot;zh_CN.UTF-8&quot;</span><br><span class="line">LC_ALL=zh_CN.UTF-8</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>保存退出。</p></div><div class="tab-pane" id="xiugaiyuyan-3"><p>重启服务器：</p>
+<p><code>reboot</code></p></div></div></div>
+
+<h1 id="配置个性域名"><a href="#配置个性域名" class="headerlink" title="配置个性域名"></a>配置个性域名</h1><p>我们搭建好的云<code>jupyter</code>如果只是用我们服务器的IP地址来访问，显的确实有点点不大好看，因此，我们将介绍一下如何给我们的云<code>jupyter</code>配置一个个性域名。</p>
+<div class="tabs" id="gexingyuming"><ul class="nav-tabs"><li class="tab active"><a href="#gexingyuming-1">购买域名</a></li><li class="tab"><a href="#gexingyuming-2">申请SSL证书（可选）</a></li><li class="tab"><a href="#gexingyuming-3">配置nginx</a></li><li class="tab"><a href="#gexingyuming-4">域名解析</a></li></ul><div class="tab-content"><div class="tab-pane active" id="gexingyuming-1"><p>小伙伴们可以前往各大厂商（阿里云，百度云，腾讯云等）进行购买，很多域名的首年只需要个位数的价格，买来玩还是可以的~</p>
+<p><img data-src="%E6%90%AD%E5%BB%BA%E4%BA%91Jupyter%E7%AC%94%E8%AE%B0%E6%9C%AC/yuming1.png"></p>
+<p>有自己的域名感觉倍儿有格调~</p></div><div class="tab-pane" id="gexingyuming-2"><div class="note info"><p>可能有些小伙伴不知道<code>SSL</code>证书是什么东西，用来干啥的，这里小编简单的解释一下，就是在访问你的域名的时候让你的域名前面有一个（绿色的）小锁头：</p>
+<p><img data-src="%E6%90%AD%E5%BB%BA%E4%BA%91Jupyter%E7%AC%94%E8%AE%B0%E6%9C%AC/xiaosuo.png"></p>
+<p>表示访问你这个网站是安全的。</p>
+</div>
+
+<p><code>SSL</code>证书的种类：</p>
+<div class="tabs" id="zhengshuzhonglei"><ul class="nav-tabs"><li class="tab active"><a href="#zhengshuzhonglei-1">单域名</a></li><li class="tab"><a href="#zhengshuzhonglei-2">通配符域名</a></li><li class="tab"><a href="#zhengshuzhonglei-3">多域名</a></li></ul><div class="tab-content"><div class="tab-pane active" id="zhengshuzhonglei-1"><p><strong>保护一个</strong>单页面网站，例如 <code>domain.com、ssl.domain.com、ssl.ssl.domain.com</code></p>
+<p>若是小伙伴们只是想弄个小锁头耍耍就只要申请一个这个即可。</p>
+<div class="note success"><h2 id="白嫖方法"><a href="#白嫖方法" class="headerlink" title="白嫖方法"></a>白嫖方法</h2><p>以阿里云为例（腾讯云操作更为简单，百度云目前没发现白嫖方法）：</p>
+<p><strong>登陆阿里云控制台</strong> –&gt;  <strong>SSL证书</strong> –&gt; <strong>购买证书</strong> </p>
+<p><img data-src="%E6%90%AD%E5%BB%BA%E4%BA%91Jupyter%E7%AC%94%E8%AE%B0%E6%9C%AC/sslzhengshu.png"></p>
+<p>以上即可购买一份免费的单域名证书了。</p>
+</div></div><div class="tab-pane" id="zhengshuzhonglei-2"><p><strong>大量子域名的超值</strong>选择！一张证书可以同时保障多个子域名的安全加固！</p>
+<p>例如：<code>*.aliyun.com</code>的通配符证书只能对<code>a.aliyun.com、b.aliyun.com</code>域名进行保护。如果存在<code>a.b.aliyun.com</code>的域名需要购买<code>*.b.aliyun.com</code>的通配符证书。</p>
+<p>通配符域名证书基本上都需要购买，这个就是属于有需求且有能力的小伙伴选择购买了，毕竟也不便宜，，，</p>
+<p>但是！！！</p>
+<div class="note warning"><h2 id="依旧能白嫖"><a href="#依旧能白嫖" class="headerlink" title="依旧能白嫖"></a>依旧能白嫖</h2><p>有兴趣并且喜欢折腾的小伙伴们，给你们一个传送门：<a class="btn" href="https://www.hi-linux.com/posts/6968.html">Let’s Encrypt 免费通配符 SSL 证书申请教程</a></p>
+<p>同时，感谢这位作者，撒花~</p>
+</div></div><div class="tab-pane" id="zhengshuzhonglei-3"><p><strong>一张证书可以为多个独立域名提供安全保障。</strong></p>
+<p>例如：一个多域名证书可以同时保障 aliyun.com、aliyunShop.com 和 taobao.com 的网站安全。</p>
+<p>这个就是属于，，，反正不是属于小编这样子的人能购买的，，，而且，，，没有白嫖！</p></div></div></div></div><div class="tab-pane" id="gexingyuming-3"><p>首先安装<code>nginx</code>：</p>
+<p><code>sudo apt-get install nginx</code></p>
+<p>安装完成后打开<code>nginx</code>配置文件所在目录：</p>
+<p><code>cd /etc/nginx</code><br><code>ls</code></p>
+<p>可以看到这里面已经有<code>nginx.conf </code>配置文件了</p>
+<p>这里我们再新建一个配置文件：</p>
+<p><code>touch vhost.conf</code></p>
+<p>打开<code>nginx</code>配置文件：<code>sudo vim nginx.conf</code>，在<code>http</code>这个大花括号内最后一行添加一行：</p>
+<p><code>include /etc/nginx/vhost.conf; # 将我们刚才新建的配置文件包含进来</code>，然后保存；</p>
+<p>再打开新建的配置文件：<code>sudo vim vhost.conf</code>，添加以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">    server_name xxx.com 123.123.123.123; # 服务器域名和 IP 地址</span><br><span class="line">    listen 80; </span><br><span class="line">    location / &#123; </span><br><span class="line">        root /var/www/notebook_ssl; # 此路径下放置一个 index.html，将连接转移到 https</span><br><span class="line">    &#125;   </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">    server_name xxx.com 123.123.123.123; # 服务器域名和 IP 地址</span><br><span class="line">    listen 443;</span><br><span class="line">    ssl on; </span><br><span class="line">    ssl_certificate /etc/letsencrypt/live/xxx.com/fullchain.pem; # SSL 证书文件的路径</span><br><span class="line">    ssl_certificate_key /etc/letsencrypt/live/xxx.com/privkey.pem; # SSL 密钥文件的路径</span><br><span class="line">    ssl_session_timeout 5m; </span><br><span class="line">    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line">    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;</span><br><span class="line">    ssl_prefer_server_ciphers on; </span><br><span class="line">    location / &#123; </span><br><span class="line">        proxy_pass http://127.0.0.1:8888/; # JUPYTER_PORT 为 Jupyter 运行端口</span><br><span class="line">        proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line"></span><br><span class="line">​        proxy_set_header Host $host;</span><br><span class="line"></span><br><span class="line">​        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line"></span><br><span class="line">​        proxy_http_version 1.1;</span><br><span class="line"></span><br><span class="line">​        proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">​        proxy_set_header Connection &quot;upgrade&quot;;</span><br><span class="line">​        proxy_redirect off;</span><br><span class="line">​    &#125;   </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>保存退出后，执行命令：<code>service nginx restart</code>，重启<code>nginx</code>即可。</p></div><div class="tab-pane" id="gexingyuming-4"><p>打开<strong>阿里云（百度云，腾讯云）控制台</strong> –&gt; <strong>域名</strong> –&gt; <strong>解析</strong> –&gt; <strong>添加记录</strong></p>
+<p><strong>记录类型</strong>：A</p>
+<p><strong>主机记录</strong>：域名的前缀，随意选取，如<code>notebook</code></p>
+<p><strong>解析路线</strong>：默认</p>
+<p><strong>记录值</strong>：你的服务器的IP地址</p>
+<p><strong>TTL</strong>：10分钟</p></div></div></div>
+
+<p>这样，我们就可以愉快的用自定义的域名地址：<code>https://notebook.域名</code></p>
+<p>来访问我们的<code>jupyter notebook</code>了</p>
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><blockquote class="blockquote-center">
+<p>感谢这些作者的无私奉献！</p>
+
+</blockquote>
+
+<div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/images/csdn.png"></object>
+<p>CSDN</p><p>linux服务器安装Anaconda及配置Jupyter</p>
+<a href="https://blog.csdn.net/ImAustin/article/details/103179826"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/csdn.png"></object>
+<p>CSDN</p><p>在Google Cloud上部署深度学习环境，并为jupyter notebook配置域名https访问</p>
+<a href="https://blog.csdn.net/u012956394/article/details/88410416"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/csdn.png"></object>
+<p>CSDN</p><p>Ubuntu修改终端下的语言（中文或英文）</p>
+<a href="https://blog.csdn.net/BobYuan888/article/details/88662779"></a>
+</div></div>]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>jupyter</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>jupyter</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>爬虫项目集</title>
+    <url>/2be0f48319f5.html</url>
+    <content><![CDATA[<p><strong>学习 python，多拿些项目练习练习，因此寻了些爬虫项目，归纳如下：</strong></p>
+<span id="more"></span>
+
+<ol>
+<li><p><a href="https://github.com/LiuXingMing/QQSpider"><strong>QQSpider</strong></a>：QQ空间爬虫，包括日志、说说、个人信息等，一天可抓取 400 万条数据。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/Chyroc/WechatSogou"><strong>WechatSogou</strong></a>：微信公众号爬虫。基于搜狗微信搜索的微信公众号爬虫接口，可以扩展成基于搜狗搜索的爬虫，返回结果是列表，每一项均是公众号具体信息字典。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/lanbing510/DouBanSpider"><strong>DouBanSpider</strong></a>：<br>豆瓣读书爬虫。可以爬下豆瓣读书标签下的所有图书，按评分排名依次储存，储存到 Excel 中，可以方便打架筛选搜罗，比如筛选评价人数 &gt; 1000的给分书籍；可依据不同的主题储存到 Excel 不同的 Sheet，采用 User-Agent 伪装为浏览器进行爬取，并加入随机延时来更好的模仿浏览器行为，避免爬虫被封。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/LiuRoy/zhihu_spider"><strong>ZhiHuSpider</strong></a>：<br>知乎爬虫。此项目的功能是爬取知乎用户信息以及人际拓扑关系，爬虫框架使用 Scrapy，数据储存使用 Mongo。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/airingursb/bilibili-user"><strong>Bilibili-User</strong></a>：<br>Bilibili 用户爬虫。总数据数：20119918，抓取字段：用户 id、昵称、性别、头像、等级、经验值、粉丝数、生日、地址、注册时间、签名、等级与经验值等。抓取后生成B站用户数据报告。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/LiuXingMing/SinaSpider"><strong>SinaSpider</strong></a>：<br>新浪微博爬虫，主要爬取新浪微博用户的个人信息、微博关注、粉丝和关注。代码获取新浪微博 Cookie 进行登陆，可以通过多账号登陆来防止新浪的返爬。主要使用 Scrapy 爬虫框架。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/gnemoug/distribute_crawler"><strong>distribute_crawler</strong></a>：<br>小说下载分布式爬虫。使用 Scrapy，Redis，MongoDB，graphite 实现的一个分布式网络爬虫，底层储存 MongoDB 集群，分布式使用 Redis 实现，爬虫状态显示使用 graphite 实现，主要正对一个小说站点。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/yanzhou/CnkiSpider"><strong>CnkiSpider</strong></a>：<br>中国知网爬虫。设置检索条件后，执行src/CnkiSpider.py抓取数据，抓取数据存储在/data目录下，每个数据文件的第一行为字段名称。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/lanbing510/LianJiaSpider"><strong>LianJiaSpider</strong></a>：<br> 链家网爬虫。爬取北京地区链家历年二手房成交记录。涵盖链家爬虫一文的全部代码，包括链家模拟登录代码。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/taizilongxu/scrapy_jingdong"><strong>scrapy_jingdong</strong></a>：京东爬虫。基于scrapy的京东网站爬虫，保存格式为csv。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/caspartse/QQ-Groups-Spider"><strong>QQ-Groups-Spider</strong></a>：<br>QQ 群爬虫。批量抓取 QQ 群信息，包括群名称、群号、群人数、群主、群简介等内容，最终生成 XLS(X) / CSV 结果文件。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/hanc00l/wooyun_public"><strong>wooyun_public</strong></a>：<br>乌云爬虫。乌云公开漏洞、知识库爬虫和搜索。全部公开漏洞的列表和每个漏洞的文本内容存在MongoDB中，大概约2G内容；如果整站爬全部文本和图片作为离线查询，大概需要10G空间、2小时（10M电信带宽）；爬取全部知识库，总共约500M空间。漏洞搜索使用了Flask作为web server，bootstrap作为前端。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/simapple/spider"><strong>spider</strong></a>：<br>hao123网站爬虫。以hao123为入口页面，滚动爬取外链，收集网址，并记录网址上的内链和外链数目，记录title等信息，windows7 32位上测试，目前每24个小时，可收集数据为10万左右。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/fankcoder/findtrip"><strong>findtrip</strong></a>：机票爬虫（去哪儿和携程网）。Findtrip是一个基于Scrapy的机票爬虫，目前整合了国内两大机票网站（去哪儿 + 携程）。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/leyle/163spider"><strong>163spider</strong></a>：基于requests、MySQLdb、torndb的网易客户端内容爬虫。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/fanpei91/doubanspiders"><strong>doubanspiders</strong></a>：豆瓣电影、书籍、小组、相册、东西等爬虫集。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/Shu-Ji/baidu-music-spider"><strong>baidu-music-spider</strong></a>：<br>百度mp3全站爬虫，使用redis支持断点续传。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/pakoo/tbcrawler"><strong>tbcrawler</strong></a>：<br>淘宝和天猫的爬虫,可以根据搜索关键词,物品id来抓去页面的信息，数据存储在MongoDB。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/benitoro/stockholm"><strong>stockholm</strong></a>：<br>一个股票数据（沪深）爬虫和选股策略测试框架。根据选定的日期范围抓取所有沪深两市股票的行情数据。支持使用表达式定义选股策略。支持多线程处理。保存数据到JSON文件、CSV文件。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/k1995/BaiduyunSpider"><strong>BaiduyunSpider</strong></a>：<br>百度云盘爬虫。分布式百度网盘爬虫，使用当前最流行的技术框架。适合个人学习以及二次开发。爬虫基于 <code>Scrapy</code>，灵活简单、易扩展，方便二次开发。使用 <code>Scrapy-Redis</code> 作为分布式中间件，可同时部署多个爬虫实例，以提升采集效率。<code>Web</code>后台管理基于<code>React</code>，<code>Material Design</code> 设计风格。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/Qutan/Spider"><strong>Spider</strong></a>：社交数据爬虫。支持微博，知乎，豆瓣。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/jhao104/proxy_pool"><strong>proxy pool</strong></a>：Python爬虫代理IP池(proxy pool)。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/RitterHou/music-163"><strong>music-163</strong></a>：爬取网易云音乐所有歌曲的评论。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/kulovecc/jandan_spider"><strong>jandan_spider</strong></a>：爬取煎蛋妹纸图片。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/jackgitgz/CnblogsSpider"><strong>CnblogsSpider</strong></a>：Cnblogs列表页爬虫。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/qiyeboy/spider_smooc"><strong>spider_smooc</strong></a>：爬取慕课网视频。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/yanzhou/CnkiSpider"><strong>CnkiSpider</strong></a>：中国知网爬虫。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/littlethunder/knowsecSpider2"><strong>knowsecSpider2</strong></a>：知道创宇爬虫题目。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/x-spiders/aiss-spider"><strong>aiss-spider</strong></a>：爱丝APP图片爬虫。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/szcf-weiya/SinaSpider"><strong>SinaSpider</strong></a>：动态IP解决新浪的反爬虫机制，快速抓取内容。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/Kevinsss/csdn-spider"><strong>csdn-spider</strong></a>：爬取CSDN上的博客文章。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/changetjut/ProxySpider"><strong>ProxySpider</strong></a>：爬取西刺上的代理IP，并验证代理可用性。</p>
+<hr>
+</li>
+<li><p><a href="https://github.com/Python3WebSpider/ProxyPool"><strong>ProxyPool</strong></a>：简易高效的代理池，提供如下功能：</p>
+<ol>
+<li><p> 定时抓取免费代理网站，简易可扩展。</p>
+</li>
+<li><p> 使用 Redis 对代理进行存储并对代理可用性进行排序。</p>
+</li>
+<li><p> 定时测试和筛选，剔除不可用代理，留下可用代理。</p>
+</li>
+<li><p>提供代理 API，随机取用测试通过的可用代理。</p>
+<p> 代理池原理解析可见「<a href="https://cuiqingcai.com/7048.html">如何搭建一个高效的代理池</a>」，建议使用之前阅读。</p>
+</li>
+</ol>
+</li>
+<li><p><a href="https://github.com/dataabc/weiboSpider">Weibo Spider</a>：<br>本程序可以连续爬取一个或多个新浪微博用户（如胡歌、迪丽热巴、郭碧婷）的数据，并将结果信息写入文件或数据库。写入信息几乎包括用户微博的所有数据，包括用户信息和微博信息两大类。因为内容太多，这里不再赘述，详细内容见获取到的字段。如果只需要用户信息，可以通过设置实现只爬取微博用户信息的功能。本程序需设置cookie来获取微博访问权限，后面会讲解如何获取cookie。如果不想设置cookie，可以使用免cookie版，二者功能类似。</p>
+<hr>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>项目</category>
+        <category>爬虫</category>
+      </categories>
+      <tags>
+        <tag>项目</tag>
+        <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客搭建</title>
+    <url>/6004aa280b7b.html</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>搭建这个网站的最开始的理由就是想找一个清净点的地方记录自己想记录的一些东西，并且不用有任何的担心文章会不会被删除之类的；所以不惜花费一点时间来搭建一个属于自己的主页，这样就可以<del>为所欲为</del>好好写博客了~</p>
+<span id="more"></span>
+
+<hr>
+<h1 id="Hexo搭建本地博客"><a href="#Hexo搭建本地博客" class="headerlink" title="Hexo搭建本地博客"></a>Hexo搭建本地博客</h1><p>Hexo是一个快速、简洁且高效的博客框架。Hexo使用Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<p><a href="https://hexo.io/zh-cn/docs/">hexo官方文档</a></p>
+<h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装<a href="https://git-for-windows.github.io/">git</a></h2><ul>
+<li>安装时一直下一步即可，若出现加入系统环境变量的选项，则需要勾选上，否则需要自己手动加入；</li>
+<li>检验是否成功添加到环境变量：打开cmd，输入<code>git version</code>，若出现<code>git</code>的版本，则说明成功添加。</li>
+</ul>
+<h2 id="安装nodeJs-LTS为长期维护版本，Current为最新版"><a href="#安装nodeJs-LTS为长期维护版本，Current为最新版" class="headerlink" title="安装nodeJs(LTS为长期维护版本，Current为最新版)"></a>安装<a href="https://nodejs.org/en/">nodeJs</a>(LTS为长期维护版本，Current为最新版)</h2><ul>
+<li>安装时一直下一步，不过在 Custom Setup 这一步记得选<code>Add to PATH</code>，否则就需要自己手动添加到系统环境变量；</li>
+<li>检验：打开cmd，输入<code>node</code>，若出现<code>node</code>的简介，则表示安装成功且成功添加到系统环境变量。</li>
+</ul>
+<h2 id="安装Heox"><a href="#安装Heox" class="headerlink" title="安装Heox"></a>安装Heox</h2><ul>
+<li>打开cmd；</li>
+<li>输入<code>npm install -g hexo-cli</code>（通过<code>npm</code>安装<code>hexo</code>，<code>-g</code>为全局安装）；</li>
+<li>等待安装成功即可。</li>
+</ul>
+<h2 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h2><ul>
+<li>博客的初始化：<code>hexo init Blog</code> (这里的Blog为用于存放博客文件的地方，名字随意)；<br><img data-src="https://gitee.com/shuoshuoyun/picbed/raw/master/img//20200730102522.png" alt="1M3ZOP"></li>
+<li><code>cd Blog</code>；</li>
+<li>安装npm相关组件：<code>npm inistall</code>；<br><img data-src="https://gitee.com/shuoshuoyun/picbed/raw/master/img//20200730102550.png" alt="1M8Xb6"></li>
+<li>生成静态页面：<code>hexo generate</code>或<code>hexo g</code>；</li>
+<li>启动服务：<code>hexo server</code>或<code>hexo s</code>；<br>此时就可以打开浏览器，输入<code>http://localhost:4000</code>查看效果，本地博客搭建成功。<br><img data-src="https://gitee.com/shuoshuoyun/picbed/raw/master/img//20200730102628.png" alt="1MGeIS"></li>
+</ul>
+<hr>
+<h1 id="桥接到github"><a href="#桥接到github" class="headerlink" title="桥接到github"></a>桥接到github</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>新建一个名为&lt;你的用户名&gt;.github.io的仓库，比如说，如果你的github用户名是test，那么你就新建test.github.io的仓库（必须是你的用户名，其它名称无效），将来你的网站访问地址就是 <a href="http://test.github.io/">http://test.github.io</a> 了，是不是很方便？</p>
+<p>由此可见，每一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。<br><img data-src="https://gitee.com/shuoshuoyun/picbed/raw/master/img//20200730102712.png" alt="1MJwtS"></p>
+<p><strong>几个注意的地方</strong>：</p>
+<ul>
+<li>注册的邮箱一定要验证，否则不会成功；</li>
+<li>仓库名字必须是：username.github.io，其中username是你的用户名；</li>
+<li>仓库创建成功不会立即生效，需要过一段时间，大概10-30分钟，或者更久。</li>
+</ul>
+<p>创建成功后，默认会在你这个仓库里生成一些示例页面，以后你的网站所有代码都是放在这个仓库里啦。</p>
+<h2 id="配置github的-SSH-key"><a href="#配置github的-SSH-key" class="headerlink" title="配置github的 SSH key"></a>配置github的 SSH key</h2><p>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。</p>
+<p><strong>注意：本文是用 git bash 输入所有命令，用 cmd 可能会出错</strong></p>
+<ul>
+<li>检查本机已存在的ssh密钥：<code>$ cd ~/. ssh </code> 如果提示：No such file or directory 说明你是第一次使用git。</li>
+<li>创建SSH：<code>ssh-keygen -t rsa -C &quot;邮件地址&quot;</code> <strong>注意：这里的邮件地址指的是你注册 github 的邮箱</strong>;</li>
+<li>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录即<code>c:\Users\你的电脑用户名</code>，找到.ssh文件夹下的id_rsa.pub文件，记事本打开并复制里面的内容;</li>
+<li>打开你的github主页，进入<code>个人设置 -&gt; SSH and GPG keys -&gt; New SSH key</code></li>
+</ul>
+<p><img data-src="https://gitee.com/shuoshuoyun/picbed/raw/master/img//20200730102734.png" alt="1l0isU"></p>
+<ul>
+<li>将刚复制的内容粘贴到key那里，title随便填，保存。</li>
+<li>打开cmd，输入<code>ssh -T git@github.com</code># 测试是否成功；</li>
+</ul>
+<p>如果提示<code>Are you sure you want to continue connecting (yes/no)?</code>，输入<code>yes</code>，然后会看到：<code>Hi h0ryit! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code>看到这个信息说明SSH已配置成功！</p>
+<p>此时你还需要配置：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;liuxianan&quot;// 你的github用户名</span><br><span class="line">git config --global user.email  &quot;xxx@qq.com&quot;// 填写你的github注册邮箱</span><br></pre></td></tr></table></figure>
+
+<h2 id="修改站点配置"><a href="#修改站点配置" class="headerlink" title="修改站点配置"></a>修改站点配置</h2><p>打开你的blog文件，找到_config.yml文件。修改：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy: </span><br><span class="line">    type: git  </span><br><span class="line">    repository:https://github.com/YourgithubName/YourgithubName.github.io.git </span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
+
+<p>然后在站点文件夹目录下执行命令<code>npm install hexo-deployer-git --save</code></p>
+<p>这样，你的本地博客就可以通过<code>hexo d</code>命令部署到<code>github</code>上了。</p>
+<h1 id="第一篇博客"><a href="#第一篇博客" class="headerlink" title="第一篇博客"></a>第一篇博客</h1><p>执行命令：</p>
+<p><code>hexo new Hexo博客搭建</code></p>
+<p>即会在目录<code>hexo\source\_posts</code>目录下看见文件<code>Hexo博客搭建.md</code>文件，编辑这个文件，写下你想写的内容，完成后再执行命令：</p>
+<p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+<p>稍后即可在你的博客中看到自己写的文章啦。</p>
+<hr>
+<h1 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h1><p>之前的博客搭建之初，对各个方面都不是很懂，因此对于博客的搭建以及美化优化做的并不是特别好；在经过一番思考过后，决定将博客的文件储存到服务器里，将博客的撰写以及上传工作都放到服务器里面，这样就不用担心文件的突然丢失了。同时也对博客的部署以及<code>NexT</code>模板的版本进行了更改，让我们有更好的体验~</p>
+<h1 id="桥接到Coding"><a href="#桥接到Coding" class="headerlink" title="桥接到Coding"></a>桥接到Coding</h1><p>由于<code>github</code>是国外网站，我们将博客部署到那里时，对其进行访问会很慢，所以我们将博客的托管平台进行了更改，国内小编知道的比较大的代码托管平台就只知道<code>Gitee</code>和<code>Coding</code>了，目前<code>Gitee</code>平台的企业版本才可以免费支持<code>Pages</code>服务中的自动部署以及自定义域名服务，而<code>Coding</code>平台中这些都免费支持（虽然他的缺点也有一些，但是这个符合我们的要求，所以就选择了它~）。</p>
+<p>将博客托管到<code>Coding</code>平台其实和<code>Github</code>差不多，大概也就下面三步：</p>
+<div class="tabs" id="qiaojiedcoding"><ul class="nav-tabs"><li class="tab active"><a href="#qiaojiedcoding-1">创建仓库</a></li><li class="tab"><a href="#qiaojiedcoding-2">配置 SSH key</a></li><li class="tab"><a href="#qiaojiedcoding-3">开启静态网站服务</a></li><li class="tab"><a href="#qiaojiedcoding-4">修改站点配置</a></li></ul><div class="tab-content"><div class="tab-pane active" id="qiaojiedcoding-1"><p>这个应该不用多说了，很简单的，不过<code>Coding</code>里面有一点不一样的就是，首先是创建项目，项目里面可以创建个仓库，所以小伙伴们可以先创建一个项目，然后再创建相应的仓库，这里还有一点和<code>Github</code>不一样的就是，这里的仓库名字可以随意起~</p></div><div class="tab-pane" id="qiaojiedcoding-2"><p>如图，</p>
+<p><strong>代码仓库</strong> –&gt; <strong>设置</strong> –&gt; <strong>部署公钥</strong></p>
+<p><img data-src="https://gitee.com/shuoshuoyun/picbed/raw/master/img//20200730102810.png" alt="Ucl8eO"></p>
+<p>在这里面配置好自己的公钥即可，公钥的生成方法以及查看方法前面有介绍到。</p></div><div class="tab-pane" id="qiaojiedcoding-3"><p>如图，</p>
+<p><strong>持续部署</strong> –&gt; <strong>静态网站</strong></p>
+<p><img data-src="https://gitee.com/shuoshuoyun/picbed/raw/master/img//20200730102844.png" alt="U6vFAJ"></p>
+<p>若是没有这个选项的话，则需要手动开启：</p>
+<p><strong>项目设置</strong> –&gt; <strong>项目与成员</strong> –&gt; <strong>功能开关</strong> –&gt; <strong>持续集成</strong> –&gt; <strong>打开开关</strong></p>
+<p><img data-src="https://gitee.com/shuoshuoyun/picbed/raw/master/img//20200730102912.png" alt="U6xvLT"></p>
+<p>静态网站初始设置：</p>
+<p><strong>网站名称</strong>：随意</p>
+<p><strong>部署来源</strong>：本项目仓库</p>
+<ul>
+<li><strong>选择项目</strong>：刚才创建的项目</li>
+<li><strong>选择仓库</strong>：刚才创建的项目中的仓库</li>
+</ul>
+<p>其他的选项都选择默认</p>
+<p><img data-src="https://gitee.com/shuoshuoyun/picbed/raw/master/img//20200730103016.png" alt="U6v9nU"></p>
+<p>确定后就你的博客就搭建完成啦，赶紧去它给你的网址去看看吧~</p>
+<p><img data-src="https://gitee.com/shuoshuoyun/picbed/raw/master/img//20200730103039.png" alt="UclmFJ"></p>
+<p>这里小编的访问地址有两个，是因为小编自己绑定了域名~</p>
+<details class="note info"><summary><p>icon</p>
+</summary>
+<h2 id="个性域名"><a href="#个性域名" class="headerlink" title="个性域名"></a>个性域名</h2><p>大家可以自己去购买一个个性域名，这样会显得很不一样，而且也不用多少q~</p>
+
+</details></div><div class="tab-pane" id="qiaojiedcoding-4"><p>打开文件<code>blog/_config.yml</code>，修改：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy: </span><br><span class="line">    type: git  </span><br><span class="line">    repository: git@e.coding.net:YourTeamName/YourProjectName/YourRepositoryName.git </span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
+
+<p>最后，在<code>blog/</code>目录下执行命令<code>npm install hexo-deployer-git --save</code></p>
+<p>这样，你的本地博客就可以通过<code>hexo d</code>命令部署到<code>Coding</code>上了，从此再也不用担心国内访问速度啦。</p></div></div></div>
+
+<hr>
+<h1 id="个性化设置"><a href="#个性化设置" class="headerlink" title="个性化设置"></a>个性化设置</h1><p>小编这次的个性化设置基本上参照<code>NexT</code>主题的官方文档设置的，传送门如下：</p>
+<div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
+<p>Theme NexT</p><p>Stay Simple. Stay NexT.</p>
+<a href="https://theme-next.js.org/"></a>
+</div></div>
+
+<h2 id="常规配置"><a href="#常规配置" class="headerlink" title="常规配置"></a>常规配置</h2><p><code>hexo/_config.yml</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title:  # 博客标题</span><br><span class="line">subtitle: &#x27;&#x27;  # 副标题</span><br><span class="line">description: &#x27;&#x27;  # 描述</span><br><span class="line">keywords:  # 关键字</span><br><span class="line">author:  # 作者</span><br><span class="line">language: zh-CN  # 语言 </span><br><span class="line">timezone: &#x27;&#x27;  # 时区</span><br></pre></td></tr></table></figure>
+
+<h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><p>默认的主题感觉还是不喜欢，所以这里小编选用的是<code>NexT</code>主题；安装方式如下：</p>
+<div class="tabs" id="genghuanzt"><ul class="nav-tabs"><li class="tab active"><a href="#genghuanzt-1">最新版</a></li><li class="tab"><a href="#genghuanzt-2">稳定版</a></li></ul><div class="tab-content"><div class="tab-pane active" id="genghuanzt-1"><p>在<code>next/</code>下打开终端：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd hexo</span><br><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="genghuanzt-2"><ol>
+<li><p>前往<code>NexT</code>主题的版本发布页面前往选择下载：<a class="btn" href="https://github.com/next-theme/hexo-theme-next/releases" title="Hexo&NexT"><i class="fa fa-home fa-fw fa-lg"></i>NexT-Releases</a>你需要的版本源代码（zip文件），例如： v8.0.0-rc.3</p>
+</li>
+<li><p>将zip文件解压到主题文件夹目录下并重命名为<code>next</code>即可。</p>
+</li>
+</ol></div></div></div>
+
+<p>安装完成主题后即可在文件<code>blog/_config.yml</code>中启用主题：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<p>启用完成后就可以在命令端执行：<code>hexo s --debug</code>，然后在浏览器中打开网址：<code>http://localhost:4000</code>就可以看到修改完成后的<code>next</code>主题啦。</p>
+<h2 id="更换主题方案"><a href="#更换主题方案" class="headerlink" title="更换主题方案"></a><del>更换主题方案</del></h2><p><strong>NexT官方主题配置更改方案已经更新，Next主题修改请移步至<a href="https://theme-next.js.org/">官网文档</a></strong></p>
+<p><code>next/_config.yml</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Schemes</span><br><span class="line"># scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
+
+<p>这里有四种主题方案，各位同学可自行选择~</p>
+<h2 id="精简静态文件"><a href="#精简静态文件" class="headerlink" title="精简静态文件"></a>精简静态文件</h2><p><code>next/_config.yml</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 生成静态文件后移除不必要的文件。</span><br><span class="line">minify: true</span><br></pre></td></tr></table></figure>
+
+<h2 id="更换网站图标"><a href="#更换网站图标" class="headerlink" title="更换网站图标"></a>更换网站图标</h2><p><code>next/_config.yml</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">favicon:</span><br><span class="line">  small: /images/favicon-16x16-next.ico</span><br><span class="line">  medium: /images/favicon-32x32-next.ico</span><br><span class="line">  apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">  safari_pinned_tab: /images/logo.svg</span><br><span class="line">  #android_manifest: /images/manifest.json</span><br><span class="line">  #ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
+
+<p>将自己喜欢的图片在网站：<a class="btn" href="http://www.bitbug.net/t" title="icon制作网站"><i class="fas fa-bug fa-fw fa-lg"></i>比特虫</a> 制作成<code>ico</code>图标，制作两个，一个16X16的，一个32X32的，放在<code>next/source/images</code>中，用其相对文件路径替换<code>favicon</code>中的<code>small</code>和<code>medium</code>后的默认路径。</p>
+<h2 id="网站底部"><a href="#网站底部" class="headerlink" title="网站底部"></a>网站底部</h2><p><code>next/_config.yml</code></p>
+<h3 id="建站年份"><a href="#建站年份" class="headerlink" title="建站年份"></a>建站年份</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">footer:</span><br><span class="line">  # 建站年份，如果未启用，则默认未当前年份。</span><br><span class="line">  since: 2019</span><br></pre></td></tr></table></figure>
+
+<h3 id="底部图标"><a href="#底部图标" class="headerlink" title="底部图标"></a>底部图标</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"># 底部图标相关信息</span><br><span class="line">icon:</span><br><span class="line">  # Icon 图标名字，详情见: https://fontawesome.com/icons</span><br><span class="line">  name: fa fa-heartbeat</span><br><span class="line">  # 设置图标是否开启动画</span><br><span class="line">  animated: true</span><br><span class="line">  # 改变图标颜色</span><br><span class="line">  color: &quot;#ff0000&quot;</span><br><span class="line"></span><br><span class="line"># If not defined, `author` from Hexo `_config.yml` will be used.</span><br><span class="line">copyright:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Powered-by-Hexo-amp-NexT"><a href="#Powered-by-Hexo-amp-NexT" class="headerlink" title="Powered by Hexo &amp; NexT"></a>Powered by Hexo &amp; NexT</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 是否开启：Powered by Hexo &amp; NexT</span><br><span class="line">powered: true</span><br></pre></td></tr></table></figure>
+
+<h3 id="备案信息"><a href="#备案信息" class="headerlink" title="备案信息"></a>备案信息</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 我们特有的备案信息选填项~详情见: http://www.beian.miit.gov.cn, http://www.beian.gov.cn</span><br><span class="line"># 网站备案</span><br><span class="line">beian:</span><br><span class="line">  enable: true</span><br><span class="line">  icp: 京ICP备1234567890号-1</span><br><span class="line">  # The digit in the num of gongan beian.</span><br><span class="line">  gongan_id: 1234567890</span><br><span class="line">  # The full num of gongan beian.</span><br><span class="line">  gongan_num: 京公网安备 1234567890号</span><br><span class="line">  # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download</span><br><span class="line">  gongan_icon_url: /images/beian.png</span><br></pre></td></tr></table></figure>
+
+<h2 id="深色模式"><a href="#深色模式" class="headerlink" title="深色模式"></a>深色模式</h2><p><code>next/_config.yml</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Dark Mode</span><br><span class="line">darkmode: true</span><br></pre></td></tr></table></figure>
+
+<div class="note warning"><h4 id="Warning"><a href="#Warning" class="headerlink" title="Warning"></a>Warning</h4><p>请确保您的浏览器支持暗模式。</p>
+</div>
+
+<h2 id="菜单栏设置"><a href="#菜单栏设置" class="headerlink" title="菜单栏设置"></a>菜单栏设置</h2><h3 id="启用默认菜单栏"><a href="#启用默认菜单栏" class="headerlink" title="启用默认菜单栏"></a>启用默认菜单栏</h3><p>在<code>next/_config.yml</code>启用：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  #about: /about/ || fa fa-user</span><br><span class="line">  #tags: /tags/ || fa fa-tags</span><br><span class="line">  #categories: /categories/ || fa fa-th</span><br><span class="line">  #archives: /archives/ || fa fa-archive</span><br><span class="line">  #schedule: /schedule/ || fa fa-calendar</span><br><span class="line">  #sitemap: /sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: /404/ || fa fa-heartbeat</span><br></pre></td></tr></table></figure>
+
+<div class="note warning"><h4 id="Warning"><a href="#Warning" class="headerlink" title="Warning"></a>Warning</h4><p>除了<code>home</code>和<code>archives</code>，其他的菜单启用时，都要手动添加其页面；如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
+</div>
+
+<h3 id="添加自定义菜单"><a href="#添加自定义菜单" class="headerlink" title="添加自定义菜单"></a>添加自定义菜单</h3><div class="tabs" id="tianjiazdycd"><ul class="nav-tabs"><li class="tab active"><a href="#tianjiazdycd-1">第一步</a></li><li class="tab"><a href="#tianjiazdycd-2">第二步</a></li><li class="tab"><a href="#tianjiazdycd-3">第三步</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tianjiazdycd-1"><p>创建新的页面：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd hexo-site</span><br><span class="line">hexo new page custom-name</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="tianjiazdycd-2"><p>将自定义菜单添加进<code>hexo/_config.yml</code>的<code>menu</code>中：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  custom-name: /custom-name/ || fa fa-user</span><br></pre></td></tr></table></figure>
+
+<div class="note success"><h4 id="温馨提示"><a href="#温馨提示" class="headerlink" title="温馨提示"></a>温馨提示</h4><p>自定义菜单相应显示的小图标，如<code>home</code>的<code>fa fa-home</code>，同学们可以前往<a class="btn" href="https://fontawesome.com/" title="Font Awesome 官网"><i class="fas fa-flag fa-lg"></i>Font Awesome</a>寻找自己喜欢的小图标换上。</p>
+</div></div><div class="tab-pane" id="tianjiazdycd-3"><p>为你的<code>custom-name</code>添加译文：</p>
+<p>在<code>next/languages/zh-CN.yml</code>文件中的<code>menu</code>中添加：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">    custom-name: 自定义名字</span><br></pre></td></tr></table></figure>
+
+<div class="note info"><p>因为我们启用的语言为<code>zh-CN</code>，因此需要在这里面添加<code>custome-name</code>相应的翻译，这样在博客中才会正确的显示我们自定义菜单的中文；否则就只会显示英文。</p>
+</div></div></div></div>
+
+<h3 id="添加二级子菜单"><a href="#添加二级子菜单" class="headerlink" title="添加二级子菜单"></a>添加二级子菜单</h3><p>添加子菜单方式如下：</p>
+<p><code>next/_config.yml</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  sub-menu:                                       # 一级子菜单</span><br><span class="line">    default: /sub-menu/ || fa fa-book             # 一级子菜单的配置</span><br><span class="line">    sub-sub-menu-1: /sub-sub-menu || fa fa-plug   # 二级一号子菜单的配置</span><br><span class="line">    sub-sub-menu-2:                               # 二级二号子菜单</span><br><span class="line">      default: /sub-suub-menu-2/ || fa fa-plug    # 二级二号子菜单配置</span><br><span class="line">      sub-sub-sub-menu: /sub-sub-sub-menu || fa fa-search-plus</span><br></pre></td></tr></table></figure>
+
+<div class="tabs" id="tianjiaejzcd"><ul class="nav-tabs"><li class="tab active"><a href="#tianjiaejzcd-1">添加中文译文</a></li><li class="tab"><a href="#tianjiaejzcd-2">添加子菜单文件</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tianjiaejzcd-1"><p>这里和添加自定义菜单时一样的，传送按钮<a class="btn" href="#tianjiazdycd-3">添加译文</a></p></div><div class="tab-pane" id="tianjiaejzcd-2"><p>在目录<code>hexo/source/</code>下创建如下文件树：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sub-menu</span><br><span class="line">    |</span><br><span class="line">    |— index.md</span><br><span class="line">    |— sub-sub-menu-1.md</span><br><span class="line">    |— sub-sub-menu-2</span><br><span class="line">             |</span><br><span class="line">             |— index.md</span><br><span class="line">             |— sub-sub-sub-menu.md</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这里解释一下这些文件</p>
+<ul>
+<li><code>index.md</code>：当前文件目录下的默认博客文件</li>
+<li><code>sub-sub-menu-1.md</code>：二级一号子菜单的博客文件</li>
+<li><code>sub-sub-sub-menu.md</code>：三级子菜单的博客文件</li>
+</ul>
+<div class="note primary"><h4 id="温馨提示"><a href="#温馨提示" class="headerlink" title="温馨提示"></a>温馨提示</h4><p>这些文件小编暂时没有找到使用<code>hexo</code>命令来生成二级及其以下子菜单级文件目录及文件的方法，所以同学们可以自己手动创建~</p>
+</div></div></div></div>
+
+<h3 id="链接持久化"><a href="#链接持久化" class="headerlink" title="链接持久化"></a>链接持久化</h3><p>在<code>Hexo</code>中当我们创建的博客名包含中文的名的时候，<code>url</code>链接地址经常会变成一串很长字符串，不利于博客的链接分享，以及搜索引擎搜索，我们可以通过安装其他的插件来解决这个问题。</p>
+<ol>
+<li><p>安装<code>url</code>地址持久化插件:</p>
+<p><code>npm install hexo-abbrlink --save</code></p>
+</li>
+<li><p>配置文件<code>hexo/_config.yml</code></p>
+<p><code>permalink: :year/:month/:day/:abbrlink/</code></p>
+</li>
+</ol>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><blockquote class="blockquote-center">
+<p>感谢这些作者的无私奉献！</p>
+
+</blockquote>
+
+<div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/images/csdn.png"></object>
+<p>Theme NexT</p><p>Stay Simple. Stay NexT.</p>
+<a href="https://theme-next.js.org/"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/csdn.png"></object>
+<p>CSDN</p><p>GitHub Pages自定义域名后每次hexo d都会失效解决</p>
+<a href="https://blog.csdn.net/fake_hydra/article/details/82414965"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/csdn.png"></object>
+<p>CSDN</p><p>hexo+github搭建免费个人博客</p>
+<a href="https://blog.csdn.net/weixin_38788347/article/details/78154487"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/csdn.png"></object>
+<p>CSDN</p><p>hexo + next主题高级配置</p>
+<a href="https://blog.csdn.net/destinytaoer/article/details/78400023"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/csdn.png"></object>
+<p>CSDN</p><p>Hexo框架下用NexT(v7.0+)主题美化博客</p>
+<a href="https://blog.csdn.net/weixin_39345384/article/details/80785373"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/csdn.png"></object>
+<p>CSDN</p><p>快速搭建博客：写作技巧</p>
+<a href="https://blog.csdn.net/weixin_41800884/article/details/103750672"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/csdn.png"></object>
+<p>CSDN</p><p>Hexo博客NexT主题终极配置</p>
+<a href="https://blog.csdn.net/panchao888888/article/details/80666352"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/csdn.png"></object>
+<p>CSDN</p><p>Hexo+NexT（三）：Next主题配置详解</p>
+<a href="https://blog.csdn.net/loze/article/details/94210320"></a>
+</div></div>
+
+
+
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学爬虫，你需要学习的东西！</title>
+    <url>/cc1797049882.html</url>
+    <content><![CDATA[<p>当今大数据的时代，网络爬虫已经成为了获取数据的一个重要手段。</p>
+<p>但要学习好爬虫并没有那么简单。首先知识点和方向实在是太多了，它关系到了计算机网络、编程基础、前端开发、后端开发、App 开发与逆向、网络安全、数据库、运维、机器学习、数据分析等各个方向的内容，它像一张大网一样把现在一些主流的技术栈都连接在了一起。正因为涵盖的方向多，因此学习的东西也非常零散和杂乱，很多初学者搞不清楚究竟要学习哪些知识，学习过程中遇到反爬也不知道用什么方法来解决，本篇我们来做一些归纳和总结。</p>
+<span id="more"></span>
+
+<h2 id="初学爬虫"><a href="#初学爬虫" class="headerlink" title="初学爬虫"></a>初学爬虫</h2><p>一些最基本的网站，往往不带任何反爬措施。比如某个博客站点，我们要爬全站的话就顺着列表页爬到文章页，再把文章的时间、作者、正文等信息爬下来就可以了。</p>
+<p>那代码怎么写呢？用 Python 的 requests 等库就够了，写一个基本的逻辑，顺着把一篇篇文章的源码获取下来，解析的话用 XPath、BeautifulSoup、PyQuery 或者正则表达式，或者粗暴的字符串匹配把想要的内容抠出来，再加个文本写入存下来就完事了。</p>
+<p>代码很简单，就几个方法调用。逻辑很简单，几个循环加存储。最后就能看到一篇篇文章就被我们存到自己的电脑里面了。当然有的同学可能不太会写代码或者都懒得写，那么利用基本的可视化爬取工具，如某爪鱼、某裔采集器也能通过可视化点选的方式把数据爬下来。</p>
+<p>如果存储方面稍微扩展一下的话，可以对接上 MySQL、MongoDB、Elasticsearch、Kafka 等等来保存数据，实现持久化存储。以后查询或者操作会更方便。</p>
+<p>反正，不管效率如何，一个完全没有反爬的网站用最最基本的方式就搞定了。</p>
+<p>到这里，你就说你会爬虫了吗？不，还差的远呢。</p>
+<h2 id="Ajax、动态渲染"><a href="#Ajax、动态渲染" class="headerlink" title="Ajax、动态渲染"></a>Ajax、动态渲染</h2><p>随着互联网的发展，前端技术也在不断变化，数据的加载方式也不再是单纯的服务端渲染了。现在你可以看到很多网站的数据可能都是通过接口的形式传输的，或者即使不是接口那也是一些 JSON 的数据，然后经过 JavaScript 渲染得出来的。</p>
+<p>这时候，你要再用 requests 来爬那就不顶用了，因为 requests 爬下来的源码是服务端渲染得到的，浏览器看到页面的和 requests 获取的结果是不一样的。真正的数据是经过 JavaScript 执行的出来的，数据来源可能是 Ajax，也可能是页面里的某些 Data，也可能是一些 ifame 页面等等，不过大多数情况下可能是 Ajax 接口获取的。</p>
+<p>所以很多情况下需要分析 Ajax，知道这些接口的调用方式之后再用程序来模拟。但是有些接口带着加密参数，比如 token、sign 等等，又不好模拟，咋整呢？</p>
+<p>一种方法就是去分析网站的 JavaScript 逻辑，死抠里面的代码，揪出来这些参数是怎么构造的，找出思路来了之后再用爬虫模拟或重写就行了。如果你解出来了，那么直接模拟的方式效率会高非常多，这里面就需要一些 JavaScript 基础了，当然有些网站加密逻辑做的太牛逼了，你可能花一个星期也解不出来，最后放弃了。</p>
+<p>那这样解不出来或者不想解，那咋办呢？这时候可以有一种简单粗暴的方法就是直接用模拟浏览器的方式来爬取，比如用 Puppeteer、Pyppeteer、Selenium、Splash 等，这样爬取到的源代码就是真正的网页代码，数据自然就好提取了，同时也就绕过分析 Ajax 和一些 JavaScript 逻辑的过程。这种方式就做到了可见即可爬，难度也不大，同时模拟了浏览器，也不太会有一些法律方面的问题。</p>
+<p>但其实后面的这种方法也会遇到各种反爬的情况，现在很多网站都会去识别 webdriver，看到你是用的 Selenium 等工具，直接干掉或不返回数据，所以你碰到这种网站还得来专门解一下这个问题。</p>
+<h2 id="多进程、多线程、协程"><a href="#多进程、多线程、协程" class="headerlink" title="多进程、多线程、协程"></a>多进程、多线程、协程</h2><p>上面的情况如果用单线程的爬虫来模拟是比较简单的，但是有个问题就是速度慢啊。</p>
+<p>爬虫是 IO 密集型的任务，所以可能大多数情况下都在等待网络的响应，如果网络响应速度慢，那就得一直等着。但这个空余的时间其实可以让 CPU 去做更多事情。那怎么办呢？多开点线程吧。</p>
+<p>所以这时候我们就可以在某些场景下加上多进程、多线程，虽然说多线程有 GIL 锁，但对于爬虫来说其实影响没那么大，所以用上多进程、多线程都可以成倍地提高爬取速度，对应的库就有 threading、multiprocessing 了。</p>
+<p>异步协程就更牛逼了，用 aiohttp、gevent、tornado 等等的基本上你想搞多少并发就搞多少并发，但是还是悠着点，别把人家网站搞挂了。</p>
+<p>总之，用上这几个，爬虫速度就提上来了。</p>
+<p>但速度提上来了不一定是好事，反爬接着肯定就要来了，封你 IP、封你账号、弹验证码、返回假数据，所以有时候龟速爬似乎也是个解决办法？</p>
+<h2 id="分布式"><a href="#分布式" class="headerlink" title="分布式"></a>分布式</h2><p>多线程、多进程、协程都能加速，但终究还是单机的爬虫。要真正做到规模化，还得来靠分布式爬虫来搞。</p>
+<p>分布式的核心是什么？资源共享。比如爬取队列共享、去重指纹共享等等。</p>
+<p>我们可以使用一些基础的队列或组件来实现分布式，比如 RabbitMQ、Celery、Kafka、Redis 等等，但经过很多人的尝试，自己去实现一个分布式爬虫，性能和扩展性总会出现一些问题，当然特别牛逼的除外哈。不少企业内部其实也有自己开发的一套分布式爬虫，和业务更紧密，这种当然是最好了。</p>
+<p>现在主流的 Python 分布式爬虫还是基于 Scrapy 的，对接 Scrapy-Redis、Scrapy-Redis-BloomFilter 或者用 Scrapy-Cluster 等等，他们都是基于 Redis 来共享爬取队列的，总会多多少少遇到一些内存的问题。所以一些人也考虑对接到了其他的消息队列上面，比如 RabbitMQ、Kafka 等等，解决一些问题，效率也不差。</p>
+<p>总之，要提高爬取效率，分布式还是必须要掌握的。</p>
+<h2 id="验证码"><a href="#验证码" class="headerlink" title="验证码"></a>验证码</h2><p>爬虫难免遇到反爬，验证码就是其中之一。要会反爬，那首先就要会解验证码。</p>
+<p>现在你可以看到很多网站都会有各种各样的验证码了，比如最简单的图形验证码，要是验证码的文字规整的话，OCR 过一遍或者基本的模型库都能识别，不想搞这个的话可以直接去对接个打码平台来搞，准确率还是有的。</p>
+<p>然而你可能现在都见不到什么图形验证码了，都是一些行为验证码，如某验、某盾等等，国外也有很多，比如 reCaptcha 等等。一些稍微简单一点的，比如滑动的，你可以找点办法识别缺口，比如图像处理比对、深度学习识别都是可以的。轨迹呢自己写个模拟正常人行为的，加点抖动之类的。有了轨迹之后咋模拟呢，如果你牛逼，那么可以直接去分析验证码的 JavaScript 逻辑，把轨迹数据录入，那就能得到里面的一些加密参数，直接拿着这些参数放到表单或接口里面就能直接用了。当然也可以用模拟浏览器的方式来拖动，也能通过一定的方式拿到加密参数，或者直接用模拟浏览器的方式把登录一起做了，拿着 Cookies 来爬也行。</p>
+<p>当然拖动只是一种验证码，还有文字点选、逻辑推理等，要是真不想搞，可以找打码平台来解出来再模拟，但毕竟花钱的，一些高手就会选择自己训练深度学习相关的模型，收集数据、标注、训练，针对不同的业务训练不同的模型。这样有了核心技术，也不用再去花钱找打码平台了，再研究下验证码的逻辑模拟一下，加密参数就能解出来了。不过有的验证码难得很，有的我也没搞定。</p>
+<p>当然有些验证码可能是请求过于频繁而弹出来的，这种如果换个 IP 什么的也能解。</p>
+<h2 id="封-IP"><a href="#封-IP" class="headerlink" title="封 IP"></a>封 IP</h2><p>封 IP 也是个令人头疼的事，行之有效的方法就是换代理了。</p>
+<p>代理很多种，市面上免费的，收费的太多太多了。</p>
+<p>首先可以把市面上免费的代理用起来，自己搭建一个代理池，收集现在全网所有的免费代理，然后加一个测试器一直不断测试，测试的网址可以改成你要爬的网址。这样测试通过的一般都能直接拿来爬你的目标网站。我自己也搭建过一个代理池，现在对接了一些免费代理，定时爬、定时测，还写了个 API 来取，放在 GitHub 了：<a href="https://github.com/Python3WebSpider/ProxyPool%EF%BC%8C%E6%89%93%E5%A5%BD%E4%BA%86">https://github.com/Python3WebSpider/ProxyPool，打好了</a> Docker 镜像，提供了 Kubernetes 脚本，大家可以直接拿来用。</p>
+<p>付费代理也是一样，很多商家提供了代理提取接口，请求一下就能获取几十几百个代理，我们可以同样把它们接入到代理池里面。但这个代理也分各种套餐，什么开放代理、独享代理等等的质量和被封的几率也是不一样的。</p>
+<p>有的商家还利用隧道技术搭了代理，这样代理的地址和端口我们是不知道的，代理池是由他们来维护的，比如某布云，这样用起来更省心一些，但是可控性就差一些。</p>
+<p>还有更稳定的代理，比如拨号代理、蜂窝代理等等，接入成本会高一些，但是一定程度上也能解决一些封 IP 的问题。</p>
+<p>不过这些背后也不简单，为啥一个好好的高匿代理就是莫名其妙爬不了，背后的一些事就不多讲了。</p>
+<p>##封账号</p>
+<p>有些信息需要模拟登录才能爬嘛，如果爬的过快，人家网站直接把你的账号封禁了，就啥都没得说了。比如爬公众号的，人家把你 WX 号封了，那就全完了。</p>
+<p>一种解决方法当然就是放慢频率，控制下节奏。</p>
+<p>还有种方法就是看看别的终端，比如手机页、App 页、wap 页，看看有没有能绕过登录的法子。</p>
+<p>另外比较好的方法，那就是分流。如果你号足够多，建一个池子，比如 Cookies 池、Token 池、Sign 池反正不管什么池吧，多个账号跑出来的 Cookies、Token 都放到这个池子里面，用的时候随机从里面拿一个。如果你想保证爬取效率不变，那么 100 个账号相比 20 个账号，对于每个账号对应的 Cookies、Token 的取用频率就变成原来的了 1/5，那么被封的概率也就随之降低了。</p>
+<h2 id="奇葩的反爬"><a href="#奇葩的反爬" class="headerlink" title="奇葩的反爬"></a>奇葩的反爬</h2><p>上面说的是几种比较主流的反爬，当然还有非常多奇葩的反爬。比如返回假数据、返回图片化数据、返回乱序数据、返回骂人的数据、返回求饶的数据，那都具体情况看着办吧。</p>
+<p>这些反爬也得小心点，之前见过一个反爬直接返回 <code>rm -rf /</code> 的也不是没有，你要是正好有个脚本模拟执行返回结果，后果自己想象哈。</p>
+<h2 id="JavaScript-逆向"><a href="#JavaScript-逆向" class="headerlink" title="JavaScript 逆向"></a>JavaScript 逆向</h2><p>说到重头了。随着前端技术的进步和网站反爬意识的增强，很多网站选择在前端上下功夫，那就是在前端对一些逻辑或代码进行加密或混淆。当然这不仅仅是为了保护前端的代码不被轻易盗取，更重要的是反爬。比如很多 Ajax 接口都会带着一些参数，比如 sign、token 等等，这些前文也讲过了。这种数据我们可以用前文所说的 Selenium 等方式来爬，但总归来说效率太低了，毕竟它模拟的是网页渲染的整个过程，而真实的数据可能仅仅就藏在一个小接口里。</p>
+<p>如果我们能够把一些接口的参数真正找出其中的逻辑，用代码来模拟执行，那效率就会有成倍的提升，而且还能在一定程度上规避上述的反爬现象。</p>
+<p>但问题是什么？难啊。</p>
+<p>Webpack 是一方面，前端代码都被压缩和转码成一些 bundle 文件，一些变量的含义已经丢失，不好还原。然后一些网站再加上一些 obfuscator 的机制，把前端代码变成你完全看不懂的东西，比如字符串拆散打乱、变量十六进制化、控制流扁平化、无限 debug、控制台禁用等等，前端的代码和逻辑已经面目全非。有的用 WebAssembly 等技术把前端核心逻辑直接编译，那就只能慢慢抠了，虽然说有些有一定的技巧，但是总归来说还是会花费很多时间。但一旦解出来了，那就万事大吉了。怎么说？就像奥赛题一样，解出来升天，解不出来 GG。</p>
+<p>很多公司招聘爬虫工程师都会问有没有 JavaScript 逆向基础，破解过哪些网站，比如某宝、某多、某条等等，解出来某个他们需要的可能就直接录用你。每家网站的逻辑都不一样，难度也不一样。</p>
+<h2 id="App"><a href="#App" class="headerlink" title="App"></a>App</h2><p>当然爬虫不仅仅是网页爬虫了，随着互联网时代的发展，现在越来越多的公司都选择将数据放到 App 上面，甚至有些公司只有 App 没有网站。所以数据只能通过 App 来爬。</p>
+<p>咋爬呢？基本的就是抓包工具了，Charles、Fiddler 一把梭，抓到接口之后，直接拿来模拟就行了。</p>
+<p>如果接口有加密参数怎么办呢？一种方法你可以边爬边处理，比如 mitmproxy 直接监听接口数据。另一方面你可以走 Hook，比如上 Xposed 也可以拿到。</p>
+<p>那爬的时候又怎么实现自动化呢？总不能拿手来戳吧。其实工具也多，安卓原生的 adb 工具也行，Appium 现在已经是比较主流的方案了，当然还有其他的某精灵都是可以实现的。</p>
+<p>最后，有的时候可能真的就不想走自动化的流程，我就想把里面的一些接口逻辑抠出来，那就得搞逆向了，IDA Pro、jdax、FRIDA 等工具就派上用场了，当然这个过程和 JavaScript 逆向一样很痛苦，甚至可能得读汇编指令。搞一个案例掉一把头发也不是不可能的。</p>
+<h2 id="智能化"><a href="#智能化" class="headerlink" title="智能化"></a>智能化</h2><p>上面的这一通，都搞熟了，恭喜你已经超过了百分之八九十的爬虫玩家了，当然专门搞 JavaScript 逆向、App 逆向的都是站在食物链顶端的男人，这种严格来说已经不算爬虫范畴了，这种神我们就不算在里面了，反正我不是。</p>
+<p>除了上面的一些技能，在一些场合下，我们可能也需要结合一些机器学习的技术，让我们的爬虫变得更智能起来。</p>
+<p>比如现在很多博客、新闻文章，其页面结构相似度比较高，要提取的信息也比较类似。</p>
+<p>比如如何区分一个页面是索引页还是详情页？如何提取详情页的文章链接？如何解析文章页的页面内容？这些其实都是可以通过一些算法来计算出来的。</p>
+<p>所以，一些智能解析技术也营运而生，比如提取详情页，一位朋友写的 GeneralNewsExtractor 表现就非常好。</p>
+<p>假如说我来了一个需求，我要爬取一万个新闻网站数据，要一个个写 XPath 吗？写死我吧。如果有了智能化解析技术，在容忍一定错误的条件下，完成这个就是分分钟的事情。</p>
+<p>总之，如果我们能把这一块也学会了，我们的爬虫技术就会如虎添翼。</p>
+<h2 id="运维"><a href="#运维" class="headerlink" title="运维"></a>运维</h2><p>这块也是一个重头戏。爬虫和运维也是息息相关。</p>
+<p>比如写完一个爬虫，怎样去快速部署到 100 台主机上跑起来。</p>
+<p>比如怎么灵活地监控每个爬虫的运行状态。</p>
+<p>比如爬虫有处代码改动，如何去快速更新。</p>
+<p>比如怎样监控一些爬虫的占用内存、消耗的 CPU 状况。</p>
+<p>比如怎样科学地控制爬虫的定时运行、</p>
+<p>比如爬虫出现了问题，怎样能及时收到通知，怎样设置科学的报警机制。</p>
+<p>这里面，部署大家各有各的方法，比如用 Ansible 当然可以。如果用 Scrapy 的话有 Scrapyd，然后配合上一些管理工具也能完成一些监控和定时任务。不过我现在用的更多是还是 Docker + Kubernetes，再加上 DevOps 一套，比如 GitHub Actions、Azure Pipelines、Jenkins 等等，快速实现分发和部署。</p>
+<p>定时任务大家有的用 crontab，有的用 apscheduler，有的用管理工具，有的用 Kubernetes，我的话用 Kubernetes 就多一些了，定时任务也是很好实现。</p>
+<p>至于监控的话，也有很多，专门的一些爬虫管理工具自带了一些监控和报警功能。一些云服务也带了一些监控的功能。我用的是 Kubernetes + Prometheus + Grafana，什么 CPU、内存、运行状态，一目了然，报警机制在 Grafana 里面配一下也很方便，支持 Webhook、邮件甚至某钉。</p>
+<p>数据的存储和监控，用 Kafka、Elasticsearch 个人感觉也挺方便的，我主要用的是后者，然后再和 Grafana 配合起来，数据爬取量、爬取速度等等监控也都一目了然。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>至此，爬虫的一些涵盖的知识点也就差不多了，怎么样，梳理一下，是不是计算机网络、编程基础、前端开发、后端开发、App 开发与逆向、网络安全、数据库、运维、机器学习都涵盖到了？上面总结的可以算是从爬虫小白到爬虫高手的路径了，里面每个方向其实可研究的点非常多，每个点做精了，都会非常了不起。</p>
+<p>爬虫往往学着学着，就成为了一名全栈工程师或者全干工程师，因为你可能真的啥都会了。但是没办法啊，都是被爬虫逼的啊，如果不是生活所困，谁愿意一身才华呢？</p>
+<p>然而有了才华之后呢？摸摸头顶，卧槽，我的头发呢？</p>
+<p>嗯，大家都懂的。</p>
+<p>最后最重要的，珍爱生命、珍爱每一根头发。</p>
+<hr>
+<p>文章转自<a href="https://mp.weixin.qq.com/s/X_R4sv_3l0svv5s7wc4jGA">https://mp.weixin.qq.com/s/X_R4sv_3l0svv5s7wc4jGA</a></p>
+<p><strong>特别声明：如有侵权，告知笔者，立删此文！</strong></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>爬虫</category>
+      </categories>
+      <tags>
+        <tag>爬虫</tag>
+      </tags>
+  </entry>
+</search>
