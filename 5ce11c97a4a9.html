@@ -26,27 +26,28 @@
 <meta name="description" content="前言最近学习python用到了jupyter notebook编辑器；但由于环境原因，并不能一直在自己的笔记本上完成学习，很多时候需要在别的、没有python环境的、但是有网络的地方，这时候我们想学习python的时候就比较犯难，没有工作环境，怎么办？当然是问度娘咯，于是小编这就找到了这个搭建云jupyter笔记本的方法，搭建完成以后，嗯~相当舒服，有浏览器有网络的地方就可以开始码代码了，，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建云Jupyter笔记本">
-<meta property="og:url" content="https://pylover.net/2c088c349386.html">
+<meta property="og:url" content="https://pylover.net/5ce11c97a4a9.html">
 <meta property="og:site_name" content="追光日记">
 <meta property="og:description" content="前言最近学习python用到了jupyter notebook编辑器；但由于环境原因，并不能一直在自己的笔记本上完成学习，很多时候需要在别的、没有python环境的、但是有网络的地方，这时候我们想学习python的时候就比较犯难，没有工作环境，怎么办？当然是问度娘咯，于是小编这就找到了这个搭建云jupyter笔记本的方法，搭建完成以后，嗯~相当舒服，有浏览器有网络的地方就可以开始码代码了，，">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pylover.net/%E6%90%AD%E5%BB%BA%E4%BA%91Jupyter%E7%AC%94%E8%AE%B0%E6%9C%AC/yuming1.png">
-<meta property="og:image" content="https://pylover.net/%E6%90%AD%E5%BB%BA%E4%BA%91Jupyter%E7%AC%94%E8%AE%B0%E6%9C%AC/xiaosuo.png">
-<meta property="og:image" content="https://pylover.net/%E6%90%AD%E5%BB%BA%E4%BA%91Jupyter%E7%AC%94%E8%AE%B0%E6%9C%AC/sslzhengshu.png">
+<meta property="og:image" content="https://image.pylover.net/img/202110280019025.png">
+<meta property="og:image" content="https://image.pylover.net/img/202110280020664.png">
+<meta property="og:image" content="https://image.pylover.net/img/202110280025282.png">
+<meta property="og:image" content="https://image.pylover.net/img/202110280025074.png">
 <meta property="article:published_time" content="2020-07-23T07:05:25.000Z">
-<meta property="article:modified_time" content="2021-10-26T11:15:10.741Z">
+<meta property="article:modified_time" content="2021-10-27T16:25:57.912Z">
 <meta property="article:author" content="追光者">
 <meta property="article:tag" content="工具">
 <meta property="article:tag" content="jupyter">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://pylover.net/%E6%90%AD%E5%BB%BA%E4%BA%91Jupyter%E7%AC%94%E8%AE%B0%E6%9C%AC/yuming1.png">
+<meta name="twitter:image" content="https://image.pylover.net/img/202110280019025.png">
 
 
-<link rel="canonical" href="https://pylover.net/2c088c349386.html">
+<link rel="canonical" href="https://pylover.net/5ce11c97a4a9.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://pylover.net/2c088c349386.html","path":"2c088c349386.html","title":"搭建云Jupyter笔记本"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://pylover.net/5ce11c97a4a9.html","path":"5ce11c97a4a9.html","title":"搭建云Jupyter笔记本"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>搭建云Jupyter笔记本 | 追光日记</title>
@@ -246,7 +247,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://pylover.net/2c088c349386.html">
+    <link itemprop="mainEntityOfPage" href="https://pylover.net/5ce11c97a4a9.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/avatar2.png">
@@ -277,7 +278,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-10-26 19:15:10" itemprop="dateModified" datetime="2021-10-26T19:15:10+08:00">2021-10-26</time>
+        <time title="修改时间：2021-10-28 00:25:57" itemprop="dateModified" datetime="2021-10-28T00:25:57+08:00">2021-10-28</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -310,8 +311,8 @@
       <span class="post-meta-item-text">Changyan：</span>
     
     
-      <a title="changyan" href="/2c088c349386.html#SOHUCS" itemprop="discussionUrl">
-        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2c088c349386.html" itemprop="commentCount"></span>
+      <a title="changyan" href="/5ce11c97a4a9.html#SOHUCS" itemprop="discussionUrl">
+        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="5ce11c97a4a9.html" itemprop="commentCount"></span>
       </a>
     
   </span>
@@ -423,18 +424,19 @@
 
 <h1 id="配置个性域名"><a href="#配置个性域名" class="headerlink" title="配置个性域名"></a>配置个性域名</h1><p>我们搭建好的云<code>jupyter</code>如果只是用我们服务器的IP地址来访问，显的确实有点点不大好看，因此，我们将介绍一下如何给我们的云<code>jupyter</code>配置一个个性域名。</p>
 <div class="tabs" id="gexingyuming"><ul class="nav-tabs"><li class="tab active"><a href="#gexingyuming-1">购买域名</a></li><li class="tab"><a href="#gexingyuming-2">申请SSL证书（可选）</a></li><li class="tab"><a href="#gexingyuming-3">配置nginx</a></li><li class="tab"><a href="#gexingyuming-4">域名解析</a></li></ul><div class="tab-content"><div class="tab-pane active" id="gexingyuming-1"><p>小伙伴们可以前往各大厂商（阿里云，百度云，腾讯云等）进行购买，很多域名的首年只需要个位数的价格，买来玩还是可以的~</p>
-<p><img data-src="%E6%90%AD%E5%BB%BA%E4%BA%91Jupyter%E7%AC%94%E8%AE%B0%E6%9C%AC/yuming1.png"></p>
+<p><img data-src="https://image.pylover.net/img/202110280019025.png"></p>
 <p>有自己的域名感觉倍儿有格调~</p></div><div class="tab-pane" id="gexingyuming-2"><div class="note info"><p>可能有些小伙伴不知道<code>SSL</code>证书是什么东西，用来干啥的，这里小编简单的解释一下，就是在访问你的域名的时候让你的域名前面有一个（绿色的）小锁头：</p>
-<p><img data-src="%E6%90%AD%E5%BB%BA%E4%BA%91Jupyter%E7%AC%94%E8%AE%B0%E6%9C%AC/xiaosuo.png"></p>
+<p><img data-src="https://image.pylover.net/img/202110280020664.png"></p>
 <p>表示访问你这个网站是安全的。</p>
 </div>
 
 <p><code>SSL</code>证书的种类：</p>
 <div class="tabs" id="zhengshuzhonglei"><ul class="nav-tabs"><li class="tab active"><a href="#zhengshuzhonglei-1">单域名</a></li><li class="tab"><a href="#zhengshuzhonglei-2">通配符域名</a></li><li class="tab"><a href="#zhengshuzhonglei-3">多域名</a></li></ul><div class="tab-content"><div class="tab-pane active" id="zhengshuzhonglei-1"><p><strong>保护一个</strong>单页面网站，例如 <code>domain.com、ssl.domain.com、ssl.ssl.domain.com</code></p>
 <p>若是小伙伴们只是想弄个小锁头耍耍就只要申请一个这个即可。</p>
-<div class="note success"><h2 id="白嫖方法"><a href="#白嫖方法" class="headerlink" title="白嫖方法"></a>白嫖方法</h2><p>以阿里云为例（腾讯云操作更为简单，百度云目前没发现白嫖方法）：</p>
+<div class="note success"><h2 id="白嫖方法"><a href="#白嫖方法" class="headerlink" title="白嫖方法"></a>白嫖方法</h2><p>以腾讯云为例（阿里云也有，百度云目前没发现白嫖方法）：</p>
 <p><strong>登陆阿里云控制台</strong> –&gt;  <strong>SSL证书</strong> –&gt; <strong>购买证书</strong> </p>
-<p><img data-src="%E6%90%AD%E5%BB%BA%E4%BA%91Jupyter%E7%AC%94%E8%AE%B0%E6%9C%AC/sslzhengshu.png"></p>
+<p><img data-src="https://image.pylover.net/img/202110280025282.png"></p>
+<p><img data-src="https://image.pylover.net/img/202110280025074.png"></p>
 <p>以上即可购买一份免费的单域名证书了。</p>
 </div></div><div class="tab-pane" id="zhengshuzhonglei-2"><p><strong>大量子域名的超值</strong>选择！一张证书可以同时保障多个子域名的安全加固！</p>
 <p>例如：<code>*.aliyun.com</code>的通配符证书只能对<code>a.aliyun.com、b.aliyun.com</code>域名进行保护。如果存在<code>a.b.aliyun.com</code>的域名需要购买<code>*.b.aliyun.com</code>的通配符证书。</p>
@@ -471,15 +473,15 @@
 </blockquote>
 
 <div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="/images/csdn.png"></object>
+<object class="link-grid-image" data="/uploads/csdn.png"></object>
 <p>CSDN</p><p>linux服务器安装Anaconda及配置Jupyter</p>
 <a target="_blank" rel="noopener" href="https://blog.csdn.net/ImAustin/article/details/103179826"></a>
 </div><div class="link-grid-container">
-<object class="link-grid-image" data="/images/csdn.png"></object>
+<object class="link-grid-image" data="/uploads/csdn.png"></object>
 <p>CSDN</p><p>在Google Cloud上部署深度学习环境，并为jupyter notebook配置域名https访问</p>
 <a target="_blank" rel="noopener" href="https://blog.csdn.net/u012956394/article/details/88410416"></a>
 </div><div class="link-grid-container">
-<object class="link-grid-image" data="/images/csdn.png"></object>
+<object class="link-grid-image" data="/uploads/csdn.png"></object>
 <p>CSDN</p><p>Ubuntu修改终端下的语言（中文或英文）</p>
 <a target="_blank" rel="noopener" href="https://blog.csdn.net/BobYuan888/article/details/88662779"></a>
 </div></div>
@@ -499,7 +501,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://pylover.net/2c088c349386.html" title="搭建云Jupyter笔记本">https://pylover.net/2c088c349386.html</a>
+      <a href="https://pylover.net/5ce11c97a4a9.html" title="搭建云Jupyter笔记本">https://pylover.net/5ce11c97a4a9.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -516,12 +518,12 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/6004aa280b7b.html" rel="prev" title="Hexo博客搭建">
+                <a href="/5ba4c255d128.html" rel="prev" title="Hexo博客搭建">
                   <i class="fa fa-chevron-left"></i> Hexo博客搭建
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/909dee122cd5.html" rel="next" title="Coding+Hexo云上创建个人博客">
+                <a href="/ed7a7cc4af87.html" rel="next" title="Coding+Hexo云上创建个人博客">
                   Coding+Hexo云上创建个人博客 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
@@ -604,7 +606,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://pylover.net/2c088c349386.html"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://pylover.net/5ce11c97a4a9.html"}</script>
   <script src="/js/third-party/quicklink.js"></script>
 <script class="next-config" data-name="changyan" type="application/json">{"enable":"ture","appid":"cyvkAzYFK","appkey":"ef256bad532909226bdc05cff4b14d96"}</script>
 <script src="/js/third-party/comments/changyan.js"></script>
