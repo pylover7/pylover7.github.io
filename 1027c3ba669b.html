@@ -23,29 +23,33 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"pylover.net","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="前言Python有着很多很酷的第三方库，可以使任务变得更容易。">
+<meta name="description" content="前言Python 中有很多奇妙且好用的第三方库，可以让你的任务变得更为容易，下面给大家收集一些好用的 Python 库，每一个都很不错的哟~">
 <meta property="og:type" content="article">
-<meta property="og:title" content="你值得学习的几个python库">
-<meta property="og:url" content="https://pylover.net/c40696c93928.html">
+<meta property="og:title" content="奇妙的Python库">
+<meta property="og:url" content="https://pylover.net/1027c3ba669b.html">
 <meta property="og:site_name" content="追光日记">
-<meta property="og:description" content="前言Python有着很多很酷的第三方库，可以使任务变得更容易。">
+<meta property="og:description" content="前言Python 中有很多奇妙且好用的第三方库，可以让你的任务变得更为容易，下面给大家收集一些好用的 Python 库，每一个都很不错的哟~">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-10-21T16:01:41.000Z">
-<meta property="article:modified_time" content="2021-10-27T16:02:19.513Z">
+<meta property="og:image" content="https://image.pylover.net/img/202110301403572.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110301407629.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110301410131.png?imageMogr2/format/webp">
+<meta property="article:published_time" content="2021-10-30T05:33:54.000Z">
+<meta property="article:modified_time" content="2021-10-30T06:11:29.750Z">
 <meta property="article:author" content="追光者">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="package">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://image.pylover.net/img/202110301403572.png?imageMogr2/format/webp">
 
 
-<link rel="canonical" href="https://pylover.net/c40696c93928.html">
+<link rel="canonical" href="https://pylover.net/1027c3ba669b.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://pylover.net/c40696c93928.html","path":"c40696c93928.html","title":"你值得学习的几个python库"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://pylover.net/1027c3ba669b.html","path":"1027c3ba669b.html","title":"奇妙的Python库"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>你值得学习的几个python库 | 追光日记</title>
+<title>奇妙的Python库 | 追光日记</title>
   
 
 
@@ -165,7 +169,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%B7%E9%85%B7%E7%9A%84%E5%BA%93"><span class="nav-number">2.</span> <span class="nav-text">酷酷的库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#socket"><span class="nav-number">2.1.</span> <span class="nav-text">socket</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pyshorteners"><span class="nav-number">2.2.</span> <span class="nav-text">pyshorteners</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fabulous"><span class="nav-number">2.3.</span> <span class="nav-text">fabulous</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-number">3.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -242,7 +246,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://pylover.net/c40696c93928.html">
+    <link itemprop="mainEntityOfPage" href="https://pylover.net/1027c3ba669b.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/avatar2.png">
@@ -255,7 +259,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          你值得学习的几个python库
+          奇妙的Python库
         </h1>
 
         <div class="post-meta-container">
@@ -265,16 +269,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2021-10-22 00:01:41" itemprop="dateCreated datePublished" datetime="2021-10-22T00:01:41+08:00">2021-10-22</time>
+      <time title="创建时间：2021-10-30 13:33:54 / 修改时间：14:11:29" itemprop="dateCreated datePublished" datetime="2021-10-30T13:33:54+08:00">2021-10-30</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-10-28 00:02:19" itemprop="dateModified" datetime="2021-10-28T00:02:19+08:00">2021-10-28</time>
-      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -282,6 +280,10 @@
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
         </span>
     </span>
 
@@ -302,8 +304,8 @@
       <span class="post-meta-item-text">Changyan：</span>
     
     
-      <a title="changyan" href="/c40696c93928.html#SOHUCS" itemprop="discussionUrl">
-        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="c40696c93928.html" itemprop="commentCount"></span>
+      <a title="changyan" href="/1027c3ba669b.html#SOHUCS" itemprop="discussionUrl">
+        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="1027c3ba669b.html" itemprop="commentCount"></span>
       </a>
     
   </span>
@@ -318,10 +320,32 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Python有着很多很酷的第三方库，可以使任务变得更容易。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Python</code> 中有很多奇妙且好用的第三方库，可以让你的任务变得更为容易，下面给大家收集一些好用的 <code>Python</code> 库，每一个都很不错的哟~</p>
 <span id="more"></span>
 
-<hr>
+<h2 id="酷酷的库"><a href="#酷酷的库" class="headerlink" title="酷酷的库"></a>酷酷的库</h2><h3 id="socket"><a href="#socket" class="headerlink" title="socket"></a>socket</h3><p>获取本机的局域网 <code>IP</code> 地址</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> socket <span class="keyword">as</span> f</span><br><span class="line"></span><br><span class="line">hostn = f.gethostname()</span><br><span class="line">Laptop = f.gethostbyname(hostn)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑本地IP地址是：&quot;</span> + Laptop)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑本地IP地址是：192.168.2.101</span></span><br></pre></td></tr></table></figure>
+
+<p>当然我们的目的是获取本机的公网 <code>IP</code>，不过这个已经和这个库没有什么关系了，是借助一个  <a class="btn" target="_blank" rel="noopener" href="https://jsonip.com"><i class="fas fa-globe"></i>其他网站</a>  来实现的</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</span><br><span class="line"></span><br><span class="line"><span class="comment"># 全局取消证书验证</span></span><br><span class="line"><span class="keyword">import</span> ssl</span><br><span class="line">ssl._create_default_https_context = ssl._create_unverified_context</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> urlopen(<span class="string">r&#x27;https://jsonip.com&#x27;</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    content = fp.read().decode()</span><br><span class="line"></span><br><span class="line">ip = json.loads(content)[<span class="string">&#x27;ip&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑公网IP地址是：&quot;</span> + ip)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑公网IP地址是：120.236.128.201</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="pyshorteners"><a href="#pyshorteners" class="headerlink" title="pyshorteners"></a>pyshorteners</h3><p><code>pyshorteners</code> 是一个简单的 URL 缩短的库，提供了18种短链根域名供使用。</p>
+<p><img data-src="https://image.pylover.net/img/202110301403572.png?imageMogr2/format/webp"></p>
+<p>这里以 <code>clck.ru</code> 格式为例。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyshorteners <span class="keyword">as</span> psn</span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;http://www.shuhai.com/&quot;</span></span><br><span class="line">u = psn.Shortener().clckru.short(url)</span><br><span class="line"><span class="built_in">print</span>(u)</span><br><span class="line"></span><br><span class="line"><span class="comment"># https://clck.ru/WPJgg</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="fabulous"><a href="#fabulous" class="headerlink" title="fabulous"></a>fabulous</h3><p>添加文本颜色，如果你是在命令行上运行Python程序，那么输出都是相同颜色，不方便观察。</p>
+<p>使用 <code>Fabulous</code>，则可以添加图像、彩色文本来凸显输出。</p>
+<p><img data-src="https://image.pylover.net/img/202110301407629.png?imageMogr2/format/webp"></p>
+<p>示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> fabulous.color <span class="keyword">import</span> bold, magenta, highlight_red</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(bold(magenta(</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    hello world</span></span><br><span class="line"><span class="string">    this is some new line</span></span><br><span class="line"><span class="string">    and here is the last line. :)</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">)))</span><br></pre></td></tr></table></figure>
+
+<p>结果如下，输出字体加粗且有颜色。<br><img data-src="https://image.pylover.net/img/202110301410131.png?imageMogr2/format/webp"></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>这10个奇妙的Python库，你必须要试试！</p>
+<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/5RZYPySM0GYSTwbvqyxK1A"></a>
+</div></div>
 
     </div>
 
@@ -339,7 +363,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://pylover.net/c40696c93928.html" title="你值得学习的几个python库">https://pylover.net/c40696c93928.html</a>
+      <a href="https://pylover.net/1027c3ba669b.html" title="奇妙的Python库">https://pylover.net/1027c3ba669b.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -356,14 +380,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/aa19ff014c7f.html" rel="prev" title="Python异常处理">
-                  <i class="fa fa-chevron-left"></i> Python异常处理
+                <a href="/501a8d5dd7dc.html" rel="prev" title="VScode必备Python插件">
+                  <i class="fa fa-chevron-left"></i> VScode必备Python插件
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/bba48c4356b8.html" rel="next" title="Python项目管理与构建工具">
-                  Python项目管理与构建工具 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -444,7 +465,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://pylover.net/c40696c93928.html"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://pylover.net/1027c3ba669b.html"}</script>
   <script src="/js/third-party/quicklink.js"></script>
 <script class="next-config" data-name="changyan" type="application/json">{"enable":"ture","appid":"cyvkAzYFK","appkey":"ef256bad532909226bdc05cff4b14d96"}</script>
 <script src="/js/third-party/comments/changyan.js"></script>

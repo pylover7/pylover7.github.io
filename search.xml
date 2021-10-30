@@ -17,6 +17,17 @@
       </tags>
   </entry>
   <entry>
+    <title>python黑魔法指南</title>
+    <url>/956f654d80a2.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一本关于 <code>python</code> 的黑魔法指南，你值得拥有！</p>
+<span id="more"></span>
+]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>magic</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python正则表达式小例子</title>
     <url>/1064605f83ae.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>收集了 20 个 <code>re</code> 模块的小栗子，供大家参考学习~</p>
@@ -96,101 +107,6 @@
       <tags>
         <tag>python</tag>
         <tag>re</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python黑魔法指南</title>
-    <url>/956f654d80a2.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一本关于 <code>python</code> 的黑魔法指南，你值得拥有！</p>
-<span id="more"></span>
-]]></content>
-      <tags>
-        <tag>python</tag>
-        <tag>magic</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Pycharm插件推荐</title>
-    <url>/8598bcba2424.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> <code>Pycharm</code> 作为最好的 <code>python</code> 编辑器之一，本身的功能就非常优秀了，不过加上了一些优秀的插件，它会变得更加优秀！</p>
-<span id="more"></span>
-
-<h2 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h2><h3 id="Chinese-Language-Pack"><a href="#Chinese-Language-Pack" class="headerlink" title="Chinese Language Pack"></a>Chinese Language Pack</h3><p>英语不好的同学，看着 <code>pycharm</code> 那么多的功能却不知道怎么用的，就不用多说了吧~<br><img data-src="https://image.pylover.net/img/202110272114715.png?imageMogr2/format/webp"></p>
-<h3 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h3><p>这个插件可以让你在 <code>Pycharm</code> 的任何地方对各种语言进行翻译，再也不用担心看源代码的注释看不懂了，而且不知道怎么用英语表达的中文也可以立马用翻译过来，必须是必备插件！<br><img data-src="https://image.pylover.net/img/202110272115075.png?imageMogr2/format/webp"></p>
-<div class="note info"><h4 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h4><p>选中想要翻译的词汇后： <code>Ctrl+Shift+y</code></p>
-</div>
-
-<h3 id="AiXcoder-Code-Completer"><a href="#AiXcoder-Code-Completer" class="headerlink" title="AiXcoder Code Completer"></a>AiXcoder Code Completer</h3><p>各位日常写代码的小伙伴应该都知道 <strong>代码补全</strong> 这个好用的功能，<code>aixcoder</code> 就是一款这样的插件：智能编程助手，是真的非常好用！谁用谁知道；反正小编是超级喜欢的；除此之外的其他功能，小伙伴们可以去他的官网看看<br><img data-src="https://image.pylover.net/img/202110272115255.png?imageMogr2/format/webp"></p>
-<div class="note info"><h4 id="Aixcoder"><a href="#Aixcoder" class="headerlink" title="Aixcoder"></a><code>Aixcoder</code></h4><p><a href="https://www.aixcoder.com/">官网地址</a></p>
-</div>
-
-<h3 id="Kite"><a href="#Kite" class="headerlink" title="Kite"></a>Kite</h3><p>和 <code>Aixcoder</code> 一样，也是一款代码补全插件，谁用谁知道，不过小编一般使用 <code>Aixcoder</code> ，原因有两个：</p>
-<ul>
-<li><p><code>aixcoder</code> 是我们自己国家的的， <code>kite</code> 是别人的，咱们还是要支持咱自己的东西；</p>
-</li>
-<li><p><code>kite</code> 的代码补全不像 <code>aixcoder</code> 那么多，补全的稍微比较少；</p>
-<p>不过，<code>kite</code> 也有它的优势，部分使用体验会好一些，至于具体使用哪一个，那就由小伙伴们自己决定了。<br><img data-src="https://image.pylover.net/img/202110272117889.png?imageMogr2/format/webp"></p>
-</li>
-</ul>
-<div class="note info"><h4 id="Kite"><a href="#Kite" class="headerlink" title="Kite"></a><code>Kite</code></h4><p><a href="https://www.kite.com/">官网地址</a></p>
-</div>
-
-<h3 id="Key-Promoter-X"><a href="#Key-Promoter-X" class="headerlink" title="Key Promoter X"></a>Key Promoter X</h3><p>这是一款提示你每个操作的快捷键是什么的插件，如果没有相应的快捷键，也会提示你需不需要建立一个；如果你在写代码的时候不想用鼠标，双手一直在键盘上，那就可以尝试一下这款插件，它可以不厌其烦的提示你，你此时用鼠标操作的快捷键是啥（当然你要是烦了也可以关掉了啦），一直到你记住为止；当然，如果不不习惯它原本的快捷键，也可以非常方便的修改成自己喜欢的快捷键，如果你本就是想学快捷键，那这就是个上上选的插件了。<br><img data-src="https://image.pylover.net/img/202110272118831.png?imageMogr2/format/webp"></p>
-<p>提示的方式如下：<br><img data-src="https://image.pylover.net/img/202110272121902.png?imageMogr2/format/webp"></p>
-<h3 id="Gitee"><a href="#Gitee" class="headerlink" title="Gitee"></a>Gitee</h3><p>一个可以登录 <code>Gitee</code> 的插件，类似于 <code>Pycharm</code> 自带的 <code>Github</code> 插件一样，可以直接在编辑器内对远程仓库进行 <code>Clone</code> 等操作。<br><img data-src="https://image.pylover.net/img/202110272123010.png?imageMogr2/format/webp"></p>
-<p>在这里登录：<br><img data-src="https://image.pylover.net/img/202110272124384.png?imageMogr2/format/webp"></p>
-<h3 id="CSV-plugin"><a href="#CSV-plugin" class="headerlink" title="CSV plugin"></a>CSV plugin</h3><p>用于通过灵活的表编辑器编辑 csv、tsv、psv文件，语法验证，结构突出显示，可自定义的颜色，新意图和有用的检查；主要是在 Pycharm 里打开 csv 文件原本的样式太不美观了，数据密密麻麻的，用这个插件就会友好很多很多。<br><img data-src="https://image.pylover.net/img/202110272124921.png?imageMogr2/format/webp"></p>
-<h3 id="Rainbow-Brackets"><a href="#Rainbow-Brackets" class="headerlink" title="Rainbow Brackets"></a>Rainbow Brackets</h3><p>让你的括号等类似符号不同层之间显示不同，支持许多的语言。这个可以使不同的括号显示不同的颜色，便于我们在许多括号的时候辨别哪两个括号是一对的；也是个挺好用的插件。<br><img data-src="https://image.pylover.net/img/202110272124831.png?imageMogr2/format/webp"></p>
-<p>很多层级的时候就像这样：<br><img data-src="https://image.pylover.net/img/202110272124065.png?imageMogr2/format/webp"></p>
-<h3 id="Atom-Material-Icons"><a href="#Atom-Material-Icons" class="headerlink" title="Atom Material Icons"></a>Atom Material Icons</h3><p>这个插件主要用于自定义 <code>Pycharm</code> 的 UI 图标和文件目录的图标，用完以后比之前的好看很多！<br><img data-src="https://image.pylover.net/img/202110272124153.png?imageMogr2/format/webp"></p>
-<p>用了这个插件部分文件的图标如下：<br><img data-src="https://image.pylover.net/img/202110272125618.png?imageMogr2/format/webp"></p>
-<h3 id="ignore"><a href="#ignore" class="headerlink" title=".ignore"></a>.ignore</h3><p>用于创建各种 <code>.ignore</code> 文件；例如当我们在进行项目的版本管理的时候，总有很多文件是不需要管理的，也会有很多重要的文件是不能上传到仓库的，这个时候要是自己一个一个手打的话….还是用这个插件直接创建一个吧，它自带了很多的模板，可由我们自由选择，很方便。<br><img data-src="https://image.pylover.net/img/202110272125819.png?imageMogr2/format/webp"></p>
-<p>创建方法：在新建文件里面就可以选择模板了</p>
-<h3 id="CodeGlance"><a href="#CodeGlance" class="headerlink" title="CodeGlance"></a>CodeGlance</h3><p>将类似于 <code>Sublime</code> 中的代码小地图嵌入到编辑器窗格中，如下，这样子假如我们一个文件有很长的代码，用鼠标滚轮上下滚动就很累，有了这个小地图，直接就可以用鼠标拖动进度了，特别方便！<br><img data-src="https://image.pylover.net/img/202110272125598.png?imageMogr2/format/webp"></p>
-<p>启用后文件的后边小地图：<br><img data-src="https://image.pylover.net/img/202110272125435.png?imageMogr2/format/webp"></p>
-<h3 id="SonarLint"><a href="#SonarLint" class="headerlink" title="SonarLint"></a>SonarLint</h3><p>这个插件能够在你写代码的时候帮你查找你代码的错误和漏洞并给出修改的相关规则和建议，简单来说就是帮你找错的，不然有时候很多错要运行很多遍才能一个一个改过来。<br><img data-src="https://image.pylover.net/img/202110272125490.png?imageMogr2/format/webp"></p>
-<p><img data-src="https://image.pylover.net/img/202110272125117.png?imageMogr2/format/webp"></p>
-<p><img data-src="https://image.pylover.net/img/202110272126126.png?imageMogr2/format/webp"></p>
-<h3 id="PlantUML-integration"><a href="#PlantUML-integration" class="headerlink" title="PlantUML integration"></a>PlantUML integration</h3><p>一个非常强大的插件，主要用于用代码绘制PlantUML 图表，至于这个图是个啥，放个图看看<br><img data-src="https://image.pylover.net/img/202110272126718.png?imageMogr2/format/webp"></p>
-<p><img data-src="https://image.pylover.net/img/202110272126772.png?imageMogr2/format/webp"></p>
-<p>除此之外，还能绘制很多的图，想了解的小伙伴可以去是它的『 <a href="https://plantuml.com/zh/">官网</a> 』看看<br><img data-src="https://image.pylover.net/img/202110272126536.png?imageMogr2/format/webp"></p>
-<h3 id="IdeaVim"><a href="#IdeaVim" class="headerlink" title="IdeaVim"></a>IdeaVim</h3><p>在大多数场景之下，使用鼠标的效率和精准度，是远不如键盘快捷键的（前提是你已经相当熟练的掌握了快捷键），这个你得承认吧。</p>
-<p>Vi 可以满足你对文本操作的所有需求，比可视化界面更加效率，更加 geek。在安装完 Pycharm 完后，将 <code>ideaVim</code> 这个插件也装上，它可以让我们在 Pycharm 中 使用 vim 来编辑代码。<br><img data-src="https://image.pylover.net/img/202110272126007.png?imageMogr2/format/webp"></p>
-<h3 id="RegexpTester"><a href="#RegexpTester" class="headerlink" title="RegexpTester"></a>RegexpTester</h3><p><code>Regex Tester</code> 是 <code>PyCharm</code> 的第三方插件，可以测试正则表达式。</p>
-<p><img data-src="https://image.pylover.net/img/202110280100248.png?imageMogr2/format/webp"></p>
-<p>安装完成后，无需重启 <code>PyCharm</code> ，点击  <code>PyCharm</code>  界面左下方的小矩形按钮，就能找到 <code>Regex Tester</code> 选项。</p>
-<p><img data-src="https://image.pylover.net/img/202110280101634.png?imageMogr2/format/webp"></p>
-<p>点击进入后，就出现了如下界面。匹配到的字符串背景会被高亮。右上方还有一些选项如大小写敏感，多行模式等，可根据需要进行选择。<code>Regex Tester</code> 还提供了<code>Split，Replace</code> 功能等。</p>
-<p>使用效果如下：</p>
-<p><img data-src="https://image.pylover.net/img/202110280103797.png?imageMogr2/format/webp"></p>
-<h3 id="Json-Parser"><a href="#Json-Parser" class="headerlink" title="Json Parser"></a>Json Parser</h3><p>在开发过程中，经常会把校验一串 JSON 字符串是否合法，在以前我的做法都是打开 <a href="https://tool.lu/json/">https://tool.lu/json/</a> 这个在线网站，直接美化来校验，只有 JSON 格式都正确无误合法的，才能够美化。</p>
-<p>直到后来发现在 <code>PyCharm</code> 有一个插件专门来做这个事，那就是 <code>JSON Parser</code>，在插件市场安装后，重启 <code>PyCharm</code> ，就能在右侧边栏中看到它。</p>
-<p><img data-src="https://image.pylover.net/img/202110280104191.png?imageMogr2/format/webp"></p>
-<h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>以上就是小编推荐的一些好用的 <code>Pycharm</code> 插件，让优秀的 <code>Pycharm</code> 变得更为优秀！</p>
-<div class="note warning"><h4 id="请注意"><a href="#请注意" class="headerlink" title="请注意"></a>请注意</h4><p>若是你的设备性能不够好，建议不要装这么多插件，毕竟 <code>Pycharm</code> 本身就是一个重量级的编辑器！</p>
-</div>
-
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="/uploads/wechat.png"></object>
-<p>微信文章</p><p>参考文章的描述</p>
-<a href="https://mp.weixin.qq.com/s?__biz=Mzg3NzU1MjgxOA==&mid=2247486689&idx=1&sn=e9a500f50cdefa8e3c6672a792c1cf53&scene=19#wechat_redirect"></a>
-</div><div class="link-grid-container">
-<object class="link-grid-image" data="/uploads/wechat.png"></object>
-<p>微信文章</p><p>参考文章的描述</p>
-<a href="https://mp.weixin.qq.com/s?__biz=Mzg3NzU1MjgxOA==&mid=100004344&idx=1&sn=366a25b50f754a15ea085a52c79d7689&scene=19#wechat_redirect"></a>
-</div><div class="link-grid-container">
-<object class="link-grid-image" data="/uploads/wechat.png"></object>
-<p>微信文章</p><p>参考文章的描述</p>
-<a href="https://mp.weixin.qq.com/s/wOTDnyG5VV2XYx1qe4apMA"></a>
-</div></div>
-]]></content>
-      <categories>
-        <category>教程</category>
-        <category>插件</category>
-      </categories>
-      <tags>
-        <tag>pycharm</tag>
-        <tag>插件</tag>
       </tags>
   </entry>
   <entry>
@@ -309,6 +225,90 @@
       <tags>
         <tag>python</tag>
         <tag>装饰器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Pycharm插件推荐</title>
+    <url>/8598bcba2424.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> <code>Pycharm</code> 作为最好的 <code>python</code> 编辑器之一，本身的功能就非常优秀了，不过加上了一些优秀的插件，它会变得更加优秀！</p>
+<span id="more"></span>
+
+<h2 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h2><h3 id="Chinese-Language-Pack"><a href="#Chinese-Language-Pack" class="headerlink" title="Chinese Language Pack"></a>Chinese Language Pack</h3><p>英语不好的同学，看着 <code>pycharm</code> 那么多的功能却不知道怎么用的，就不用多说了吧~<br><img data-src="https://image.pylover.net/img/202110272114715.png?imageMogr2/format/webp"></p>
+<h3 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h3><p>这个插件可以让你在 <code>Pycharm</code> 的任何地方对各种语言进行翻译，再也不用担心看源代码的注释看不懂了，而且不知道怎么用英语表达的中文也可以立马用翻译过来，必须是必备插件！<br><img data-src="https://image.pylover.net/img/202110272115075.png?imageMogr2/format/webp"></p>
+<div class="note info"><h4 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h4><p>选中想要翻译的词汇后： <code>Ctrl+Shift+y</code></p>
+</div>
+
+<h3 id="AiXcoder-Code-Completer"><a href="#AiXcoder-Code-Completer" class="headerlink" title="AiXcoder Code Completer"></a>AiXcoder Code Completer</h3><p>各位日常写代码的小伙伴应该都知道 <strong>代码补全</strong> 这个好用的功能，<code>aixcoder</code> 就是一款这样的插件：智能编程助手，是真的非常好用！谁用谁知道；反正小编是超级喜欢的；除此之外的其他功能，小伙伴们可以去他的官网看看<br><img data-src="https://image.pylover.net/img/202110272115255.png?imageMogr2/format/webp"></p>
+<div class="note info"><h4 id="Aixcoder"><a href="#Aixcoder" class="headerlink" title="Aixcoder"></a><code>Aixcoder</code></h4><p><a href="https://www.aixcoder.com/">官网地址</a></p>
+</div>
+
+<h3 id="Kite"><a href="#Kite" class="headerlink" title="Kite"></a>Kite</h3><p>和 <code>Aixcoder</code> 一样，也是一款代码补全插件，谁用谁知道，不过小编一般使用 <code>Aixcoder</code> ，原因有两个：</p>
+<ul>
+<li><p><code>aixcoder</code> 是我们自己国家的的， <code>kite</code> 是别人的，咱们还是要支持咱自己的东西；</p>
+</li>
+<li><p><code>kite</code> 的代码补全不像 <code>aixcoder</code> 那么多，补全的稍微比较少；</p>
+<p>不过，<code>kite</code> 也有它的优势，部分使用体验会好一些，至于具体使用哪一个，那就由小伙伴们自己决定了。<br><img data-src="https://image.pylover.net/img/202110272117889.png?imageMogr2/format/webp"></p>
+</li>
+</ul>
+<div class="note info"><h4 id="Kite"><a href="#Kite" class="headerlink" title="Kite"></a><code>Kite</code></h4><p><a href="https://www.kite.com/">官网地址</a></p>
+</div>
+
+<h3 id="Key-Promoter-X"><a href="#Key-Promoter-X" class="headerlink" title="Key Promoter X"></a>Key Promoter X</h3><p>这是一款提示你每个操作的快捷键是什么的插件，如果没有相应的快捷键，也会提示你需不需要建立一个；如果你在写代码的时候不想用鼠标，双手一直在键盘上，那就可以尝试一下这款插件，它可以不厌其烦的提示你，你此时用鼠标操作的快捷键是啥（当然你要是烦了也可以关掉了啦），一直到你记住为止；当然，如果不不习惯它原本的快捷键，也可以非常方便的修改成自己喜欢的快捷键，如果你本就是想学快捷键，那这就是个上上选的插件了。<br><img data-src="https://image.pylover.net/img/202110272118831.png?imageMogr2/format/webp"></p>
+<p>提示的方式如下：<br><img data-src="https://image.pylover.net/img/202110272121902.png?imageMogr2/format/webp"></p>
+<h3 id="Gitee"><a href="#Gitee" class="headerlink" title="Gitee"></a>Gitee</h3><p>一个可以登录 <code>Gitee</code> 的插件，类似于 <code>Pycharm</code> 自带的 <code>Github</code> 插件一样，可以直接在编辑器内对远程仓库进行 <code>Clone</code> 等操作。<br><img data-src="https://image.pylover.net/img/202110272123010.png?imageMogr2/format/webp"></p>
+<p>在这里登录：<br><img data-src="https://image.pylover.net/img/202110272124384.png?imageMogr2/format/webp"></p>
+<h3 id="CSV-plugin"><a href="#CSV-plugin" class="headerlink" title="CSV plugin"></a>CSV plugin</h3><p>用于通过灵活的表编辑器编辑 csv、tsv、psv文件，语法验证，结构突出显示，可自定义的颜色，新意图和有用的检查；主要是在 Pycharm 里打开 csv 文件原本的样式太不美观了，数据密密麻麻的，用这个插件就会友好很多很多。<br><img data-src="https://image.pylover.net/img/202110272124921.png?imageMogr2/format/webp"></p>
+<h3 id="Rainbow-Brackets"><a href="#Rainbow-Brackets" class="headerlink" title="Rainbow Brackets"></a>Rainbow Brackets</h3><p>让你的括号等类似符号不同层之间显示不同，支持许多的语言。这个可以使不同的括号显示不同的颜色，便于我们在许多括号的时候辨别哪两个括号是一对的；也是个挺好用的插件。<br><img data-src="https://image.pylover.net/img/202110272124831.png?imageMogr2/format/webp"></p>
+<p>很多层级的时候就像这样：<br><img data-src="https://image.pylover.net/img/202110272124065.png?imageMogr2/format/webp"></p>
+<h3 id="Atom-Material-Icons"><a href="#Atom-Material-Icons" class="headerlink" title="Atom Material Icons"></a>Atom Material Icons</h3><p>这个插件主要用于自定义 <code>Pycharm</code> 的 UI 图标和文件目录的图标，用完以后比之前的好看很多！<br><img data-src="https://image.pylover.net/img/202110272124153.png?imageMogr2/format/webp"></p>
+<p>用了这个插件部分文件的图标如下：<br><img data-src="https://image.pylover.net/img/202110272125618.png?imageMogr2/format/webp"></p>
+<h3 id="ignore"><a href="#ignore" class="headerlink" title=".ignore"></a>.ignore</h3><p>用于创建各种 <code>.ignore</code> 文件；例如当我们在进行项目的版本管理的时候，总有很多文件是不需要管理的，也会有很多重要的文件是不能上传到仓库的，这个时候要是自己一个一个手打的话….还是用这个插件直接创建一个吧，它自带了很多的模板，可由我们自由选择，很方便。<br><img data-src="https://image.pylover.net/img/202110272125819.png?imageMogr2/format/webp"></p>
+<p>创建方法：在新建文件里面就可以选择模板了</p>
+<h3 id="CodeGlance"><a href="#CodeGlance" class="headerlink" title="CodeGlance"></a>CodeGlance</h3><p>将类似于 <code>Sublime</code> 中的代码小地图嵌入到编辑器窗格中，如下，这样子假如我们一个文件有很长的代码，用鼠标滚轮上下滚动就很累，有了这个小地图，直接就可以用鼠标拖动进度了，特别方便！<br><img data-src="https://image.pylover.net/img/202110272125598.png?imageMogr2/format/webp"></p>
+<p>启用后文件的后边小地图：<br><img data-src="https://image.pylover.net/img/202110272125435.png?imageMogr2/format/webp"></p>
+<h3 id="SonarLint"><a href="#SonarLint" class="headerlink" title="SonarLint"></a>SonarLint</h3><p>这个插件能够在你写代码的时候帮你查找你代码的错误和漏洞并给出修改的相关规则和建议，简单来说就是帮你找错的，不然有时候很多错要运行很多遍才能一个一个改过来。<br><img data-src="https://image.pylover.net/img/202110272125490.png?imageMogr2/format/webp"></p>
+<p><img data-src="https://image.pylover.net/img/202110272125117.png?imageMogr2/format/webp"></p>
+<p><img data-src="https://image.pylover.net/img/202110272126126.png?imageMogr2/format/webp"></p>
+<h3 id="PlantUML-integration"><a href="#PlantUML-integration" class="headerlink" title="PlantUML integration"></a>PlantUML integration</h3><p>一个非常强大的插件，主要用于用代码绘制PlantUML 图表，至于这个图是个啥，放个图看看<br><img data-src="https://image.pylover.net/img/202110272126718.png?imageMogr2/format/webp"></p>
+<p><img data-src="https://image.pylover.net/img/202110272126772.png?imageMogr2/format/webp"></p>
+<p>除此之外，还能绘制很多的图，想了解的小伙伴可以去是它的『 <a href="https://plantuml.com/zh/">官网</a> 』看看<br><img data-src="https://image.pylover.net/img/202110272126536.png?imageMogr2/format/webp"></p>
+<h3 id="IdeaVim"><a href="#IdeaVim" class="headerlink" title="IdeaVim"></a>IdeaVim</h3><p>在大多数场景之下，使用鼠标的效率和精准度，是远不如键盘快捷键的（前提是你已经相当熟练的掌握了快捷键），这个你得承认吧。</p>
+<p>Vi 可以满足你对文本操作的所有需求，比可视化界面更加效率，更加 geek。在安装完 Pycharm 完后，将 <code>ideaVim</code> 这个插件也装上，它可以让我们在 Pycharm 中 使用 vim 来编辑代码。<br><img data-src="https://image.pylover.net/img/202110272126007.png?imageMogr2/format/webp"></p>
+<h3 id="RegexpTester"><a href="#RegexpTester" class="headerlink" title="RegexpTester"></a>RegexpTester</h3><p><code>Regex Tester</code> 是 <code>PyCharm</code> 的第三方插件，可以测试正则表达式。</p>
+<p><img data-src="https://image.pylover.net/img/202110280100248.png?imageMogr2/format/webp"></p>
+<p>安装完成后，无需重启 <code>PyCharm</code> ，点击  <code>PyCharm</code>  界面左下方的小矩形按钮，就能找到 <code>Regex Tester</code> 选项。</p>
+<p><img data-src="https://image.pylover.net/img/202110280101634.png?imageMogr2/format/webp"></p>
+<p>点击进入后，就出现了如下界面。匹配到的字符串背景会被高亮。右上方还有一些选项如大小写敏感，多行模式等，可根据需要进行选择。<code>Regex Tester</code> 还提供了<code>Split，Replace</code> 功能等。</p>
+<p>使用效果如下：</p>
+<p><img data-src="https://image.pylover.net/img/202110280103797.png?imageMogr2/format/webp"></p>
+<h3 id="Json-Parser"><a href="#Json-Parser" class="headerlink" title="Json Parser"></a>Json Parser</h3><p>在开发过程中，经常会把校验一串 JSON 字符串是否合法，在以前我的做法都是打开 <a href="https://tool.lu/json/">https://tool.lu/json/</a> 这个在线网站，直接美化来校验，只有 JSON 格式都正确无误合法的，才能够美化。</p>
+<p>直到后来发现在 <code>PyCharm</code> 有一个插件专门来做这个事，那就是 <code>JSON Parser</code>，在插件市场安装后，重启 <code>PyCharm</code> ，就能在右侧边栏中看到它。</p>
+<p><img data-src="https://image.pylover.net/img/202110280104191.png?imageMogr2/format/webp"></p>
+<h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>以上就是小编推荐的一些好用的 <code>Pycharm</code> 插件，让优秀的 <code>Pycharm</code> 变得更为优秀！</p>
+<div class="note warning"><h4 id="请注意"><a href="#请注意" class="headerlink" title="请注意"></a>请注意</h4><p>若是你的设备性能不够好，建议不要装这么多插件，毕竟 <code>Pycharm</code> 本身就是一个重量级的编辑器！</p>
+</div>
+
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>参考文章的描述</p>
+<a href="https://mp.weixin.qq.com/s?__biz=Mzg3NzU1MjgxOA==&mid=2247486689&idx=1&sn=e9a500f50cdefa8e3c6672a792c1cf53&scene=19#wechat_redirect"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>参考文章的描述</p>
+<a href="https://mp.weixin.qq.com/s?__biz=Mzg3NzU1MjgxOA==&mid=100004344&idx=1&sn=366a25b50f754a15ea085a52c79d7689&scene=19#wechat_redirect"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>参考文章的描述</p>
+<a href="https://mp.weixin.qq.com/s/wOTDnyG5VV2XYx1qe4apMA"></a>
+</div></div>
+]]></content>
+      <categories>
+        <category>教程</category>
+        <category>插件</category>
+      </categories>
+      <tags>
+        <tag>pycharm</tag>
+        <tag>插件</tag>
       </tags>
   </entry>
   <entry>
@@ -510,6 +510,45 @@
       </tags>
   </entry>
   <entry>
+    <title>奇妙的Python库</title>
+    <url>/1027c3ba669b.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Python</code> 中有很多奇妙且好用的第三方库，可以让你的任务变得更为容易，下面给大家收集一些好用的 <code>Python</code> 库，每一个都很不错的哟~</p>
+<span id="more"></span>
+
+<h2 id="酷酷的库"><a href="#酷酷的库" class="headerlink" title="酷酷的库"></a>酷酷的库</h2><h3 id="socket"><a href="#socket" class="headerlink" title="socket"></a>socket</h3><p>获取本机的局域网 <code>IP</code> 地址</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> socket <span class="keyword">as</span> f</span><br><span class="line"></span><br><span class="line">hostn = f.gethostname()</span><br><span class="line">Laptop = f.gethostbyname(hostn)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑本地IP地址是：&quot;</span> + Laptop)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑本地IP地址是：192.168.2.101</span></span><br></pre></td></tr></table></figure>
+
+<p>当然我们的目的是获取本机的公网 <code>IP</code>，不过这个已经和这个库没有什么关系了，是借助一个  <a class="btn" href="https://jsonip.com"><i class="fas fa-globe"></i>其他网站</a>  来实现的</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</span><br><span class="line"></span><br><span class="line"><span class="comment"># 全局取消证书验证</span></span><br><span class="line"><span class="keyword">import</span> ssl</span><br><span class="line">ssl._create_default_https_context = ssl._create_unverified_context</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> urlopen(<span class="string">r&#x27;https://jsonip.com&#x27;</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    content = fp.read().decode()</span><br><span class="line"></span><br><span class="line">ip = json.loads(content)[<span class="string">&#x27;ip&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑公网IP地址是：&quot;</span> + ip)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑公网IP地址是：120.236.128.201</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="pyshorteners"><a href="#pyshorteners" class="headerlink" title="pyshorteners"></a>pyshorteners</h3><p><code>pyshorteners</code> 是一个简单的 URL 缩短的库，提供了18种短链根域名供使用。</p>
+<p><img data-src="https://image.pylover.net/img/202110301403572.png?imageMogr2/format/webp"></p>
+<p>这里以 <code>clck.ru</code> 格式为例。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyshorteners <span class="keyword">as</span> psn</span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;http://www.shuhai.com/&quot;</span></span><br><span class="line">u = psn.Shortener().clckru.short(url)</span><br><span class="line"><span class="built_in">print</span>(u)</span><br><span class="line"></span><br><span class="line"><span class="comment"># https://clck.ru/WPJgg</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="fabulous"><a href="#fabulous" class="headerlink" title="fabulous"></a>fabulous</h3><p>添加文本颜色，如果你是在命令行上运行Python程序，那么输出都是相同颜色，不方便观察。</p>
+<p>使用 <code>Fabulous</code>，则可以添加图像、彩色文本来凸显输出。</p>
+<p><img data-src="https://image.pylover.net/img/202110301407629.png?imageMogr2/format/webp"></p>
+<p>示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> fabulous.color <span class="keyword">import</span> bold, magenta, highlight_red</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(bold(magenta(</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    hello world</span></span><br><span class="line"><span class="string">    this is some new line</span></span><br><span class="line"><span class="string">    and here is the last line. :)</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">)))</span><br></pre></td></tr></table></figure>
+
+<p>结果如下，输出字体加粗且有颜色。<br><img data-src="https://image.pylover.net/img/202110301410131.png?imageMogr2/format/webp"></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>这10个奇妙的Python库，你必须要试试！</p>
+<a href="https://mp.weixin.qq.com/s/5RZYPySM0GYSTwbvqyxK1A"></a>
+</div></div>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>package</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Chrome浏览器推荐插件</title>
     <url>/6dd5d8c4f209.html</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Chrome浏览器，算是个人比较喜欢的一款浏览器吧，支持插件算是喜欢这类浏览器的主要原因了；当然，支持插件的浏览器还有其他的，比如火狐之类的，不过个人因为先用的 Chrome，很是喜欢，体验也想当的好，所以就没打算换其他的了。今天就来介绍一下 Chrome 浏览器个人比较喜欢的一些插件吧。</p>
@@ -565,107 +604,6 @@
       </categories>
       <tags>
         <tag>Chrome插件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开发者常用工具集</title>
-    <url>/d78b1b9cf9ee.html</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>不同岗位的程序员也有千差万别，前端、算法、架构设计、测试……不同的岗位日常使用的工具截然不同。收集一些在开发中常用的<strong>软件/网站/插件/命令行工具</strong>。</p>
-<span id="more"></span>
-
-<p>下面主要从4个方面介绍：</p>
-<ul>
-<li>PC端软件</li>
-<li>网页工具</li>
-<li>浏览器插件</li>
-<li>命令行工具</li>
-</ul>
-<h1 id="PC端工具"><a href="#PC端工具" class="headerlink" title="PC端工具"></a>PC端工具</h1><h2 id="VS-Code"><a href="#VS-Code" class="headerlink" title="VS Code"></a>VS Code</h2><p>第一名当然归属于神器 vscode ，这些年的开发中，IDE是接触最多的工具，无论前端JS，做服务开发时用Java，还是做算法时用Python，都离不开IDE。</p>
-<p>以往，是每种编程语言选择在这种语言表现最优的IDE，例如，codeblocks、eclipse、Pycharm、webstorm 等等，但是有了 vscode，这些我统统卸载了。</p>
-<p><strong>远程开发、丰富的主题、简易的配置、轻量化</strong>等等，若干优点让我爱不释手，详情可以查看我的另一篇文章：<a href="https://mp.weixin.qq.com/s?__biz=MzI0NTM1MzA2Mw==&mid=2247484755&idx=1&sn=872b5dc1432b3a0730e7f19cceb2b9f3&scene=21#wechat_redirect">我最终还是选择了VS code！</a></p>
-<h2 id="Sublime"><a href="#Sublime" class="headerlink" title="Sublime"></a>Sublime</h2><p>sublime是我接触较早，使用时间也较长的一款工具，最初是用来开发Python，后来写代码转向了vs code，sublime也就纯粹的成为了一款编辑工具。</p>
-<p>支持编码格式丰富、运行流畅、界面美观等等，虽然，相对于UE、notepad++说不出它绝对的优势在哪，我还是依然习惯于使用这款工具。</p>
-<h2 id="Postman"><a href="#Postman" class="headerlink" title="Postman"></a>Postman</h2><p>不同模块之间调用有很多种方式，数据库、函数接口、restful。其中restful应该是使用最为频繁的，不同语言，在这个过程中就涉及到测试Web API &amp; HTTP，Postman就变的异常重要。</p>
-<p>它支持GET, HEAD, POST, PUT等任何方式的请求，多种格式的header、body体，比起另外写一个测试脚本或者curl实在节省很多时间。</p>
-<h2 id="Xshell"><a href="#Xshell" class="headerlink" title="Xshell"></a>Xshell</h2><p>开发过程中，服务器是无法绕开的，这时候终端模拟工具就显得异常重要，之前用过Putty、mobaxterm等，但是最后还是选择了xshell。</p>
-<p>支持丰富的主题，轻松管理远程主机，强大的快捷功能，灵活的定制化，流畅的使用体验等等，让我越使用，越喜欢这款工具。</p>
-<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>这里需要多说一句废话，<strong>要区分git和GitHub</strong>，GitHub是一个开源项目托管平台，git一款版本控制工具。</p>
-<p>在团队开发过程中，版本控制是必不可少的，提交、检视、MR等等，一系列的版本控制流程，让代码规范和交付更叫可靠，这里就离不开git。另外，git也支持很多常用Linux命令，所以，git对于我来说使用频率也是非常高的一款工具。</p>
-<h2 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h2><p>文档，在开发过程中当然是必不可少的，而markdown在开发中更加是举足轻重。Markdown编辑工具数不胜数，在线的、PC端的，比比皆是，但是我还是选择 typora 。界面简洁，支持实时预览，支持多种公式类型，支持TOC等标签。</p>
-<h2 id="Listary"><a href="#Listary" class="headerlink" title="Listary"></a>Listary</h2><p>listary 在一定程度上和everything有一些重叠，都可以用于文件搜索，但是有了listary之后我就很少使用everything，因为非常方便，当然，它也有不足之处，比如不能像everything那样使用正则表达式匹配，但是这丝毫不妨害它对我的吸引，调出非常方便，<strong>双击ctrl</strong>即可，而，最吸引我的地方是快速定位功能，无论是在文件夹内部，还是在控制面板、或者是在桌面，只要敲击一下要找的东西名称中的一个字母即可，此外，listary还可以作为快速启动软件使用，能够结合不同软件进行定制化，使用简短的字符匹配某一款软件，快速打开使用。</p>
-<h2 id="CopyTranslator"><a href="#CopyTranslator" class="headerlink" title="CopyTranslator"></a>CopyTranslator</h2><p>作为学生、科研人员或者算法工程师等职位难免会接触英文文章，读英语文章有哪些痛点呢？英语水平差，这个当然排第一，如果英语水平好了，就不要再找什么翻译软件了。</p>
-<p>我在阅读文献翻译英文时主要受困于如下几点，</p>
-<ul>
-<li>来回切换屏幕、复制、粘贴比较麻烦。</li>
-<li>人工翻译不仅贵而且效果不好。</li>
-<li>翻译软件有限制，比如我们用谷歌或百度翻译的时候，复制一段文章，拷贝到翻译框里，到换行符的位置会中断，这样就会让翻译的混乱不堪，还需要一个一个的把换行符删掉。</li>
-</ul>
-<p>CopyTranslator让翻译过程中变得快捷方便，而且，这款软件还支持点按复制、专注模式，能同时解决上述3个痛点。</p>
-<h1 id="网页工具"><a href="#网页工具" class="headerlink" title="网页工具"></a>网页工具</h1><h2 id="Bootschool"><a href="#Bootschool" class="headerlink" title="Bootschool"></a>Bootschool</h2><p><strong>bootschool</strong>是一个JS插件和网站模板分享网站,提供各种JS插件、jQuery特效、插件指导、网站模板与插件在线预览,jQuery插件下载及教程。</p>
-<p>也许，读到这里很多对JS不感兴趣的会感觉到失望，其实日常工作中我做JS开发的时间也不多，我只所以使用这个网站是因为它有丰富有趣的小功能，例如，<strong>自定义banner</strong>。</p>
-<p>在我们做Python、Spring Boot开发时，为了显示更加个性化，会输出一些字符串形式的banner信息，bootschool可以根据输入内容快速生成<strong>ASCII文字</strong>，当然，我们也可以用在其他方面，让原本单调的日志信息变得多姿多彩。</p>
-<h2 id="Jsoneditoronline"><a href="#Jsoneditoronline" class="headerlink" title="Jsoneditoronline"></a>Jsoneditoronline</h2><p>json格式是开发中非常常见的，包括http请求，数据持久化等等。json阅读和格式化就是一项非常必要的工作，之前使用过一段时间json.cn，但是自从同事给我推荐<strong>jsoneditoronline</strong>这款在线工具之后就再也没有用过其他的。</p>
-<p>这是一款来自<strong>谷歌</strong>的在线工具，支持差异化对比、格式检查等等非常丰富而强大的 json 编辑和格式化功能。</p>
-<h2 id="Explainshell"><a href="#Explainshell" class="headerlink" title="Explainshell"></a>Explainshell</h2><p>作为IT/互联网相关的工作人员，哪怕不是开发者，也有可能会和Linux打交道，我们可以用Linux进行开发、运维等，因此，Linux就成为了一项非常重要的个人技能。</p>
-<p>使用Linux过程中主要打交道的对象就是繁多的Linux命令和选项(options)就成了令人头疼的事情，举一个最为简单的例子:</p>
-<p><code>ls -al</code></p>
-<p>这个Linux命令包含两个部分，command和options，ls是查看命令，-a和-l分别代表：显示所有文件(包括以.开头的隐藏文件)、以列表形式显示。</p>
-<p>这些常用的我们都知道，但是有很多使用频率较少的怎么办？我们可以借助<strong>explainshell</strong>。它是一款利用Python开发的Linux命令行工具，通过解析帮助文档，逐个匹配一行Linux命令中不同字符的含义，让你对Linux命令能够一目了然，是一款非常棒的Linux学习工具。</p>
-<h2 id="Nicetool"><a href="#Nicetool" class="headerlink" title="Nicetool"></a>Nicetool</h2><p><strong>Nicetool</strong>包含超过400个简单易用的工具收录其中，使用领域涵盖生活常用、办公辅助，教育学习，视频媒体，网络工具，程序开发，工具无需注册下载，即用即走。</p>
-<h2 id="Alltoall"><a href="#Alltoall" class="headerlink" title="Alltoall"></a>Alltoall</h2><p><strong>alltoall</strong>是一个在线转换工具网站，200+种文件格式，视频、音频、图片、文档、表格、电子书等等，再也不用为文件格式转换下载各种工具和软件了。</p>
-<h1 id="浏览器插件"><a href="#浏览器插件" class="headerlink" title="浏览器插件"></a>浏览器插件</h1><h2 id="OneTab"><a href="#OneTab" class="headerlink" title="OneTab"></a>OneTab</h2><p>同事说“<strong>自从你给我推荐了这款插件，我再也离不开它了。</strong>”</p>
-<p>浏览器标签页是一样令人头疼的东西，至少对于我来说是这样的，每当打开一些网页之后会发现标签页密密麻麻，非常混乱，关闭后又担心会用到，不关闭实在影响浏览器的使用，而且过多的打开网页会带来很多内存占用。很久以来，一直没有找到好的解决方法，直到遇到OneTab这款插件，能够一键关闭、恢复所有标签页，而且能够节省高达95%的内容占用。</p>
-<p>只需单击一下，就可以把所有标签页转化成一个列表，如果再次需要某个网页的时候，可以单个或者全部恢复标签页。</p>
-<h2 id="SwitchyOmega"><a href="#SwitchyOmega" class="headerlink" title="SwitchyOmega"></a>SwitchyOmega</h2><p>我觉得校园网也是让很多大学生头疼的一个问题，外网无法访问校园网资源，校园网访问外网速度缓慢。怎么样才能在这两种网络之间自如切换？手动设置IE代理？那样效率太低了，不仅步骤繁琐，而且不能自动切换。SwitchyOmega就可以轻松解决代理切换问题，让你在不同的网络环境下自如切换代理，选择最快的代理方法打开你要的网页。</p>
-<h2 id="Octotree"><a href="#Octotree" class="headerlink" title="Octotree"></a>Octotree</h2><p>Octotree是当之无愧的Github神器，强烈的推荐给大家。</p>
-<p>查看某个文件是我使用Github过程中最苦恼的一个点，需要逐层进入一个目录，然后再逐层退出目录，这样不仅费劲，而且，如果网速不太好的话，查看一个文件需要耗费很长时间，例如，</p>
-<p>Octotree的出现能够让Github体验提升到一个全新的水平，它能够以树形结构展示Github项目，更加易于阅读，能够快速查看某个文件，能够让Github像大多数IDE那样。</p>
-<p>除此之外，Octotree还有一项非常实用的功能–下载单个文件。</p>
-<h2 id="Click-amp-Clean"><a href="#Click-amp-Clean" class="headerlink" title="Click&amp;Clean"></a>Click&amp;Clean</h2><p>浏览器是我们使用最多的一款工具之一，甚至没有其中的之一。每天我们花费大量的时间在浏览器上面，访问各种网址，也留下了很多访问的足迹，这就涉及一个问题，除了缓存垃圾之外就是隐私和安全信息。不知不觉中我们把自己的信息展露无疑。我认为有着Click&amp;Clean这款超强的隐私保护工具就再也不用担心这个问题了。</p>
-<ul>
-<li>清除浏览历史记录, 清除下载历史记录</li>
-<li>清空缓存</li>
-<li>删除 Cookie</li>
-<li>清除已保存的密码</li>
-<li>浏览器关闭时运行外部应用程序</li>
-<li>关闭所有窗口/标签前清理</li>
-<li>…</li>
-</ul>
-<h2 id="Tampermonkey"><a href="#Tampermonkey" class="headerlink" title="Tampermonkey"></a>Tampermonkey</h2><p>可以毫不谦虚的说，Tampermonkey是目前最为流行的用户脚本管理器，它适用于 Chrome, Microsoft Edge, Safari, Opera Next, 和 Firefox。</p>
-<p>用户脚本是一个什么东西？简而言之，不同脚本可以实现不同的功能。</p>
-<p>Tampermonkey可以对这些功能进行管理，让你的浏览器如虎添翼,Tampermonkey有很多可选的脚本。</p>
-<h1 id="命令行工具"><a href="#命令行工具" class="headerlink" title="命令行工具"></a>命令行工具</h1><h2 id="oh-my-zsh"><a href="#oh-my-zsh" class="headerlink" title="oh-my-zsh"></a>oh-my-zsh</h2><p>提到命令行工具，首推的自然是这款大杀器，bash的替代工具。bash算得上一款中规中矩的shell工具，没有什么缺陷，但是也谈不上优秀，在很多方面考虑的还不够周到，例如，自动补全、语法、高亮显示、提示符等。</p>
-<p>提到oh-my-zsh，那就厉害了，102kStar、250+插件、125+主题、1450+贡献者……从这一系列的数字中就可以体现出这款shell工具的生态有多么完善，也足以体现它有多么强大。</p>
-<h2 id="Tldr"><a href="#Tldr" class="headerlink" title="Tldr"></a>Tldr</h2><p>用Linux的过程中难免会和各种参数打交道，距离比如<code>ps -aux</code>、<code>tar -jxvf</code>、<code>find -name</code>，每个”-“后面的就是各种命令参数，大家比较熟悉的查看命令解释的方法有”command ?” “man command”，就是命令后面加？或者man加命令。以man为例，解释很详细，但是带来的问题就是冗余，有很多信息是我们不想看到的，所以tldr就凸显出它的优点，简洁、实用。</p>
-<h2 id="Tig"><a href="#Tig" class="headerlink" title="Tig"></a>Tig</h2><p>Tig是一个基于ncurses的git文本模式接口。它的功能主要是作为一个Git存储库浏览器，但也可以帮助在块级别上分段提交更改，并充当各种Git命令输出的分页器。</p>
-<h2 id="Autojump"><a href="#Autojump" class="headerlink" title="Autojump"></a>Autojump</h2><p>我们在Linux下开发时会频繁的切换工作目录，要一步一步的cd，pwd实在太麻烦了，autojump通过记录命令行中使用最多的目录并给定相应权重的数据块来进行工作，不需要完全输入目录名，甚至输错目录名都没问题。</p>
-<p><strong>使用方法：</strong></p>
-<p>跳转到包含foo的路径只需下面这个命令即可，autojump会通过维护的数据库进行跳转， <code>j foo</code></p>
-<h2 id="Script"><a href="#Script" class="headerlink" title="Script"></a>Script</h2><p>很多时候，为了安全，需要对工作内容进行备份和保存。而script就是一个隐藏的记录器，它可以记录终端会话的所有内容，形成文件，对总是忘记工作内容的同学真是福音。</p>
-<p><strong>使用方法：</strong></p>
-<p>在终端输入script,</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; script</span><br></pre></td></tr></table></figure>
-
-<p>会显示:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Script started, file is typescript</span><br></pre></td></tr></table></figure>
-
-<p>接着可以开始自己的操作，想退出输入exit即可，当前目录下会生成一个名为trypescript的文件，里面记录了刚才的操作。</p>
-<h2 id="Tree"><a href="#Tree" class="headerlink" title="Tree"></a>Tree</h2><p>刚接触非桌面Linux的同学大多数会感觉Linux没有Windows或Mac那么直观，的确，我们面对的就是一行行命令，文件夹、应用图标什么的都没有，自然不直观。但是可以借助一些工具来增强目录的直观性，这里推荐的就是tree，可以以类似于图像的树状图排列目录和文件。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># tree                   #以树状图列出当前目录结构</span></span><br><span class="line">.                        <span class="comment">#当前目录结构</span></span><br><span class="line">|-- README  </span><br><span class="line">|-- examples.desktop  </span><br><span class="line">|-- file  </span><br><span class="line">|-- file.new  </span><br><span class="line">|-- index.htm  </span><br><span class="line">|-- test  </span><br><span class="line">| |-- README  </span><br><span class="line">| |-- file  </span><br><span class="line">| |-- testfile  </span><br><span class="line">| |-- testfile1</span><br></pre></td></tr></table></figure>
-
-<h2 id="Httpie"><a href="#Httpie" class="headerlink" title="Httpie"></a>Httpie</h2><p>不同组件之间相互访问可以通过很多方式，其中restful是比较常用的一种。这里就涉及http请求，我们需要测试数据能够正确的上传和下载。在处理http请求过程中使用较多的工具就是curl。curl有很多明显的弊端：对用户不够友好，命令冗长；可视化效果差，没有高亮。httpie就是curl的一个非常好的替代者，它的使用更加简洁明了，而且能够高亮显示请求结果。</p>
-<h2 id="Glances"><a href="#Glances" class="headerlink" title="Glances"></a>Glances</h2><p>glances就如同它的汉语意思那样，“一眼”、“一瞥”，能够通过一个简单的命令对系统信息一目了然，了如指掌。glances利用Python编写的一个跨平台的监视工具，旨在通过curses或基于Web的界面提供大量监视信息。</p>
-<p>你不仅可以通过终端命令行使用该工具，还可以web界面、API接口等对服务器进行远程监控，可以将统计信息导出到文件或数据库。</p>
-<hr>
-<p>文章转自：<a href="https://mp.weixin.qq.com/s/1scAaNf-nAzjNkWC-N8WXQ">原文链接</a></p>
-<p><strong>特别声明：如有侵权，告知笔者，立删此文！</strong></p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
@@ -796,6 +734,107 @@
       <tags>
         <tag>项目</tag>
         <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>开发者常用工具集</title>
+    <url>/d78b1b9cf9ee.html</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>不同岗位的程序员也有千差万别，前端、算法、架构设计、测试……不同的岗位日常使用的工具截然不同。收集一些在开发中常用的<strong>软件/网站/插件/命令行工具</strong>。</p>
+<span id="more"></span>
+
+<p>下面主要从4个方面介绍：</p>
+<ul>
+<li>PC端软件</li>
+<li>网页工具</li>
+<li>浏览器插件</li>
+<li>命令行工具</li>
+</ul>
+<h1 id="PC端工具"><a href="#PC端工具" class="headerlink" title="PC端工具"></a>PC端工具</h1><h2 id="VS-Code"><a href="#VS-Code" class="headerlink" title="VS Code"></a>VS Code</h2><p>第一名当然归属于神器 vscode ，这些年的开发中，IDE是接触最多的工具，无论前端JS，做服务开发时用Java，还是做算法时用Python，都离不开IDE。</p>
+<p>以往，是每种编程语言选择在这种语言表现最优的IDE，例如，codeblocks、eclipse、Pycharm、webstorm 等等，但是有了 vscode，这些我统统卸载了。</p>
+<p><strong>远程开发、丰富的主题、简易的配置、轻量化</strong>等等，若干优点让我爱不释手，详情可以查看我的另一篇文章：<a href="https://mp.weixin.qq.com/s?__biz=MzI0NTM1MzA2Mw==&mid=2247484755&idx=1&sn=872b5dc1432b3a0730e7f19cceb2b9f3&scene=21#wechat_redirect">我最终还是选择了VS code！</a></p>
+<h2 id="Sublime"><a href="#Sublime" class="headerlink" title="Sublime"></a>Sublime</h2><p>sublime是我接触较早，使用时间也较长的一款工具，最初是用来开发Python，后来写代码转向了vs code，sublime也就纯粹的成为了一款编辑工具。</p>
+<p>支持编码格式丰富、运行流畅、界面美观等等，虽然，相对于UE、notepad++说不出它绝对的优势在哪，我还是依然习惯于使用这款工具。</p>
+<h2 id="Postman"><a href="#Postman" class="headerlink" title="Postman"></a>Postman</h2><p>不同模块之间调用有很多种方式，数据库、函数接口、restful。其中restful应该是使用最为频繁的，不同语言，在这个过程中就涉及到测试Web API &amp; HTTP，Postman就变的异常重要。</p>
+<p>它支持GET, HEAD, POST, PUT等任何方式的请求，多种格式的header、body体，比起另外写一个测试脚本或者curl实在节省很多时间。</p>
+<h2 id="Xshell"><a href="#Xshell" class="headerlink" title="Xshell"></a>Xshell</h2><p>开发过程中，服务器是无法绕开的，这时候终端模拟工具就显得异常重要，之前用过Putty、mobaxterm等，但是最后还是选择了xshell。</p>
+<p>支持丰富的主题，轻松管理远程主机，强大的快捷功能，灵活的定制化，流畅的使用体验等等，让我越使用，越喜欢这款工具。</p>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>这里需要多说一句废话，<strong>要区分git和GitHub</strong>，GitHub是一个开源项目托管平台，git一款版本控制工具。</p>
+<p>在团队开发过程中，版本控制是必不可少的，提交、检视、MR等等，一系列的版本控制流程，让代码规范和交付更叫可靠，这里就离不开git。另外，git也支持很多常用Linux命令，所以，git对于我来说使用频率也是非常高的一款工具。</p>
+<h2 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h2><p>文档，在开发过程中当然是必不可少的，而markdown在开发中更加是举足轻重。Markdown编辑工具数不胜数，在线的、PC端的，比比皆是，但是我还是选择 typora 。界面简洁，支持实时预览，支持多种公式类型，支持TOC等标签。</p>
+<h2 id="Listary"><a href="#Listary" class="headerlink" title="Listary"></a>Listary</h2><p>listary 在一定程度上和everything有一些重叠，都可以用于文件搜索，但是有了listary之后我就很少使用everything，因为非常方便，当然，它也有不足之处，比如不能像everything那样使用正则表达式匹配，但是这丝毫不妨害它对我的吸引，调出非常方便，<strong>双击ctrl</strong>即可，而，最吸引我的地方是快速定位功能，无论是在文件夹内部，还是在控制面板、或者是在桌面，只要敲击一下要找的东西名称中的一个字母即可，此外，listary还可以作为快速启动软件使用，能够结合不同软件进行定制化，使用简短的字符匹配某一款软件，快速打开使用。</p>
+<h2 id="CopyTranslator"><a href="#CopyTranslator" class="headerlink" title="CopyTranslator"></a>CopyTranslator</h2><p>作为学生、科研人员或者算法工程师等职位难免会接触英文文章，读英语文章有哪些痛点呢？英语水平差，这个当然排第一，如果英语水平好了，就不要再找什么翻译软件了。</p>
+<p>我在阅读文献翻译英文时主要受困于如下几点，</p>
+<ul>
+<li>来回切换屏幕、复制、粘贴比较麻烦。</li>
+<li>人工翻译不仅贵而且效果不好。</li>
+<li>翻译软件有限制，比如我们用谷歌或百度翻译的时候，复制一段文章，拷贝到翻译框里，到换行符的位置会中断，这样就会让翻译的混乱不堪，还需要一个一个的把换行符删掉。</li>
+</ul>
+<p>CopyTranslator让翻译过程中变得快捷方便，而且，这款软件还支持点按复制、专注模式，能同时解决上述3个痛点。</p>
+<h1 id="网页工具"><a href="#网页工具" class="headerlink" title="网页工具"></a>网页工具</h1><h2 id="Bootschool"><a href="#Bootschool" class="headerlink" title="Bootschool"></a>Bootschool</h2><p><strong>bootschool</strong>是一个JS插件和网站模板分享网站,提供各种JS插件、jQuery特效、插件指导、网站模板与插件在线预览,jQuery插件下载及教程。</p>
+<p>也许，读到这里很多对JS不感兴趣的会感觉到失望，其实日常工作中我做JS开发的时间也不多，我只所以使用这个网站是因为它有丰富有趣的小功能，例如，<strong>自定义banner</strong>。</p>
+<p>在我们做Python、Spring Boot开发时，为了显示更加个性化，会输出一些字符串形式的banner信息，bootschool可以根据输入内容快速生成<strong>ASCII文字</strong>，当然，我们也可以用在其他方面，让原本单调的日志信息变得多姿多彩。</p>
+<h2 id="Jsoneditoronline"><a href="#Jsoneditoronline" class="headerlink" title="Jsoneditoronline"></a>Jsoneditoronline</h2><p>json格式是开发中非常常见的，包括http请求，数据持久化等等。json阅读和格式化就是一项非常必要的工作，之前使用过一段时间json.cn，但是自从同事给我推荐<strong>jsoneditoronline</strong>这款在线工具之后就再也没有用过其他的。</p>
+<p>这是一款来自<strong>谷歌</strong>的在线工具，支持差异化对比、格式检查等等非常丰富而强大的 json 编辑和格式化功能。</p>
+<h2 id="Explainshell"><a href="#Explainshell" class="headerlink" title="Explainshell"></a>Explainshell</h2><p>作为IT/互联网相关的工作人员，哪怕不是开发者，也有可能会和Linux打交道，我们可以用Linux进行开发、运维等，因此，Linux就成为了一项非常重要的个人技能。</p>
+<p>使用Linux过程中主要打交道的对象就是繁多的Linux命令和选项(options)就成了令人头疼的事情，举一个最为简单的例子:</p>
+<p><code>ls -al</code></p>
+<p>这个Linux命令包含两个部分，command和options，ls是查看命令，-a和-l分别代表：显示所有文件(包括以.开头的隐藏文件)、以列表形式显示。</p>
+<p>这些常用的我们都知道，但是有很多使用频率较少的怎么办？我们可以借助<strong>explainshell</strong>。它是一款利用Python开发的Linux命令行工具，通过解析帮助文档，逐个匹配一行Linux命令中不同字符的含义，让你对Linux命令能够一目了然，是一款非常棒的Linux学习工具。</p>
+<h2 id="Nicetool"><a href="#Nicetool" class="headerlink" title="Nicetool"></a>Nicetool</h2><p><strong>Nicetool</strong>包含超过400个简单易用的工具收录其中，使用领域涵盖生活常用、办公辅助，教育学习，视频媒体，网络工具，程序开发，工具无需注册下载，即用即走。</p>
+<h2 id="Alltoall"><a href="#Alltoall" class="headerlink" title="Alltoall"></a>Alltoall</h2><p><strong>alltoall</strong>是一个在线转换工具网站，200+种文件格式，视频、音频、图片、文档、表格、电子书等等，再也不用为文件格式转换下载各种工具和软件了。</p>
+<h1 id="浏览器插件"><a href="#浏览器插件" class="headerlink" title="浏览器插件"></a>浏览器插件</h1><h2 id="OneTab"><a href="#OneTab" class="headerlink" title="OneTab"></a>OneTab</h2><p>同事说“<strong>自从你给我推荐了这款插件，我再也离不开它了。</strong>”</p>
+<p>浏览器标签页是一样令人头疼的东西，至少对于我来说是这样的，每当打开一些网页之后会发现标签页密密麻麻，非常混乱，关闭后又担心会用到，不关闭实在影响浏览器的使用，而且过多的打开网页会带来很多内存占用。很久以来，一直没有找到好的解决方法，直到遇到OneTab这款插件，能够一键关闭、恢复所有标签页，而且能够节省高达95%的内容占用。</p>
+<p>只需单击一下，就可以把所有标签页转化成一个列表，如果再次需要某个网页的时候，可以单个或者全部恢复标签页。</p>
+<h2 id="SwitchyOmega"><a href="#SwitchyOmega" class="headerlink" title="SwitchyOmega"></a>SwitchyOmega</h2><p>我觉得校园网也是让很多大学生头疼的一个问题，外网无法访问校园网资源，校园网访问外网速度缓慢。怎么样才能在这两种网络之间自如切换？手动设置IE代理？那样效率太低了，不仅步骤繁琐，而且不能自动切换。SwitchyOmega就可以轻松解决代理切换问题，让你在不同的网络环境下自如切换代理，选择最快的代理方法打开你要的网页。</p>
+<h2 id="Octotree"><a href="#Octotree" class="headerlink" title="Octotree"></a>Octotree</h2><p>Octotree是当之无愧的Github神器，强烈的推荐给大家。</p>
+<p>查看某个文件是我使用Github过程中最苦恼的一个点，需要逐层进入一个目录，然后再逐层退出目录，这样不仅费劲，而且，如果网速不太好的话，查看一个文件需要耗费很长时间，例如，</p>
+<p>Octotree的出现能够让Github体验提升到一个全新的水平，它能够以树形结构展示Github项目，更加易于阅读，能够快速查看某个文件，能够让Github像大多数IDE那样。</p>
+<p>除此之外，Octotree还有一项非常实用的功能–下载单个文件。</p>
+<h2 id="Click-amp-Clean"><a href="#Click-amp-Clean" class="headerlink" title="Click&amp;Clean"></a>Click&amp;Clean</h2><p>浏览器是我们使用最多的一款工具之一，甚至没有其中的之一。每天我们花费大量的时间在浏览器上面，访问各种网址，也留下了很多访问的足迹，这就涉及一个问题，除了缓存垃圾之外就是隐私和安全信息。不知不觉中我们把自己的信息展露无疑。我认为有着Click&amp;Clean这款超强的隐私保护工具就再也不用担心这个问题了。</p>
+<ul>
+<li>清除浏览历史记录, 清除下载历史记录</li>
+<li>清空缓存</li>
+<li>删除 Cookie</li>
+<li>清除已保存的密码</li>
+<li>浏览器关闭时运行外部应用程序</li>
+<li>关闭所有窗口/标签前清理</li>
+<li>…</li>
+</ul>
+<h2 id="Tampermonkey"><a href="#Tampermonkey" class="headerlink" title="Tampermonkey"></a>Tampermonkey</h2><p>可以毫不谦虚的说，Tampermonkey是目前最为流行的用户脚本管理器，它适用于 Chrome, Microsoft Edge, Safari, Opera Next, 和 Firefox。</p>
+<p>用户脚本是一个什么东西？简而言之，不同脚本可以实现不同的功能。</p>
+<p>Tampermonkey可以对这些功能进行管理，让你的浏览器如虎添翼,Tampermonkey有很多可选的脚本。</p>
+<h1 id="命令行工具"><a href="#命令行工具" class="headerlink" title="命令行工具"></a>命令行工具</h1><h2 id="oh-my-zsh"><a href="#oh-my-zsh" class="headerlink" title="oh-my-zsh"></a>oh-my-zsh</h2><p>提到命令行工具，首推的自然是这款大杀器，bash的替代工具。bash算得上一款中规中矩的shell工具，没有什么缺陷，但是也谈不上优秀，在很多方面考虑的还不够周到，例如，自动补全、语法、高亮显示、提示符等。</p>
+<p>提到oh-my-zsh，那就厉害了，102kStar、250+插件、125+主题、1450+贡献者……从这一系列的数字中就可以体现出这款shell工具的生态有多么完善，也足以体现它有多么强大。</p>
+<h2 id="Tldr"><a href="#Tldr" class="headerlink" title="Tldr"></a>Tldr</h2><p>用Linux的过程中难免会和各种参数打交道，距离比如<code>ps -aux</code>、<code>tar -jxvf</code>、<code>find -name</code>，每个”-“后面的就是各种命令参数，大家比较熟悉的查看命令解释的方法有”command ?” “man command”，就是命令后面加？或者man加命令。以man为例，解释很详细，但是带来的问题就是冗余，有很多信息是我们不想看到的，所以tldr就凸显出它的优点，简洁、实用。</p>
+<h2 id="Tig"><a href="#Tig" class="headerlink" title="Tig"></a>Tig</h2><p>Tig是一个基于ncurses的git文本模式接口。它的功能主要是作为一个Git存储库浏览器，但也可以帮助在块级别上分段提交更改，并充当各种Git命令输出的分页器。</p>
+<h2 id="Autojump"><a href="#Autojump" class="headerlink" title="Autojump"></a>Autojump</h2><p>我们在Linux下开发时会频繁的切换工作目录，要一步一步的cd，pwd实在太麻烦了，autojump通过记录命令行中使用最多的目录并给定相应权重的数据块来进行工作，不需要完全输入目录名，甚至输错目录名都没问题。</p>
+<p><strong>使用方法：</strong></p>
+<p>跳转到包含foo的路径只需下面这个命令即可，autojump会通过维护的数据库进行跳转， <code>j foo</code></p>
+<h2 id="Script"><a href="#Script" class="headerlink" title="Script"></a>Script</h2><p>很多时候，为了安全，需要对工作内容进行备份和保存。而script就是一个隐藏的记录器，它可以记录终端会话的所有内容，形成文件，对总是忘记工作内容的同学真是福音。</p>
+<p><strong>使用方法：</strong></p>
+<p>在终端输入script,</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; script</span><br></pre></td></tr></table></figure>
+
+<p>会显示:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Script started, file is typescript</span><br></pre></td></tr></table></figure>
+
+<p>接着可以开始自己的操作，想退出输入exit即可，当前目录下会生成一个名为trypescript的文件，里面记录了刚才的操作。</p>
+<h2 id="Tree"><a href="#Tree" class="headerlink" title="Tree"></a>Tree</h2><p>刚接触非桌面Linux的同学大多数会感觉Linux没有Windows或Mac那么直观，的确，我们面对的就是一行行命令，文件夹、应用图标什么的都没有，自然不直观。但是可以借助一些工具来增强目录的直观性，这里推荐的就是tree，可以以类似于图像的树状图排列目录和文件。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># tree                   #以树状图列出当前目录结构</span></span><br><span class="line">.                        <span class="comment">#当前目录结构</span></span><br><span class="line">|-- README  </span><br><span class="line">|-- examples.desktop  </span><br><span class="line">|-- file  </span><br><span class="line">|-- file.new  </span><br><span class="line">|-- index.htm  </span><br><span class="line">|-- test  </span><br><span class="line">| |-- README  </span><br><span class="line">| |-- file  </span><br><span class="line">| |-- testfile  </span><br><span class="line">| |-- testfile1</span><br></pre></td></tr></table></figure>
+
+<h2 id="Httpie"><a href="#Httpie" class="headerlink" title="Httpie"></a>Httpie</h2><p>不同组件之间相互访问可以通过很多方式，其中restful是比较常用的一种。这里就涉及http请求，我们需要测试数据能够正确的上传和下载。在处理http请求过程中使用较多的工具就是curl。curl有很多明显的弊端：对用户不够友好，命令冗长；可视化效果差，没有高亮。httpie就是curl的一个非常好的替代者，它的使用更加简洁明了，而且能够高亮显示请求结果。</p>
+<h2 id="Glances"><a href="#Glances" class="headerlink" title="Glances"></a>Glances</h2><p>glances就如同它的汉语意思那样，“一眼”、“一瞥”，能够通过一个简单的命令对系统信息一目了然，了如指掌。glances利用Python编写的一个跨平台的监视工具，旨在通过curses或基于Web的界面提供大量监视信息。</p>
+<p>你不仅可以通过终端命令行使用该工具，还可以web界面、API接口等对服务器进行远程监控，可以将统计信息导出到文件或数据库。</p>
+<hr>
+<p>文章转自：<a href="https://mp.weixin.qq.com/s/1scAaNf-nAzjNkWC-N8WXQ">原文链接</a></p>
+<p><strong>特别声明：如有侵权，告知笔者，立删此文！</strong></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
@@ -1048,100 +1087,6 @@
       </tags>
   </entry>
   <entry>
-    <title>学爬虫，你需要学习的东西！</title>
-    <url>/2ffcd46a4be5.html</url>
-    <content><![CDATA[<p>当今大数据的时代，网络爬虫已经成为了获取数据的一个重要手段。</p>
-<p>但要学习好爬虫并没有那么简单。首先知识点和方向实在是太多了，它关系到了计算机网络、编程基础、前端开发、后端开发、App 开发与逆向、网络安全、数据库、运维、机器学习、数据分析等各个方向的内容，它像一张大网一样把现在一些主流的技术栈都连接在了一起。正因为涵盖的方向多，因此学习的东西也非常零散和杂乱，很多初学者搞不清楚究竟要学习哪些知识，学习过程中遇到反爬也不知道用什么方法来解决，本篇我们来做一些归纳和总结。</p>
-<span id="more"></span>
-
-<h2 id="初学爬虫"><a href="#初学爬虫" class="headerlink" title="初学爬虫"></a>初学爬虫</h2><p>一些最基本的网站，往往不带任何反爬措施。比如某个博客站点，我们要爬全站的话就顺着列表页爬到文章页，再把文章的时间、作者、正文等信息爬下来就可以了。</p>
-<p>那代码怎么写呢？用 Python 的 requests 等库就够了，写一个基本的逻辑，顺着把一篇篇文章的源码获取下来，解析的话用 XPath、BeautifulSoup、PyQuery 或者正则表达式，或者粗暴的字符串匹配把想要的内容抠出来，再加个文本写入存下来就完事了。</p>
-<p>代码很简单，就几个方法调用。逻辑很简单，几个循环加存储。最后就能看到一篇篇文章就被我们存到自己的电脑里面了。当然有的同学可能不太会写代码或者都懒得写，那么利用基本的可视化爬取工具，如某爪鱼、某裔采集器也能通过可视化点选的方式把数据爬下来。</p>
-<p>如果存储方面稍微扩展一下的话，可以对接上 MySQL、MongoDB、Elasticsearch、Kafka 等等来保存数据，实现持久化存储。以后查询或者操作会更方便。</p>
-<p>反正，不管效率如何，一个完全没有反爬的网站用最最基本的方式就搞定了。</p>
-<p>到这里，你就说你会爬虫了吗？不，还差的远呢。</p>
-<h2 id="Ajax、动态渲染"><a href="#Ajax、动态渲染" class="headerlink" title="Ajax、动态渲染"></a>Ajax、动态渲染</h2><p>随着互联网的发展，前端技术也在不断变化，数据的加载方式也不再是单纯的服务端渲染了。现在你可以看到很多网站的数据可能都是通过接口的形式传输的，或者即使不是接口那也是一些 JSON 的数据，然后经过 JavaScript 渲染得出来的。</p>
-<p>这时候，你要再用 requests 来爬那就不顶用了，因为 requests 爬下来的源码是服务端渲染得到的，浏览器看到页面的和 requests 获取的结果是不一样的。真正的数据是经过 JavaScript 执行的出来的，数据来源可能是 Ajax，也可能是页面里的某些 Data，也可能是一些 ifame 页面等等，不过大多数情况下可能是 Ajax 接口获取的。</p>
-<p>所以很多情况下需要分析 Ajax，知道这些接口的调用方式之后再用程序来模拟。但是有些接口带着加密参数，比如 token、sign 等等，又不好模拟，咋整呢？</p>
-<p>一种方法就是去分析网站的 JavaScript 逻辑，死抠里面的代码，揪出来这些参数是怎么构造的，找出思路来了之后再用爬虫模拟或重写就行了。如果你解出来了，那么直接模拟的方式效率会高非常多，这里面就需要一些 JavaScript 基础了，当然有些网站加密逻辑做的太牛逼了，你可能花一个星期也解不出来，最后放弃了。</p>
-<p>那这样解不出来或者不想解，那咋办呢？这时候可以有一种简单粗暴的方法就是直接用模拟浏览器的方式来爬取，比如用 Puppeteer、Pyppeteer、Selenium、Splash 等，这样爬取到的源代码就是真正的网页代码，数据自然就好提取了，同时也就绕过分析 Ajax 和一些 JavaScript 逻辑的过程。这种方式就做到了可见即可爬，难度也不大，同时模拟了浏览器，也不太会有一些法律方面的问题。</p>
-<p>但其实后面的这种方法也会遇到各种反爬的情况，现在很多网站都会去识别 webdriver，看到你是用的 Selenium 等工具，直接干掉或不返回数据，所以你碰到这种网站还得来专门解一下这个问题。</p>
-<h2 id="多进程、多线程、协程"><a href="#多进程、多线程、协程" class="headerlink" title="多进程、多线程、协程"></a>多进程、多线程、协程</h2><p>上面的情况如果用单线程的爬虫来模拟是比较简单的，但是有个问题就是速度慢啊。</p>
-<p>爬虫是 IO 密集型的任务，所以可能大多数情况下都在等待网络的响应，如果网络响应速度慢，那就得一直等着。但这个空余的时间其实可以让 CPU 去做更多事情。那怎么办呢？多开点线程吧。</p>
-<p>所以这时候我们就可以在某些场景下加上多进程、多线程，虽然说多线程有 GIL 锁，但对于爬虫来说其实影响没那么大，所以用上多进程、多线程都可以成倍地提高爬取速度，对应的库就有 threading、multiprocessing 了。</p>
-<p>异步协程就更牛逼了，用 aiohttp、gevent、tornado 等等的基本上你想搞多少并发就搞多少并发，但是还是悠着点，别把人家网站搞挂了。</p>
-<p>总之，用上这几个，爬虫速度就提上来了。</p>
-<p>但速度提上来了不一定是好事，反爬接着肯定就要来了，封你 IP、封你账号、弹验证码、返回假数据，所以有时候龟速爬似乎也是个解决办法？</p>
-<h2 id="分布式"><a href="#分布式" class="headerlink" title="分布式"></a>分布式</h2><p>多线程、多进程、协程都能加速，但终究还是单机的爬虫。要真正做到规模化，还得来靠分布式爬虫来搞。</p>
-<p>分布式的核心是什么？资源共享。比如爬取队列共享、去重指纹共享等等。</p>
-<p>我们可以使用一些基础的队列或组件来实现分布式，比如 RabbitMQ、Celery、Kafka、Redis 等等，但经过很多人的尝试，自己去实现一个分布式爬虫，性能和扩展性总会出现一些问题，当然特别牛逼的除外哈。不少企业内部其实也有自己开发的一套分布式爬虫，和业务更紧密，这种当然是最好了。</p>
-<p>现在主流的 Python 分布式爬虫还是基于 Scrapy 的，对接 Scrapy-Redis、Scrapy-Redis-BloomFilter 或者用 Scrapy-Cluster 等等，他们都是基于 Redis 来共享爬取队列的，总会多多少少遇到一些内存的问题。所以一些人也考虑对接到了其他的消息队列上面，比如 RabbitMQ、Kafka 等等，解决一些问题，效率也不差。</p>
-<p>总之，要提高爬取效率，分布式还是必须要掌握的。</p>
-<h2 id="验证码"><a href="#验证码" class="headerlink" title="验证码"></a>验证码</h2><p>爬虫难免遇到反爬，验证码就是其中之一。要会反爬，那首先就要会解验证码。</p>
-<p>现在你可以看到很多网站都会有各种各样的验证码了，比如最简单的图形验证码，要是验证码的文字规整的话，OCR 过一遍或者基本的模型库都能识别，不想搞这个的话可以直接去对接个打码平台来搞，准确率还是有的。</p>
-<p>然而你可能现在都见不到什么图形验证码了，都是一些行为验证码，如某验、某盾等等，国外也有很多，比如 reCaptcha 等等。一些稍微简单一点的，比如滑动的，你可以找点办法识别缺口，比如图像处理比对、深度学习识别都是可以的。轨迹呢自己写个模拟正常人行为的，加点抖动之类的。有了轨迹之后咋模拟呢，如果你牛逼，那么可以直接去分析验证码的 JavaScript 逻辑，把轨迹数据录入，那就能得到里面的一些加密参数，直接拿着这些参数放到表单或接口里面就能直接用了。当然也可以用模拟浏览器的方式来拖动，也能通过一定的方式拿到加密参数，或者直接用模拟浏览器的方式把登录一起做了，拿着 Cookies 来爬也行。</p>
-<p>当然拖动只是一种验证码，还有文字点选、逻辑推理等，要是真不想搞，可以找打码平台来解出来再模拟，但毕竟花钱的，一些高手就会选择自己训练深度学习相关的模型，收集数据、标注、训练，针对不同的业务训练不同的模型。这样有了核心技术，也不用再去花钱找打码平台了，再研究下验证码的逻辑模拟一下，加密参数就能解出来了。不过有的验证码难得很，有的我也没搞定。</p>
-<p>当然有些验证码可能是请求过于频繁而弹出来的，这种如果换个 IP 什么的也能解。</p>
-<h2 id="封-IP"><a href="#封-IP" class="headerlink" title="封 IP"></a>封 IP</h2><p>封 IP 也是个令人头疼的事，行之有效的方法就是换代理了。</p>
-<p>代理很多种，市面上免费的，收费的太多太多了。</p>
-<p>首先可以把市面上免费的代理用起来，自己搭建一个代理池，收集现在全网所有的免费代理，然后加一个测试器一直不断测试，测试的网址可以改成你要爬的网址。这样测试通过的一般都能直接拿来爬你的目标网站。我自己也搭建过一个代理池，现在对接了一些免费代理，定时爬、定时测，还写了个 API 来取，放在 GitHub 了：<a href="https://github.com/Python3WebSpider/ProxyPool%EF%BC%8C%E6%89%93%E5%A5%BD%E4%BA%86">https://github.com/Python3WebSpider/ProxyPool，打好了</a> Docker 镜像，提供了 Kubernetes 脚本，大家可以直接拿来用。</p>
-<p>付费代理也是一样，很多商家提供了代理提取接口，请求一下就能获取几十几百个代理，我们可以同样把它们接入到代理池里面。但这个代理也分各种套餐，什么开放代理、独享代理等等的质量和被封的几率也是不一样的。</p>
-<p>有的商家还利用隧道技术搭了代理，这样代理的地址和端口我们是不知道的，代理池是由他们来维护的，比如某布云，这样用起来更省心一些，但是可控性就差一些。</p>
-<p>还有更稳定的代理，比如拨号代理、蜂窝代理等等，接入成本会高一些，但是一定程度上也能解决一些封 IP 的问题。</p>
-<p>不过这些背后也不简单，为啥一个好好的高匿代理就是莫名其妙爬不了，背后的一些事就不多讲了。</p>
-<p>##封账号</p>
-<p>有些信息需要模拟登录才能爬嘛，如果爬的过快，人家网站直接把你的账号封禁了，就啥都没得说了。比如爬公众号的，人家把你 WX 号封了，那就全完了。</p>
-<p>一种解决方法当然就是放慢频率，控制下节奏。</p>
-<p>还有种方法就是看看别的终端，比如手机页、App 页、wap 页，看看有没有能绕过登录的法子。</p>
-<p>另外比较好的方法，那就是分流。如果你号足够多，建一个池子，比如 Cookies 池、Token 池、Sign 池反正不管什么池吧，多个账号跑出来的 Cookies、Token 都放到这个池子里面，用的时候随机从里面拿一个。如果你想保证爬取效率不变，那么 100 个账号相比 20 个账号，对于每个账号对应的 Cookies、Token 的取用频率就变成原来的了 1/5，那么被封的概率也就随之降低了。</p>
-<h2 id="奇葩的反爬"><a href="#奇葩的反爬" class="headerlink" title="奇葩的反爬"></a>奇葩的反爬</h2><p>上面说的是几种比较主流的反爬，当然还有非常多奇葩的反爬。比如返回假数据、返回图片化数据、返回乱序数据、返回骂人的数据、返回求饶的数据，那都具体情况看着办吧。</p>
-<p>这些反爬也得小心点，之前见过一个反爬直接返回 <code>rm -rf /</code> 的也不是没有，你要是正好有个脚本模拟执行返回结果，后果自己想象哈。</p>
-<h2 id="JavaScript-逆向"><a href="#JavaScript-逆向" class="headerlink" title="JavaScript 逆向"></a>JavaScript 逆向</h2><p>说到重头了。随着前端技术的进步和网站反爬意识的增强，很多网站选择在前端上下功夫，那就是在前端对一些逻辑或代码进行加密或混淆。当然这不仅仅是为了保护前端的代码不被轻易盗取，更重要的是反爬。比如很多 Ajax 接口都会带着一些参数，比如 sign、token 等等，这些前文也讲过了。这种数据我们可以用前文所说的 Selenium 等方式来爬，但总归来说效率太低了，毕竟它模拟的是网页渲染的整个过程，而真实的数据可能仅仅就藏在一个小接口里。</p>
-<p>如果我们能够把一些接口的参数真正找出其中的逻辑，用代码来模拟执行，那效率就会有成倍的提升，而且还能在一定程度上规避上述的反爬现象。</p>
-<p>但问题是什么？难啊。</p>
-<p>Webpack 是一方面，前端代码都被压缩和转码成一些 bundle 文件，一些变量的含义已经丢失，不好还原。然后一些网站再加上一些 obfuscator 的机制，把前端代码变成你完全看不懂的东西，比如字符串拆散打乱、变量十六进制化、控制流扁平化、无限 debug、控制台禁用等等，前端的代码和逻辑已经面目全非。有的用 WebAssembly 等技术把前端核心逻辑直接编译，那就只能慢慢抠了，虽然说有些有一定的技巧，但是总归来说还是会花费很多时间。但一旦解出来了，那就万事大吉了。怎么说？就像奥赛题一样，解出来升天，解不出来 GG。</p>
-<p>很多公司招聘爬虫工程师都会问有没有 JavaScript 逆向基础，破解过哪些网站，比如某宝、某多、某条等等，解出来某个他们需要的可能就直接录用你。每家网站的逻辑都不一样，难度也不一样。</p>
-<h2 id="App"><a href="#App" class="headerlink" title="App"></a>App</h2><p>当然爬虫不仅仅是网页爬虫了，随着互联网时代的发展，现在越来越多的公司都选择将数据放到 App 上面，甚至有些公司只有 App 没有网站。所以数据只能通过 App 来爬。</p>
-<p>咋爬呢？基本的就是抓包工具了，Charles、Fiddler 一把梭，抓到接口之后，直接拿来模拟就行了。</p>
-<p>如果接口有加密参数怎么办呢？一种方法你可以边爬边处理，比如 mitmproxy 直接监听接口数据。另一方面你可以走 Hook，比如上 Xposed 也可以拿到。</p>
-<p>那爬的时候又怎么实现自动化呢？总不能拿手来戳吧。其实工具也多，安卓原生的 adb 工具也行，Appium 现在已经是比较主流的方案了，当然还有其他的某精灵都是可以实现的。</p>
-<p>最后，有的时候可能真的就不想走自动化的流程，我就想把里面的一些接口逻辑抠出来，那就得搞逆向了，IDA Pro、jdax、FRIDA 等工具就派上用场了，当然这个过程和 JavaScript 逆向一样很痛苦，甚至可能得读汇编指令。搞一个案例掉一把头发也不是不可能的。</p>
-<h2 id="智能化"><a href="#智能化" class="headerlink" title="智能化"></a>智能化</h2><p>上面的这一通，都搞熟了，恭喜你已经超过了百分之八九十的爬虫玩家了，当然专门搞 JavaScript 逆向、App 逆向的都是站在食物链顶端的男人，这种严格来说已经不算爬虫范畴了，这种神我们就不算在里面了，反正我不是。</p>
-<p>除了上面的一些技能，在一些场合下，我们可能也需要结合一些机器学习的技术，让我们的爬虫变得更智能起来。</p>
-<p>比如现在很多博客、新闻文章，其页面结构相似度比较高，要提取的信息也比较类似。</p>
-<p>比如如何区分一个页面是索引页还是详情页？如何提取详情页的文章链接？如何解析文章页的页面内容？这些其实都是可以通过一些算法来计算出来的。</p>
-<p>所以，一些智能解析技术也营运而生，比如提取详情页，一位朋友写的 GeneralNewsExtractor 表现就非常好。</p>
-<p>假如说我来了一个需求，我要爬取一万个新闻网站数据，要一个个写 XPath 吗？写死我吧。如果有了智能化解析技术，在容忍一定错误的条件下，完成这个就是分分钟的事情。</p>
-<p>总之，如果我们能把这一块也学会了，我们的爬虫技术就会如虎添翼。</p>
-<h2 id="运维"><a href="#运维" class="headerlink" title="运维"></a>运维</h2><p>这块也是一个重头戏。爬虫和运维也是息息相关。</p>
-<p>比如写完一个爬虫，怎样去快速部署到 100 台主机上跑起来。</p>
-<p>比如怎么灵活地监控每个爬虫的运行状态。</p>
-<p>比如爬虫有处代码改动，如何去快速更新。</p>
-<p>比如怎样监控一些爬虫的占用内存、消耗的 CPU 状况。</p>
-<p>比如怎样科学地控制爬虫的定时运行、</p>
-<p>比如爬虫出现了问题，怎样能及时收到通知，怎样设置科学的报警机制。</p>
-<p>这里面，部署大家各有各的方法，比如用 Ansible 当然可以。如果用 Scrapy 的话有 Scrapyd，然后配合上一些管理工具也能完成一些监控和定时任务。不过我现在用的更多是还是 Docker + Kubernetes，再加上 DevOps 一套，比如 GitHub Actions、Azure Pipelines、Jenkins 等等，快速实现分发和部署。</p>
-<p>定时任务大家有的用 crontab，有的用 apscheduler，有的用管理工具，有的用 Kubernetes，我的话用 Kubernetes 就多一些了，定时任务也是很好实现。</p>
-<p>至于监控的话，也有很多，专门的一些爬虫管理工具自带了一些监控和报警功能。一些云服务也带了一些监控的功能。我用的是 Kubernetes + Prometheus + Grafana，什么 CPU、内存、运行状态，一目了然，报警机制在 Grafana 里面配一下也很方便，支持 Webhook、邮件甚至某钉。</p>
-<p>数据的存储和监控，用 Kafka、Elasticsearch 个人感觉也挺方便的，我主要用的是后者，然后再和 Grafana 配合起来，数据爬取量、爬取速度等等监控也都一目了然。</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>至此，爬虫的一些涵盖的知识点也就差不多了，怎么样，梳理一下，是不是计算机网络、编程基础、前端开发、后端开发、App 开发与逆向、网络安全、数据库、运维、机器学习都涵盖到了？上面总结的可以算是从爬虫小白到爬虫高手的路径了，里面每个方向其实可研究的点非常多，每个点做精了，都会非常了不起。</p>
-<p>爬虫往往学着学着，就成为了一名全栈工程师或者全干工程师，因为你可能真的啥都会了。但是没办法啊，都是被爬虫逼的啊，如果不是生活所困，谁愿意一身才华呢？</p>
-<p>然而有了才华之后呢？摸摸头顶，卧槽，我的头发呢？</p>
-<p>嗯，大家都懂的。</p>
-<p>最后最重要的，珍爱生命、珍爱每一根头发。</p>
-<hr>
-<p>文章转自<a href="https://mp.weixin.qq.com/s/X_R4sv_3l0svv5s7wc4jGA">https://mp.weixin.qq.com/s/X_R4sv_3l0svv5s7wc4jGA</a></p>
-<p><strong>特别声明：如有侵权，告知笔者，立删此文！</strong></p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-        <category>爬虫</category>
-      </categories>
-      <tags>
-        <tag>爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo博客搭建</title>
     <url>/5ba4c255d128.html</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>搭建这个网站的最开始的理由就是想找一个清净点的地方记录自己想记录的一些东西，并且不用有任何的担心文章会不会被删除之类的；所以不惜花费一点时间来搭建一个属于自己的主页，这样就可以<del>为所欲为</del>好好写博客了~</p>
@@ -1385,6 +1330,100 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学爬虫，你需要学习的东西！</title>
+    <url>/2ffcd46a4be5.html</url>
+    <content><![CDATA[<p>当今大数据的时代，网络爬虫已经成为了获取数据的一个重要手段。</p>
+<p>但要学习好爬虫并没有那么简单。首先知识点和方向实在是太多了，它关系到了计算机网络、编程基础、前端开发、后端开发、App 开发与逆向、网络安全、数据库、运维、机器学习、数据分析等各个方向的内容，它像一张大网一样把现在一些主流的技术栈都连接在了一起。正因为涵盖的方向多，因此学习的东西也非常零散和杂乱，很多初学者搞不清楚究竟要学习哪些知识，学习过程中遇到反爬也不知道用什么方法来解决，本篇我们来做一些归纳和总结。</p>
+<span id="more"></span>
+
+<h2 id="初学爬虫"><a href="#初学爬虫" class="headerlink" title="初学爬虫"></a>初学爬虫</h2><p>一些最基本的网站，往往不带任何反爬措施。比如某个博客站点，我们要爬全站的话就顺着列表页爬到文章页，再把文章的时间、作者、正文等信息爬下来就可以了。</p>
+<p>那代码怎么写呢？用 Python 的 requests 等库就够了，写一个基本的逻辑，顺着把一篇篇文章的源码获取下来，解析的话用 XPath、BeautifulSoup、PyQuery 或者正则表达式，或者粗暴的字符串匹配把想要的内容抠出来，再加个文本写入存下来就完事了。</p>
+<p>代码很简单，就几个方法调用。逻辑很简单，几个循环加存储。最后就能看到一篇篇文章就被我们存到自己的电脑里面了。当然有的同学可能不太会写代码或者都懒得写，那么利用基本的可视化爬取工具，如某爪鱼、某裔采集器也能通过可视化点选的方式把数据爬下来。</p>
+<p>如果存储方面稍微扩展一下的话，可以对接上 MySQL、MongoDB、Elasticsearch、Kafka 等等来保存数据，实现持久化存储。以后查询或者操作会更方便。</p>
+<p>反正，不管效率如何，一个完全没有反爬的网站用最最基本的方式就搞定了。</p>
+<p>到这里，你就说你会爬虫了吗？不，还差的远呢。</p>
+<h2 id="Ajax、动态渲染"><a href="#Ajax、动态渲染" class="headerlink" title="Ajax、动态渲染"></a>Ajax、动态渲染</h2><p>随着互联网的发展，前端技术也在不断变化，数据的加载方式也不再是单纯的服务端渲染了。现在你可以看到很多网站的数据可能都是通过接口的形式传输的，或者即使不是接口那也是一些 JSON 的数据，然后经过 JavaScript 渲染得出来的。</p>
+<p>这时候，你要再用 requests 来爬那就不顶用了，因为 requests 爬下来的源码是服务端渲染得到的，浏览器看到页面的和 requests 获取的结果是不一样的。真正的数据是经过 JavaScript 执行的出来的，数据来源可能是 Ajax，也可能是页面里的某些 Data，也可能是一些 ifame 页面等等，不过大多数情况下可能是 Ajax 接口获取的。</p>
+<p>所以很多情况下需要分析 Ajax，知道这些接口的调用方式之后再用程序来模拟。但是有些接口带着加密参数，比如 token、sign 等等，又不好模拟，咋整呢？</p>
+<p>一种方法就是去分析网站的 JavaScript 逻辑，死抠里面的代码，揪出来这些参数是怎么构造的，找出思路来了之后再用爬虫模拟或重写就行了。如果你解出来了，那么直接模拟的方式效率会高非常多，这里面就需要一些 JavaScript 基础了，当然有些网站加密逻辑做的太牛逼了，你可能花一个星期也解不出来，最后放弃了。</p>
+<p>那这样解不出来或者不想解，那咋办呢？这时候可以有一种简单粗暴的方法就是直接用模拟浏览器的方式来爬取，比如用 Puppeteer、Pyppeteer、Selenium、Splash 等，这样爬取到的源代码就是真正的网页代码，数据自然就好提取了，同时也就绕过分析 Ajax 和一些 JavaScript 逻辑的过程。这种方式就做到了可见即可爬，难度也不大，同时模拟了浏览器，也不太会有一些法律方面的问题。</p>
+<p>但其实后面的这种方法也会遇到各种反爬的情况，现在很多网站都会去识别 webdriver，看到你是用的 Selenium 等工具，直接干掉或不返回数据，所以你碰到这种网站还得来专门解一下这个问题。</p>
+<h2 id="多进程、多线程、协程"><a href="#多进程、多线程、协程" class="headerlink" title="多进程、多线程、协程"></a>多进程、多线程、协程</h2><p>上面的情况如果用单线程的爬虫来模拟是比较简单的，但是有个问题就是速度慢啊。</p>
+<p>爬虫是 IO 密集型的任务，所以可能大多数情况下都在等待网络的响应，如果网络响应速度慢，那就得一直等着。但这个空余的时间其实可以让 CPU 去做更多事情。那怎么办呢？多开点线程吧。</p>
+<p>所以这时候我们就可以在某些场景下加上多进程、多线程，虽然说多线程有 GIL 锁，但对于爬虫来说其实影响没那么大，所以用上多进程、多线程都可以成倍地提高爬取速度，对应的库就有 threading、multiprocessing 了。</p>
+<p>异步协程就更牛逼了，用 aiohttp、gevent、tornado 等等的基本上你想搞多少并发就搞多少并发，但是还是悠着点，别把人家网站搞挂了。</p>
+<p>总之，用上这几个，爬虫速度就提上来了。</p>
+<p>但速度提上来了不一定是好事，反爬接着肯定就要来了，封你 IP、封你账号、弹验证码、返回假数据，所以有时候龟速爬似乎也是个解决办法？</p>
+<h2 id="分布式"><a href="#分布式" class="headerlink" title="分布式"></a>分布式</h2><p>多线程、多进程、协程都能加速，但终究还是单机的爬虫。要真正做到规模化，还得来靠分布式爬虫来搞。</p>
+<p>分布式的核心是什么？资源共享。比如爬取队列共享、去重指纹共享等等。</p>
+<p>我们可以使用一些基础的队列或组件来实现分布式，比如 RabbitMQ、Celery、Kafka、Redis 等等，但经过很多人的尝试，自己去实现一个分布式爬虫，性能和扩展性总会出现一些问题，当然特别牛逼的除外哈。不少企业内部其实也有自己开发的一套分布式爬虫，和业务更紧密，这种当然是最好了。</p>
+<p>现在主流的 Python 分布式爬虫还是基于 Scrapy 的，对接 Scrapy-Redis、Scrapy-Redis-BloomFilter 或者用 Scrapy-Cluster 等等，他们都是基于 Redis 来共享爬取队列的，总会多多少少遇到一些内存的问题。所以一些人也考虑对接到了其他的消息队列上面，比如 RabbitMQ、Kafka 等等，解决一些问题，效率也不差。</p>
+<p>总之，要提高爬取效率，分布式还是必须要掌握的。</p>
+<h2 id="验证码"><a href="#验证码" class="headerlink" title="验证码"></a>验证码</h2><p>爬虫难免遇到反爬，验证码就是其中之一。要会反爬，那首先就要会解验证码。</p>
+<p>现在你可以看到很多网站都会有各种各样的验证码了，比如最简单的图形验证码，要是验证码的文字规整的话，OCR 过一遍或者基本的模型库都能识别，不想搞这个的话可以直接去对接个打码平台来搞，准确率还是有的。</p>
+<p>然而你可能现在都见不到什么图形验证码了，都是一些行为验证码，如某验、某盾等等，国外也有很多，比如 reCaptcha 等等。一些稍微简单一点的，比如滑动的，你可以找点办法识别缺口，比如图像处理比对、深度学习识别都是可以的。轨迹呢自己写个模拟正常人行为的，加点抖动之类的。有了轨迹之后咋模拟呢，如果你牛逼，那么可以直接去分析验证码的 JavaScript 逻辑，把轨迹数据录入，那就能得到里面的一些加密参数，直接拿着这些参数放到表单或接口里面就能直接用了。当然也可以用模拟浏览器的方式来拖动，也能通过一定的方式拿到加密参数，或者直接用模拟浏览器的方式把登录一起做了，拿着 Cookies 来爬也行。</p>
+<p>当然拖动只是一种验证码，还有文字点选、逻辑推理等，要是真不想搞，可以找打码平台来解出来再模拟，但毕竟花钱的，一些高手就会选择自己训练深度学习相关的模型，收集数据、标注、训练，针对不同的业务训练不同的模型。这样有了核心技术，也不用再去花钱找打码平台了，再研究下验证码的逻辑模拟一下，加密参数就能解出来了。不过有的验证码难得很，有的我也没搞定。</p>
+<p>当然有些验证码可能是请求过于频繁而弹出来的，这种如果换个 IP 什么的也能解。</p>
+<h2 id="封-IP"><a href="#封-IP" class="headerlink" title="封 IP"></a>封 IP</h2><p>封 IP 也是个令人头疼的事，行之有效的方法就是换代理了。</p>
+<p>代理很多种，市面上免费的，收费的太多太多了。</p>
+<p>首先可以把市面上免费的代理用起来，自己搭建一个代理池，收集现在全网所有的免费代理，然后加一个测试器一直不断测试，测试的网址可以改成你要爬的网址。这样测试通过的一般都能直接拿来爬你的目标网站。我自己也搭建过一个代理池，现在对接了一些免费代理，定时爬、定时测，还写了个 API 来取，放在 GitHub 了：<a href="https://github.com/Python3WebSpider/ProxyPool%EF%BC%8C%E6%89%93%E5%A5%BD%E4%BA%86">https://github.com/Python3WebSpider/ProxyPool，打好了</a> Docker 镜像，提供了 Kubernetes 脚本，大家可以直接拿来用。</p>
+<p>付费代理也是一样，很多商家提供了代理提取接口，请求一下就能获取几十几百个代理，我们可以同样把它们接入到代理池里面。但这个代理也分各种套餐，什么开放代理、独享代理等等的质量和被封的几率也是不一样的。</p>
+<p>有的商家还利用隧道技术搭了代理，这样代理的地址和端口我们是不知道的，代理池是由他们来维护的，比如某布云，这样用起来更省心一些，但是可控性就差一些。</p>
+<p>还有更稳定的代理，比如拨号代理、蜂窝代理等等，接入成本会高一些，但是一定程度上也能解决一些封 IP 的问题。</p>
+<p>不过这些背后也不简单，为啥一个好好的高匿代理就是莫名其妙爬不了，背后的一些事就不多讲了。</p>
+<p>##封账号</p>
+<p>有些信息需要模拟登录才能爬嘛，如果爬的过快，人家网站直接把你的账号封禁了，就啥都没得说了。比如爬公众号的，人家把你 WX 号封了，那就全完了。</p>
+<p>一种解决方法当然就是放慢频率，控制下节奏。</p>
+<p>还有种方法就是看看别的终端，比如手机页、App 页、wap 页，看看有没有能绕过登录的法子。</p>
+<p>另外比较好的方法，那就是分流。如果你号足够多，建一个池子，比如 Cookies 池、Token 池、Sign 池反正不管什么池吧，多个账号跑出来的 Cookies、Token 都放到这个池子里面，用的时候随机从里面拿一个。如果你想保证爬取效率不变，那么 100 个账号相比 20 个账号，对于每个账号对应的 Cookies、Token 的取用频率就变成原来的了 1/5，那么被封的概率也就随之降低了。</p>
+<h2 id="奇葩的反爬"><a href="#奇葩的反爬" class="headerlink" title="奇葩的反爬"></a>奇葩的反爬</h2><p>上面说的是几种比较主流的反爬，当然还有非常多奇葩的反爬。比如返回假数据、返回图片化数据、返回乱序数据、返回骂人的数据、返回求饶的数据，那都具体情况看着办吧。</p>
+<p>这些反爬也得小心点，之前见过一个反爬直接返回 <code>rm -rf /</code> 的也不是没有，你要是正好有个脚本模拟执行返回结果，后果自己想象哈。</p>
+<h2 id="JavaScript-逆向"><a href="#JavaScript-逆向" class="headerlink" title="JavaScript 逆向"></a>JavaScript 逆向</h2><p>说到重头了。随着前端技术的进步和网站反爬意识的增强，很多网站选择在前端上下功夫，那就是在前端对一些逻辑或代码进行加密或混淆。当然这不仅仅是为了保护前端的代码不被轻易盗取，更重要的是反爬。比如很多 Ajax 接口都会带着一些参数，比如 sign、token 等等，这些前文也讲过了。这种数据我们可以用前文所说的 Selenium 等方式来爬，但总归来说效率太低了，毕竟它模拟的是网页渲染的整个过程，而真实的数据可能仅仅就藏在一个小接口里。</p>
+<p>如果我们能够把一些接口的参数真正找出其中的逻辑，用代码来模拟执行，那效率就会有成倍的提升，而且还能在一定程度上规避上述的反爬现象。</p>
+<p>但问题是什么？难啊。</p>
+<p>Webpack 是一方面，前端代码都被压缩和转码成一些 bundle 文件，一些变量的含义已经丢失，不好还原。然后一些网站再加上一些 obfuscator 的机制，把前端代码变成你完全看不懂的东西，比如字符串拆散打乱、变量十六进制化、控制流扁平化、无限 debug、控制台禁用等等，前端的代码和逻辑已经面目全非。有的用 WebAssembly 等技术把前端核心逻辑直接编译，那就只能慢慢抠了，虽然说有些有一定的技巧，但是总归来说还是会花费很多时间。但一旦解出来了，那就万事大吉了。怎么说？就像奥赛题一样，解出来升天，解不出来 GG。</p>
+<p>很多公司招聘爬虫工程师都会问有没有 JavaScript 逆向基础，破解过哪些网站，比如某宝、某多、某条等等，解出来某个他们需要的可能就直接录用你。每家网站的逻辑都不一样，难度也不一样。</p>
+<h2 id="App"><a href="#App" class="headerlink" title="App"></a>App</h2><p>当然爬虫不仅仅是网页爬虫了，随着互联网时代的发展，现在越来越多的公司都选择将数据放到 App 上面，甚至有些公司只有 App 没有网站。所以数据只能通过 App 来爬。</p>
+<p>咋爬呢？基本的就是抓包工具了，Charles、Fiddler 一把梭，抓到接口之后，直接拿来模拟就行了。</p>
+<p>如果接口有加密参数怎么办呢？一种方法你可以边爬边处理，比如 mitmproxy 直接监听接口数据。另一方面你可以走 Hook，比如上 Xposed 也可以拿到。</p>
+<p>那爬的时候又怎么实现自动化呢？总不能拿手来戳吧。其实工具也多，安卓原生的 adb 工具也行，Appium 现在已经是比较主流的方案了，当然还有其他的某精灵都是可以实现的。</p>
+<p>最后，有的时候可能真的就不想走自动化的流程，我就想把里面的一些接口逻辑抠出来，那就得搞逆向了，IDA Pro、jdax、FRIDA 等工具就派上用场了，当然这个过程和 JavaScript 逆向一样很痛苦，甚至可能得读汇编指令。搞一个案例掉一把头发也不是不可能的。</p>
+<h2 id="智能化"><a href="#智能化" class="headerlink" title="智能化"></a>智能化</h2><p>上面的这一通，都搞熟了，恭喜你已经超过了百分之八九十的爬虫玩家了，当然专门搞 JavaScript 逆向、App 逆向的都是站在食物链顶端的男人，这种严格来说已经不算爬虫范畴了，这种神我们就不算在里面了，反正我不是。</p>
+<p>除了上面的一些技能，在一些场合下，我们可能也需要结合一些机器学习的技术，让我们的爬虫变得更智能起来。</p>
+<p>比如现在很多博客、新闻文章，其页面结构相似度比较高，要提取的信息也比较类似。</p>
+<p>比如如何区分一个页面是索引页还是详情页？如何提取详情页的文章链接？如何解析文章页的页面内容？这些其实都是可以通过一些算法来计算出来的。</p>
+<p>所以，一些智能解析技术也营运而生，比如提取详情页，一位朋友写的 GeneralNewsExtractor 表现就非常好。</p>
+<p>假如说我来了一个需求，我要爬取一万个新闻网站数据，要一个个写 XPath 吗？写死我吧。如果有了智能化解析技术，在容忍一定错误的条件下，完成这个就是分分钟的事情。</p>
+<p>总之，如果我们能把这一块也学会了，我们的爬虫技术就会如虎添翼。</p>
+<h2 id="运维"><a href="#运维" class="headerlink" title="运维"></a>运维</h2><p>这块也是一个重头戏。爬虫和运维也是息息相关。</p>
+<p>比如写完一个爬虫，怎样去快速部署到 100 台主机上跑起来。</p>
+<p>比如怎么灵活地监控每个爬虫的运行状态。</p>
+<p>比如爬虫有处代码改动，如何去快速更新。</p>
+<p>比如怎样监控一些爬虫的占用内存、消耗的 CPU 状况。</p>
+<p>比如怎样科学地控制爬虫的定时运行、</p>
+<p>比如爬虫出现了问题，怎样能及时收到通知，怎样设置科学的报警机制。</p>
+<p>这里面，部署大家各有各的方法，比如用 Ansible 当然可以。如果用 Scrapy 的话有 Scrapyd，然后配合上一些管理工具也能完成一些监控和定时任务。不过我现在用的更多是还是 Docker + Kubernetes，再加上 DevOps 一套，比如 GitHub Actions、Azure Pipelines、Jenkins 等等，快速实现分发和部署。</p>
+<p>定时任务大家有的用 crontab，有的用 apscheduler，有的用管理工具，有的用 Kubernetes，我的话用 Kubernetes 就多一些了，定时任务也是很好实现。</p>
+<p>至于监控的话，也有很多，专门的一些爬虫管理工具自带了一些监控和报警功能。一些云服务也带了一些监控的功能。我用的是 Kubernetes + Prometheus + Grafana，什么 CPU、内存、运行状态，一目了然，报警机制在 Grafana 里面配一下也很方便，支持 Webhook、邮件甚至某钉。</p>
+<p>数据的存储和监控，用 Kafka、Elasticsearch 个人感觉也挺方便的，我主要用的是后者，然后再和 Grafana 配合起来，数据爬取量、爬取速度等等监控也都一目了然。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>至此，爬虫的一些涵盖的知识点也就差不多了，怎么样，梳理一下，是不是计算机网络、编程基础、前端开发、后端开发、App 开发与逆向、网络安全、数据库、运维、机器学习都涵盖到了？上面总结的可以算是从爬虫小白到爬虫高手的路径了，里面每个方向其实可研究的点非常多，每个点做精了，都会非常了不起。</p>
+<p>爬虫往往学着学着，就成为了一名全栈工程师或者全干工程师，因为你可能真的啥都会了。但是没办法啊，都是被爬虫逼的啊，如果不是生活所困，谁愿意一身才华呢？</p>
+<p>然而有了才华之后呢？摸摸头顶，卧槽，我的头发呢？</p>
+<p>嗯，大家都懂的。</p>
+<p>最后最重要的，珍爱生命、珍爱每一根头发。</p>
+<hr>
+<p>文章转自<a href="https://mp.weixin.qq.com/s/X_R4sv_3l0svv5s7wc4jGA">https://mp.weixin.qq.com/s/X_R4sv_3l0svv5s7wc4jGA</a></p>
+<p><strong>特别声明：如有侵权，告知笔者，立删此文！</strong></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>爬虫</category>
+      </categories>
+      <tags>
+        <tag>爬虫</tag>
       </tags>
   </entry>
 </search>
