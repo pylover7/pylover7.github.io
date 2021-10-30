@@ -4,7 +4,7 @@
   <url>
     <loc>https://pylover.net/501a8d5dd7dc.html</loc>
     
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     
   </url>
   
@@ -319,7 +319,7 @@
 
   <url>
     <loc>https://pylover.net/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -327,105 +327,105 @@
   
   <url>
     <loc>https://pylover.net/tags/python/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2021-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/tags/magic/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/re/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://pylover.net/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <loc>https://pylover.net/tags/magic/</loc>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/pycharm/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/</loc>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/VScode/</loc>
-    <lastmod>2021-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/tags/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/Chrome%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/tags/%E7%88%AC%E8%99%AB/</loc>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/jupyter/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/retrying/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/package/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/tags/Hexo/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -434,91 +434,91 @@
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2021-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python/</loc>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2021-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/categories/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Chrome%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2021-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E6%95%99%E7%A8%8B/%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2021-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/categories/%E9%A1%B9%E7%9B%AE/</loc>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/jupyter/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E9%A1%B9%E7%9B%AE/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Hexo/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
