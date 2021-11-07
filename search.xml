@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>python黑魔法指南</title>
-    <url>/956f654d80a2.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一本关于 <code>python</code> 的黑魔法指南，你值得拥有！</p>
-<span id="more"></span>
-]]></content>
-      <tags>
-        <tag>python</tag>
-        <tag>magic</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python项目管理与构建工具</title>
     <url>/bba48c4356b8.html</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>python的项目管理与构建工具</p>
@@ -25,6 +14,17 @@
       <tags>
         <tag>python</tag>
         <tag>项目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python黑魔法指南</title>
+    <url>/956f654d80a2.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一本关于 <code>python</code> 的黑魔法指南，你值得拥有！</p>
+<span id="more"></span>
+]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>magic</tag>
       </tags>
   </entry>
   <entry>
@@ -411,45 +411,6 @@
       </tags>
   </entry>
   <entry>
-    <title>奇妙的Python库</title>
-    <url>/1027c3ba669b.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Python</code> 中有很多奇妙且好用的第三方库，可以让你的任务变得更为容易，下面给大家收集一些好用的 <code>Python</code> 库，每一个都很不错的哟~</p>
-<span id="more"></span>
-
-<h2 id="酷酷的库"><a href="#酷酷的库" class="headerlink" title="酷酷的库"></a>酷酷的库</h2><h3 id="socket"><a href="#socket" class="headerlink" title="socket"></a>socket</h3><p>获取本机的局域网 <code>IP</code> 地址</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> socket <span class="keyword">as</span> f</span><br><span class="line"></span><br><span class="line">hostn = f.gethostname()</span><br><span class="line">Laptop = f.gethostbyname(hostn)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑本地IP地址是：&quot;</span> + Laptop)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑本地IP地址是：192.168.2.101</span></span><br></pre></td></tr></table></figure>
-
-<p>当然我们的目的是获取本机的公网 <code>IP</code>，不过这个已经和这个库没有什么关系了，是借助一个  <a class="btn" href="https://jsonip.com"><i class="fas fa-globe"></i>其他网站</a>  来实现的</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</span><br><span class="line"></span><br><span class="line"><span class="comment"># 全局取消证书验证</span></span><br><span class="line"><span class="keyword">import</span> ssl</span><br><span class="line">ssl._create_default_https_context = ssl._create_unverified_context</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> urlopen(<span class="string">r&#x27;https://jsonip.com&#x27;</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    content = fp.read().decode()</span><br><span class="line"></span><br><span class="line">ip = json.loads(content)[<span class="string">&#x27;ip&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑公网IP地址是：&quot;</span> + ip)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑公网IP地址是：120.236.128.201</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="pyshorteners"><a href="#pyshorteners" class="headerlink" title="pyshorteners"></a>pyshorteners</h3><p><code>pyshorteners</code> 是一个简单的 URL 缩短的库，提供了18种短链根域名供使用。</p>
-<p><img data-src="https://image.pylover.net/img/202110301403572.png?imageMogr2/format/webp"></p>
-<p>这里以 <code>clck.ru</code> 格式为例。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyshorteners <span class="keyword">as</span> psn</span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;http://www.shuhai.com/&quot;</span></span><br><span class="line">u = psn.Shortener().clckru.short(url)</span><br><span class="line"><span class="built_in">print</span>(u)</span><br><span class="line"></span><br><span class="line"><span class="comment"># https://clck.ru/WPJgg</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="fabulous"><a href="#fabulous" class="headerlink" title="fabulous"></a>fabulous</h3><p>添加文本颜色，如果你是在命令行上运行Python程序，那么输出都是相同颜色，不方便观察。</p>
-<p>使用 <code>Fabulous</code>，则可以添加图像、彩色文本来凸显输出。</p>
-<p><img data-src="https://image.pylover.net/img/202110301407629.png?imageMogr2/format/webp"></p>
-<p>示例：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> fabulous.color <span class="keyword">import</span> bold, magenta, highlight_red</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(bold(magenta(</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    hello world</span></span><br><span class="line"><span class="string">    this is some new line</span></span><br><span class="line"><span class="string">    and here is the last line. :)</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">)))</span><br></pre></td></tr></table></figure>
-
-<p>结果如下，输出字体加粗且有颜色。<br><img data-src="https://image.pylover.net/img/202110301410131.png?imageMogr2/format/webp"></p>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="/uploads/wechat.png"></object>
-<p>微信文章</p><p>这10个奇妙的Python库，你必须要试试！</p>
-<a href="https://mp.weixin.qq.com/s/5RZYPySM0GYSTwbvqyxK1A"></a>
-</div></div>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>package</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>VScode必备Python插件</title>
     <url>/501a8d5dd7dc.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在使用 <code>VScode</code> 的时候，优秀的各种插件总是能让你获得极其舒适的体验，下面就介绍一些开发 <code>Python</code> 时，一些好用的插件。 </p>
@@ -546,6 +507,89 @@
         <tag>python</tag>
         <tag>插件</tag>
         <tag>VScode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>奇妙的Python库</title>
+    <url>/1027c3ba669b.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Python</code> 中有很多奇妙且好用的第三方库，可以让你的任务变得更为容易，下面给大家收集一些好用的 <code>Python</code> 库，每一个都很不错的哟~</p>
+<span id="more"></span>
+
+<h2 id="酷酷的库"><a href="#酷酷的库" class="headerlink" title="酷酷的库"></a>酷酷的库</h2><h3 id="socket"><a href="#socket" class="headerlink" title="socket"></a>socket</h3><p>获取本机的局域网 <code>IP</code> 地址</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> socket <span class="keyword">as</span> f</span><br><span class="line"></span><br><span class="line">hostn = f.gethostname()</span><br><span class="line">Laptop = f.gethostbyname(hostn)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑本地IP地址是：&quot;</span> + Laptop)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑本地IP地址是：192.168.2.101</span></span><br></pre></td></tr></table></figure>
+
+<p>当然我们的目的是获取本机的公网 <code>IP</code>，不过这个已经和这个库没有什么关系了，是借助一个  <a class="btn" href="https://jsonip.com"><i class="fas fa-globe"></i>其他网站</a>  来实现的</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</span><br><span class="line"></span><br><span class="line"><span class="comment"># 全局取消证书验证</span></span><br><span class="line"><span class="keyword">import</span> ssl</span><br><span class="line">ssl._create_default_https_context = ssl._create_unverified_context</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> urlopen(<span class="string">r&#x27;https://jsonip.com&#x27;</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    content = fp.read().decode()</span><br><span class="line"></span><br><span class="line">ip = json.loads(content)[<span class="string">&#x27;ip&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑公网IP地址是：&quot;</span> + ip)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑公网IP地址是：120.236.128.201</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="pyshorteners"><a href="#pyshorteners" class="headerlink" title="pyshorteners"></a>pyshorteners</h3><p><code>pyshorteners</code> 是一个简单的 URL 缩短的库，提供了18种短链根域名供使用。</p>
+<p><img data-src="https://image.pylover.net/img/202110301403572.png?imageMogr2/format/webp"></p>
+<p>这里以 <code>clck.ru</code> 格式为例。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyshorteners <span class="keyword">as</span> psn</span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;http://www.shuhai.com/&quot;</span></span><br><span class="line">u = psn.Shortener().clckru.short(url)</span><br><span class="line"><span class="built_in">print</span>(u)</span><br><span class="line"></span><br><span class="line"><span class="comment"># https://clck.ru/WPJgg</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="fabulous"><a href="#fabulous" class="headerlink" title="fabulous"></a>fabulous</h3><p>添加文本颜色，如果你是在命令行上运行Python程序，那么输出都是相同颜色，不方便观察。</p>
+<p>使用 <code>Fabulous</code>，则可以添加图像、彩色文本来凸显输出。</p>
+<p><img data-src="https://image.pylover.net/img/202110301407629.png?imageMogr2/format/webp"></p>
+<p>示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> fabulous.color <span class="keyword">import</span> bold, magenta, highlight_red</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(bold(magenta(</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    hello world</span></span><br><span class="line"><span class="string">    this is some new line</span></span><br><span class="line"><span class="string">    and here is the last line. :)</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">)))</span><br></pre></td></tr></table></figure>
+
+<p>结果如下，输出字体加粗且有颜色。<br><img data-src="https://image.pylover.net/img/202110301410131.png?imageMogr2/format/webp"></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>这10个奇妙的Python库，你必须要试试！</p>
+<a href="https://mp.weixin.qq.com/s/5RZYPySM0GYSTwbvqyxK1A"></a>
+</div></div>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>package</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ajax笔记</title>
+    <url>/5967be06b66e.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Ajax</code> 前后端通信技术，简单学习并记录。</p>
+<span id="more"></span>
+
+<hr>
+<h2 id="Ajax-学习"><a href="#Ajax-学习" class="headerlink" title="Ajax  学习"></a><code>Ajax</code>  学习</h2><h2 id="HTTP-协议与请求内容"><a href="#HTTP-协议与请求内容" class="headerlink" title="HTTP 协议与请求内容"></a><code>HTTP</code> 协议与请求内容</h2><p><code>HTTP</code> 协议，【超文本传输协议】，规定了浏览器和万维网之间相互通信的规则，</p>
+<h3 id="请求报文"><a href="#请求报文" class="headerlink" title="请求报文"></a>请求报文</h3><p>重点是格式与参数</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">行      POST  /s?ie=utf-8  HTTP/1.1</span><br><span class="line">头      Host: baidu.com</span><br><span class="line">		Cookies: name=guigu</span><br><span class="line">		Content-type: text/html</span><br><span class="line">		User-Agent: chrome 3</span><br><span class="line">空行     (必须有，但为空)</span><br><span class="line">体      username=admin&amp;password=adimn</span><br></pre></td></tr></table></figure>
+
+<h3 id="响应报文"><a href="#响应报文" class="headerlink" title="响应报文"></a>响应报文</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">行      HTTP1.1(http版本)  200(相应状态码)  OK(状态字符串)</span><br><span class="line">头      Content-type: text/html</span><br><span class="line">		Content-length: 2048</span><br><span class="line">		Content-encoding: gzip</span><br><span class="line">空行     (必须有，但为空)</span><br><span class="line">体	   http 内容</span><br></pre></td></tr></table></figure>
+
+<h2 id="AJAX-请求的基本操作"><a href="#AJAX-请求的基本操作" class="headerlink" title="AJAX 请求的基本操作"></a>AJAX 请求的基本操作</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 获取元素</span></span><br><span class="line"><span class="keyword">const</span> btn = <span class="built_in">document</span>.getElementsByTagName(<span class="string">&quot;button&quot;</span>)[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">const</span> result = <span class="built_in">document</span>.getElementsById(<span class="string">&quot;result&quot;</span>);</span><br><span class="line"><span class="comment">// 绑定事件</span></span><br><span class="line">btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="comment">// 1. 创建对象</span></span><br><span class="line">	<span class="keyword">const</span> xhr = <span class="keyword">new</span> XMLHttpRequest()</span><br><span class="line">	<span class="comment">// 2. 初始化，设置请求方法和 url</span></span><br><span class="line">	xhr.open(<span class="string">&quot;GET&quot;</span>, <span class="string">&quot;http://127.0.0.1/server&quot;</span>)</span><br><span class="line">	<span class="comment">// 3. 发送</span></span><br><span class="line">	xhr.send()</span><br><span class="line">	<span class="comment">// 4. 事件绑定 处理服务端返回的结果</span></span><br><span class="line">	<span class="comment">// on when 当...时候</span></span><br><span class="line">	<span class="comment">// readystate 是 xhr 对象中的属性，表示状态 0 1 2 3 4  通常是状态为 4 的时候做处理</span></span><br><span class="line">	<span class="comment">// change 改变</span></span><br><span class="line">	xhr.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="comment">// 判断（服务端返回的所有结果）</span></span><br><span class="line">	<span class="keyword">if</span>(xhr.readyState === <span class="number">4</span>)&#123;</span><br><span class="line">			<span class="comment">// 判断响应的状态码 200</span></span><br><span class="line">			<span class="comment">// 2xx 都表示成功</span></span><br><span class="line">			<span class="keyword">if</span>(xhr.status &gt;= <span class="number">200</span> &amp;&amp; xhr.status &lt;= <span class="number">300</span>)&#123;</span><br><span class="line">				<span class="comment">// 处理结果</span></span><br><span class="line">				<span class="comment">// 1. 响应行</span></span><br><span class="line">				<span class="built_in">console</span>.log(xhr.status); <span class="comment">// 状态码</span></span><br><span class="line">				<span class="built_in">console</span>.log(xhr.statusText); <span class="comment">// 状态字符串</span></span><br><span class="line">				<span class="built_in">console</span>.log(xhr.getAllResponseHeaders()); <span class="comment">// 所有响应头</span></span><br><span class="line">				<span class="built_in">console</span>.log(xhr.response) <span class="comment">// 响应体</span></span><br><span class="line">				</span><br><span class="line">				<span class="comment">// 设置 result 文本</span></span><br><span class="line">				result.innerHTML = xhr.response</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>设置 url 参数</strong><br>在 <code>url</code> 后面加 <code>?a=100...</code></p>
+<h2 id="AJAX-发送-POST-请求"><a href="#AJAX-发送-POST-请求" class="headerlink" title="AJAX 发送 POST 请求"></a>AJAX 发送 POST 请求</h2><h3 id="不带参数"><a href="#不带参数" class="headerlink" title="不带参数"></a>不带参数</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 创建对象</span></span><br><span class="line"><span class="keyword">const</span> result.getElementById(<span class="string">&quot;result&quot;</span>)</span><br><span class="line"><span class="comment">// 绑定事件</span></span><br><span class="line">result.addEventListener(<span class="string">&quot;mouseover&quot;</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="comment">// 1. 创建对象</span></span><br><span class="line">	<span class="comment">// 2. 初始化，设置请求方法和 url</span></span><br><span class="line">	<span class="comment">// 3. 发送</span></span><br><span class="line">	<span class="comment">// 4. 事件绑定</span></span><br><span class="line">		<span class="comment">// 状态判断</span></span><br><span class="line">		<span class="comment">// 处理服务端响应的结果</span></span><br><span class="line">		</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="带参数请求"><a href="#带参数请求" class="headerlink" title="带参数请求"></a>带参数请求</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="comment">// 3. 发送</span></span><br><span class="line">xhr.send(<span class="string">&quot;a=100&amp;b=200&amp;c=300&quot;</span>);</span><br><span class="line">xhr.send(<span class="string">&quot;a:100&amp;b:200&amp;c:300&quot;</span>);</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<h2 id="AJAX-设置请求头信息"><a href="#AJAX-设置请求头信息" class="headerlink" title="AJAX 设置请求头信息"></a>AJAX 设置请求头信息</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 2. 初始化，设置请求方法和 url</span></span><br><span class="line"><span class="comment">// 设置请求头，参数一：请求头名字；参数二：请求头的值</span></span><br><span class="line">xhr.setRequestHeader(<span class="string">&quot;Content-Typt&quot;</span>, <span class="string">&quot;text/html&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="服务端返回-JSON"><a href="#服务端返回-JSON" class="headerlink" title="服务端返回 JSON"></a>服务端返回 JSON</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 4. 事件绑定</span></span><br><span class="line">	<span class="comment">// 处理服务端响应的结果</span></span><br><span class="line">	<span class="comment">// 手动转换</span></span><br><span class="line">	<span class="keyword">let</span> data = <span class="built_in">JSON</span>.parse(xhr.response);</span><br><span class="line">	result.innerHTML = data.name;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 自动转换</span></span><br><span class="line">	<span class="comment">// 设置响应体数据的类型</span></span><br><span class="line">	xhr.responseType = <span class="string">&quot;json&quot;</span></span><br><span class="line">	...</span><br></pre></td></tr></table></figure>
+
+<h2 id="请求超时与网络异常"><a href="#请求超时与网络异常" class="headerlink" title="请求超时与网络异常"></a>请求超时与网络异常</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 设置超时后取消请求</span></span><br><span class="line"><span class="comment">// 超时设置 2s</span></span><br><span class="line">xhr.timeout(<span class="number">2000</span>)</span><br><span class="line"><span class="comment">// 超时回调</span></span><br><span class="line">xhr.ontimeout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 网络异常回调</span></span><br><span class="line">xhr.onerror = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 手动取消</span></span><br><span class="line"><span class="comment">// 事件绑定中调用</span></span><br><span class="line">xhr.abort()</span><br></pre></td></tr></table></figure>
+
+<h2 id="防止重复发送请求"><a href="#防止重复发送请求" class="headerlink" title="防止重复发送请求"></a>防止重复发送请求</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>参考文章</p><p>参考文章的描述</p>
+<a href="#"></a>
+</div></div>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>ajax</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+        <tag>ajax</tag>
       </tags>
   </entry>
   <entry>
