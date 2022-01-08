@@ -110,90 +110,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Pycharm插件推荐</title>
-    <url>/8598bcba2424.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> <code>Pycharm</code> 作为最好的 <code>python</code> 编辑器之一，本身的功能就非常优秀了，不过加上了一些优秀的插件，它会变得更加优秀！</p>
-<span id="more"></span>
-
-<h2 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h2><h3 id="Chinese-Language-Pack"><a href="#Chinese-Language-Pack" class="headerlink" title="Chinese Language Pack"></a>Chinese Language Pack</h3><p>英语不好的同学，看着 <code>pycharm</code> 那么多的功能却不知道怎么用的，就不用多说了吧~<br><img data-src="https://image.pylover.net/img/202110272114715.png?imageMogr2/format/webp"></p>
-<h3 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h3><p>这个插件可以让你在 <code>Pycharm</code> 的任何地方对各种语言进行翻译，再也不用担心看源代码的注释看不懂了，而且不知道怎么用英语表达的中文也可以立马用翻译过来，必须是必备插件！<br><img data-src="https://image.pylover.net/img/202110272115075.png?imageMogr2/format/webp"></p>
-<div class="note info"><h4 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h4><p>选中想要翻译的词汇后： <code>Ctrl+Shift+y</code></p>
-</div>
-
-<h3 id="AiXcoder-Code-Completer"><a href="#AiXcoder-Code-Completer" class="headerlink" title="AiXcoder Code Completer"></a>AiXcoder Code Completer</h3><p>各位日常写代码的小伙伴应该都知道 <strong>代码补全</strong> 这个好用的功能，<code>aixcoder</code> 就是一款这样的插件：智能编程助手，是真的非常好用！谁用谁知道；反正小编是超级喜欢的；除此之外的其他功能，小伙伴们可以去他的官网看看<br><img data-src="https://image.pylover.net/img/202110272115255.png?imageMogr2/format/webp"></p>
-<div class="note info"><h4 id="Aixcoder"><a href="#Aixcoder" class="headerlink" title="Aixcoder"></a><code>Aixcoder</code></h4><p><a href="https://www.aixcoder.com/">官网地址</a></p>
-</div>
-
-<h3 id="Kite"><a href="#Kite" class="headerlink" title="Kite"></a>Kite</h3><p>和 <code>Aixcoder</code> 一样，也是一款代码补全插件，谁用谁知道，不过小编一般使用 <code>Aixcoder</code> ，原因有两个：</p>
-<ul>
-<li><p><code>aixcoder</code> 是我们自己国家的的， <code>kite</code> 是别人的，咱们还是要支持咱自己的东西；</p>
-</li>
-<li><p><code>kite</code> 的代码补全不像 <code>aixcoder</code> 那么多，补全的稍微比较少；</p>
-<p>不过，<code>kite</code> 也有它的优势，部分使用体验会好一些，至于具体使用哪一个，那就由小伙伴们自己决定了。<br><img data-src="https://image.pylover.net/img/202110272117889.png?imageMogr2/format/webp"></p>
-</li>
-</ul>
-<div class="note info"><h4 id="Kite"><a href="#Kite" class="headerlink" title="Kite"></a><code>Kite</code></h4><p><a href="https://www.kite.com/">官网地址</a></p>
-</div>
-
-<h3 id="Key-Promoter-X"><a href="#Key-Promoter-X" class="headerlink" title="Key Promoter X"></a>Key Promoter X</h3><p>这是一款提示你每个操作的快捷键是什么的插件，如果没有相应的快捷键，也会提示你需不需要建立一个；如果你在写代码的时候不想用鼠标，双手一直在键盘上，那就可以尝试一下这款插件，它可以不厌其烦的提示你，你此时用鼠标操作的快捷键是啥（当然你要是烦了也可以关掉了啦），一直到你记住为止；当然，如果不不习惯它原本的快捷键，也可以非常方便的修改成自己喜欢的快捷键，如果你本就是想学快捷键，那这就是个上上选的插件了。<br><img data-src="https://image.pylover.net/img/202110272118831.png?imageMogr2/format/webp"></p>
-<p>提示的方式如下：<br><img data-src="https://image.pylover.net/img/202110272121902.png?imageMogr2/format/webp"></p>
-<h3 id="Gitee"><a href="#Gitee" class="headerlink" title="Gitee"></a>Gitee</h3><p>一个可以登录 <code>Gitee</code> 的插件，类似于 <code>Pycharm</code> 自带的 <code>Github</code> 插件一样，可以直接在编辑器内对远程仓库进行 <code>Clone</code> 等操作。<br><img data-src="https://image.pylover.net/img/202110272123010.png?imageMogr2/format/webp"></p>
-<p>在这里登录：<br><img data-src="https://image.pylover.net/img/202110272124384.png?imageMogr2/format/webp"></p>
-<h3 id="CSV-plugin"><a href="#CSV-plugin" class="headerlink" title="CSV plugin"></a>CSV plugin</h3><p>用于通过灵活的表编辑器编辑 csv、tsv、psv文件，语法验证，结构突出显示，可自定义的颜色，新意图和有用的检查；主要是在 Pycharm 里打开 csv 文件原本的样式太不美观了，数据密密麻麻的，用这个插件就会友好很多很多。<br><img data-src="https://image.pylover.net/img/202110272124921.png?imageMogr2/format/webp"></p>
-<h3 id="Rainbow-Brackets"><a href="#Rainbow-Brackets" class="headerlink" title="Rainbow Brackets"></a>Rainbow Brackets</h3><p>让你的括号等类似符号不同层之间显示不同，支持许多的语言。这个可以使不同的括号显示不同的颜色，便于我们在许多括号的时候辨别哪两个括号是一对的；也是个挺好用的插件。<br><img data-src="https://image.pylover.net/img/202110272124831.png?imageMogr2/format/webp"></p>
-<p>很多层级的时候就像这样：<br><img data-src="https://image.pylover.net/img/202110272124065.png?imageMogr2/format/webp"></p>
-<h3 id="Atom-Material-Icons"><a href="#Atom-Material-Icons" class="headerlink" title="Atom Material Icons"></a>Atom Material Icons</h3><p>这个插件主要用于自定义 <code>Pycharm</code> 的 UI 图标和文件目录的图标，用完以后比之前的好看很多！<br><img data-src="https://image.pylover.net/img/202110272124153.png?imageMogr2/format/webp"></p>
-<p>用了这个插件部分文件的图标如下：<br><img data-src="https://image.pylover.net/img/202110272125618.png?imageMogr2/format/webp"></p>
-<h3 id="ignore"><a href="#ignore" class="headerlink" title=".ignore"></a>.ignore</h3><p>用于创建各种 <code>.ignore</code> 文件；例如当我们在进行项目的版本管理的时候，总有很多文件是不需要管理的，也会有很多重要的文件是不能上传到仓库的，这个时候要是自己一个一个手打的话….还是用这个插件直接创建一个吧，它自带了很多的模板，可由我们自由选择，很方便。<br><img data-src="https://image.pylover.net/img/202110272125819.png?imageMogr2/format/webp"></p>
-<p>创建方法：在新建文件里面就可以选择模板了</p>
-<h3 id="CodeGlance"><a href="#CodeGlance" class="headerlink" title="CodeGlance"></a>CodeGlance</h3><p>将类似于 <code>Sublime</code> 中的代码小地图嵌入到编辑器窗格中，如下，这样子假如我们一个文件有很长的代码，用鼠标滚轮上下滚动就很累，有了这个小地图，直接就可以用鼠标拖动进度了，特别方便！<br><img data-src="https://image.pylover.net/img/202110272125598.png?imageMogr2/format/webp"></p>
-<p>启用后文件的后边小地图：<br><img data-src="https://image.pylover.net/img/202110272125435.png?imageMogr2/format/webp"></p>
-<h3 id="SonarLint"><a href="#SonarLint" class="headerlink" title="SonarLint"></a>SonarLint</h3><p>这个插件能够在你写代码的时候帮你查找你代码的错误和漏洞并给出修改的相关规则和建议，简单来说就是帮你找错的，不然有时候很多错要运行很多遍才能一个一个改过来。<br><img data-src="https://image.pylover.net/img/202110272125490.png?imageMogr2/format/webp"></p>
-<p><img data-src="https://image.pylover.net/img/202110272125117.png?imageMogr2/format/webp"></p>
-<p><img data-src="https://image.pylover.net/img/202110272126126.png?imageMogr2/format/webp"></p>
-<h3 id="PlantUML-integration"><a href="#PlantUML-integration" class="headerlink" title="PlantUML integration"></a>PlantUML integration</h3><p>一个非常强大的插件，主要用于用代码绘制PlantUML 图表，至于这个图是个啥，放个图看看<br><img data-src="https://image.pylover.net/img/202110272126718.png?imageMogr2/format/webp"></p>
-<p><img data-src="https://image.pylover.net/img/202110272126772.png?imageMogr2/format/webp"></p>
-<p>除此之外，还能绘制很多的图，想了解的小伙伴可以去是它的『 <a href="https://plantuml.com/zh/">官网</a> 』看看<br><img data-src="https://image.pylover.net/img/202110272126536.png?imageMogr2/format/webp"></p>
-<h3 id="IdeaVim"><a href="#IdeaVim" class="headerlink" title="IdeaVim"></a>IdeaVim</h3><p>在大多数场景之下，使用鼠标的效率和精准度，是远不如键盘快捷键的（前提是你已经相当熟练的掌握了快捷键），这个你得承认吧。</p>
-<p>Vi 可以满足你对文本操作的所有需求，比可视化界面更加效率，更加 geek。在安装完 Pycharm 完后，将 <code>ideaVim</code> 这个插件也装上，它可以让我们在 Pycharm 中 使用 vim 来编辑代码。<br><img data-src="https://image.pylover.net/img/202110272126007.png?imageMogr2/format/webp"></p>
-<h3 id="RegexpTester"><a href="#RegexpTester" class="headerlink" title="RegexpTester"></a>RegexpTester</h3><p><code>Regex Tester</code> 是 <code>PyCharm</code> 的第三方插件，可以测试正则表达式。</p>
-<p><img data-src="https://image.pylover.net/img/202110280100248.png?imageMogr2/format/webp"></p>
-<p>安装完成后，无需重启 <code>PyCharm</code> ，点击  <code>PyCharm</code>  界面左下方的小矩形按钮，就能找到 <code>Regex Tester</code> 选项。</p>
-<p><img data-src="https://image.pylover.net/img/202110280101634.png?imageMogr2/format/webp"></p>
-<p>点击进入后，就出现了如下界面。匹配到的字符串背景会被高亮。右上方还有一些选项如大小写敏感，多行模式等，可根据需要进行选择。<code>Regex Tester</code> 还提供了<code>Split，Replace</code> 功能等。</p>
-<p>使用效果如下：</p>
-<p><img data-src="https://image.pylover.net/img/202110280103797.png?imageMogr2/format/webp"></p>
-<h3 id="Json-Parser"><a href="#Json-Parser" class="headerlink" title="Json Parser"></a>Json Parser</h3><p>在开发过程中，经常会把校验一串 JSON 字符串是否合法，在以前我的做法都是打开 <a href="https://tool.lu/json/">https://tool.lu/json/</a> 这个在线网站，直接美化来校验，只有 JSON 格式都正确无误合法的，才能够美化。</p>
-<p>直到后来发现在 <code>PyCharm</code> 有一个插件专门来做这个事，那就是 <code>JSON Parser</code>，在插件市场安装后，重启 <code>PyCharm</code> ，就能在右侧边栏中看到它。</p>
-<p><img data-src="https://image.pylover.net/img/202110280104191.png?imageMogr2/format/webp"></p>
-<h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>以上就是小编推荐的一些好用的 <code>Pycharm</code> 插件，让优秀的 <code>Pycharm</code> 变得更为优秀！</p>
-<div class="note warning"><h4 id="请注意"><a href="#请注意" class="headerlink" title="请注意"></a>请注意</h4><p>若是你的设备性能不够好，建议不要装这么多插件，毕竟 <code>Pycharm</code> 本身就是一个重量级的编辑器！</p>
-</div>
-
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="/uploads/wechat.png"></object>
-<p>微信文章</p><p>参考文章的描述</p>
-<a href="https://mp.weixin.qq.com/s?__biz=Mzg3NzU1MjgxOA==&mid=2247486689&idx=1&sn=e9a500f50cdefa8e3c6672a792c1cf53&scene=19#wechat_redirect"></a>
-</div><div class="link-grid-container">
-<object class="link-grid-image" data="/uploads/wechat.png"></object>
-<p>微信文章</p><p>参考文章的描述</p>
-<a href="https://mp.weixin.qq.com/s?__biz=Mzg3NzU1MjgxOA==&mid=100004344&idx=1&sn=366a25b50f754a15ea085a52c79d7689&scene=19#wechat_redirect"></a>
-</div><div class="link-grid-container">
-<object class="link-grid-image" data="/uploads/wechat.png"></object>
-<p>微信文章</p><p>参考文章的描述</p>
-<a href="https://mp.weixin.qq.com/s/wOTDnyG5VV2XYx1qe4apMA"></a>
-</div></div>
-]]></content>
-      <categories>
-        <category>教程</category>
-        <category>插件</category>
-      </categories>
-      <tags>
-        <tag>pycharm</tag>
-        <tag>插件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python装饰器</title>
     <url>/b17576fd19ba.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>学习装饰器的一点点小笔记，记录一下</p>
@@ -309,6 +225,90 @@
       <tags>
         <tag>python</tag>
         <tag>装饰器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Pycharm插件推荐</title>
+    <url>/8598bcba2424.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> <code>Pycharm</code> 作为最好的 <code>python</code> 编辑器之一，本身的功能就非常优秀了，不过加上了一些优秀的插件，它会变得更加优秀！</p>
+<span id="more"></span>
+
+<h2 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h2><h3 id="Chinese-Language-Pack"><a href="#Chinese-Language-Pack" class="headerlink" title="Chinese Language Pack"></a>Chinese Language Pack</h3><p>英语不好的同学，看着 <code>pycharm</code> 那么多的功能却不知道怎么用的，就不用多说了吧~<br><img data-src="https://image.pylover.net/img/202110272114715.png?imageMogr2/format/webp"></p>
+<h3 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h3><p>这个插件可以让你在 <code>Pycharm</code> 的任何地方对各种语言进行翻译，再也不用担心看源代码的注释看不懂了，而且不知道怎么用英语表达的中文也可以立马用翻译过来，必须是必备插件！<br><img data-src="https://image.pylover.net/img/202110272115075.png?imageMogr2/format/webp"></p>
+<div class="note info"><h4 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h4><p>选中想要翻译的词汇后： <code>Ctrl+Shift+y</code></p>
+</div>
+
+<h3 id="AiXcoder-Code-Completer"><a href="#AiXcoder-Code-Completer" class="headerlink" title="AiXcoder Code Completer"></a>AiXcoder Code Completer</h3><p>各位日常写代码的小伙伴应该都知道 <strong>代码补全</strong> 这个好用的功能，<code>aixcoder</code> 就是一款这样的插件：智能编程助手，是真的非常好用！谁用谁知道；反正小编是超级喜欢的；除此之外的其他功能，小伙伴们可以去他的官网看看<br><img data-src="https://image.pylover.net/img/202110272115255.png?imageMogr2/format/webp"></p>
+<div class="note info"><h4 id="Aixcoder"><a href="#Aixcoder" class="headerlink" title="Aixcoder"></a><code>Aixcoder</code></h4><p><a href="https://www.aixcoder.com/">官网地址</a></p>
+</div>
+
+<h3 id="Kite"><a href="#Kite" class="headerlink" title="Kite"></a>Kite</h3><p>和 <code>Aixcoder</code> 一样，也是一款代码补全插件，谁用谁知道，不过小编一般使用 <code>Aixcoder</code> ，原因有两个：</p>
+<ul>
+<li><p><code>aixcoder</code> 是我们自己国家的的， <code>kite</code> 是别人的，咱们还是要支持咱自己的东西；</p>
+</li>
+<li><p><code>kite</code> 的代码补全不像 <code>aixcoder</code> 那么多，补全的稍微比较少；</p>
+<p>不过，<code>kite</code> 也有它的优势，部分使用体验会好一些，至于具体使用哪一个，那就由小伙伴们自己决定了。<br><img data-src="https://image.pylover.net/img/202110272117889.png?imageMogr2/format/webp"></p>
+</li>
+</ul>
+<div class="note info"><h4 id="Kite"><a href="#Kite" class="headerlink" title="Kite"></a><code>Kite</code></h4><p><a href="https://www.kite.com/">官网地址</a></p>
+</div>
+
+<h3 id="Key-Promoter-X"><a href="#Key-Promoter-X" class="headerlink" title="Key Promoter X"></a>Key Promoter X</h3><p>这是一款提示你每个操作的快捷键是什么的插件，如果没有相应的快捷键，也会提示你需不需要建立一个；如果你在写代码的时候不想用鼠标，双手一直在键盘上，那就可以尝试一下这款插件，它可以不厌其烦的提示你，你此时用鼠标操作的快捷键是啥（当然你要是烦了也可以关掉了啦），一直到你记住为止；当然，如果不不习惯它原本的快捷键，也可以非常方便的修改成自己喜欢的快捷键，如果你本就是想学快捷键，那这就是个上上选的插件了。<br><img data-src="https://image.pylover.net/img/202110272118831.png?imageMogr2/format/webp"></p>
+<p>提示的方式如下：<br><img data-src="https://image.pylover.net/img/202110272121902.png?imageMogr2/format/webp"></p>
+<h3 id="Gitee"><a href="#Gitee" class="headerlink" title="Gitee"></a>Gitee</h3><p>一个可以登录 <code>Gitee</code> 的插件，类似于 <code>Pycharm</code> 自带的 <code>Github</code> 插件一样，可以直接在编辑器内对远程仓库进行 <code>Clone</code> 等操作。<br><img data-src="https://image.pylover.net/img/202110272123010.png?imageMogr2/format/webp"></p>
+<p>在这里登录：<br><img data-src="https://image.pylover.net/img/202110272124384.png?imageMogr2/format/webp"></p>
+<h3 id="CSV-plugin"><a href="#CSV-plugin" class="headerlink" title="CSV plugin"></a>CSV plugin</h3><p>用于通过灵活的表编辑器编辑 csv、tsv、psv文件，语法验证，结构突出显示，可自定义的颜色，新意图和有用的检查；主要是在 Pycharm 里打开 csv 文件原本的样式太不美观了，数据密密麻麻的，用这个插件就会友好很多很多。<br><img data-src="https://image.pylover.net/img/202110272124921.png?imageMogr2/format/webp"></p>
+<h3 id="Rainbow-Brackets"><a href="#Rainbow-Brackets" class="headerlink" title="Rainbow Brackets"></a>Rainbow Brackets</h3><p>让你的括号等类似符号不同层之间显示不同，支持许多的语言。这个可以使不同的括号显示不同的颜色，便于我们在许多括号的时候辨别哪两个括号是一对的；也是个挺好用的插件。<br><img data-src="https://image.pylover.net/img/202110272124831.png?imageMogr2/format/webp"></p>
+<p>很多层级的时候就像这样：<br><img data-src="https://image.pylover.net/img/202110272124065.png?imageMogr2/format/webp"></p>
+<h3 id="Atom-Material-Icons"><a href="#Atom-Material-Icons" class="headerlink" title="Atom Material Icons"></a>Atom Material Icons</h3><p>这个插件主要用于自定义 <code>Pycharm</code> 的 UI 图标和文件目录的图标，用完以后比之前的好看很多！<br><img data-src="https://image.pylover.net/img/202110272124153.png?imageMogr2/format/webp"></p>
+<p>用了这个插件部分文件的图标如下：<br><img data-src="https://image.pylover.net/img/202110272125618.png?imageMogr2/format/webp"></p>
+<h3 id="ignore"><a href="#ignore" class="headerlink" title=".ignore"></a>.ignore</h3><p>用于创建各种 <code>.ignore</code> 文件；例如当我们在进行项目的版本管理的时候，总有很多文件是不需要管理的，也会有很多重要的文件是不能上传到仓库的，这个时候要是自己一个一个手打的话….还是用这个插件直接创建一个吧，它自带了很多的模板，可由我们自由选择，很方便。<br><img data-src="https://image.pylover.net/img/202110272125819.png?imageMogr2/format/webp"></p>
+<p>创建方法：在新建文件里面就可以选择模板了</p>
+<h3 id="CodeGlance"><a href="#CodeGlance" class="headerlink" title="CodeGlance"></a>CodeGlance</h3><p>将类似于 <code>Sublime</code> 中的代码小地图嵌入到编辑器窗格中，如下，这样子假如我们一个文件有很长的代码，用鼠标滚轮上下滚动就很累，有了这个小地图，直接就可以用鼠标拖动进度了，特别方便！<br><img data-src="https://image.pylover.net/img/202110272125598.png?imageMogr2/format/webp"></p>
+<p>启用后文件的后边小地图：<br><img data-src="https://image.pylover.net/img/202110272125435.png?imageMogr2/format/webp"></p>
+<h3 id="SonarLint"><a href="#SonarLint" class="headerlink" title="SonarLint"></a>SonarLint</h3><p>这个插件能够在你写代码的时候帮你查找你代码的错误和漏洞并给出修改的相关规则和建议，简单来说就是帮你找错的，不然有时候很多错要运行很多遍才能一个一个改过来。<br><img data-src="https://image.pylover.net/img/202110272125490.png?imageMogr2/format/webp"></p>
+<p><img data-src="https://image.pylover.net/img/202110272125117.png?imageMogr2/format/webp"></p>
+<p><img data-src="https://image.pylover.net/img/202110272126126.png?imageMogr2/format/webp"></p>
+<h3 id="PlantUML-integration"><a href="#PlantUML-integration" class="headerlink" title="PlantUML integration"></a>PlantUML integration</h3><p>一个非常强大的插件，主要用于用代码绘制PlantUML 图表，至于这个图是个啥，放个图看看<br><img data-src="https://image.pylover.net/img/202110272126718.png?imageMogr2/format/webp"></p>
+<p><img data-src="https://image.pylover.net/img/202110272126772.png?imageMogr2/format/webp"></p>
+<p>除此之外，还能绘制很多的图，想了解的小伙伴可以去是它的『 <a href="https://plantuml.com/zh/">官网</a> 』看看<br><img data-src="https://image.pylover.net/img/202110272126536.png?imageMogr2/format/webp"></p>
+<h3 id="IdeaVim"><a href="#IdeaVim" class="headerlink" title="IdeaVim"></a>IdeaVim</h3><p>在大多数场景之下，使用鼠标的效率和精准度，是远不如键盘快捷键的（前提是你已经相当熟练的掌握了快捷键），这个你得承认吧。</p>
+<p>Vi 可以满足你对文本操作的所有需求，比可视化界面更加效率，更加 geek。在安装完 Pycharm 完后，将 <code>ideaVim</code> 这个插件也装上，它可以让我们在 Pycharm 中 使用 vim 来编辑代码。<br><img data-src="https://image.pylover.net/img/202110272126007.png?imageMogr2/format/webp"></p>
+<h3 id="RegexpTester"><a href="#RegexpTester" class="headerlink" title="RegexpTester"></a>RegexpTester</h3><p><code>Regex Tester</code> 是 <code>PyCharm</code> 的第三方插件，可以测试正则表达式。</p>
+<p><img data-src="https://image.pylover.net/img/202110280100248.png?imageMogr2/format/webp"></p>
+<p>安装完成后，无需重启 <code>PyCharm</code> ，点击  <code>PyCharm</code>  界面左下方的小矩形按钮，就能找到 <code>Regex Tester</code> 选项。</p>
+<p><img data-src="https://image.pylover.net/img/202110280101634.png?imageMogr2/format/webp"></p>
+<p>点击进入后，就出现了如下界面。匹配到的字符串背景会被高亮。右上方还有一些选项如大小写敏感，多行模式等，可根据需要进行选择。<code>Regex Tester</code> 还提供了<code>Split，Replace</code> 功能等。</p>
+<p>使用效果如下：</p>
+<p><img data-src="https://image.pylover.net/img/202110280103797.png?imageMogr2/format/webp"></p>
+<h3 id="Json-Parser"><a href="#Json-Parser" class="headerlink" title="Json Parser"></a>Json Parser</h3><p>在开发过程中，经常会把校验一串 JSON 字符串是否合法，在以前我的做法都是打开 <a href="https://tool.lu/json/">https://tool.lu/json/</a> 这个在线网站，直接美化来校验，只有 JSON 格式都正确无误合法的，才能够美化。</p>
+<p>直到后来发现在 <code>PyCharm</code> 有一个插件专门来做这个事，那就是 <code>JSON Parser</code>，在插件市场安装后，重启 <code>PyCharm</code> ，就能在右侧边栏中看到它。</p>
+<p><img data-src="https://image.pylover.net/img/202110280104191.png?imageMogr2/format/webp"></p>
+<h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>以上就是小编推荐的一些好用的 <code>Pycharm</code> 插件，让优秀的 <code>Pycharm</code> 变得更为优秀！</p>
+<div class="note warning"><h4 id="请注意"><a href="#请注意" class="headerlink" title="请注意"></a>请注意</h4><p>若是你的设备性能不够好，建议不要装这么多插件，毕竟 <code>Pycharm</code> 本身就是一个重量级的编辑器！</p>
+</div>
+
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>参考文章的描述</p>
+<a href="https://mp.weixin.qq.com/s?__biz=Mzg3NzU1MjgxOA==&mid=2247486689&idx=1&sn=e9a500f50cdefa8e3c6672a792c1cf53&scene=19#wechat_redirect"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>参考文章的描述</p>
+<a href="https://mp.weixin.qq.com/s?__biz=Mzg3NzU1MjgxOA==&mid=100004344&idx=1&sn=366a25b50f754a15ea085a52c79d7689&scene=19#wechat_redirect"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>参考文章的描述</p>
+<a href="https://mp.weixin.qq.com/s/wOTDnyG5VV2XYx1qe4apMA"></a>
+</div></div>
+]]></content>
+      <categories>
+        <category>教程</category>
+        <category>插件</category>
+      </categories>
+      <tags>
+        <tag>pycharm</tag>
+        <tag>插件</tag>
       </tags>
   </entry>
   <entry>
@@ -510,6 +510,45 @@
       </tags>
   </entry>
   <entry>
+    <title>奇妙的Python库</title>
+    <url>/1027c3ba669b.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Python</code> 中有很多奇妙且好用的第三方库，可以让你的任务变得更为容易，下面给大家收集一些好用的 <code>Python</code> 库，每一个都很不错的哟~</p>
+<span id="more"></span>
+
+<h2 id="酷酷的库"><a href="#酷酷的库" class="headerlink" title="酷酷的库"></a>酷酷的库</h2><h3 id="socket"><a href="#socket" class="headerlink" title="socket"></a>socket</h3><p>获取本机的局域网 <code>IP</code> 地址</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> socket <span class="keyword">as</span> f</span><br><span class="line"></span><br><span class="line">hostn = f.gethostname()</span><br><span class="line">Laptop = f.gethostbyname(hostn)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑本地IP地址是：&quot;</span> + Laptop)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑本地IP地址是：192.168.2.101</span></span><br></pre></td></tr></table></figure>
+
+<p>当然我们的目的是获取本机的公网 <code>IP</code>，不过这个已经和这个库没有什么关系了，是借助一个  <a class="btn" href="https://jsonip.com"><i class="fas fa-globe"></i>其他网站</a>  来实现的</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</span><br><span class="line"></span><br><span class="line"><span class="comment"># 全局取消证书验证</span></span><br><span class="line"><span class="keyword">import</span> ssl</span><br><span class="line">ssl._create_default_https_context = ssl._create_unverified_context</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> urlopen(<span class="string">r&#x27;https://jsonip.com&#x27;</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    content = fp.read().decode()</span><br><span class="line"></span><br><span class="line">ip = json.loads(content)[<span class="string">&#x27;ip&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑公网IP地址是：&quot;</span> + ip)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑公网IP地址是：120.236.128.201</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="pyshorteners"><a href="#pyshorteners" class="headerlink" title="pyshorteners"></a>pyshorteners</h3><p><code>pyshorteners</code> 是一个简单的 URL 缩短的库，提供了18种短链根域名供使用。</p>
+<p><img data-src="https://image.pylover.net/img/202110301403572.png?imageMogr2/format/webp"></p>
+<p>这里以 <code>clck.ru</code> 格式为例。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyshorteners <span class="keyword">as</span> psn</span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;http://www.shuhai.com/&quot;</span></span><br><span class="line">u = psn.Shortener().clckru.short(url)</span><br><span class="line"><span class="built_in">print</span>(u)</span><br><span class="line"></span><br><span class="line"><span class="comment"># https://clck.ru/WPJgg</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="fabulous"><a href="#fabulous" class="headerlink" title="fabulous"></a>fabulous</h3><p>添加文本颜色，如果你是在命令行上运行Python程序，那么输出都是相同颜色，不方便观察。</p>
+<p>使用 <code>Fabulous</code>，则可以添加图像、彩色文本来凸显输出。</p>
+<p><img data-src="https://image.pylover.net/img/202110301407629.png?imageMogr2/format/webp"></p>
+<p>示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> fabulous.color <span class="keyword">import</span> bold, magenta, highlight_red</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(bold(magenta(</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    hello world</span></span><br><span class="line"><span class="string">    this is some new line</span></span><br><span class="line"><span class="string">    and here is the last line. :)</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">)))</span><br></pre></td></tr></table></figure>
+
+<p>结果如下，输出字体加粗且有颜色。<br><img data-src="https://image.pylover.net/img/202110301410131.png?imageMogr2/format/webp"></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>这10个奇妙的Python库，你必须要试试！</p>
+<a href="https://mp.weixin.qq.com/s/5RZYPySM0GYSTwbvqyxK1A"></a>
+</div></div>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>package</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Ajax学习笔记</title>
     <url>/006ff03df6af.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Ajax</code> 前后端通信技术，简单学习并记录。</p>
@@ -578,45 +617,6 @@
       <tags>
         <tag>javascript</tag>
         <tag>ajax</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>奇妙的Python库</title>
-    <url>/1027c3ba669b.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Python</code> 中有很多奇妙且好用的第三方库，可以让你的任务变得更为容易，下面给大家收集一些好用的 <code>Python</code> 库，每一个都很不错的哟~</p>
-<span id="more"></span>
-
-<h2 id="酷酷的库"><a href="#酷酷的库" class="headerlink" title="酷酷的库"></a>酷酷的库</h2><h3 id="socket"><a href="#socket" class="headerlink" title="socket"></a>socket</h3><p>获取本机的局域网 <code>IP</code> 地址</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> socket <span class="keyword">as</span> f</span><br><span class="line"></span><br><span class="line">hostn = f.gethostname()</span><br><span class="line">Laptop = f.gethostbyname(hostn)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑本地IP地址是：&quot;</span> + Laptop)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑本地IP地址是：192.168.2.101</span></span><br></pre></td></tr></table></figure>
-
-<p>当然我们的目的是获取本机的公网 <code>IP</code>，不过这个已经和这个库没有什么关系了，是借助一个  <a class="btn" href="https://jsonip.com"><i class="fas fa-globe"></i>其他网站</a>  来实现的</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</span><br><span class="line"></span><br><span class="line"><span class="comment"># 全局取消证书验证</span></span><br><span class="line"><span class="keyword">import</span> ssl</span><br><span class="line">ssl._create_default_https_context = ssl._create_unverified_context</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> urlopen(<span class="string">r&#x27;https://jsonip.com&#x27;</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    content = fp.read().decode()</span><br><span class="line"></span><br><span class="line">ip = json.loads(content)[<span class="string">&#x27;ip&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑公网IP地址是：&quot;</span> + ip)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑公网IP地址是：120.236.128.201</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="pyshorteners"><a href="#pyshorteners" class="headerlink" title="pyshorteners"></a>pyshorteners</h3><p><code>pyshorteners</code> 是一个简单的 URL 缩短的库，提供了18种短链根域名供使用。</p>
-<p><img data-src="https://image.pylover.net/img/202110301403572.png?imageMogr2/format/webp"></p>
-<p>这里以 <code>clck.ru</code> 格式为例。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyshorteners <span class="keyword">as</span> psn</span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;http://www.shuhai.com/&quot;</span></span><br><span class="line">u = psn.Shortener().clckru.short(url)</span><br><span class="line"><span class="built_in">print</span>(u)</span><br><span class="line"></span><br><span class="line"><span class="comment"># https://clck.ru/WPJgg</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="fabulous"><a href="#fabulous" class="headerlink" title="fabulous"></a>fabulous</h3><p>添加文本颜色，如果你是在命令行上运行Python程序，那么输出都是相同颜色，不方便观察。</p>
-<p>使用 <code>Fabulous</code>，则可以添加图像、彩色文本来凸显输出。</p>
-<p><img data-src="https://image.pylover.net/img/202110301407629.png?imageMogr2/format/webp"></p>
-<p>示例：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> fabulous.color <span class="keyword">import</span> bold, magenta, highlight_red</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(bold(magenta(</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    hello world</span></span><br><span class="line"><span class="string">    this is some new line</span></span><br><span class="line"><span class="string">    and here is the last line. :)</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">)))</span><br></pre></td></tr></table></figure>
-
-<p>结果如下，输出字体加粗且有颜色。<br><img data-src="https://image.pylover.net/img/202110301410131.png?imageMogr2/format/webp"></p>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="/uploads/wechat.png"></object>
-<p>微信文章</p><p>这10个奇妙的Python库，你必须要试试！</p>
-<a href="https://mp.weixin.qq.com/s/5RZYPySM0GYSTwbvqyxK1A"></a>
-</div></div>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>package</tag>
       </tags>
   </entry>
   <entry>
@@ -938,6 +938,14 @@
 <p>就是这么简单，当然你还可以添加其他的服务，它支持的服务如下：</p>
 <p><img data-src="https://image.pylover.net/img/202112282229832.png?imageMogr2/format/webp"></p>
 <p>勾选自己想要的服务都，保存即可，推荐勾选：<code>Steam 商店</code> 和 <code>Github访问</code></p>
+<h2 id="ApiPost"><a href="#ApiPost" class="headerlink" title="ApiPost"></a>ApiPost</h2><p>传送门：<a href="https://www.apipost.cn/">ApiPost官网</a><br>一款非常好用的 API 文档工具，支持模拟 POST、GET、PUT 等常见 HTTP 请求,支持团队协作,并可直接生成并导出接口文档的 API 文档、调试、Mock、测试一体化协作平台，更加详细的功能大家可以逛逛他们的官网；</p>
+<p>其相对于其他产品的优势在于</p>
+<ul>
+<li>ApiPost 是国内团队开发，全中文界面，对英文不好的朋友来说，使用起来会舒服！</li>
+<li>文档信息丰富学习成本低，功能齐全，用户在社区的提问反馈及时！在现在这样的敏捷开发年代，API 研发越来越注重整个项目的协作，比如 API 调试、API 文档，如果能贯穿整个研发流程，与项目所有角色打通，团队效率和效果都将大大提高！ApiPost 就解决了这个问题。</li>
+</ul>
+<p>其主界面大致如下：<br><img data-src="https://image.pylover.net/img/202201081722787.png?imageMogr2/format/webp"></p>
+<p>其他的功能大家可以自行探索，但是小编不得不说一下：强烈建议开发人员，包括后端、前端、测试朋友们都试试 ApiPost，尤其是对后端开发朋友来说，真的很不错哟~</p>
 <h1 id="网页工具"><a href="#网页工具" class="headerlink" title="网页工具"></a>网页工具</h1><h2 id="Bootschool"><a href="#Bootschool" class="headerlink" title="Bootschool"></a>Bootschool</h2><p><strong>bootschool</strong>是一个JS插件和网站模板分享网站,提供各种JS插件、jQuery特效、插件指导、网站模板与插件在线预览,jQuery插件下载及教程。</p>
 <p>也许，读到这里很多对JS不感兴趣的会感觉到失望，其实日常工作中我做JS开发的时间也不多，我只所以使用这个网站是因为它有丰富有趣的小功能，例如，<strong>自定义banner</strong>。</p>
 <p>在我们做Python、Spring Boot开发时，为了显示更加个性化，会输出一些字符串形式的banner信息，bootschool可以根据输入内容快速生成<strong>ASCII文字</strong>，当然，我们也可以用在其他方面，让原本单调的日志信息变得多姿多彩。</p>
@@ -1176,6 +1184,54 @@
       </tags>
   </entry>
   <entry>
+    <title>Coding+Hexo云上创建个人博客</title>
+    <url>/ed7a7cc4af87.html</url>
+    <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>去年的时候本着记录自己学习笔记的想法，开始创建自己的博客；后来翻来覆去，最终还是选择了<strong>Hexo</strong>来搭建自己的博客，这样的自由度会比较高，没有任何限制。</p>
+<p>后来，换电脑的时候，发现了一个很大的问题：电脑里面的博客环境不能完全的搬过去！虽然博客的各种文件都可以复制过去，但是<code>nodejs</code>的环境，以及<code>npm</code>安装的各种插件都不能完全的复现！</p>
+<span id="more"></span>
+
+<p>最主要的原因还是当初第一次做的时候安装的各种插件太多了，导致自己都不记得了；但是吧，配置文件又已经那么改了，不安装的话配置就会出错，修改配置文件的话emmmm我自己也不记得要改哪些了，所以不如直接只拿了曾经些的博客的<code>md</code>文件，其他的全部重新配置。</p>
+<p>这种换环境的问题就很是让我苦恼，后来也曾想过把博客的本地环境般到服务器上，但其实那和放在自己电脑上是一样的；直到最近发现了一个<strong>宝藏工具</strong>：<code>Cloud Studio</code>，下面，请跟随小编的步伐，来获取这个工具吧~</p>
+<h1 id="Hexo博客搭建流程的熟悉"><a href="#Hexo博客搭建流程的熟悉" class="headerlink" title="Hexo博客搭建流程的熟悉"></a>Hexo博客搭建流程的熟悉</h1><div class="note info"><p><strong>Hexo博客</strong>本地的建立请看<a href="https://pylover.net/6004aa280b7b.html">这里</a></p>
+</div>
+
+<h1 id="新的环境的熟悉"><a href="#新的环境的熟悉" class="headerlink" title="新的环境的熟悉"></a>新的环境的熟悉</h1><p>我们的新环境是源于腾讯云的一个服务：<a class="btn" href="https://cloud.tencent.com/product/coding">CODING DevOps</a>关于它的介绍，小伙伴们可以点进去仔细看看，这里就不多细讲了，小编已经尝试过了，很香~</p>
+<h1 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h1><p>不过今天的主角并不是<code>CODING Devops</code>，而是里面的一小部分而已，它叫做<code>Cloud Studio</code>，一个线上的<code>VScode</code>编辑器，下面我们来稍微介绍一下我们从无到有的流程：</p>
+<h2 id="注册腾讯云账号"><a href="#注册腾讯云账号" class="headerlink" title="注册腾讯云账号"></a>注册腾讯云账号</h2><p>这里想必大家应该都会的，不会的请出门左转问问度娘…</p>
+<h2 id="开通服务"><a href="#开通服务" class="headerlink" title="开通服务"></a>开通服务</h2><p><strong>首先我们打开<a href="https://cloud.tencent.com/">腾讯云</a>的控制台:</strong><br><img data-src="https://image.pylover.net/img/202110280027099.png"></p>
+<p><strong>找到<code>CODING DevOps</code>服务</strong><br><img data-src="https://image.pylover.net/img/202110280028227.png"></p>
+<p><strong>开通服务</strong></p>
+<p>开通服务的大致步骤：</p>
+<ul>
+<li>创建团队，自定义团队域名</li>
+<li>创建用户</li>
+<li>完成注册</li>
+</ul>
+<p>这里由于小编已经开通了，所以就直接点击<strong>立即使用</strong>即可，<br><img data-src="https://image.pylover.net/img/202110280029800.png"></p>
+<p>点击后即可来到我们的服务后台，今天我们要介绍的主角就直接在服务器后台即可看见：<br><img data-src="https://image.pylover.net/img/202110280031129.png"></p>
+<p>点进去后就可以看到工作空间的主界面了，用张图片来简单介绍一下这里：<br><img data-src="https://image.pylover.net/img/202110280039804.png"></p>
+<h2 id="创建工作空间"><a href="#创建工作空间" class="headerlink" title="创建工作空间"></a>创建工作空间</h2><p><img data-src="https://image.pylover.net/img/202110280041097.png"></p>
+<p>这里简单介绍一下这些东西：</p>
+<ul>
+<li><strong>工作空间名称</strong>：就是你的工作空间的名字</li>
+<li><strong>描述</strong>：可以简单说说你这个工作空间创建后用来干啥的，例如：Hexo博客</li>
+<li><strong>运行环境</strong>：<ul>
+<li>预置环境：就是免费白嫖一个工作空间！！！想白嫖请选这个！</li>
+<li>云服务器：链接自己的云服务器</li>
+<li>云服务器（使用密码创建）：链接自己的云服务器</li>
+</ul>
+</li>
+</ul>
+<p>下面的<strong>预置环境</strong>这里选择<code>Node.js</code>，这样可以省略它的安装过程：<br><img data-src="https://image.pylover.net/img/202110280041427.png"></p>
+<p>创建完成后我们就可以看到一个<code>VScode</code>编辑器的界面，没错，这就是一个线上的<code>VScode</code>，它和你自己的<code>VScode</code>几乎一模一样，而且自带一个<strong>后台服务器</strong>来给你提供服务！！相信大家已经知道这个线上的<code>VScode</code>编辑器的巨大作用了！！这里我们暂时只讲解创建<code>Hexo博客</code>的。</p>
+<div class="note danger"><h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>每个用户使用这个<code>Cloud Studio</code>服务，每天只有四个小时！，每天只有四个小时！，每天只有四个小时！，重要的事情说三遍！</p>
+<p>所以当你使用完工作空间后，请记得关闭！！</p>
+</div>
+
+<p>下面的流程和在自己本地创建<code>Hexo环境</code>的步骤是一样的了，部署完成后，从此再也不怕换电脑了！</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Python异常处理</title>
     <url>/aa19ff014c7f.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在写程序时，我们会经常碰到程序出现异常，这时候我们就不得不处理这些异常，以保证程序的健壮性。</p>
@@ -1249,54 +1305,6 @@
         <tag>python</tag>
         <tag>package</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Coding+Hexo云上创建个人博客</title>
-    <url>/ed7a7cc4af87.html</url>
-    <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>去年的时候本着记录自己学习笔记的想法，开始创建自己的博客；后来翻来覆去，最终还是选择了<strong>Hexo</strong>来搭建自己的博客，这样的自由度会比较高，没有任何限制。</p>
-<p>后来，换电脑的时候，发现了一个很大的问题：电脑里面的博客环境不能完全的搬过去！虽然博客的各种文件都可以复制过去，但是<code>nodejs</code>的环境，以及<code>npm</code>安装的各种插件都不能完全的复现！</p>
-<span id="more"></span>
-
-<p>最主要的原因还是当初第一次做的时候安装的各种插件太多了，导致自己都不记得了；但是吧，配置文件又已经那么改了，不安装的话配置就会出错，修改配置文件的话emmmm我自己也不记得要改哪些了，所以不如直接只拿了曾经些的博客的<code>md</code>文件，其他的全部重新配置。</p>
-<p>这种换环境的问题就很是让我苦恼，后来也曾想过把博客的本地环境般到服务器上，但其实那和放在自己电脑上是一样的；直到最近发现了一个<strong>宝藏工具</strong>：<code>Cloud Studio</code>，下面，请跟随小编的步伐，来获取这个工具吧~</p>
-<h1 id="Hexo博客搭建流程的熟悉"><a href="#Hexo博客搭建流程的熟悉" class="headerlink" title="Hexo博客搭建流程的熟悉"></a>Hexo博客搭建流程的熟悉</h1><div class="note info"><p><strong>Hexo博客</strong>本地的建立请看<a href="https://pylover.net/6004aa280b7b.html">这里</a></p>
-</div>
-
-<h1 id="新的环境的熟悉"><a href="#新的环境的熟悉" class="headerlink" title="新的环境的熟悉"></a>新的环境的熟悉</h1><p>我们的新环境是源于腾讯云的一个服务：<a class="btn" href="https://cloud.tencent.com/product/coding">CODING DevOps</a>关于它的介绍，小伙伴们可以点进去仔细看看，这里就不多细讲了，小编已经尝试过了，很香~</p>
-<h1 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h1><p>不过今天的主角并不是<code>CODING Devops</code>，而是里面的一小部分而已，它叫做<code>Cloud Studio</code>，一个线上的<code>VScode</code>编辑器，下面我们来稍微介绍一下我们从无到有的流程：</p>
-<h2 id="注册腾讯云账号"><a href="#注册腾讯云账号" class="headerlink" title="注册腾讯云账号"></a>注册腾讯云账号</h2><p>这里想必大家应该都会的，不会的请出门左转问问度娘…</p>
-<h2 id="开通服务"><a href="#开通服务" class="headerlink" title="开通服务"></a>开通服务</h2><p><strong>首先我们打开<a href="https://cloud.tencent.com/">腾讯云</a>的控制台:</strong><br><img data-src="https://image.pylover.net/img/202110280027099.png"></p>
-<p><strong>找到<code>CODING DevOps</code>服务</strong><br><img data-src="https://image.pylover.net/img/202110280028227.png"></p>
-<p><strong>开通服务</strong></p>
-<p>开通服务的大致步骤：</p>
-<ul>
-<li>创建团队，自定义团队域名</li>
-<li>创建用户</li>
-<li>完成注册</li>
-</ul>
-<p>这里由于小编已经开通了，所以就直接点击<strong>立即使用</strong>即可，<br><img data-src="https://image.pylover.net/img/202110280029800.png"></p>
-<p>点击后即可来到我们的服务后台，今天我们要介绍的主角就直接在服务器后台即可看见：<br><img data-src="https://image.pylover.net/img/202110280031129.png"></p>
-<p>点进去后就可以看到工作空间的主界面了，用张图片来简单介绍一下这里：<br><img data-src="https://image.pylover.net/img/202110280039804.png"></p>
-<h2 id="创建工作空间"><a href="#创建工作空间" class="headerlink" title="创建工作空间"></a>创建工作空间</h2><p><img data-src="https://image.pylover.net/img/202110280041097.png"></p>
-<p>这里简单介绍一下这些东西：</p>
-<ul>
-<li><strong>工作空间名称</strong>：就是你的工作空间的名字</li>
-<li><strong>描述</strong>：可以简单说说你这个工作空间创建后用来干啥的，例如：Hexo博客</li>
-<li><strong>运行环境</strong>：<ul>
-<li>预置环境：就是免费白嫖一个工作空间！！！想白嫖请选这个！</li>
-<li>云服务器：链接自己的云服务器</li>
-<li>云服务器（使用密码创建）：链接自己的云服务器</li>
-</ul>
-</li>
-</ul>
-<p>下面的<strong>预置环境</strong>这里选择<code>Node.js</code>，这样可以省略它的安装过程：<br><img data-src="https://image.pylover.net/img/202110280041427.png"></p>
-<p>创建完成后我们就可以看到一个<code>VScode</code>编辑器的界面，没错，这就是一个线上的<code>VScode</code>，它和你自己的<code>VScode</code>几乎一模一样，而且自带一个<strong>后台服务器</strong>来给你提供服务！！相信大家已经知道这个线上的<code>VScode</code>编辑器的巨大作用了！！这里我们暂时只讲解创建<code>Hexo博客</code>的。</p>
-<div class="note danger"><h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>每个用户使用这个<code>Cloud Studio</code>服务，每天只有四个小时！，每天只有四个小时！，每天只有四个小时！，重要的事情说三遍！</p>
-<p>所以当你使用完工作空间后，请记得关闭！！</p>
-</div>
-
-<p>下面的流程和在自己本地创建<code>Hexo环境</code>的步骤是一样的了，部署完成后，从此再也不怕换电脑了！</p>
-]]></content>
   </entry>
   <entry>
     <title>学爬虫，你需要学习的东西！</title>
