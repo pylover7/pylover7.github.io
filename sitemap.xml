@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pylover.net/projects/web.html</loc>
+    
+    <lastmod>2022-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/projects/spider.html</loc>
+    
+    <lastmod>2022-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/projects/simple.html</loc>
+    
+    <lastmod>2022-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/projects/machinelearning.html</loc>
+    
+    <lastmod>2022-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/projects/datavisualization.html</loc>
+    
+    <lastmod>2022-01-13</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://pylover.net/config/others.html</loc>
     
     <lastmod>2022-01-13</lastmod>
@@ -23,21 +58,35 @@
   </url>
   
   <url>
-    <loc>https://pylover.net/config/extensions/</loc>
-    
-    <lastmod>2022-01-12</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://pylover.net/config/webtools.html</loc>
     
-    <lastmod>2022-01-12</lastmod>
+    <lastmod>2022-01-13</lastmod>
     
   </url>
   
   <url>
     <loc>https://pylover.net/config/pcsoftware.html</loc>
+    
+    <lastmod>2022-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/projects/</loc>
+    
+    <lastmod>2022-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/allskills/mdskill/</loc>
+    
+    <lastmod>2022-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/config/extensions/</loc>
     
     <lastmod>2022-01-12</lastmod>
     
@@ -178,13 +227,6 @@
   
   <url>
     <loc>https://pylover.net/0863bcf0f635.html</loc>
-    
-    <lastmod>2021-10-27</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/6dd5d8c4f209.html</loc>
     
     <lastmod>2021-10-27</lastmod>
     
@@ -445,13 +487,6 @@
   </url>
   
   <url>
-    <loc>https://pylover.net/tags/Chrome%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2022-01-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://pylover.net/tags/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2022-01-13</lastmod>
     <changefreq>daily</changefreq>
@@ -539,13 +574,6 @@
   
   <url>
     <loc>https://pylover.net/categories/%E6%95%99%E7%A8%8B/%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2022-01-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Chrome%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2022-01-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
