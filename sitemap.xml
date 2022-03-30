@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pylover.net/9a43c2abc119.html</loc>
+    
+    <lastmod>2022-03-30</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://pylover.net/projects/web.html</loc>
     
     <lastmod>2022-03-30</lastmod>
@@ -551,6 +558,13 @@
   
   <url>
     <loc>https://pylover.net/tags/retrying/</loc>
+    <lastmod>2022-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/tags/git/</loc>
     <lastmod>2022-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
