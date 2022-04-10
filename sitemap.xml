@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pylover.net/allskills/mdskill/line-breaks.html</loc>
+    
+    <lastmod>2022-04-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/allskills/mdskill/paragraphs.html</loc>
+    
+    <lastmod>2022-04-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://pylover.net/allskills/writing/</loc>
     
     <lastmod>2022-04-10</lastmod>
@@ -75,13 +89,6 @@
     <loc>https://pylover.net/allskills/writing/button.html</loc>
     
     <lastmod>2022-04-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/allskills/mdskill/paragraphs.html</loc>
-    
-    <lastmod>2022-04-09</lastmod>
     
   </url>
   
@@ -178,13 +185,6 @@
   
   <url>
     <loc>https://pylover.net/allskills/mdskill/emphasis.html</loc>
-    
-    <lastmod>2022-02-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/allskills/mdskill/line-breaks.html</loc>
     
     <lastmod>2022-02-04</lastmod>
     
