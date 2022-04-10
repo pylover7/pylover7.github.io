@@ -30,8 +30,8 @@
 <meta property="og:site_name" content="追光日记">
 <meta property="og:description" content="Markdown 换行语法用法在一行的末尾添加两个或多个空格，然后按回车键,即可创建一个换行(&lt;br&gt;)。 语法HTML预览12This is the first line.  And this is the second line.12&lt;p&gt;This is the first line.&lt;br&gt;And this is the second line.&lt;&#x2F;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-10T10:01:58.579Z">
-<meta property="article:modified_time" content="2022-04-10T10:01:58.579Z">
+<meta property="article:published_time" content="2022-04-10T10:48:06.411Z">
+<meta property="article:modified_time" content="2022-04-10T10:48:06.411Z">
 <meta property="article:author" content="追光者">
 <meta name="twitter:card" content="summary">
 
@@ -309,9 +309,7 @@ And this is the second line.</p></div></div></div>
 <p>还有两种其他方式我并不推荐使用。CommonMark 和其它几种轻量级标记语言支持在行尾添加反斜杠 (<code>\</code>) 的方式实现换行，但是并非所有 Markdown 应用程序都支持此种方式，因此从兼容性的角度来看，不推荐使用。并且至少有两种轻量级标记语言支持无须在行尾添加任何内容，只须键入回车键（<code>return</code>）即可实现换行。</p>
 <div class="note success"><h4 id="正确做法"><a href="#正确做法" class="headerlink" title="正确做法"></a>正确做法</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">First line with two spaces after.  </span><br><span class="line">And the next line.</span><br><span class="line"></span><br><span class="line">First line with the HTML tag after.&lt;br&gt;</span><br><span class="line">And the next line.</span><br></pre></td></tr></table></figure></div>
 
-<div class="note danger"><h4 id="错误做法"><a href="#错误做法" class="headerlink" title="错误做法"></a>错误做法</h4><p>```<br>First line with a backslash after.<br>And the next line.</p>
-<p>First line with nothing after.<br>And the next line.</p>
-</div>
+<div class="note danger"><h4 id="错误做法"><a href="#错误做法" class="headerlink" title="错误做法"></a>错误做法</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">First line with a backslash after.\</span><br><span class="line">And the next line.</span><br><span class="line"></span><br><span class="line">First line with nothing after.</span><br><span class="line">And the next line.</span><br></pre></td></tr></table></figure></div>
 
       </div>
       
