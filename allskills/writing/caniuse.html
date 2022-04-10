@@ -30,8 +30,8 @@
 <meta property="og:site_name" content="追光日记">
 <meta property="og:description" content="用法1&amp;#123;% caniuse feature @ [periods] %&amp;#125; 或 1&amp;#123;% can feature @ [periods] %&amp;#125;  功能：在 Caniuse 上搜索你想要的功能，然后单击搜索结果标题左侧的散列标志，就会得到该特性的唯一名称。 可选参数：选择要显示的浏览器的版本，支持值：past_1, past_2, past_3, past_4,">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-09T16:34:27.539Z">
-<meta property="article:modified_time" content="2022-04-09T16:34:27.539Z">
+<meta property="article:published_time" content="2022-04-10T09:40:11.449Z">
+<meta property="article:modified_time" content="2022-04-10T09:40:11.449Z">
 <meta property="article:author" content="追光者">
 <meta name="twitter:card" content="summary">
 
@@ -299,19 +299,19 @@
 <li><strong>功能</strong>：在 <a target="_blank" rel="noopener" href="https://caniuse.com/">Caniuse</a> 上搜索你想要的功能，然后单击搜索结果标题左侧的散列标志，就会得到该特性的唯一名称。</li>
 <li><strong>可选参数</strong>：选择要显示的浏览器的版本，支持值：<code>past_1</code>, <code>past_2</code>, <code>past_3</code>, <code>past_4</code>, <code>past_5</code>, <code>currentfuture_3</code>, <code>future_2</code>, <code>future_1</code> ;如果这些值是空的，那么默认将使用 <code>current</code></li>
 </ul>
-<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><h3 id="无参数的-Caniuse"><a href="#无参数的-Caniuse" class="headerlink" title="无参数的 Caniuse"></a>无参数的 Caniuse</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% caniuse fetch %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><h3 id="无参数的-Caniuse"><a href="#无参数的-Caniuse" class="headerlink" title="无参数的 Caniuse"></a>无参数的 Caniuse</h3><figure class="highlight jinja"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">caniuse</span> fetch %&#125;</span></span><br></pre></td></tr></table></figure>
 
 <iframe data-feature="fetch" src="https://caniuse.bitsofco.de/embed/index.html?feat=fetch&periods=current&accessible-colours=false" frameborder="0" width="100%" height="400px"></iframe>
 
-<h3 id="有-current-参数的-Caniuse"><a href="#有-current-参数的-Caniuse" class="headerlink" title="有 current 参数的 Caniuse"></a>有 <code>current</code> 参数的 Caniuse</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% caniuse sharedarraybuffer @ current %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="有-current-参数的-Caniuse"><a href="#有-current-参数的-Caniuse" class="headerlink" title="有 current 参数的 Caniuse"></a>有 <code>current</code> 参数的 Caniuse</h3><figure class="highlight jinja"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">caniuse</span> sharedarraybuffer @ current %&#125;</span></span><br></pre></td></tr></table></figure>
 
 <iframe data-feature="sharedarraybuffer" src="https://caniuse.bitsofco.de/embed/index.html?feat=sharedarraybuffer&periods=current&accessible-colours=false" frameborder="0" width="100%" height="400px"></iframe>
 
-<h3 id="有-future-参数的-Caniuse"><a href="#有-future-参数的-Caniuse" class="headerlink" title="有 future 参数的 Caniuse"></a>有 <code>future</code> 参数的 Caniuse</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% caniuse loading-lazy-attr @ future_3,future_2,future_1 %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="有-future-参数的-Caniuse"><a href="#有-future-参数的-Caniuse" class="headerlink" title="有 future 参数的 Caniuse"></a>有 <code>future</code> 参数的 Caniuse</h3><figure class="highlight jinja"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">caniuse</span> loading-lazy-attr @ future_3,future_2,future_1 %&#125;</span></span><br></pre></td></tr></table></figure>
 
 <iframe data-feature="loading-lazy-attr" src="https://caniuse.bitsofco.de/embed/index.html?feat=loading-lazy-attr&periods=future_3,future_2,future_1&accessible-colours=false" frameborder="0" width="100%" height="400px"></iframe>
 
-<h3 id="有-past-参数的-Caniuse"><a href="#有-past-参数的-Caniuse" class="headerlink" title="有 past 参数的 Caniuse"></a>有 <code>past</code> 参数的 Caniuse</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% caniuse link-rel-modulepreload @ past_1,past_2,past_3,past_4,past_5 %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="有-past-参数的-Caniuse"><a href="#有-past-参数的-Caniuse" class="headerlink" title="有 past 参数的 Caniuse"></a>有 <code>past</code> 参数的 Caniuse</h3><figure class="highlight jinja"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">caniuse</span> link-rel-modulepreload @ past_1,past_2,past_3,past_4,past_5 %&#125;</span></span><br></pre></td></tr></table></figure>
 
 <iframe data-feature="link-rel-modulepreload" src="https://caniuse.bitsofco.de/embed/index.html?feat=link-rel-modulepreload&periods=past_1,past_2,past_3,past_4,past_5&accessible-colours=false" frameborder="0" width="100%" height="400px"></iframe>
 
