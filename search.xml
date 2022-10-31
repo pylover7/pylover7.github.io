@@ -538,7 +538,7 @@
 <p>看完后是不是一愣一愣的，说的啥，每个字都认识，就是不理解。</p>
 <p>其实啊，闭包本质上其实还是个函数，只不过这个函数比较特殊，特殊在哪呢？</p>
 <h2 id="普通函数"><a href="#普通函数" class="headerlink" title="普通函数"></a>普通函数</h2><p>先来看个普通函数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">simple_adder</span>(<span class="params">x, y</span>):</span></span><br><span class="line">    <span class="keyword">return</span> x + y</span><br><span class="line"></span><br><span class="line">result = simple_adder(<span class="number">2</span>, <span class="number">3</span>)  <span class="comment"># 5</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><figcaption><span>demo.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">simple_adder</span>(<span class="params">x, y</span>):</span></span><br><span class="line">    <span class="keyword">return</span> x + y</span><br><span class="line"></span><br><span class="line">result = simple_adder(<span class="number">2</span>, <span class="number">3</span>)  <span class="comment"># 5</span></span><br></pre></td></tr></table></figure>
 
 <p><code>x</code> 和 <code>y</code> 作为形参传入函数 <code>simple_adder</code> ，这两个参数可以理解为函数的局部变量，函数被调用时，会在栈上创建其执行环境，函数执行完成后，局部变量随着栈帧的销毁被垃圾回收，局部变量无法在外部引用。</p>
 <h2 id="闭包函数"><a href="#闭包函数" class="headerlink" title="闭包函数"></a>闭包函数</h2><p>再来看这个复杂一点的函数（假设你对函数是一等对象这个概念已经有所了解）</p>
