@@ -109,9 +109,6 @@ deploy:
 - type: git
   repository: git@github.com:pylover7/pylover7.github.io.git
   branch: docs
-- type: git 
-  repository: git@e.coding.net:shuoshuoyun/website/blog.git
-  branch: master 
 
 # 添加搜索
 search:
