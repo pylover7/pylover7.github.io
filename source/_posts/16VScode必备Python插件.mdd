@@ -1,0 +1,130 @@
+---
+title: VScode必备Python插件
+tags:
+  - VScode
+  - python
+  - 插件
+categories:
+  - 学习笔记
+  - 插件
+date: 2021-10-30 01:08:11
+---
+
+## 前言
+在使用 `VScode` 的时候，优秀的各种插件总是能让你获得极其舒适的体验，下面就介绍一些开发 `Python` 时，一些好用的插件。 
+
+<!-- more -->
+
+## 插件列表
+### Python
+![](https://image.pylover.net/img/202110300112767.png?imageMogr2/format/webp) 
+
+`Python` 这个插件必装，别问为啥！因为它是微软 `VSCode` 开发团队自己开发的，亲儿子的级别。虽然 `VSCode` 不安装任何插件也能高亮 `Python` 代码，但该插件提供的功能远不止如此，还有很多强大的功能，比如：
+ - 智能补全：通过自动补全，代码导航，语法检查等来编辑代码
+ - 代码检查：使用 `Pylint` 、 `Flake8` 获取额外的代码分析，检查编程错误
+ - 代码格式：用 `black` ， `autopep` 或 `YAPF` 调整代码格式
+ - 调试：调试 `Python` 脚本，`Web` 应用程序以及远程或多线程进程
+ - 测试：通过测试 `Explorer` 中 `unittest` ，`pytest` 或 `nose` 运行和调试测试
+ - `Jupyter Notebook`：创建和编辑 `Jupyter Notebook` ，添加和运行代码单元、渲染图、通过变量资源管理器可视化变量、使用数据查看器可视化数据框等等
+ - 环境：自动激活并在 `virtualenv` 、`venv`、`pipenv`、`conda` 和 `pyenv` 环境之间进行切换
+ - 重构：通过变量提取、方法提取和导入排序来重构Python代码
+
+
+如下所示：
+
+![](https://image.pylover.net/img/202110301316924.gif?imageMogr2/format/webp)
+
+### Python Snippets
+![](https://image.pylover.net/img/202110300118558.png?imageMogr2/format/webp)
+
+`Python Snippets` 插件可以让我们的 `Python` 编程更加高效。
+
+它包含了大量的内置方法，以及 `string`、`list`、`sets`、`tuple`、`dictionary`、`class`代码片段，并且还为每个代码段提供至少一个示例。
+
+ - 所有python内置方法代码片段
+ - 所有python string片段
+ - 所有python list片段
+ - 所有python set片段
+ - 所有python tuple片段
+ - 所有python dictionary 字典片段
+ - 并包含许多其他代码段（例如if/else、for、while、while/else、try/catch，文件处理和类片段和oop类示例（多态性、封装、继承.i.g）
+
+
+如下所示：
+
+![](https://image.pylover.net/img/202110301318536.gif?imageMogr2/format/webp)
+
+### Python Docstring Generator
+![](https://image.pylover.net/img/202110300120692.png?imageMogr2/format/webp)
+
+`Python Docstring Generator` 可以自动创建 `docstring` ，这真的为开发人员减少了的很大工作量。并且，生成的文档字符串遵循所有标准格式，包括 `Google`、`docBlockr`、`Numpy`、`Sphinx` 和 `PEP0257`。它的主要功能包括：
+
+ - 快速生成一个可通过 `Tab` 键浏览的 `docstring` 代码段
+ - 在几种不同类型的文档字符串格式之间进行选择
+ - 通过 `pep484` 类型提示、默认值和 `var` 名称推断参数类型
+ - 支持 `args`，`kwargs`，修饰符，错误和参数类型
+
+下面是实例：
+
+![](https://image.pylover.net/img/202110301319355.gif?imageMogr2/format/webp)
+
+### Python Test Explorer for Visual Studio Code
+![](https://image.pylover.net/img/202110300123965.png?imageMogr2/format/webp)
+
+这个插件通过使用 `Test Explorer UI` 运行 `Python Unittest` 或 `Pytest` 测试，对于功能测试非常方便。具体功能如下：
+ - 在VS Code的侧栏中的“测试”视图中显示“测试资源管理器”，其中包含所有检测到的测试、套件及其状态
+ - 在测试发现期间方便的错误报告
+ - 单元测试和Pytest调试
+ - 在资源管理器中选择测试后，显示失败的测试日志
+ - 支持多根工作区
+ - 支持Unittest和Pytest测试框架及其插件
+
+### Python Preview
+![](https://image.pylover.net/img/202110300126270.png?imageMogr2/format/webp)
+
+`Python Preview` 可展现可视化调试的过程，并添加到我们的 `Python` 代码中。它将调试代码转换为带有动画和图形元素的交互式会话，以表示应用程序状态，对于代码调试非常直观。
+
+![](https://image.pylover.net/img/202110301319157.gif?imageMogr2/format/webp)
+
+### Python Type Hint
+![](https://image.pylover.net/img/202110300136840.png?imageMogr2/format/webp)
+
+`Python Type Hint` 提供针对Python的类型提示自动完成功能，以及针对内置类型、类和键入模块的完成项。
+
+ - 提供内置类型、估计类型和键入模块的类型提示完成项
+ - 估计正确的类型，提供完成项
+ - 可以在工作区中搜索Python文件以进行类型估计
+
+![](https://image.pylover.net/img/202110301320314.gif?imageMogr2/format/webp)
+
+### Jupyter
+![](https://image.pylover.net/img/202110300137044.png?imageMogr2/format/webp)
+
+`Jupyter` 可以说是我最喜欢的 `VS Code` 插件之一，可以让我们在 `VS Code` 中完美使用 `Jupyter Notebooks`。使用方法如下：
+1. 创建新笔记本，打开命令面板（ `Windows：Ctrl + Shift + P`；`iOS：Command + Shift + P`），然后选择命令 `Jupyter: Create New Blank Jupyter Notebook` 。
+
+![](https://image.pylover.net/img/202110300138412.png?imageMogr2/format/webp)
+
+2. 通过单击状态栏右下方的内核选择器或调用 `Notebook: Select Notebook Kernel` 命令来选择内核。
+
+![](https://image.pylover.net/img/202110301320377.gif?imageMogr2/format/webp)
+
+3. 通过单击语言选择器或调用 `Notebook: Change Cell Language` 命令来更改单元格语言。
+
+![](https://image.pylover.net/img/202110301322318.gif?imageMogr2/format/webp)
+
+另外，`Jupyter` 插件还支持 `VS Code Insiders` 中的其他语言，例如 `Julia` 和 `R`。
+
+### Atom Material Theme
+![](https://image.pylover.net/img/202110300141257.png?imageMogr2/format/webp)
+
+`Atom Material Theme` 可以让你的文件图标变得非常好看，并支持更换主题。
+
+### 后话
+以上就是目前推荐的 `VScode` 插件啦
+
+## 参考文章
+
+{% linkgrid %}
+参考文章 | https://mp.weixin.qq.com/s/EWLojyqdjW0xbxKPUqsDJQ | 2021 年 VS Code 必备 Python 插件！ | /uploads/wechat.png
+{% endlinkgrid %}

@@ -1,0 +1,159 @@
+---
+title: Pycharm插件推荐
+tags:
+  - pycharm
+  - 插件
+categories:
+  - 教程
+  - 插件
+date: 2021-10-25 16:20:19
+---
+
+## 前言
+ `Pycharm` 作为最好的 `python` 编辑器之一，本身的功能就非常优秀了，不过加上了一些优秀的插件，它会变得更加优秀！
+
+<!-- more -->
+
+## 插件推荐
+### Chinese Language Pack
+英语不好的同学，看着 `pycharm` 那么多的功能却不知道怎么用的，就不用多说了吧~
+![](https://image.pylover.net/img/202110272114715.png?imageMogr2/format/webp)
+
+### Translation
+这个插件可以让你在 `Pycharm` 的任何地方对各种语言进行翻译，再也不用担心看源代码的注释看不懂了，而且不知道怎么用英语表达的中文也可以立马用翻译过来，必须是必备插件！
+![](https://image.pylover.net/img/202110272115075.png?imageMogr2/format/webp)
+
+{% note info %}
+#### 快捷键
+选中想要翻译的词汇后： `Ctrl+Shift+y`
+{% endnote %}
+
+### AiXcoder Code Completer
+各位日常写代码的小伙伴应该都知道 **代码补全** 这个好用的功能，`aixcoder` 就是一款这样的插件：智能编程助手，是真的非常好用！谁用谁知道；反正小编是超级喜欢的；除此之外的其他功能，小伙伴们可以去他的官网看看
+![](https://image.pylover.net/img/202110272115255.png?imageMogr2/format/webp)
+
+{% note info %}
+#### `Aixcoder`
+[官网地址](https://www.aixcoder.com/)
+{% endnote %}
+
+### Kite
+和 `Aixcoder` 一样，也是一款代码补全插件，谁用谁知道，不过小编一般使用 `Aixcoder` ，原因有两个：
+ - `aixcoder` 是我们自己国家的的， `kite` 是别人的，咱们还是要支持咱自己的东西；
+ - `kite` 的代码补全不像 `aixcoder` 那么多，补全的稍微比较少；
+ 
+不过，`kite` 也有它的优势，部分使用体验会好一些，至于具体使用哪一个，那就由小伙伴们自己决定了。
+![](https://image.pylover.net/img/202110272117889.png?imageMogr2/format/webp)
+
+{% note info %}
+#### `Kite`
+[官网地址](https://www.kite.com/ )
+{% endnote %}
+
+### Key Promoter X
+这是一款提示你每个操作的快捷键是什么的插件，如果没有相应的快捷键，也会提示你需不需要建立一个；如果你在写代码的时候不想用鼠标，双手一直在键盘上，那就可以尝试一下这款插件，它可以不厌其烦的提示你，你此时用鼠标操作的快捷键是啥（当然你要是烦了也可以关掉了啦），一直到你记住为止；当然，如果不不习惯它原本的快捷键，也可以非常方便的修改成自己喜欢的快捷键，如果你本就是想学快捷键，那这就是个上上选的插件了。
+![](https://image.pylover.net/img/202110272118831.png?imageMogr2/format/webp)
+
+提示的方式如下：
+![](https://image.pylover.net/img/202110272121902.png?imageMogr2/format/webp)
+
+### Gitee
+一个可以登录 `Gitee` 的插件，类似于 `Pycharm` 自带的 `Github` 插件一样，可以直接在编辑器内对远程仓库进行 `Clone` 等操作。
+![](https://image.pylover.net/img/202110272123010.png?imageMogr2/format/webp)
+
+在这里登录：
+![](https://image.pylover.net/img/202110272124384.png?imageMogr2/format/webp)
+
+### CSV plugin
+用于通过灵活的表编辑器编辑 csv、tsv、psv文件，语法验证，结构突出显示，可自定义的颜色，新意图和有用的检查；主要是在 Pycharm 里打开 csv 文件原本的样式太不美观了，数据密密麻麻的，用这个插件就会友好很多很多。
+![](https://image.pylover.net/img/202110272124921.png?imageMogr2/format/webp)
+
+### Rainbow Brackets
+让你的括号等类似符号不同层之间显示不同，支持许多的语言。这个可以使不同的括号显示不同的颜色，便于我们在许多括号的时候辨别哪两个括号是一对的；也是个挺好用的插件。
+![](https://image.pylover.net/img/202110272124831.png?imageMogr2/format/webp)
+
+很多层级的时候就像这样：
+![](https://image.pylover.net/img/202110272124065.png?imageMogr2/format/webp)
+
+### Atom Material Icons
+这个插件主要用于自定义 `Pycharm` 的 UI 图标和文件目录的图标，用完以后比之前的好看很多！
+![](https://image.pylover.net/img/202110272124153.png?imageMogr2/format/webp)
+
+用了这个插件部分文件的图标如下：
+![](https://image.pylover.net/img/202110272125618.png?imageMogr2/format/webp)
+
+### .ignore
+用于创建各种 `.ignore` 文件；例如当我们在进行项目的版本管理的时候，总有很多文件是不需要管理的，也会有很多重要的文件是不能上传到仓库的，这个时候要是自己一个一个手打的话....还是用这个插件直接创建一个吧，它自带了很多的模板，可由我们自由选择，很方便。
+![](https://image.pylover.net/img/202110272125819.png?imageMogr2/format/webp)
+
+创建方法：在新建文件里面就可以选择模板了
+
+### CodeGlance
+将类似于 `Sublime` 中的代码小地图嵌入到编辑器窗格中，如下，这样子假如我们一个文件有很长的代码，用鼠标滚轮上下滚动就很累，有了这个小地图，直接就可以用鼠标拖动进度了，特别方便！
+![](https://image.pylover.net/img/202110272125598.png?imageMogr2/format/webp)
+
+启用后文件的后边小地图：
+![](https://image.pylover.net/img/202110272125435.png?imageMogr2/format/webp)
+
+### SonarLint
+这个插件能够在你写代码的时候帮你查找你代码的错误和漏洞并给出修改的相关规则和建议，简单来说就是帮你找错的，不然有时候很多错要运行很多遍才能一个一个改过来。
+![](https://image.pylover.net/img/202110272125490.png?imageMogr2/format/webp)
+
+![](https://image.pylover.net/img/202110272125117.png?imageMogr2/format/webp)
+
+![](https://image.pylover.net/img/202110272126126.png?imageMogr2/format/webp)
+
+### PlantUML integration
+
+一个非常强大的插件，主要用于用代码绘制PlantUML 图表，至于这个图是个啥，放个图看看
+![](https://image.pylover.net/img/202110272126718.png?imageMogr2/format/webp)
+
+![](https://image.pylover.net/img/202110272126772.png?imageMogr2/format/webp)
+
+除此之外，还能绘制很多的图，想了解的小伙伴可以去是它的『 [官网](https://plantuml.com/zh/) 』看看
+![](https://image.pylover.net/img/202110272126536.png?imageMogr2/format/webp)
+
+### IdeaVim
+在大多数场景之下，使用鼠标的效率和精准度，是远不如键盘快捷键的（前提是你已经相当熟练的掌握了快捷键），这个你得承认吧。
+
+Vi 可以满足你对文本操作的所有需求，比可视化界面更加效率，更加 geek。在安装完 Pycharm 完后，将 `ideaVim` 这个插件也装上，它可以让我们在 Pycharm 中 使用 vim 来编辑代码。
+![](https://image.pylover.net/img/202110272126007.png?imageMogr2/format/webp)
+
+### RegexpTester
+`Regex Tester` 是 `PyCharm` 的第三方插件，可以测试正则表达式。
+
+![](https://image.pylover.net/img/202110280100248.png?imageMogr2/format/webp)
+
+安装完成后，无需重启 `PyCharm` ，点击  `PyCharm`  界面左下方的小矩形按钮，就能找到 `Regex Tester` 选项。
+
+![](https://image.pylover.net/img/202110280101634.png?imageMogr2/format/webp)
+
+点击进入后，就出现了如下界面。匹配到的字符串背景会被高亮。右上方还有一些选项如大小写敏感，多行模式等，可根据需要进行选择。`Regex Tester` 还提供了`Split，Replace` 功能等。
+
+使用效果如下：
+
+![](https://image.pylover.net/img/202110280103797.png?imageMogr2/format/webp)
+
+### Json Parser
+
+在开发过程中，经常会把校验一串 JSON 字符串是否合法，在以前我的做法都是打开 https://tool.lu/json/ 这个在线网站，直接美化来校验，只有 JSON 格式都正确无误合法的，才能够美化。
+
+直到后来发现在 `PyCharm` 有一个插件专门来做这个事，那就是 `JSON Parser`，在插件市场安装后，重启 `PyCharm` ，就能在右侧边栏中看到它。
+
+![](https://image.pylover.net/img/202110280104191.png?imageMogr2/format/webp)
+
+## 后话
+以上就是小编推荐的一些好用的 `Pycharm` 插件，让优秀的 `Pycharm` 变得更为优秀！
+
+{% note warning %}
+#### 请注意
+若是你的设备性能不够好，建议不要装这么多插件，毕竟 `Pycharm` 本身就是一个重量级的编辑器！
+{% endnote %}
+
+## 参考文章
+
+{% linkgrid %}
+微信文章 | https://mp.weixin.qq.com/s?__biz=Mzg3NzU1MjgxOA==&mid=2247486689&idx=1&sn=e9a500f50cdefa8e3c6672a792c1cf53&scene=19#wechat_redirect | 参考文章的描述 | /uploads/wechat.png
+微信文章 | https://mp.weixin.qq.com/s?__biz=Mzg3NzU1MjgxOA==&mid=100004344&idx=1&sn=366a25b50f754a15ea085a52c79d7689&scene=19#wechat_redirect | 参考文章的描述 | /uploads/wechat.png
+微信文章 | https://mp.weixin.qq.com/s/wOTDnyG5VV2XYx1qe4apMA | 参考文章的描述 | /uploads/wechat.png
+{% endlinkgrid %}
