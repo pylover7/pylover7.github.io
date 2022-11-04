@@ -105,9 +105,10 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+## $ npm install hexo-deployer-git --save
 deploy:
 - type: git
-  repository: git@github.com:pylover7/pylover7.github.io.git
+  repository: https://github.com/pylover7/pylover7.github.io.git
   branch: docs
 
 # 添加搜索
