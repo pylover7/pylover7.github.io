@@ -808,6 +808,22 @@
       </tags>
   </entry>
   <entry>
+    <title>你值得学习的几个python库</title>
+    <url>/c40696c93928.html</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Python有着很多很酷的第三方库，可以使任务变得更容易。</p>
+<span id="more"></span>
+
+<hr>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>package</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Coding+Hexo云上创建个人博客</title>
     <url>/ed7a7cc4af87.html</url>
     <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>去年的时候本着记录自己学习笔记的想法，开始创建自己的博客；后来翻来覆去，最终还是选择了<strong>Hexo</strong>来搭建自己的博客，这样的自由度会比较高，没有任何限制。</p>
@@ -858,22 +874,6 @@
         <tag>教程</tag>
         <tag>coding</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>你值得学习的几个python库</title>
-    <url>/c40696c93928.html</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Python有着很多很酷的第三方库，可以使任务变得更容易。</p>
-<span id="more"></span>
-
-<hr>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>package</tag>
       </tags>
   </entry>
   <entry>
