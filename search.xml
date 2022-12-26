@@ -110,6 +110,105 @@
       </tags>
   </entry>
   <entry>
+    <title>Pycharm部署项目</title>
+    <url>/3e80b88cd181.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Pycharm</code> 作为一款优秀的编辑器，当让是自带的有将代码部署到服务器的功能了，特别是当我们遇到下面的情况时，相信它会给你带来惊喜~</p>
+<span id="more"></span>
+
+<p>当你面临下面三个问题的时候，你会怎么做呢？</p>
+<ul>
+<li>现在要运行一个耗时很长的代码，例如爬虫大量爬取，或者数据分析分析大量数据等，你是选择放自己电脑上跑，然后干等着还是…</li>
+<li>现在你想部署一个自己的小项目到服务器，但是目前还在开发中，随时会有很多的改动，你是准备每次改动都重新部署一次呢还是…</li>
+<li>现在你在做的一个项目只能运行于 <code>Unix</code> 系统，而你用的 <code>Windows</code> 系统，你想测试的时候是每次都手动上传到服务器还是…</li>
+</ul>
+<p>上面这些类似的问题一般来说比较的费时间，麻烦；如果说，能让我们在自己的电脑上写代码，运行在服务器里面，那上面这些问题不久全部的解决了？正好， <code>Pycharm</code> 就有这样的功能！</p>
+<h2 id="工具与环境"><a href="#工具与环境" class="headerlink" title="工具与环境"></a>工具与环境</h2><ul>
+<li>工具：<code>Pycharm</code> 专业版和 <code>python3.x</code></li>
+<li>环境：<code>CentOS7.x / CentOS8.x</code> 或 <code>Ubuntu18.x</code> 等都可以，不过请预先装好所需要的 <code>python</code> 及其相关的模块</li>
+</ul>
+<div class="note warning"><p>** <code>Pycharm</code> ** 一定要是专业版，社区版是不提供远程部署功能的</p>
+</div>
+
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="配置远程服务器信息"><a href="#配置远程服务器信息" class="headerlink" title="配置远程服务器信息"></a>配置远程服务器信息</h3><h4 id="打开配置界面"><a href="#打开配置界面" class="headerlink" title="打开配置界面"></a>打开配置界面</h4><ul>
+<li>打开 <code>Pycahrm</code></li>
+<li>点击 <code>Tools</code> -&gt; <code>Deployment</code> -&gt; <code>configuration</code></li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110281409124.png?imageMogr2/format/webp" alt="202110281409124"></p>
+<h4 id="新增一个配置"><a href="#新增一个配置" class="headerlink" title="新增一个配置"></a>新增一个配置</h4><ul>
+<li><p>这里我们添加一个 <code>SFTP</code><br><img data-src="https://image.pylover.net/img/202110281411033.png?imageMogr2/format/webp" alt="202110281411033"></p>
+</li>
+<li><p>给自己远程环境起个名字</p>
+</li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110281411049.png?imageMogr2/format/webp" alt="202110281411049"></p>
+<h4 id="开始配置"><a href="#开始配置" class="headerlink" title="开始配置"></a>开始配置</h4><ul>
+<li>开始配置信息</li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110281417420.png?imageMogr2/format/webp" alt="202110281417420"></p>
+<p>上面这张图都好说，不过要介绍一下这个新增 <code>SSH</code> 配置，点击那三个小点</p>
+<details class="note info no-icon"><summary><p>新增 <code>SSH</code> 配置</p>
+</summary>
+<h5 id="新增配置-No-icon"><a href="#新增配置-No-icon" class="headerlink" title="新增配置 (No icon)"></a>新增配置 (No icon)</h5><p><img data-src="https://image.pylover.net/img/202110281430817.png?imageMogr2/format/webp" alt="202110281430817"></p>
+<ul>
+<li>连接成功</li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110281432293.png?imageMogr2/format/webp" alt="202110281432293"></p>
+
+</details>
+
+<ul>
+<li><code>SSH</code> 配置成功</li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110281433106.png?imageMogr2/format/webp" alt="202110281433106"></p>
+<ul>
+<li>路径映射配置</li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110281436119.png?imageMogr2/format/webp" alt="202110281436119"></p>
+<ul>
+<li>排除路径配置</li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110281438582.png?imageMogr2/format/webp" alt="202110281438582"></p>
+<ul>
+<li>配置成功后ok就行了</li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110281441432.png?imageMogr2/format/webp" alt="202110281441432"></p>
+<ul>
+<li>浏览远程文件</li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110281447879.png?imageMogr2/format/webp" alt="202110281447879"></p>
+<h3 id="配置远程python解释器"><a href="#配置远程python解释器" class="headerlink" title="配置远程python解释器"></a>配置远程python解释器</h3><p>上述我们只是配置了远程服务器信息,但是并没有让 <code>pycharm</code> 指定 <code>python</code> 解释器</p>
+<ul>
+<li><code>File</code> -&gt; <code>Setting</code> -&gt; <code>Project:项目名称</code> -&gt; <code>Python Interpreter</code> -&gt; <code>Add</code></li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110281452930.png?imageMogr2/format/webp" alt="202110281452930"></p>
+<ul>
+<li>选择 <code>SSH Interpreter</code> 后，选择我们之前已经配置好的现成的 <code>SSH</code> 配置</li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110281453220.png?imageMogr2/format/webp" alt="202110281453220"></p>
+<ul>
+<li>选择服务器上 <code>Python</code> 解释器的位置,,然后点击 <code>Finish</code></li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110281455991.png?imageMogr2/format/webp" alt="202110281455991"></p>
+<ul>
+<li>指定解释器为远程解释器,,然后点击Apply,ok</li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110281456827.png?imageMogr2/format/webp" alt="202110281456827"></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>手把手教你用Pycharm连接远程Python环境</p>
+<a href="https://mp.weixin.qq.com/s/ULatzjyeS433CrvSzpSY5Q"></a>
+</div></div>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>pycharm</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python装饰器</title>
     <url>/b17576fd19ba.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>学习装饰器的一点点小笔记，记录一下</p>
@@ -225,105 +324,6 @@
       <tags>
         <tag>python</tag>
         <tag>装饰器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Pycharm部署项目</title>
-    <url>/3e80b88cd181.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Pycharm</code> 作为一款优秀的编辑器，当让是自带的有将代码部署到服务器的功能了，特别是当我们遇到下面的情况时，相信它会给你带来惊喜~</p>
-<span id="more"></span>
-
-<p>当你面临下面三个问题的时候，你会怎么做呢？</p>
-<ul>
-<li>现在要运行一个耗时很长的代码，例如爬虫大量爬取，或者数据分析分析大量数据等，你是选择放自己电脑上跑，然后干等着还是…</li>
-<li>现在你想部署一个自己的小项目到服务器，但是目前还在开发中，随时会有很多的改动，你是准备每次改动都重新部署一次呢还是…</li>
-<li>现在你在做的一个项目只能运行于 <code>Unix</code> 系统，而你用的 <code>Windows</code> 系统，你想测试的时候是每次都手动上传到服务器还是…</li>
-</ul>
-<p>上面这些类似的问题一般来说比较的费时间，麻烦；如果说，能让我们在自己的电脑上写代码，运行在服务器里面，那上面这些问题不久全部的解决了？正好， <code>Pycharm</code> 就有这样的功能！</p>
-<h2 id="工具与环境"><a href="#工具与环境" class="headerlink" title="工具与环境"></a>工具与环境</h2><ul>
-<li>工具：<code>Pycharm</code> 专业版和 <code>python3.x</code></li>
-<li>环境：<code>CentOS7.x / CentOS8.x</code> 或 <code>Ubuntu18.x</code> 等都可以，不过请预先装好所需要的 <code>python</code> 及其相关的模块</li>
-</ul>
-<div class="note warning"><p>** <code>Pycharm</code> ** 一定要是专业版，社区版是不提供远程部署功能的</p>
-</div>
-
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="配置远程服务器信息"><a href="#配置远程服务器信息" class="headerlink" title="配置远程服务器信息"></a>配置远程服务器信息</h3><h4 id="打开配置界面"><a href="#打开配置界面" class="headerlink" title="打开配置界面"></a>打开配置界面</h4><ul>
-<li>打开 <code>Pycahrm</code></li>
-<li>点击 <code>Tools</code> -&gt; <code>Deployment</code> -&gt; <code>configuration</code></li>
-</ul>
-<p><img data-src="https://image.pylover.net/img/202110281409124.png?imageMogr2/format/webp" alt="202110281409124"></p>
-<h4 id="新增一个配置"><a href="#新增一个配置" class="headerlink" title="新增一个配置"></a>新增一个配置</h4><ul>
-<li><p>这里我们添加一个 <code>SFTP</code><br><img data-src="https://image.pylover.net/img/202110281411033.png?imageMogr2/format/webp" alt="202110281411033"></p>
-</li>
-<li><p>给自己远程环境起个名字</p>
-</li>
-</ul>
-<p><img data-src="https://image.pylover.net/img/202110281411049.png?imageMogr2/format/webp" alt="202110281411049"></p>
-<h4 id="开始配置"><a href="#开始配置" class="headerlink" title="开始配置"></a>开始配置</h4><ul>
-<li>开始配置信息</li>
-</ul>
-<p><img data-src="https://image.pylover.net/img/202110281417420.png?imageMogr2/format/webp" alt="202110281417420"></p>
-<p>上面这张图都好说，不过要介绍一下这个新增 <code>SSH</code> 配置，点击那三个小点</p>
-<details class="note info no-icon"><summary><p>新增 <code>SSH</code> 配置</p>
-</summary>
-<h5 id="新增配置-No-icon"><a href="#新增配置-No-icon" class="headerlink" title="新增配置 (No icon)"></a>新增配置 (No icon)</h5><p><img data-src="https://image.pylover.net/img/202110281430817.png?imageMogr2/format/webp" alt="202110281430817"></p>
-<ul>
-<li>连接成功</li>
-</ul>
-<p><img data-src="https://image.pylover.net/img/202110281432293.png?imageMogr2/format/webp" alt="202110281432293"></p>
-
-</details>
-
-<ul>
-<li><code>SSH</code> 配置成功</li>
-</ul>
-<p><img data-src="https://image.pylover.net/img/202110281433106.png?imageMogr2/format/webp" alt="202110281433106"></p>
-<ul>
-<li>路径映射配置</li>
-</ul>
-<p><img data-src="https://image.pylover.net/img/202110281436119.png?imageMogr2/format/webp" alt="202110281436119"></p>
-<ul>
-<li>排除路径配置</li>
-</ul>
-<p><img data-src="https://image.pylover.net/img/202110281438582.png?imageMogr2/format/webp" alt="202110281438582"></p>
-<ul>
-<li>配置成功后ok就行了</li>
-</ul>
-<p><img data-src="https://image.pylover.net/img/202110281441432.png?imageMogr2/format/webp" alt="202110281441432"></p>
-<ul>
-<li>浏览远程文件</li>
-</ul>
-<p><img data-src="https://image.pylover.net/img/202110281447879.png?imageMogr2/format/webp" alt="202110281447879"></p>
-<h3 id="配置远程python解释器"><a href="#配置远程python解释器" class="headerlink" title="配置远程python解释器"></a>配置远程python解释器</h3><p>上述我们只是配置了远程服务器信息,但是并没有让 <code>pycharm</code> 指定 <code>python</code> 解释器</p>
-<ul>
-<li><code>File</code> -&gt; <code>Setting</code> -&gt; <code>Project:项目名称</code> -&gt; <code>Python Interpreter</code> -&gt; <code>Add</code></li>
-</ul>
-<p><img data-src="https://image.pylover.net/img/202110281452930.png?imageMogr2/format/webp" alt="202110281452930"></p>
-<ul>
-<li>选择 <code>SSH Interpreter</code> 后，选择我们之前已经配置好的现成的 <code>SSH</code> 配置</li>
-</ul>
-<p><img data-src="https://image.pylover.net/img/202110281453220.png?imageMogr2/format/webp" alt="202110281453220"></p>
-<ul>
-<li>选择服务器上 <code>Python</code> 解释器的位置,,然后点击 <code>Finish</code></li>
-</ul>
-<p><img data-src="https://image.pylover.net/img/202110281455991.png?imageMogr2/format/webp" alt="202110281455991"></p>
-<ul>
-<li>指定解释器为远程解释器,,然后点击Apply,ok</li>
-</ul>
-<p><img data-src="https://image.pylover.net/img/202110281456827.png?imageMogr2/format/webp" alt="202110281456827"></p>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="/uploads/wechat.png"></object>
-<p>微信文章</p><p>手把手教你用Pycharm连接远程Python环境</p>
-<a href="https://mp.weixin.qq.com/s/ULatzjyeS433CrvSzpSY5Q"></a>
-</div></div>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>pycharm</tag>
-        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -530,7 +530,7 @@
   <entry>
     <title>闭包</title>
     <url>/126f60b18a4f.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>闭包并不是python中特有的概念，在函数式编程语言中都有，例如 <code>Javascript</code>、<code>Ruby</code> 这样的语言中都存在闭包。1</p>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>闭包并不是python中特有的概念，在函数式编程语言中都有，例如 <code>Javascript</code>、<code>Ruby</code> 这样的语言中都存在闭包。</p>
 <p>闭包对初学者来说绝对是一个晦涩难懂的概念，即使你去看权威的维基百科，他的描述也像论文一样难懂，我们来看看他是怎么说的。</p>
 <span id="more"></span>
 
