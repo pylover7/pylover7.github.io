@@ -8,6 +8,7 @@ date: 2022-03-30 22:07:46
 ---
 
 ## 前言
+
 如果我们希望能够快速了解或体验一下 `Git` 的操作的话，推荐前往这个网站进行学习，其不需要我们安装工具，而且我们的每一步操作都可以在右侧实时看到状态，对于我们学习和理解 `Git` 工作方式和原理非常有帮助的。
 
 传送门：[Learn Git Branching](https://learngitbranching.js.org/?locale=zh_CN)
@@ -23,9 +24,7 @@ date: 2022-03-30 22:07:46
 - 补丁分支
 - 修改分支
 
-![](https://image.pylover.net/img/202203302055593.png?imageMogr2/format/webp)
-
-
+![图片1](https://image.pylover.net/img/202203302055593.png?imageMogr2/format/webp)
 
 ### GitHub Flow
 
@@ -36,9 +35,7 @@ date: 2022-03-30 22:07:46
 - 部署检测
 - 合并代码
 
-![](https://image.pylover.net/img/202203302059947.png?imageMogr2/format/webp)
-
-
+![图片2](https://image.pylover.net/img/202203302059947.png?imageMogr2/format/webp)
 
 ### GitLab Flow
 
@@ -46,9 +43,7 @@ date: 2022-03-30 22:07:46
 - 带环境分支
 - 带发布分支
 
-![](https://image.pylover.net/img/202203302059392.png?imageMogr2/format/webp)
-
-
+![图片3](https://image.pylover.net/img/202203302059392.png?imageMogr2/format/webp)
 
 ## 日常使用最佳实践
 
@@ -84,7 +79,7 @@ date: 2022-03-30 22:07:46
 
 日常使用只要记住 6 个命令就可以了。
 
-![](https://image.pylover.net/img/202203302104714.png?imageMogr2/format/webp)
+![图片5](https://image.pylover.net/img/202203302104714.png?imageMogr2/format/webp)
 
 ```bash
 # 工作区 -> 暂存区
@@ -118,8 +113,6 @@ $ git reset --mixed <commit>  # 本地仓库覆盖到工作区（保存回退文
 $ git reset --soft <commit>   # 本地仓库覆盖到工作区（保留修改并加到暂存区）
 $ git reset --hard <commit>   # 本地仓库覆盖到工作区（不保留修改直接删除掉)
 ```
-
-
 
 ## 配置实用参数选项
 
@@ -222,8 +215,6 @@ $ git log
 * c8f7dea - 1st commit
 ```
 
-
-
 | 编号 | 选项列表     | 对应含义解释                                               |
 | :--- | :----------- | :--------------------------------------------------------- |
 | 1    | `p`/`pick`   | 使用这个 commit 记录                                       |
@@ -233,8 +224,6 @@ $ git log
 | 5    | `f`/`fixup`  | 与 squash 选项相同；但不会保存当前 commit 的提交信息       |
 | 6    | `x`/`exec`   | 执行其他 shell 命令                                        |
 | 7    | `d`/`drop`   | 移除这个 commit 记录                                       |
-
-
 
 ### 删除意外调试的测试代码
 
@@ -465,8 +454,6 @@ usage: git stash list [<options>]
           [-u|--include-untracked] [-a|--all] [<message>]
 ```
 
-
-
 ```bash
 # 存储当前的修改但不用提交 commit
 $ git stash
@@ -517,5 +504,5 @@ $ git reset --hard <commit/reference>
 ## 参考文章
 
 {% linkgrid %}
-Git实用技巧记录 | https://www.escapelife.site/posts/f6ffe82b.html | Git实用技巧记录 | /uploads/blog.png
+Git实用技巧记录 | <https://www.escapelife.site/posts/f6ffe82b.html> | Git实用技巧记录 | /uploads/blog.png
 {% endlinkgrid %}

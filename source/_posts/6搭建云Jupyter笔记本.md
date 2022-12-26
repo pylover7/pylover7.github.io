@@ -12,13 +12,13 @@ date: 2020-07-23 15:05:25
 
 
 
-# 前言
+## 前言
 
 最近学习`python`用到了`jupyter notebook`编辑器；但由于环境原因，并不能一直在自己的笔记本上完成学习，很多时候需要在**别的、没有`python`环境的、但是有网络的**地方，这时候我们想学习`python`的时候就比较犯难，没有工作环境，怎么办？当然是问度娘咯，于是小编这就找到了这个搭建云`jupyter`笔记本的方法，搭建完成以后，嗯~相当舒服，有浏览器有网络的地方就可以开始码代码了，，
 
 <!-- more -->
 
-# 前期准备工作
+## 前期准备工作
 
 {% note success %}
 
@@ -68,11 +68,11 @@ date: 2020-07-23 15:05:25
 
 {% endtabs %}
 
-# 安装
+## 安装
 
 {% note info %}
 
-## 温馨提示
+### 温馨提示
 
 本次我们要搭建的是云笔记本，所以大家需要有一台云服务器哦；关于云服务器的获取{% btn #前言, 上一节 %}有介绍，有需要的小伙伴可以看看。
 
@@ -141,7 +141,7 @@ date: 2020-07-23 15:05:25
 
 {% note warning %}
 
-## jupyter command not found
+### jupyter command not found
 
 可能有些小伙伴在安装完成后回出现这个问题，这里我们就一并解决了吧~当然，没有出现这个问题更好。
 
@@ -169,7 +169,7 @@ date: 2020-07-23 15:05:25
 
 打开配置文件：
 
-`sudo vim /etc/profile `
+`sudo vim /etc/profile`
 
 添加如下信息：
 
@@ -190,7 +190,7 @@ date: 2020-07-23 15:05:25
 <!-- endtab -->
 {% endtabs %}
 
-# 配置
+## 配置
 
 {% tabs jupyterpeizhi %}
 
@@ -245,7 +245,7 @@ c.NotebookApp.allow_remote_access = True     # 允许远程访问
 
 至此我们搭建云`Jupyter`笔记本的教程就大概结束了，没有别的需求的小伙伴们就可以通过访问`http://服务器IP地址:8888`来访问你的`jupyter`啦（记得去服务器控制台将8888端口打开~），而且是随时随地的访问，是不是很方便呢，又可以开心的继续写代码了呢：）
 
-# 修改语言
+## 修改语言
 
 小伙伴们打开`jupyter`后会发现，这个编辑器的默认语言是英语，，，可能某些英语底子不大好的同学看着就有点头疼（小编就是。。。），所以，小编在网络上疯狂寻找如何修改`jupyter`编辑器的语言教程，终于在某个深山老林里面找到了此等秘籍！
 
@@ -318,7 +318,7 @@ LC_ALL=zh_CN.UTF-8
 
 {% endtabs %}
 
-# 配置个性域名
+## 配置个性域名
 
 我们搭建好的云`jupyter`如果只是用我们服务器的IP地址来访问，显的确实有点点不大好看，因此，我们将介绍一下如何给我们的云`jupyter`配置一个个性域名。
 
@@ -328,7 +328,7 @@ LC_ALL=zh_CN.UTF-8
 
 小伙伴们可以前往各大厂商（阿里云，百度云，腾讯云等）进行购买，很多域名的首年只需要个位数的价格，买来玩还是可以的~
 
-![](https://image.pylover.net/img/202110280019025.png)
+![图片1](https://image.pylover.net/img/202110280019025.png)
 
 有自己的域名感觉倍儿有格调~
 
@@ -340,7 +340,7 @@ LC_ALL=zh_CN.UTF-8
 
 可能有些小伙伴不知道`SSL`证书是什么东西，用来干啥的，这里小编简单的解释一下，就是在访问你的域名的时候让你的域名前面有一个（绿色的）小锁头：
 
-![](https://image.pylover.net/img/202110280020664.png)
+![图片2](https://image.pylover.net/img/202110280020664.png)
 
 表示访问你这个网站是安全的。
 
@@ -358,15 +358,15 @@ LC_ALL=zh_CN.UTF-8
 
 {% note success %}
 
-## 白嫖方法
+### 白嫖方法
 
 以腾讯云为例（阿里云也有，百度云目前没发现白嫖方法）：
 
-**登陆阿里云控制台** –>  **SSL证书** –> **购买证书** 
+**登陆阿里云控制台** –>  **SSL证书** –> **购买证书**
 
-![](https://image.pylover.net/img/202110280025282.png)
+![图片3](https://image.pylover.net/img/202110280025282.png)
 
-![](https://image.pylover.net/img/202110280025074.png)
+![图片4](https://image.pylover.net/img/202110280025074.png)
 
 以上即可购买一份免费的单域名证书了。
 
@@ -386,7 +386,7 @@ LC_ALL=zh_CN.UTF-8
 
 {% note warning %}
 
-## 依旧能白嫖
+### 依旧能白嫖
 
 有兴趣并且喜欢折腾的小伙伴们，给你们一个传送门：{% btn https://www.hi-linux.com/posts/6968.html, Let's Encrypt 免费通配符 SSL 证书申请教程 %}
 
@@ -421,7 +421,7 @@ LC_ALL=zh_CN.UTF-8
 `cd /etc/nginx`
 `ls`
 
-可以看到这里面已经有`nginx.conf `配置文件了
+可以看到这里面已经有`nginx.conf`配置文件了
 
 这里我们再新建一个配置文件：
 
@@ -437,23 +437,23 @@ LC_ALL=zh_CN.UTF-8
 
 server {
     server_name xxx.com 123.123.123.123; # 服务器域名和 IP 地址
-    listen 80; 
-    location / { 
+    listen 80;
+    location / {
         root /var/www/notebook_ssl; # 此路径下放置一个 index.html，将连接转移到 https
-    }   
+    }
 }
 
 server {
     server_name xxx.com 123.123.123.123; # 服务器域名和 IP 地址
     listen 443;
-    ssl on; 
+    ssl on;
     ssl_certificate /etc/letsencrypt/live/xxx.com/fullchain.pem; # SSL 证书文件的路径
     ssl_certificate_key /etc/letsencrypt/live/xxx.com/privkey.pem; # SSL 密钥文件的路径
-    ssl_session_timeout 5m; 
+    ssl_session_timeout 5m;
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
     ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
-    ssl_prefer_server_ciphers on; 
-    location / { 
+    ssl_prefer_server_ciphers on;
+    location / {
         proxy_pass http://127.0.0.1:8888/; # JUPYTER_PORT 为 Jupyter 运行端口
         proxy_set_header X-Real-IP $remote_addr;
 
@@ -461,12 +461,12 @@ server {
 
 ​        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 
-​		proxy_http_version 1.1;
+​  proxy_http_version 1.1;
 
-​		proxy_set_header Upgrade $http_upgrade;
+​  proxy_set_header Upgrade $http_upgrade;
 ​        proxy_set_header Connection "upgrade";
 ​        proxy_redirect off;
-​    }   
+​    }
 }
 
 {% endcode %}
@@ -497,7 +497,7 @@ server {
 
 来访问我们的`jupyter notebook`了
 
-# 参考文献
+## 参考文献
 
 {% cq %}感谢这些作者的无私奉献！{% endcq %}
 

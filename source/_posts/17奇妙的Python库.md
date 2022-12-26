@@ -10,12 +10,16 @@ date: 2021-10-30 13:33:54
 ---
 
 ## 前言
+
 `Python` 中有很多奇妙且好用的第三方库，可以让你的任务变得更为容易，下面给大家收集一些好用的 `Python` 库，每一个都很不错的哟~
 <!-- more -->
 
 ## 酷酷的库
+
 ### socket
+
 获取本机的局域网 `IP` 地址
+
 ```python
 import socket as f
 
@@ -46,9 +50,10 @@ print("你的电脑公网IP地址是：" + ip)
 ```
 
 ### pyshorteners
+
 `pyshorteners` 是一个简单的 URL 缩短的库，提供了18种短链根域名供使用。
 
-![](https://image.pylover.net/img/202110301403572.png?imageMogr2/format/webp)
+![图片1](https://image.pylover.net/img/202110301403572.png?imageMogr2/format/webp)
 
 这里以 `clck.ru` 格式为例。
 
@@ -63,13 +68,15 @@ print(u)
 ```
 
 ### fabulous
+
 添加文本颜色，如果你是在命令行上运行Python程序，那么输出都是相同颜色，不方便观察。
 
 使用 `Fabulous`，则可以添加图像、彩色文本来凸显输出。
 
-![](https://image.pylover.net/img/202110301407629.png?imageMogr2/format/webp)
+![图片2](https://image.pylover.net/img/202110301407629.png?imageMogr2/format/webp)
 
 示例：
+
 ```python
 from fabulous.color import bold, magenta, highlight_red
 
@@ -83,8 +90,7 @@ print(bold(magenta(
 ```
 
 结果如下，输出字体加粗且有颜色。
-![](https://image.pylover.net/img/202110301410131.png?imageMogr2/format/webp)
-
+![图片3](https://image.pylover.net/img/202110301410131.png?imageMogr2/format/webp)
 
 ## 参考文章
 
