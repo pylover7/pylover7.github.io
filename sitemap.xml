@@ -173,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://pylover.net/schedule/</loc>
+    <loc>https://pylover.net/projects/web.html</loc>
     
     <lastmod>2022-11-09</lastmod>
     
@@ -182,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://pylover.net/projects/web.html</loc>
+    <loc>https://pylover.net/schedule/</loc>
     
     <lastmod>2022-11-09</lastmod>
     
@@ -631,6 +631,13 @@
   </url>
   
   <url>
+    <loc>https://pylover.net/tags/package/</loc>
+    <lastmod>2022-12-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://pylover.net/tags/pycharm/</loc>
     <lastmod>2022-12-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -639,13 +646,6 @@
   
   <url>
     <loc>https://pylover.net/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-12-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/tags/package/</loc>
     <lastmod>2022-12-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

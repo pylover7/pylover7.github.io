@@ -231,6 +231,45 @@
       </tags>
   </entry>
   <entry>
+    <title>奇妙的Python库</title>
+    <url>/1027c3ba669b.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Python</code> 中有很多奇妙且好用的第三方库，可以让你的任务变得更为容易，下面给大家收集一些好用的 <code>Python</code> 库，每一个都很不错的哟~</p>
+<span id="more"></span>
+
+<h2 id="酷酷的库"><a href="#酷酷的库" class="headerlink" title="酷酷的库"></a>酷酷的库</h2><h3 id="socket"><a href="#socket" class="headerlink" title="socket"></a>socket</h3><p>获取本机的局域网 <code>IP</code> 地址</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> socket <span class="keyword">as</span> f</span><br><span class="line"></span><br><span class="line">hostn = f.gethostname()</span><br><span class="line">Laptop = f.gethostbyname(hostn)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑本地IP地址是：&quot;</span> + Laptop)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑本地IP地址是：192.168.2.101</span></span><br></pre></td></tr></table></figure>
+
+<p>当然我们的目的是获取本机的公网 <code>IP</code>，不过这个已经和这个库没有什么关系了，是借助一个  <a class="btn" href="https://jsonip.com"><i class="fas fa-globe"></i>其他网站</a>  来实现的</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</span><br><span class="line"></span><br><span class="line"><span class="comment"># 全局取消证书验证</span></span><br><span class="line"><span class="keyword">import</span> ssl</span><br><span class="line">ssl._create_default_https_context = ssl._create_unverified_context</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> urlopen(<span class="string">r&#x27;https://jsonip.com&#x27;</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    content = fp.read().decode()</span><br><span class="line"></span><br><span class="line">ip = json.loads(content)[<span class="string">&#x27;ip&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑公网IP地址是：&quot;</span> + ip)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑公网IP地址是：120.236.128.201</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="pyshorteners"><a href="#pyshorteners" class="headerlink" title="pyshorteners"></a>pyshorteners</h3><p><code>pyshorteners</code> 是一个简单的 URL 缩短的库，提供了18种短链根域名供使用。</p>
+<p><img data-src="https://image.pylover.net/img/202110301403572.png?imageMogr2/format/webp" alt="图片1"></p>
+<p>这里以 <code>clck.ru</code> 格式为例。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyshorteners <span class="keyword">as</span> psn</span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;http://www.shuhai.com/&quot;</span></span><br><span class="line">u = psn.Shortener().clckru.short(url)</span><br><span class="line"><span class="built_in">print</span>(u)</span><br><span class="line"></span><br><span class="line"><span class="comment"># https://clck.ru/WPJgg</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="fabulous"><a href="#fabulous" class="headerlink" title="fabulous"></a>fabulous</h3><p>添加文本颜色，如果你是在命令行上运行Python程序，那么输出都是相同颜色，不方便观察。</p>
+<p>使用 <code>Fabulous</code>，则可以添加图像、彩色文本来凸显输出。</p>
+<p><img data-src="https://image.pylover.net/img/202110301407629.png?imageMogr2/format/webp" alt="图片2"></p>
+<p>示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> fabulous.color <span class="keyword">import</span> bold, magenta, highlight_red</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(bold(magenta(</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    hello world</span></span><br><span class="line"><span class="string">    this is some new line</span></span><br><span class="line"><span class="string">    and here is the last line. :)</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">)))</span><br></pre></td></tr></table></figure>
+
+<p>结果如下，输出字体加粗且有颜色。<br><img data-src="https://image.pylover.net/img/202110301410131.png?imageMogr2/format/webp" alt="图片3"></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>这10个奇妙的Python库，你必须要试试！</p>
+<a href="https://mp.weixin.qq.com/s/5RZYPySM0GYSTwbvqyxK1A"></a>
+</div></div>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>package</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Pycharm部署项目</title>
     <url>/3e80b88cd181.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Pycharm</code> 作为一款优秀的编辑器，当让是自带的有将代码部署到服务器的功能了，特别是当我们遇到下面的情况时，相信它会给你带来惊喜~</p>
@@ -327,45 +366,6 @@
       <tags>
         <tag>pycharm</tag>
         <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>奇妙的Python库</title>
-    <url>/1027c3ba669b.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Python</code> 中有很多奇妙且好用的第三方库，可以让你的任务变得更为容易，下面给大家收集一些好用的 <code>Python</code> 库，每一个都很不错的哟~</p>
-<span id="more"></span>
-
-<h2 id="酷酷的库"><a href="#酷酷的库" class="headerlink" title="酷酷的库"></a>酷酷的库</h2><h3 id="socket"><a href="#socket" class="headerlink" title="socket"></a>socket</h3><p>获取本机的局域网 <code>IP</code> 地址</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> socket <span class="keyword">as</span> f</span><br><span class="line"></span><br><span class="line">hostn = f.gethostname()</span><br><span class="line">Laptop = f.gethostbyname(hostn)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑本地IP地址是：&quot;</span> + Laptop)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑本地IP地址是：192.168.2.101</span></span><br></pre></td></tr></table></figure>
-
-<p>当然我们的目的是获取本机的公网 <code>IP</code>，不过这个已经和这个库没有什么关系了，是借助一个  <a class="btn" href="https://jsonip.com"><i class="fas fa-globe"></i>其他网站</a>  来实现的</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</span><br><span class="line"></span><br><span class="line"><span class="comment"># 全局取消证书验证</span></span><br><span class="line"><span class="keyword">import</span> ssl</span><br><span class="line">ssl._create_default_https_context = ssl._create_unverified_context</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> urlopen(<span class="string">r&#x27;https://jsonip.com&#x27;</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    content = fp.read().decode()</span><br><span class="line"></span><br><span class="line">ip = json.loads(content)[<span class="string">&#x27;ip&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的电脑公网IP地址是：&quot;</span> + ip)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 你的电脑公网IP地址是：120.236.128.201</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="pyshorteners"><a href="#pyshorteners" class="headerlink" title="pyshorteners"></a>pyshorteners</h3><p><code>pyshorteners</code> 是一个简单的 URL 缩短的库，提供了18种短链根域名供使用。</p>
-<p><img data-src="https://image.pylover.net/img/202110301403572.png?imageMogr2/format/webp" alt="图片1"></p>
-<p>这里以 <code>clck.ru</code> 格式为例。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pyshorteners <span class="keyword">as</span> psn</span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;http://www.shuhai.com/&quot;</span></span><br><span class="line">u = psn.Shortener().clckru.short(url)</span><br><span class="line"><span class="built_in">print</span>(u)</span><br><span class="line"></span><br><span class="line"><span class="comment"># https://clck.ru/WPJgg</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="fabulous"><a href="#fabulous" class="headerlink" title="fabulous"></a>fabulous</h3><p>添加文本颜色，如果你是在命令行上运行Python程序，那么输出都是相同颜色，不方便观察。</p>
-<p>使用 <code>Fabulous</code>，则可以添加图像、彩色文本来凸显输出。</p>
-<p><img data-src="https://image.pylover.net/img/202110301407629.png?imageMogr2/format/webp" alt="图片2"></p>
-<p>示例：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> fabulous.color <span class="keyword">import</span> bold, magenta, highlight_red</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(bold(magenta(</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    hello world</span></span><br><span class="line"><span class="string">    this is some new line</span></span><br><span class="line"><span class="string">    and here is the last line. :)</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">)))</span><br></pre></td></tr></table></figure>
-
-<p>结果如下，输出字体加粗且有颜色。<br><img data-src="https://image.pylover.net/img/202110301410131.png?imageMogr2/format/webp" alt="图片3"></p>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="/uploads/wechat.png"></object>
-<p>微信文章</p><p>这10个奇妙的Python库，你必须要试试！</p>
-<a href="https://mp.weixin.qq.com/s/5RZYPySM0GYSTwbvqyxK1A"></a>
-</div></div>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>package</tag>
       </tags>
   </entry>
   <entry>
