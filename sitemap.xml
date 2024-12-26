@@ -533,33 +533,6 @@
   </url>
   
   <url>
-    <loc>https://pylover.net/c40696c93928.html</loc>
-    
-    <lastmod>2024-12-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/bba48c4356b8.html</loc>
-    
-    <lastmod>2024-12-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/956f654d80a2.html</loc>
-    
-    <lastmod>2024-12-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://pylover.net/b17576fd19ba.html</loc>
     
     <lastmod>2024-12-26</lastmod>
@@ -597,20 +570,6 @@
   
   <url>
     <loc>https://pylover.net/tags/python/</loc>
-    <lastmod>2024-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/tags/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2024-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://pylover.net/tags/magic/</loc>
     <lastmod>2024-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -731,13 +690,6 @@
   </url>
   
   <url>
-    <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ajax/</loc>
     <lastmod>2024-12-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -746,6 +698,13 @@
   
   <url>
     <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2024-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2024-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
