@@ -11,8 +11,8 @@ https://pylover.net/config/index.html
 https://pylover.net/config/others.html
 https://pylover.net/config/pcsoftware.html
 https://pylover.net/config/webtools.html
-https://pylover.net/grouppicture/daxue.html
 https://pylover.net/grouppicture/index.html
+https://pylover.net/grouppicture/daxue.html
 https://pylover.net/projects/datavisualization.html
 https://pylover.net/projects/index.html
 https://pylover.net/projects/machinelearning.html
@@ -46,8 +46,8 @@ https://pylover.net/allskills/mdskill/lists.html
 https://pylover.net/allskills/mdskill/paragraphs.html
 https://pylover.net/allskills/skill/index.html
 https://pylover.net/allskills/tutorial/index.html
-https://pylover.net/allskills/writing/button.html
 https://pylover.net/allskills/writing/caniuse.html
+https://pylover.net/allskills/writing/button.html
 https://pylover.net/allskills/writing/group-pictures.html
 https://pylover.net/006ff03df6af.html
 https://pylover.net/cf608139546a.html
@@ -57,15 +57,15 @@ https://pylover.net/5ba4c255d128.html
 https://pylover.net/5ce11c97a4a9.html
 https://pylover.net/ed7a7cc4af87.html
 https://pylover.net/aa19ff014c7f.html
-https://pylover.net/b17576fd19ba.html
 https://pylover.net/3e80b88cd181.html
+https://pylover.net/b17576fd19ba.html
 https://pylover.net/1027c3ba669b.html
 https://pylover.net/
 https://pylover.net/tags/python/
 https://pylover.net/tags/re/
-https://pylover.net/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/
 https://pylover.net/tags/pycharm/
 https://pylover.net/tags/%E6%95%99%E7%A8%8B/
+https://pylover.net/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/
 https://pylover.net/tags/package/
 https://pylover.net/tags/javascript/
 https://pylover.net/tags/ajax/
