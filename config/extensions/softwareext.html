@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/icon1.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/icon1.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/icon0.5.ico">
+  <link rel="mask-icon" href="/uploads/icon1.ico" color="#222">
+  <meta name="baidu-site-verification" content="code-F25ER4wHr6">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"pylover.net","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"default"},"fold":{"enable":true,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="PycharmChinese Language Pack英语不好的同学，看着 pycharm 那么多的功能却不知道怎么用的，就不用多说了吧~ Translation这个插件可以让你在 Pycharm 的任何地方对各种语言进行翻译，再也不用担心看源代码的注释看不懂了，而且不知道怎么用英语表达的中文也可以立马用翻译过来，必须是必备插件！ 快捷键选中想要翻译的词汇后： Ctrl+Shift+y   Ai">
+<meta property="og:type" content="website">
+<meta property="og:title" content="软件插件">
+<meta property="og:url" content="https://pylover.net/config/extensions/softwareext.html">
+<meta property="og:site_name" content="追光日记">
+<meta property="og:description" content="PycharmChinese Language Pack英语不好的同学，看着 pycharm 那么多的功能却不知道怎么用的，就不用多说了吧~ Translation这个插件可以让你在 Pycharm 的任何地方对各种语言进行翻译，再也不用担心看源代码的注释看不懂了，而且不知道怎么用英语表达的中文也可以立马用翻译过来，必须是必备插件！ 快捷键选中想要翻译的词汇后： Ctrl+Shift+y   Ai">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://image.pylover.net/img/202110272114715.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272115075.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272115255.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272117889.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272118831.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272121902.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272123010.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272124384.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272124921.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272124831.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272124065.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272124153.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272125618.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272125819.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272125598.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272125435.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272125490.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272125117.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272126126.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272126718.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272126772.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272126536.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110272126007.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110280100248.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110280101634.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110280103797.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110280104191.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110300112767.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110301316924.gif?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110300118558.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110301318536.gif?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110300120692.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110301319355.gif?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110300123965.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110300126270.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110301319157.gif?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110300136840.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110301320314.gif?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110300137044.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110300138412.png?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110301320377.gif?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110301322318.gif?imageMogr2/format/webp">
+<meta property="og:image" content="https://image.pylover.net/img/202110300141257.png?imageMogr2/format/webp">
+<meta property="article:published_time" content="2024-12-26T09:49:36.113Z">
+<meta property="article:modified_time" content="2024-12-26T09:49:36.113Z">
+<meta property="article:author" content="pylover7">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://image.pylover.net/img/202110272114715.png?imageMogr2/format/webp">
+
+
+<link rel="canonical" href="https://pylover.net/config/extensions/softwareext.html">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://pylover.net/config/extensions/softwareext.html","path":"config/extensions/softwareext.html","title":"软件插件"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>软件插件 | 追光日记
+</title>
+  
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?15a02190bbfe25e9869a860d891b46ba"></script>
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">追光日记</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">站在巨人的肩上</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-开发工具"><a href="/config/" rel="section"><i class="fa fa-user-cog fa-fw"></i>开发工具</a></li><li class="menu-item menu-item-技巧教程"><a href="/allskills/" rel="section"><i class="fa fa-tachometer-alt fa-fw"></i>技巧教程</a></li><li class="menu-item menu-item-项目收集"><a href="/projects/" rel="section"><i class="fa fa-project-diagram fa-fw"></i>项目收集</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Pycharm"><span class="nav-number">1.</span> <span class="nav-text">Pycharm</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Chinese-Language-Pack"><span class="nav-number">1.1.</span> <span class="nav-text">Chinese Language Pack</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Translation"><span class="nav-number">1.2.</span> <span class="nav-text">Translation</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">1.2.1.</span> <span class="nav-text">快捷键</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AiXcoder-Code-Completer"><span class="nav-number">1.3.</span> <span class="nav-text">AiXcoder Code Completer</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Aixcoder"><span class="nav-number">1.3.1.</span> <span class="nav-text">Aixcoder</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kite"><span class="nav-number">1.4.</span> <span class="nav-text">Kite</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Kite"><span class="nav-number">1.4.1.</span> <span class="nav-text">Kite</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Key-Promoter-X"><span class="nav-number">1.5.</span> <span class="nav-text">Key Promoter X</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gitee"><span class="nav-number">1.6.</span> <span class="nav-text">Gitee</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSV-plugin"><span class="nav-number">1.7.</span> <span class="nav-text">CSV plugin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Rainbow-Brackets"><span class="nav-number">1.8.</span> <span class="nav-text">Rainbow Brackets</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Atom-Material-Icons"><span class="nav-number">1.9.</span> <span class="nav-text">Atom Material Icons</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ignore"><span class="nav-number">1.10.</span> <span class="nav-text">.ignore</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CodeGlance"><span class="nav-number">1.11.</span> <span class="nav-text">CodeGlance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SonarLint"><span class="nav-number">1.12.</span> <span class="nav-text">SonarLint</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PlantUML-integration"><span class="nav-number">1.13.</span> <span class="nav-text">PlantUML integration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IdeaVim"><span class="nav-number">1.14.</span> <span class="nav-text">IdeaVim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RegexpTester"><span class="nav-number">1.15.</span> <span class="nav-text">RegexpTester</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Json-Parser"><span class="nav-number">1.16.</span> <span class="nav-text">Json Parser</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vscode"><span class="nav-number">2.</span> <span class="nav-text">Vscode</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Python"><span class="nav-number">2.1.</span> <span class="nav-text">Python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-Snippets"><span class="nav-number">2.2.</span> <span class="nav-text">Python Snippets</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-Docstring-Generator"><span class="nav-number">2.3.</span> <span class="nav-text">Python Docstring Generator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-Test-Explorer-for-Visual-Studio-Code"><span class="nav-number">2.4.</span> <span class="nav-text">Python Test Explorer for Visual Studio Code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-Preview"><span class="nav-number">2.5.</span> <span class="nav-text">Python Preview</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-Type-Hint"><span class="nav-number">2.6.</span> <span class="nav-text">Python Type Hint</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jupyter"><span class="nav-number">2.7.</span> <span class="nav-text">Jupyter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Atom-Material-Theme"><span class="nav-number">2.8.</span> <span class="nav-text">Atom Material Theme</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-Notebook"><span class="nav-number">3.</span> <span class="nav-text">Jupyter Notebook</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Collapsible-Headings"><span class="nav-number">3.1.</span> <span class="nav-text">Collapsible Headings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Notify"><span class="nav-number">3.2.</span> <span class="nav-text">Notify</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Table-of-Contents-2"><span class="nav-number">3.3.</span> <span class="nav-text">Table of Contents (2)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Variable-Inspector"><span class="nav-number">3.4.</span> <span class="nav-text">Variable Inspector</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Codefolding"><span class="nav-number">3.5.</span> <span class="nav-text">Codefolding</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ExecuteTime"><span class="nav-number">3.6.</span> <span class="nav-text">ExecuteTime</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nbextensions-dashboard-tab"><span class="nav-number">3.7.</span> <span class="nav-text">Nbextensions dashboard tab</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Snippets-Menu"><span class="nav-number">3.8.</span> <span class="nav-text">Snippets Menu</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Codefolding-in-Editor"><span class="nav-number">3.9.</span> <span class="nav-text">Codefolding in Editor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#contrib-nbextensions-help-item"><span class="nav-number">3.10.</span> <span class="nav-text">contrib_nbextensions_help_item</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hide-input"><span class="nav-number">3.11.</span> <span class="nav-text">Hide input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hinterland"><span class="nav-number">3.12.</span> <span class="nav-text">Hinterland</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nbextensions-edit-menu-item"><span class="nav-number">3.13.</span> <span class="nav-text">Nbextensions edit menu item</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#spellchecker"><span class="nav-number">3.14.</span> <span class="nav-text">spellchecker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Toggle-all-line-numbers"><span class="nav-number">3.15.</span> <span class="nav-text">Toggle all line numbers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Autopep8"><span class="nav-number">3.16.</span> <span class="nav-text">Autopep8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hide-input-all"><span class="nav-number">3.17.</span> <span class="nav-text">Hide input all</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Scratchpad"><span class="nav-number">3.18.</span> <span class="nav-text">Scratchpad</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AutoSaveTime"><span class="nav-number">3.19.</span> <span class="nav-text">AutoSaveTime</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ScrollDown"><span class="nav-number">3.20.</span> <span class="nav-text">ScrollDown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#highlighter"><span class="nav-number">3.21.</span> <span class="nav-text">highlighter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ruler-in-Editor"><span class="nav-number">3.22.</span> <span class="nav-text">Ruler in Editor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-Markdown"><span class="nav-number">3.23.</span> <span class="nav-text">Python Markdown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Skip-Traceback"><span class="nav-number">3.24.</span> <span class="nav-text">Skip-Traceback</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="pylover7"
+      src="/uploads/avatar2.png">
+  <p class="site-author-name" itemprop="name">pylover7</p>
+  <div class="site-description" itemprop="description">py爱好者~</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/pylover7" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;pylover7" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner page posts-expand">
+    <ul class="sub-menu menu">
+      
+  <li class="menu-item menu-item-pc端软件"><a href="/config/pcsoftware.html" rel="section"><i class="fa fa-laptop-code fa-fw"></i>PC端软件</a></li>
+
+
+      
+  <li class="menu-item menu-item-网页工具"><a href="/config/webtools.html" rel="section"><i class="fa fa-wrench fa-fw"></i>网页工具</a></li>
+
+
+      
+  <li class="menu-item menu-item-扩展插件"><a href="/config/extensions/" rel="section"><i class="fa fa-tachometer-alt fa-fw"></i>扩展插件</a></li>
+
+
+      
+  <li class="menu-item menu-item-其他"><a href="/config/others.html" rel="section"><i class="fab fa-ethereum fa-fw"></i>其他</a></li>
+
+
+    </ul>
+    <ul class="sub-menu menu">
+      
+  <li class="menu-item menu-item-软件扩展"><a href="/config/extensions/softwareext.html" rel="section"><i class="fab fa-accusoft fa-fw"></i>软件扩展</a></li>
+
+
+      
+  <li class="menu-item menu-item-浏览器插件"><a href="/config/extensions/browserext.html" rel="section"><i class="fab fa-edge fa-fw"></i>浏览器插件</a></li>
+
+
+    </ul>
+
+
+    
+    
+    
+    <div class="post-block" lang="zh-CN"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">软件插件
+</h1>
+
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/config/">开发工具</a></li>
+            <li><a href="/config/extensions/">扩展插件</a></li>
+            <li>软件扩展</li>
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <h2 id="Pycharm"><a href="#Pycharm" class="headerlink" title="Pycharm"></a>Pycharm</h2><h3 id="Chinese-Language-Pack"><a href="#Chinese-Language-Pack" class="headerlink" title="Chinese Language Pack"></a>Chinese Language Pack</h3><p>英语不好的同学，看着 <code>pycharm</code> 那么多的功能却不知道怎么用的，就不用多说了吧~<br><img data-src="https://image.pylover.net/img/202110272114715.png?imageMogr2/format/webp"></p>
+<h3 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h3><p>这个插件可以让你在 <code>Pycharm</code> 的任何地方对各种语言进行翻译，再也不用担心看源代码的注释看不懂了，而且不知道怎么用英语表达的中文也可以立马用翻译过来，必须是必备插件！<br><img data-src="https://image.pylover.net/img/202110272115075.png?imageMogr2/format/webp"></p>
+<div class="note info"><h4 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h4><p>选中想要翻译的词汇后： <code>Ctrl+Shift+y</code></p>
+</div>
+
+<h3 id="AiXcoder-Code-Completer"><a href="#AiXcoder-Code-Completer" class="headerlink" title="AiXcoder Code Completer"></a>AiXcoder Code Completer</h3><p>各位日常写代码的小伙伴应该都知道 <strong>代码补全</strong> 这个好用的功能，<code>aixcoder</code> 就是一款这样的插件：智能编程助手，是真的非常好用！谁用谁知道；反正小编是超级喜欢的；除此之外的其他功能，小伙伴们可以去他的官网看看<br><img data-src="https://image.pylover.net/img/202110272115255.png?imageMogr2/format/webp"></p>
+<div class="note info"><h4 id="Aixcoder"><a href="#Aixcoder" class="headerlink" title="Aixcoder"></a><code>Aixcoder</code></h4><p><a target="_blank" rel="noopener" href="https://www.aixcoder.com/">官网地址</a></p>
+</div>
+
+<h3 id="Kite"><a href="#Kite" class="headerlink" title="Kite"></a>Kite</h3><p>和 <code>Aixcoder</code> 一样，也是一款代码补全插件，谁用谁知道，不过小编一般使用 <code>Aixcoder</code> ，原因有两个：</p>
+<ul>
+<li><code>aixcoder</code> 是我们自己国家的的， <code>kite</code> 是别人的，咱们还是要支持咱自己的东西；</li>
+<li><code>kite</code> 的代码补全不像 <code>aixcoder</code> 那么多，补全的稍微比较少；</li>
+</ul>
+<p>不过，<code>kite</code> 也有它的优势，部分使用体验会好一些，至于具体使用哪一个，那就由小伙伴们自己决定了。<br><img data-src="https://image.pylover.net/img/202110272117889.png?imageMogr2/format/webp"></p>
+<div class="note info"><h4 id="Kite"><a href="#Kite" class="headerlink" title="Kite"></a><code>Kite</code></h4><p><a target="_blank" rel="noopener" href="https://www.kite.com/">官网地址</a></p>
+</div>
+
+<h3 id="Key-Promoter-X"><a href="#Key-Promoter-X" class="headerlink" title="Key Promoter X"></a>Key Promoter X</h3><p>这是一款提示你每个操作的快捷键是什么的插件，如果没有相应的快捷键，也会提示你需不需要建立一个；如果你在写代码的时候不想用鼠标，双手一直在键盘上，那就可以尝试一下这款插件，它可以不厌其烦的提示你，你此时用鼠标操作的快捷键是啥（当然你要是烦了也可以关掉了啦），一直到你记住为止；当然，如果不不习惯它原本的快捷键，也可以非常方便的修改成自己喜欢的快捷键，如果你本就是想学快捷键，那这就是个上上选的插件了。<br><img data-src="https://image.pylover.net/img/202110272118831.png?imageMogr2/format/webp"></p>
+<p>提示的方式如下：<br><img data-src="https://image.pylover.net/img/202110272121902.png?imageMogr2/format/webp"></p>
+<h3 id="Gitee"><a href="#Gitee" class="headerlink" title="Gitee"></a>Gitee</h3><p>一个可以登录 <code>Gitee</code> 的插件，类似于 <code>Pycharm</code> 自带的 <code>Github</code> 插件一样，可以直接在编辑器内对远程仓库进行 <code>Clone</code> 等操作。<br><img data-src="https://image.pylover.net/img/202110272123010.png?imageMogr2/format/webp"></p>
+<p>在这里登录：<br><img data-src="https://image.pylover.net/img/202110272124384.png?imageMogr2/format/webp"></p>
+<h3 id="CSV-plugin"><a href="#CSV-plugin" class="headerlink" title="CSV plugin"></a>CSV plugin</h3><p>用于通过灵活的表编辑器编辑 csv、tsv、psv文件，语法验证，结构突出显示，可自定义的颜色，新意图和有用的检查；主要是在 Pycharm 里打开 csv 文件原本的样式太不美观了，数据密密麻麻的，用这个插件就会友好很多很多。<br><img data-src="https://image.pylover.net/img/202110272124921.png?imageMogr2/format/webp"></p>
+<h3 id="Rainbow-Brackets"><a href="#Rainbow-Brackets" class="headerlink" title="Rainbow Brackets"></a>Rainbow Brackets</h3><p>让你的括号等类似符号不同层之间显示不同，支持许多的语言。这个可以使不同的括号显示不同的颜色，便于我们在许多括号的时候辨别哪两个括号是一对的；也是个挺好用的插件。<br><img data-src="https://image.pylover.net/img/202110272124831.png?imageMogr2/format/webp"></p>
+<p>很多层级的时候就像这样：<br><img data-src="https://image.pylover.net/img/202110272124065.png?imageMogr2/format/webp"></p>
+<h3 id="Atom-Material-Icons"><a href="#Atom-Material-Icons" class="headerlink" title="Atom Material Icons"></a>Atom Material Icons</h3><p>这个插件主要用于自定义 <code>Pycharm</code> 的 UI 图标和文件目录的图标，用完以后比之前的好看很多！<br><img data-src="https://image.pylover.net/img/202110272124153.png?imageMogr2/format/webp"></p>
+<p>用了这个插件部分文件的图标如下：<br><img data-src="https://image.pylover.net/img/202110272125618.png?imageMogr2/format/webp"></p>
+<h3 id="ignore"><a href="#ignore" class="headerlink" title=".ignore"></a>.ignore</h3><p>用于创建各种 <code>.ignore</code> 文件；例如当我们在进行项目的版本管理的时候，总有很多文件是不需要管理的，也会有很多重要的文件是不能上传到仓库的，这个时候要是自己一个一个手打的话….还是用这个插件直接创建一个吧，它自带了很多的模板，可由我们自由选择，很方便。<br><img data-src="https://image.pylover.net/img/202110272125819.png?imageMogr2/format/webp"></p>
+<p>创建方法：在新建文件里面就可以选择模板了</p>
+<h3 id="CodeGlance"><a href="#CodeGlance" class="headerlink" title="CodeGlance"></a>CodeGlance</h3><p>将类似于 <code>Sublime</code> 中的代码小地图嵌入到编辑器窗格中，如下，这样子假如我们一个文件有很长的代码，用鼠标滚轮上下滚动就很累，有了这个小地图，直接就可以用鼠标拖动进度了，特别方便！<br><img data-src="https://image.pylover.net/img/202110272125598.png?imageMogr2/format/webp"></p>
+<p>启用后文件的后边小地图：<br><img data-src="https://image.pylover.net/img/202110272125435.png?imageMogr2/format/webp"></p>
+<h3 id="SonarLint"><a href="#SonarLint" class="headerlink" title="SonarLint"></a>SonarLint</h3><p>这个插件能够在你写代码的时候帮你查找你代码的错误和漏洞并给出修改的相关规则和建议，简单来说就是帮你找错的，不然有时候很多错要运行很多遍才能一个一个改过来。<br><img data-src="https://image.pylover.net/img/202110272125490.png?imageMogr2/format/webp"></p>
+<p><img data-src="https://image.pylover.net/img/202110272125117.png?imageMogr2/format/webp"></p>
+<p><img data-src="https://image.pylover.net/img/202110272126126.png?imageMogr2/format/webp"></p>
+<h3 id="PlantUML-integration"><a href="#PlantUML-integration" class="headerlink" title="PlantUML integration"></a>PlantUML integration</h3><p>一个非常强大的插件，主要用于用代码绘制PlantUML 图表，至于这个图是个啥，放个图看看<br><img data-src="https://image.pylover.net/img/202110272126718.png?imageMogr2/format/webp"></p>
+<p><img data-src="https://image.pylover.net/img/202110272126772.png?imageMogr2/format/webp"></p>
+<p>除此之外，还能绘制很多的图，想了解的小伙伴可以去是它的『 <a target="_blank" rel="noopener" href="https://plantuml.com/zh/">官网</a> 』看看<br><img data-src="https://image.pylover.net/img/202110272126536.png?imageMogr2/format/webp"></p>
+<h3 id="IdeaVim"><a href="#IdeaVim" class="headerlink" title="IdeaVim"></a>IdeaVim</h3><p>在大多数场景之下，使用鼠标的效率和精准度，是远不如键盘快捷键的（前提是你已经相当熟练的掌握了快捷键），这个你得承认吧。</p>
+<p>Vi 可以满足你对文本操作的所有需求，比可视化界面更加效率，更加 geek。在安装完 Pycharm 完后，将 <code>ideaVim</code> 这个插件也装上，它可以让我们在 Pycharm 中 使用 vim 来编辑代码。<br><img data-src="https://image.pylover.net/img/202110272126007.png?imageMogr2/format/webp"></p>
+<h3 id="RegexpTester"><a href="#RegexpTester" class="headerlink" title="RegexpTester"></a>RegexpTester</h3><p><code>Regex Tester</code> 是 <code>PyCharm</code> 的第三方插件，可以测试正则表达式。</p>
+<p><img data-src="https://image.pylover.net/img/202110280100248.png?imageMogr2/format/webp"></p>
+<p>安装完成后，无需重启 <code>PyCharm</code> ，点击  <code>PyCharm</code>  界面左下方的小矩形按钮，就能找到 <code>Regex Tester</code> 选项。</p>
+<p><img data-src="https://image.pylover.net/img/202110280101634.png?imageMogr2/format/webp"></p>
+<p>点击进入后，就出现了如下界面。匹配到的字符串背景会被高亮。右上方还有一些选项如大小写敏感，多行模式等，可根据需要进行选择。<code>Regex Tester</code> 还提供了<code>Split，Replace</code> 功能等。</p>
+<p>使用效果如下：</p>
+<p><img data-src="https://image.pylover.net/img/202110280103797.png?imageMogr2/format/webp"></p>
+<h3 id="Json-Parser"><a href="#Json-Parser" class="headerlink" title="Json Parser"></a>Json Parser</h3><p>在开发过程中，经常会把校验一串 JSON 字符串是否合法，在以前我的做法都是打开 <a target="_blank" rel="noopener" href="https://tool.lu/json/">https://tool.lu/json/</a> 这个在线网站，直接美化来校验，只有 JSON 格式都正确无误合法的，才能够美化。</p>
+<p>直到后来发现在 <code>PyCharm</code> 有一个插件专门来做这个事，那就是 <code>JSON Parser</code>，在插件市场安装后，重启 <code>PyCharm</code> ，就能在右侧边栏中看到它。</p>
+<p><img data-src="https://image.pylover.net/img/202110280104191.png?imageMogr2/format/webp"></p>
+<details class="note primary"><summary><p>温馨提示</p>
+</summary>
+<p>若是你的设备性能不够好，建议不要装这么多插件，毕竟 <code>Pycharm</code> 本身就是一个重量级的编辑器！</p>
+
+</details>
+
+
+<hr>
+<h2 id="Vscode"><a href="#Vscode" class="headerlink" title="Vscode"></a>Vscode</h2><h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><p><img data-src="https://image.pylover.net/img/202110300112767.png?imageMogr2/format/webp"> </p>
+<p><code>Python</code> 这个插件必装，别问为啥！因为它是微软 <code>VSCode</code> 开发团队自己开发的，亲儿子的级别。虽然 <code>VSCode</code> 不安装任何插件也能高亮 <code>Python</code> 代码，但该插件提供的功能远不止如此，还有很多强大的功能，比如：</p>
+<ul>
+<li>智能补全：通过自动补全，代码导航，语法检查等来编辑代码</li>
+<li>代码检查：使用 <code>Pylint</code> 、 <code>Flake8</code> 获取额外的代码分析，检查编程错误</li>
+<li>代码格式：用 <code>black</code> ， <code>autopep</code> 或 <code>YAPF</code> 调整代码格式</li>
+<li>调试：调试 <code>Python</code> 脚本，<code>Web</code> 应用程序以及远程或多线程进程</li>
+<li>测试：通过测试 <code>Explorer</code> 中 <code>unittest</code> ，<code>pytest</code> 或 <code>nose</code> 运行和调试测试</li>
+<li><code>Jupyter Notebook</code>：创建和编辑 <code>Jupyter Notebook</code> ，添加和运行代码单元、渲染图、通过变量资源管理器可视化变量、使用数据查看器可视化数据框等等</li>
+<li>环境：自动激活并在 <code>virtualenv</code> 、<code>venv</code>、<code>pipenv</code>、<code>conda</code> 和 <code>pyenv</code> 环境之间进行切换</li>
+<li>重构：通过变量提取、方法提取和导入排序来重构Python代码</li>
+</ul>
+<p>如下所示：</p>
+<p><img data-src="https://image.pylover.net/img/202110301316924.gif?imageMogr2/format/webp"></p>
+<h3 id="Python-Snippets"><a href="#Python-Snippets" class="headerlink" title="Python Snippets"></a>Python Snippets</h3><p><img data-src="https://image.pylover.net/img/202110300118558.png?imageMogr2/format/webp"></p>
+<p><code>Python Snippets</code> 插件可以让我们的 <code>Python</code> 编程更加高效。</p>
+<p>它包含了大量的内置方法，以及 <code>string</code>、<code>list</code>、<code>sets</code>、<code>tuple</code>、<code>dictionary</code>、<code>class</code>代码片段，并且还为每个代码段提供至少一个示例。</p>
+<ul>
+<li>所有python内置方法代码片段</li>
+<li>所有python string片段</li>
+<li>所有python list片段</li>
+<li>所有python set片段</li>
+<li>所有python tuple片段</li>
+<li>所有python dictionary 字典片段</li>
+<li>并包含许多其他代码段（例如if&#x2F;else、for、while、while&#x2F;else、try&#x2F;catch，文件处理和类片段和oop类示例（多态性、封装、继承.i.g）</li>
+</ul>
+<p>如下所示：</p>
+<p><img data-src="https://image.pylover.net/img/202110301318536.gif?imageMogr2/format/webp"></p>
+<h3 id="Python-Docstring-Generator"><a href="#Python-Docstring-Generator" class="headerlink" title="Python Docstring Generator"></a>Python Docstring Generator</h3><p><img data-src="https://image.pylover.net/img/202110300120692.png?imageMogr2/format/webp"></p>
+<p><code>Python Docstring Generator</code> 可以自动创建 <code>docstring</code> ，这真的为开发人员减少了的很大工作量。并且，生成的文档字符串遵循所有标准格式，包括 <code>Google</code>、<code>docBlockr</code>、<code>Numpy</code>、<code>Sphinx</code> 和 <code>PEP0257</code>。它的主要功能包括：</p>
+<ul>
+<li>快速生成一个可通过 <code>Tab</code> 键浏览的 <code>docstring</code> 代码段</li>
+<li>在几种不同类型的文档字符串格式之间进行选择</li>
+<li>通过 <code>pep484</code> 类型提示、默认值和 <code>var</code> 名称推断参数类型</li>
+<li>支持 <code>args</code>，<code>kwargs</code>，修饰符，错误和参数类型</li>
+</ul>
+<p>下面是实例：</p>
+<p><img data-src="https://image.pylover.net/img/202110301319355.gif?imageMogr2/format/webp"></p>
+<h3 id="Python-Test-Explorer-for-Visual-Studio-Code"><a href="#Python-Test-Explorer-for-Visual-Studio-Code" class="headerlink" title="Python Test Explorer for Visual Studio Code"></a>Python Test Explorer for Visual Studio Code</h3><p><img data-src="https://image.pylover.net/img/202110300123965.png?imageMogr2/format/webp"></p>
+<p>这个插件通过使用 <code>Test Explorer UI</code> 运行 <code>Python Unittest</code> 或 <code>Pytest</code> 测试，对于功能测试非常方便。具体功能如下：</p>
+<ul>
+<li>在VS Code的侧栏中的“测试”视图中显示“测试资源管理器”，其中包含所有检测到的测试、套件及其状态</li>
+<li>在测试发现期间方便的错误报告</li>
+<li>单元测试和Pytest调试</li>
+<li>在资源管理器中选择测试后，显示失败的测试日志</li>
+<li>支持多根工作区</li>
+<li>支持Unittest和Pytest测试框架及其插件</li>
+</ul>
+<h3 id="Python-Preview"><a href="#Python-Preview" class="headerlink" title="Python Preview"></a>Python Preview</h3><p><img data-src="https://image.pylover.net/img/202110300126270.png?imageMogr2/format/webp"></p>
+<p><code>Python Preview</code> 可展现可视化调试的过程，并添加到我们的 <code>Python</code> 代码中。它将调试代码转换为带有动画和图形元素的交互式会话，以表示应用程序状态，对于代码调试非常直观。</p>
+<p><img data-src="https://image.pylover.net/img/202110301319157.gif?imageMogr2/format/webp"></p>
+<h3 id="Python-Type-Hint"><a href="#Python-Type-Hint" class="headerlink" title="Python Type Hint"></a>Python Type Hint</h3><p><img data-src="https://image.pylover.net/img/202110300136840.png?imageMogr2/format/webp"></p>
+<p><code>Python Type Hint</code> 提供针对Python的类型提示自动完成功能，以及针对内置类型、类和键入模块的完成项。</p>
+<ul>
+<li>提供内置类型、估计类型和键入模块的类型提示完成项</li>
+<li>估计正确的类型，提供完成项</li>
+<li>可以在工作区中搜索Python文件以进行类型估计</li>
+</ul>
+<p><img data-src="https://image.pylover.net/img/202110301320314.gif?imageMogr2/format/webp"></p>
+<h3 id="Jupyter"><a href="#Jupyter" class="headerlink" title="Jupyter"></a>Jupyter</h3><p><img data-src="https://image.pylover.net/img/202110300137044.png?imageMogr2/format/webp"></p>
+<p><code>Jupyter</code> 可以说是我最喜欢的 <code>VS Code</code> 插件之一，可以让我们在 <code>VS Code</code> 中完美使用 <code>Jupyter Notebooks</code>。使用方法如下：</p>
+<ol>
+<li>创建新笔记本，打开命令面板（ <code>Windows：Ctrl + Shift + P</code>；<code>iOS：Command + Shift + P</code>），然后选择命令 <code>Jupyter: Create New Blank Jupyter Notebook</code> 。</li>
+</ol>
+<p><img data-src="https://image.pylover.net/img/202110300138412.png?imageMogr2/format/webp"></p>
+<ol start="2">
+<li>通过单击状态栏右下方的内核选择器或调用 <code>Notebook: Select Notebook Kernel</code> 命令来选择内核。</li>
+</ol>
+<p><img data-src="https://image.pylover.net/img/202110301320377.gif?imageMogr2/format/webp"></p>
+<ol start="3">
+<li>通过单击语言选择器或调用 <code>Notebook: Change Cell Language</code> 命令来更改单元格语言。</li>
+</ol>
+<p><img data-src="https://image.pylover.net/img/202110301322318.gif?imageMogr2/format/webp"></p>
+<p>另外，<code>Jupyter</code> 插件还支持 <code>VS Code Insiders</code> 中的其他语言，例如 <code>Julia</code> 和 <code>R</code>。</p>
+<h3 id="Atom-Material-Theme"><a href="#Atom-Material-Theme" class="headerlink" title="Atom Material Theme"></a>Atom Material Theme</h3><p><img data-src="https://image.pylover.net/img/202110300141257.png?imageMogr2/format/webp"></p>
+<p><code>Atom Material Theme</code> 可以让你的文件图标变得非常好看，并支持更换主题。</p>
+<hr>
+<h2 id="Jupyter-Notebook"><a href="#Jupyter-Notebook" class="headerlink" title="Jupyter Notebook"></a>Jupyter Notebook</h2><h3 id="Collapsible-Headings"><a href="#Collapsible-Headings" class="headerlink" title="Collapsible Headings"></a>Collapsible Headings</h3><p>允许笔记本具有可折叠的部分，并以标题分隔</p>
+<h3 id="Notify"><a href="#Notify" class="headerlink" title="Notify"></a>Notify</h3><p>当内核忙了一段时间之后再次变为空闲时，显示浏览器通知-可在0、5、10或30秒忙之后进行配置。</p>
+<h3 id="Table-of-Contents-2"><a href="#Table-of-Contents-2" class="headerlink" title="Table of Contents (2)"></a>Table of Contents (2)</h3><p>使用toc2扩展程序可以收集所有正在运行的标头，并将它们显示在浮动窗口中，作为侧边栏或带有导航菜单。 该扩展程序也可拖动，可调整大小，可折叠，可停靠，并具有自动编号功能，具有唯一的链接ID和可选的toc单元。</p>
+<h3 id="Variable-Inspector"><a href="#Variable-Inspector" class="headerlink" title="Variable Inspector"></a>Variable Inspector</h3><p>Variable Inspector扩展会收集所有已定义的变量并将其显示在浮动窗口中。 该扩展名也是可拖动，可调整大小，可折叠的。</p>
+<h3 id="Codefolding"><a href="#Codefolding" class="headerlink" title="Codefolding"></a>Codefolding</h3><p>此扩展启用CodeMirror功能以允许在代码单元中进行代码折叠</p>
+<h3 id="ExecuteTime"><a href="#ExecuteTime" class="headerlink" title="ExecuteTime"></a>ExecuteTime</h3><p>显示何时执行每个单元以及花费了多长时间</p>
+<h3 id="Nbextensions-dashboard-tab"><a href="#Nbextensions-dashboard-tab" class="headerlink" title="Nbextensions dashboard tab"></a>Nbextensions dashboard tab</h3><p>将nbextensions配置器界面呈现为仪表板选项卡的nbextension</p>
+<h3 id="Snippets-Menu"><a href="#Snippets-Menu" class="headerlink" title="Snippets Menu"></a>Snippets Menu</h3><p>添加可自定义的菜单项以插入代码和降价代码段。 带有流行的python模块的广泛默认值，包括相当重要的许多重要函数和常量的完整列表，以节省通过文档进行的搜索。</p>
+<h3 id="Codefolding-in-Editor"><a href="#Codefolding-in-Editor" class="headerlink" title="Codefolding in Editor"></a>Codefolding in Editor</h3><p>启用CodeMirror功能以允许在Jupyter文件编辑器视图中进行代码折叠。 请注意，这还使用笔记本视图的代码折叠nbextension中的代码折叠热键。</p>
+<h3 id="contrib-nbextensions-help-item"><a href="#contrib-nbextensions-help-item" class="headerlink" title="contrib_nbextensions_help_item"></a>contrib_nbextensions_help_item</h3><p>contrib_nbextensions_help_item是一个很小的扩展，仅在笔记本的帮助菜单中添加了一个项目，指向readthedocs上的jupyter_contrib_nbextensions。</p>
+<h3 id="Hide-input"><a href="#Hide-input" class="headerlink" title="Hide input"></a>Hide input</h3><p>切换所选代码单元输入的显示</p>
+<h3 id="Hinterland"><a href="#Hinterland" class="headerlink" title="Hinterland"></a>Hinterland</h3><p>为代码单元中的每个按键启用代码自动完成菜单，而不是仅通过制表符启用它（<strong>亲测相当好用，其实就是在你写出一个方法的时候，它会自动跳出这个方法的文档</strong>）</p>
+<h3 id="Nbextensions-edit-menu-item"><a href="#Nbextensions-edit-menu-item" class="headerlink" title="Nbextensions edit menu item"></a>Nbextensions edit menu item</h3><p>添加编辑菜单项以打开nbextensions配置器页面</p>
+<h3 id="spellchecker"><a href="#spellchecker" class="headerlink" title="spellchecker"></a>spellchecker</h3><p>为Typo.js拼写检查添加CodeMirror覆盖模式</p>
+<h3 id="Toggle-all-line-numbers"><a href="#Toggle-all-line-numbers" class="headerlink" title="Toggle all line numbers"></a>Toggle all line numbers</h3><p>添加工具栏按钮和热键以打开或关闭所有单元格的行号</p>
+<h3 id="Autopep8"><a href="#Autopep8" class="headerlink" title="Autopep8"></a>Autopep8</h3><p>使用特定于内核的代码重新格式化&#x2F;修饰代码单元的内容</p>
+<h3 id="Hide-input-all"><a href="#Hide-input-all" class="headerlink" title="Hide input all"></a>Hide input all</h3><p>切换所有代码单元输入的显示</p>
+<h3 id="Scratchpad"><a href="#Scratchpad" class="headerlink" title="Scratchpad"></a>Scratchpad</h3><p>在Jupyter笔记本中添加便笺式单元</p>
+<h3 id="AutoSaveTime"><a href="#AutoSaveTime" class="headerlink" title="AutoSaveTime"></a>AutoSaveTime</h3><p>（可选）设置笔记本自动保存间隔，和&#x2F;或向工具栏添加选择器</p>
+<h3 id="ScrollDown"><a href="#ScrollDown" class="headerlink" title="ScrollDown"></a>ScrollDown</h3><p>自动向下滚动输出</p>
+<h3 id="highlighter"><a href="#highlighter" class="headerlink" title="highlighter"></a>highlighter</h3><p>启用以突出显示降价单元格中的选定文本</p>
+<h3 id="Ruler-in-Editor"><a href="#Ruler-in-Editor" class="headerlink" title="Ruler in Editor"></a>Ruler in Editor</h3><p>此扩展启用了编辑器中的标尺功能</p>
+<h3 id="Python-Markdown"><a href="#Python-Markdown" class="headerlink" title="Python Markdown"></a>Python Markdown</h3><p>允许在markdown单元格中嵌入Python代码</p>
+<h3 id="Skip-Traceback"><a href="#Skip-Traceback" class="headerlink" title="Skip-Traceback"></a>Skip-Traceback</h3><p>隐藏错误回溯，而是显示错误名称和类型的摘要。 单击摘要将显示整个回溯</p>
+
+      </div>
+      
+      
+      
+    </div>
+  <ul class="breadcrumb">
+            <li><a href="/config/">开发工具</a></li>
+            <li><a href="/config/extensions/">扩展插件</a></li>
+            <li>软件扩展</li>
+  </ul>
+
+    
+    
+
+
+    
+  
+  <div class="comments giscus-container">
+  </div>
+  
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">琼ICP备2021004101号 </a>
+      <img src="/uploads/beian.png" alt=""><a href="https://beian.mps.gov.cn/#/query/webSearch?code=43052302000141" rel="noopener" target="_blank">湘公网安备 43052302000141号 </a>
+  </div>
+  <div class="copyright">
+    &copy; 2019 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">pylover7</span>
+  </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/pylover7" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js","integrity":"sha256-G8ouPAnw4zzMbnAenHnVz6h9XpKbNdOkrqTh7AadyHs="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://pylover.net/config/extensions/softwareext.html"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<script class="next-config" data-name="giscus" type="application/json">{"enable":true,"repo":"pylover7/pylover7.github.io","repo_id":"R_kgDONiaYUg","category":"Announcements","category_id":"DIC_kwDONiaYUs4Clhu3","mapping":"pathname","strict":0,"reactions_enabled":1,"emit_metadata":1,"theme":"dark","lang":"zh-CN","crossorigin":"anonymous","input_position":"anonymous","loading":"lazy"}</script>
+
+<script>
+document.addEventListener('page:loaded', () => {
+  if (!CONFIG.page.comments) return;
+
+  NexT.utils.loadComments('.giscus-container')
+    .then(() => NexT.utils.getScript('https://giscus.app/client.js', {
+      attributes: {
+        async                   : true,
+        crossOrigin             : 'anonymous',
+        'data-repo'             : CONFIG.giscus.repo,
+        'data-repo-id'          : CONFIG.giscus.repo_id,
+        'data-category'         : CONFIG.giscus.category,
+        'data-category-id'      : CONFIG.giscus.category_id,
+        'data-mapping'          : CONFIG.giscus.mapping,
+        'data-strict'           : CONFIG.giscus.strict,
+        'data-reactions-enabled': CONFIG.giscus.reactions_enabled,
+        'data-emit-metadata'    : CONFIG.giscus.emit_metadata,
+        'data-theme'            : CONFIG.giscus.theme,
+        'data-lang'             : CONFIG.giscus.lang,
+        'data-input-position'   : CONFIG.giscus.input_position,
+        'data-loading'          : CONFIG.giscus.loading
+      },
+      parentNode: document.querySelector('.giscus-container')
+    }));
+});
+</script>
+
+</body>
+</html>

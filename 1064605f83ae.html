@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/icon1.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/icon1.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/icon0.5.ico">
+  <link rel="mask-icon" href="/uploads/icon1.ico" color="#222">
+  <meta name="baidu-site-verification" content="code-F25ER4wHr6">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"pylover.net","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"default"},"fold":{"enable":true,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="前言收集了 20 个 re 模块的小栗子，供大家参考学习~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python正则表达式小例子">
+<meta property="og:url" content="https://pylover.net/1064605f83ae.html">
+<meta property="og:site_name" content="追光日记">
+<meta property="og:description" content="前言收集了 20 个 re 模块的小栗子，供大家参考学习~">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-10-24T08:29:01.000Z">
+<meta property="article:modified_time" content="2024-12-26T09:49:36.108Z">
+<meta property="article:author" content="pylover7">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="re">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://pylover.net/1064605f83ae.html">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://pylover.net/1064605f83ae.html","path":"1064605f83ae.html","title":"Python正则表达式小例子"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Python正则表达式小例子 | 追光日记</title>
+  
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?15a02190bbfe25e9869a860d891b46ba"></script>
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">追光日记</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">站在巨人的肩上</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-开发工具"><a href="/config/" rel="section"><i class="fa fa-user-cog fa-fw"></i>开发工具</a></li><li class="menu-item menu-item-技巧教程"><a href="/allskills/" rel="section"><i class="fa fa-tachometer-alt fa-fw"></i>技巧教程</a></li><li class="menu-item menu-item-项目收集"><a href="/projects/" rel="section"><i class="fa fa-project-diagram fa-fw"></i>项目收集</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B%E5%AD%90"><span class="nav-number">2.</span> <span class="nav-text">例子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E6%89%BE%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8C%B9%E9%85%8D%E4%B8%B2"><span class="nav-number">2.1.</span> <span class="nav-text">查找第一个匹配串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E6%89%BE%E6%89%80%E6%9C%891"><span class="nav-number">2.2.</span> <span class="nav-text">查找所有1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-%E5%8C%B9%E9%85%8D%E6%95%B0%E5%AD%97-0-9"><span class="nav-number">2.3.</span> <span class="nav-text">\d 匹配数字 [0-9]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%A8%E7%A4%BA%E5%89%8D%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E5%8C%B9%E9%85%8D0%E6%88%961%E6%AC%A1"><span class="nav-number">2.4.</span> <span class="nav-text">? 表示前一个字符匹配0或1次</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8C%B9%E9%85%8D%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%BC%80%E5%A4%B4"><span class="nav-number">2.5.</span> <span class="nav-text">^ 匹配字符串的开头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#re-I-%E5%BF%BD%E7%95%A5%E5%A4%A7%E5%B0%8F%E5%86%99"><span class="nav-number">2.6.</span> <span class="nav-text">re.I 忽略大小写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%90%E5%8F%96%E5%8D%95%E8%AF%8D"><span class="nav-number">2.7.</span> <span class="nav-text">提取单词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8D%95%E8%8E%B7%E5%8D%95%E8%AF%8D%E5%8E%BB%E6%8E%89%E7%A9%BA%E6%A0%BC"><span class="nav-number">2.8.</span> <span class="nav-text">捕获单词去掉空格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%A5%E5%85%85%E4%B8%8A%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%95%E8%AF%8D"><span class="nav-number">2.9.</span> <span class="nav-text">补充上第一个单词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-split-%E7%9B%B4%E6%8E%A5%E5%88%86%E5%89%B2%E5%8D%95%E8%AF%8D"><span class="nav-number">2.10.</span> <span class="nav-text">使用 split() 直接分割单词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%90%E5%8F%96%E4%BB%A5m%E6%88%96t%E5%BC%80%E5%A4%B4%E7%9A%84%E5%8D%95%E8%AF%8D%EF%BC%8C%E5%BF%BD%E7%95%A5%E5%A4%A7%E5%B0%8F%E5%86%99"><span class="nav-number">2.11.</span> <span class="nav-text">提取以m或t开头的单词，忽略大小写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-%E6%9F%A5%E6%89%BE%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%BC%80%E5%A4%B4%E7%9A%84%E5%8D%95%E8%AF%8D"><span class="nav-number">2.12.</span> <span class="nav-text">使用 ^ 查找字符串开头的单词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%88%E5%88%86%E5%89%B2%EF%BC%8C%E5%86%8D%E6%9F%A5%E6%89%BE%E6%BB%A1%E8%B6%B3%E8%A6%81%E6%B1%82%E7%9A%84%E5%8D%95%E8%AF%8D"><span class="nav-number">2.13.</span> <span class="nav-text">先分割，再查找满足要求的单词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B4%AA%E5%BF%83%E5%8C%B9%E9%85%8D"><span class="nav-number">2.14.</span> <span class="nav-text">贪心匹配</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%9E%E8%B4%AA%E5%BF%83%E5%8C%B9%E9%85%8D"><span class="nav-number">2.15.</span> <span class="nav-text">非贪心匹配</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AB%E6%9C%89%E5%A4%9A%E7%A7%8D%E5%88%86%E5%89%B2%E7%AC%A6"><span class="nav-number">2.16.</span> <span class="nav-text">含有多种分割符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%BF%E6%8D%A2%E5%8C%B9%E9%85%8D%E7%9A%84%E5%AD%90%E4%B8%B2"><span class="nav-number">2.17.</span> <span class="nav-text">替换匹配的子串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%88%AC%E5%8F%96%E7%99%BE%E5%BA%A6%E9%A6%96%E9%A1%B5%E6%A0%87%E9%A2%98"><span class="nav-number">2.18.</span> <span class="nav-text">爬取百度首页标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%85%83%E5%AD%97%E7%AC%A6%E6%80%BB%E7%BB%93"><span class="nav-number">2.19.</span> <span class="nav-text">常用元字符总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E9%80%9A%E7%94%A8%E5%AD%97%E7%AC%A6%E6%80%BB%E7%BB%93"><span class="nav-number">2.20.</span> <span class="nav-text">常用通用字符总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8E%E8%AF%9D"><span class="nav-number">3.</span> <span class="nav-text">后话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E6%96%87%E9%93%BE%E6%8E%A5"><span class="nav-number">4.</span> <span class="nav-text">原文链接</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="pylover7"
+      src="/uploads/avatar2.png">
+  <p class="site-author-name" itemprop="name">pylover7</p>
+  <div class="site-description" itemprop="description">py爱好者~</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/pylover7" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;pylover7" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://pylover.net/1064605f83ae.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar2.png">
+      <meta itemprop="name" content="pylover7">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="追光日记">
+      <meta itemprop="description" content="py爱好者~">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Python正则表达式小例子 | 追光日记">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Python正则表达式小例子
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-10-24 16:29:01" itemprop="dateCreated datePublished" datetime="2021-10-24T16:29:01+08:00">2021-10-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-12-26 17:49:36" itemprop="dateModified" datetime="2024-12-26T17:49:36+08:00">2024-12-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>收集了 20 个 <code>re</code> 模块的小栗子，供大家参考学习~</p>
+<span id="more"></span>
+
+<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><h3 id="查找第一个匹配串"><a href="#查找第一个匹配串" class="headerlink" title="查找第一个匹配串"></a>查找第一个匹配串</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;i love python very much&#x27;</span></span><br><span class="line">pat = <span class="string">&#x27;python&#x27;</span> </span><br><span class="line">r = re.search(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r.span()) <span class="comment">#(7,13)</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="查找所有1"><a href="#查找所有1" class="headerlink" title="查找所有1"></a>查找所有1</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;山东省潍坊市青州第1中学高三1班&#x27;</span></span><br><span class="line">pat = <span class="string">&#x27;1&#x27;</span></span><br><span class="line">r = re.finditer(pat,s)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> r:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br><span class="line"></span><br><span class="line"><span class="comment"># &lt;re.Match object; span=(9, 10), match=&#x27;1&#x27;&gt;</span></span><br><span class="line"><span class="comment"># &lt;re.Match object; span=(14, 15), match=&#x27;1&#x27;&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="d-匹配数字-0-9"><a href="#d-匹配数字-0-9" class="headerlink" title="\d 匹配数字 [0-9]"></a><code>\d</code> 匹配数字 <code>[0-9]</code></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;一共20行代码运行时间13.59s&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\d+&#x27;</span> <span class="comment"># +表示匹配数字(\d表示数字的通用字符)1次或多次</span></span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r)</span><br><span class="line"><span class="comment"># [&#x27;20&#x27;, &#x27;13&#x27;, &#x27;59&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="表示前一个字符匹配0或1次"><a href="#表示前一个字符匹配0或1次" class="headerlink" title="? 表示前一个字符匹配0或1次"></a><code>?</code> 表示前一个字符匹配0或1次</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;一共20行代码运行时间13.59s&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\d+\.?\d+&#x27;</span> <span class="comment"># ?表示匹配小数点(\.)0次或1次</span></span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r)</span><br><span class="line"><span class="comment"># [&#x27;20&#x27;, &#x27;13.59&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="匹配字符串的开头"><a href="#匹配字符串的开头" class="headerlink" title="^ 匹配字符串的开头"></a><code>^</code> 匹配字符串的开头</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;^[emrt]&#x27;</span> <span class="comment"># 查找以</span></span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r)</span><br><span class="line"><span class="comment"># [],因为字符串的开头是字符`T`，不在emrt匹配范围内，所以返回为空</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="re-I-忽略大小写"><a href="#re-I-忽略大小写" class="headerlink" title="re.I 忽略大小写"></a><code>re.I</code> 忽略大小写</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;^[emrt]&#x27;</span> <span class="comment"># 查找以</span></span><br><span class="line">r = re.<span class="built_in">compile</span>(pat,re.I).search(s)</span><br><span class="line"><span class="built_in">print</span>(r)</span><br><span class="line"><span class="comment"># &lt;re.Match object; span=(0, 1), match=&#x27;T&#x27;&gt; 表明字符串的开头在匹配列表中</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="提取单词"><a href="#提取单词" class="headerlink" title="提取单词"></a>提取单词</h3><div class="note info"><p>这是不准确版本，请参看第 <a href="#%E8%A1%A5%E5%85%85%E4%B8%8A%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%95%E8%AF%8D">9</a> 个</p>
+</div>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\s[a-zA-Z]+&#x27;</span>  </span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r) <span class="comment">#[&#x27; module&#x27;, &#x27; provides&#x27;, &#x27; regular&#x27;, &#x27; expression&#x27;, &#x27; matching&#x27;, &#x27; operations&#x27;, &#x27; similar&#x27;, &#x27; to&#x27;, &#x27; those&#x27;, &#x27; found&#x27;, &#x27; in&#x27;, &#x27; Perl&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="捕获单词去掉空格"><a href="#捕获单词去掉空格" class="headerlink" title="捕获单词去掉空格"></a>捕获单词去掉空格</h3><div class="note info"><p>使用 <code>()</code> 捕获，这是不准确版本，请参看第 <a href="#%E8%A1%A5%E5%85%85%E4%B8%8A%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%95%E8%AF%8D">9</a> 个</p>
+</div>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\s([a-zA-Z]+)&#x27;</span>  </span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r) <span class="comment">#[&#x27;module&#x27;, &#x27;provides&#x27;, &#x27;regular&#x27;, &#x27;expression&#x27;, &#x27;matching&#x27;, &#x27;operations&#x27;, &#x27;similar&#x27;, &#x27;to&#x27;, &#x27;those&#x27;, &#x27;found&#x27;, &#x27;in&#x27;, &#x27;Perl&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="补充上第一个单词"><a href="#补充上第一个单词" class="headerlink" title="补充上第一个单词"></a>补充上第一个单词</h3><div class="note info"><p>上面第 <a href="#%E6%8D%95%E8%8E%B7%E5%8D%95%E8%AF%8D%E5%8E%BB%E6%8E%89%E7%A9%BA%E6%A0%BC">8</a>，看到提取单词中未包括第一个单词，使用 <code>?</code> 表示前面字符出现 0 次或 1 次，但是此字符还有表示贪心或非贪心匹配含义，使用时要谨慎</p>
+</div>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\s?([a-zA-Z]+)&#x27;</span>  </span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r) <span class="comment">#[&#x27;This&#x27;, &#x27;module&#x27;, &#x27;provides&#x27;, &#x27;regular&#x27;, &#x27;expression&#x27;, &#x27;matching&#x27;, &#x27;operations&#x27;, &#x27;similar&#x27;, &#x27;to&#x27;, &#x27;those&#x27;, &#x27;found&#x27;, &#x27;in&#x27;, &#x27;Perl&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="使用-split-直接分割单词"><a href="#使用-split-直接分割单词" class="headerlink" title="使用 split() 直接分割单词"></a>使用 <code>split()</code> 直接分割单词</h3><p>使用以上方法分割单词，不是简洁的，仅仅为了演示。分割单词最简单还是使用 <code>split()</code> 。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\s+&#x27;</span>  </span><br><span class="line">r = re.split(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r) <span class="comment"># [&#x27;This&#x27;, &#x27;module&#x27;, &#x27;provides&#x27;, &#x27;regular&#x27;, &#x27;expression&#x27;, &#x27;matching&#x27;, &#x27;operations&#x27;, &#x27;similar&#x27;, &#x27;to&#x27;, &#x27;those&#x27;, &#x27;found&#x27;, &#x27;in&#x27;, &#x27;Perl&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="提取以m或t开头的单词，忽略大小写"><a href="#提取以m或t开头的单词，忽略大小写" class="headerlink" title="提取以m或t开头的单词，忽略大小写"></a>提取以m或t开头的单词，忽略大小写</h3><div class="note warning"><p>下面出现的结果不是我们想要的，原因出在 <code>?</code> 上！</p>
+</div>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\s?([mt][a-zA-Z]*)&#x27;</span> <span class="comment"># 查找以</span></span><br><span class="line">r = re.findall(pat,s)</span><br><span class="line"><span class="built_in">print</span>(r) <span class="comment"># [&#x27;module&#x27;, &#x27;matching&#x27;, &#x27;tions&#x27;, &#x27;milar&#x27;, &#x27;to&#x27;, &#x27;those&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="使用-查找字符串开头的单词"><a href="#使用-查找字符串开头的单词" class="headerlink" title="使用 ^ 查找字符串开头的单词"></a>使用 <code>^</code> 查找字符串开头的单词</h3><p>综合 <a href="#%E6%8F%90%E5%8F%96%E4%BB%A5m%E6%88%96t%E5%BC%80%E5%A4%B4%E7%9A%84%E5%8D%95%E8%AF%8D%E5%BF%BD%E7%95%A5%E5%A4%A7%E5%B0%8F%E5%86%99">11</a> 和 12 得到所有以 <code>m</code> 或 <code>t</code> 开头的单词</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;^([mt][a-zA-Z]*)\s&#x27;</span> <span class="comment"># 查找以</span></span><br><span class="line">r = re.<span class="built_in">compile</span>(pat,re.I).findall(s)</span><br><span class="line"><span class="built_in">print</span>(r) <span class="comment"># [&#x27;This&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="先分割，再查找满足要求的单词"><a href="#先分割，再查找满足要求的单词" class="headerlink" title="先分割，再查找满足要求的单词"></a>先分割，再查找满足要求的单词</h3><p>使用 <code>match</code> 表示是否匹配</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">s = <span class="string">&#x27;This module provides regular expression matching operations similar to those found in Perl&#x27;</span></span><br><span class="line">pat = <span class="string">r&#x27;\s+&#x27;</span>  </span><br><span class="line">r = re.split(pat,s)</span><br><span class="line">res = [i <span class="keyword">for</span> i <span class="keyword">in</span> r <span class="keyword">if</span> re.<span class="keyword">match</span>(<span class="string">r&#x27;[mMtT]&#x27;</span>,i)] </span><br><span class="line"><span class="built_in">print</span>(res) <span class="comment"># [&#x27;This&#x27;, &#x27;module&#x27;, &#x27;matching&#x27;, &#x27;to&#x27;, &#x27;those&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="贪心匹配"><a href="#贪心匹配" class="headerlink" title="贪心匹配"></a>贪心匹配</h3><p>尽可能多的匹配字符</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">content=<span class="string">&#x27;&lt;h&gt;ddedadsad&lt;/h&gt;&lt;div&gt;graph&lt;/div&gt;bb&lt;div&gt;math&lt;/div&gt;cc&#x27;</span></span><br><span class="line">pat=re.<span class="built_in">compile</span>(<span class="string">r&quot;&lt;div&gt;(.*)&lt;/div&gt;&quot;</span>)  <span class="comment">#贪婪模式</span></span><br><span class="line">m=pat.findall(content)</span><br><span class="line"><span class="built_in">print</span>(m) <span class="comment"># [&#x27;graph&lt;/div&gt;bb&lt;div&gt;math&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="非贪心匹配"><a href="#非贪心匹配" class="headerlink" title="非贪心匹配"></a>非贪心匹配</h3><p>与 <a href="#%E8%B4%AA%E5%BF%83%E5%8C%B9%E9%85%8D">14</a> 相比，仅仅多了一个问号 <code>(?)</code> ，得到结果完全不同</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">content=<span class="string">&#x27;&lt;h&gt;ddedadsad&lt;/h&gt;&lt;div&gt;graph&lt;/div&gt;bb&lt;div&gt;math&lt;/div&gt;cc&#x27;</span></span><br><span class="line">pat=re.<span class="built_in">compile</span>(<span class="string">r&quot;&lt;div&gt;(.*?)&lt;/div&gt;&quot;</span>)  <span class="comment">#贪婪模式</span></span><br><span class="line">m=pat.findall(content)</span><br><span class="line"><span class="built_in">print</span>(m) <span class="comment"># [&#x27;graph&#x27;, &#x27;math&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<p>与14比较可知，贪心匹配和非贪心匹配的区别，后者是字符串匹配后立即返回，见好就收。</p>
+<h3 id="含有多种分割符"><a href="#含有多种分割符" class="headerlink" title="含有多种分割符"></a>含有多种分割符</h3><p>使用 <code>split</code> 函数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">content = <span class="string">&#x27;graph math,,english;chemistry&#x27;</span> <span class="comment"># 这种</span></span><br><span class="line">pat=re.<span class="built_in">compile</span>(<span class="string">r&quot;[\s\,\;]+&quot;</span>)  <span class="comment">#贪婪模式</span></span><br><span class="line">m=pat.split(content)</span><br><span class="line"><span class="built_in">print</span>(m) <span class="comment"># [&#x27;graph&#x27;, &#x27;math&#x27;, &#x27;english&#x27;, &#x27;chemistry&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="替换匹配的子串"><a href="#替换匹配的子串" class="headerlink" title="替换匹配的子串"></a>替换匹配的子串</h3><p><code>sub</code> 函数实现对匹配子串的替换</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">content=<span class="string">&quot;hello 12345, hello 456321&quot;</span>    </span><br><span class="line">pat=re.<span class="built_in">compile</span>(<span class="string">r&#x27;\d+&#x27;</span>) <span class="comment">#要替换的部分</span></span><br><span class="line">m=pat.sub(<span class="string">&quot;666&quot;</span>,content)</span><br><span class="line"><span class="built_in">print</span>(m) <span class="comment"># hello 666, hello 666</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="爬取百度首页标题"><a href="#爬取百度首页标题" class="headerlink" title="爬取百度首页标题"></a>爬取百度首页标题</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> request</span><br><span class="line"></span><br><span class="line"><span class="comment">#爬虫爬取百度首页内容</span></span><br><span class="line">data=request.urlopen(<span class="string">&quot;http://www.baidu.com/&quot;</span>).read().decode()</span><br><span class="line"></span><br><span class="line"><span class="comment">#分析网页,确定正则表达式</span></span><br><span class="line">pat=<span class="string">r&#x27;&lt;title&gt;(.*?)&lt;/title&gt;&#x27;</span></span><br><span class="line"></span><br><span class="line">result=re.search(pat,data)</span><br><span class="line"><span class="built_in">print</span>(result) &lt;re.Match <span class="built_in">object</span>; span=(<span class="number">1358</span>, <span class="number">1382</span>), <span class="keyword">match</span>=<span class="string">&#x27;&lt;title&gt;百度一下，你就知道&lt;/title&gt;&#x27;</span>&gt;</span><br><span class="line"></span><br><span class="line">result.group() <span class="comment"># 百度一下，你就知道</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="常用元字符总结"><a href="#常用元字符总结" class="headerlink" title="常用元字符总结"></a>常用元字符总结</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">. 匹配任意字符  </span><br><span class="line">^ 匹配字符串始位置 </span><br><span class="line">$ 匹配字符串中结束的位置 </span><br><span class="line">* 前面的原子重复0次1次多次 </span><br><span class="line">? 前面的原子重复一次或者0次 </span><br><span class="line">+ 前面的原子重复一次或多次</span><br><span class="line">&#123;n&#125; 前面的原子出现了 n 次</span><br><span class="line">&#123;n,&#125; 前面的原子至少出现 n 次</span><br><span class="line">&#123;n,m&#125; 前面的原子出现次数介于 n-m 之间</span><br><span class="line">( ) 分组,需要输出的部分</span><br></pre></td></tr></table></figure>
+
+<h3 id="常用通用字符总结"><a href="#常用通用字符总结" class="headerlink" title="常用通用字符总结"></a>常用通用字符总结</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">\s  匹配空白字符 </span><br><span class="line">\w  匹配任意字母/数字/下划线 </span><br><span class="line">\W  和小写 w 相反，匹配任意字母/数字/下划线以外的字符</span><br><span class="line">\d  匹配十进制数字</span><br><span class="line">\D  匹配除了十进制数以外的值 </span><br><span class="line">[0-9]  匹配一个0-9之间的数字</span><br><span class="line">[a-z]  匹配小写英文字母</span><br><span class="line">[A-Z]  匹配大写英文字母</span><br></pre></td></tr></table></figure>
+
+<h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>以上就是Python中正则模块的基本使用总结，里面有循序渐进的优化分析过程，这些虽然是中间过程，但是对于正则小白而言，了解这些很有必要。</p>
+<h2 id="原文链接"><a href="#原文链接" class="headerlink" title="原文链接"></a>原文链接</h2><div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/uploads/wechat.png"></object>
+<p>微信文章</p><p>学会Python正则表达式，就看这20个例子~</p>
+<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/J8KvyEoZGWfnlKajPnAPYg"></a>
+</div></div>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
+              <a href="/tags/re/" rel="tag"><i class="fa fa-tag"></i> re</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/956f654d80a2.html" rel="prev" title="python黑魔法指南">
+                  <i class="fa fa-angle-left"></i> python黑魔法指南
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/b17576fd19ba.html" rel="next" title="Python装饰器">
+                  Python装饰器 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  
+  <div class="comments giscus-container">
+  </div>
+  
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">琼ICP备2021004101号 </a>
+      <img src="/uploads/beian.png" alt=""><a href="https://beian.mps.gov.cn/#/query/webSearch?code=43052302000141" rel="noopener" target="_blank">湘公网安备 43052302000141号 </a>
+  </div>
+  <div class="copyright">
+    &copy; 2019 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">pylover7</span>
+  </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/pylover7" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js","integrity":"sha256-G8ouPAnw4zzMbnAenHnVz6h9XpKbNdOkrqTh7AadyHs="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://pylover.net/1064605f83ae.html"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<script class="next-config" data-name="giscus" type="application/json">{"enable":true,"repo":"pylover7/pylover7.github.io","repo_id":"R_kgDONiaYUg","category":"Announcements","category_id":"DIC_kwDONiaYUs4Clhu3","mapping":"pathname","strict":0,"reactions_enabled":1,"emit_metadata":1,"theme":"dark","lang":"zh-CN","crossorigin":"anonymous","input_position":"anonymous","loading":"lazy"}</script>
+
+<script>
+document.addEventListener('page:loaded', () => {
+  if (!CONFIG.page.comments) return;
+
+  NexT.utils.loadComments('.giscus-container')
+    .then(() => NexT.utils.getScript('https://giscus.app/client.js', {
+      attributes: {
+        async                   : true,
+        crossOrigin             : 'anonymous',
+        'data-repo'             : CONFIG.giscus.repo,
+        'data-repo-id'          : CONFIG.giscus.repo_id,
+        'data-category'         : CONFIG.giscus.category,
+        'data-category-id'      : CONFIG.giscus.category_id,
+        'data-mapping'          : CONFIG.giscus.mapping,
+        'data-strict'           : CONFIG.giscus.strict,
+        'data-reactions-enabled': CONFIG.giscus.reactions_enabled,
+        'data-emit-metadata'    : CONFIG.giscus.emit_metadata,
+        'data-theme'            : CONFIG.giscus.theme,
+        'data-lang'             : CONFIG.giscus.lang,
+        'data-input-position'   : CONFIG.giscus.input_position,
+        'data-loading'          : CONFIG.giscus.loading
+      },
+      parentNode: document.querySelector('.giscus-container')
+    }));
+});
+</script>
+
+</body>
+</html>
