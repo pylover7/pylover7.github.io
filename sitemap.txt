@@ -53,8 +53,8 @@ https://pylover.net/9a43c2abc119.html
 https://pylover.net/126f60b18a4f.html
 https://pylover.net/2ffcd46a4be5.html
 https://pylover.net/5ba4c255d128.html
-https://pylover.net/ed7a7cc4af87.html
 https://pylover.net/5ce11c97a4a9.html
+https://pylover.net/ed7a7cc4af87.html
 https://pylover.net/aa19ff014c7f.html
 https://pylover.net/c40696c93928.html
 https://pylover.net/bba48c4356b8.html
@@ -78,8 +78,8 @@ https://pylover.net/tags/github/
 https://pylover.net/tags/git/
 https://pylover.net/tags/%E7%88%AC%E8%99%AB/
 https://pylover.net/tags/Hexo/
-https://pylover.net/tags/coding/
 https://pylover.net/tags/jupyter/
+https://pylover.net/tags/coding/
 https://pylover.net/tags/retrying/
 https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
 https://pylover.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python/
